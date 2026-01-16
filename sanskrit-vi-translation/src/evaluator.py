@@ -13,14 +13,20 @@ class Evaluator:
         self.judge_model = judge_model
 
     def calculate_metrics(
-        self, references: List[str], candidates: List[str]
+        self, references: List[List[str]], candidates: List[str]
     ) -> Dict[str, float]:
         # BLEU Score
-        bleu = sacrebleu.corpus_bleu(candidates, [references])
+        # references should be list of lists: [[ref1_all], [ref2_all], ...]
+        bleu = sacrebleu.corpus_bleu(candidates, references)
 
         # BERTScore
+        # checking if references is a list of lists or list of strings
+        # For simplicity in this benchmark, we use the first reference list for BERTScore
+        # or we could flatten/maximize, but let's stick to Ref 0 (Primary) for finding semantic similarity.
+        primary_ref = references[0] if isinstance(references[0], list) else references
+
         # Suppress some warnings for cleaner output if desired, or handle device checks
-        P, R, F1 = score(candidates, references, lang="vi", verbose=False)
+        P, R, F1 = score(candidates, primary_ref, lang="vi", verbose=False)
 
         return {"BLEU": bleu.score, "BERTScore_F1": F1.mean().item()}
 
