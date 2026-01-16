@@ -9,11 +9,11 @@ def load_data(file_path: Path) -> pd.DataFrame:
 
     try:
         df = pd.read_csv(file_path)
-        # Ensure required columns exist
-        required_columns = ["sanskrit_text", "vietnamese_reference"]
-        for col in required_columns:
-            if col not in df.columns:
-                raise ValueError(f"Missing required column: {col}")
+        # Check for sanskrit_text
+        if "sanskrit_text" not in df.columns:
+            raise ValueError("CSV file missing 'sanskrit_text' column")
+
+        # We don't enforce vietnamese_reference anymore as we might have ref_* columns
         return df
     except Exception as e:
         raise ValueError(f"Error reading CSV file: {e}")
