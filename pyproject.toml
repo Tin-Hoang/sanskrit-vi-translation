@@ -1,0 +1,14 @@
+[project]
+name = "ml-sandbox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bert-score>=0.3.13",
+    "litellm>=1.80.16",
+    "pandas>=2.3.3",
+    "python-dotenv>=1.2.1",
+    "sacrebleu>=2.6.0",
+    "torch>=2.9.1",
+]
