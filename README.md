@@ -8,10 +8,10 @@ Date: 2026-01-17
 
 | Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
 |:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
-| Llama-3.3-70b |     9.34 |          0.72 |                         4.17 |                        3.89 |        60.96 |
-| GPT-OSS-120b  |     7.18 |          0.69 |                         4.11 |                        4.06 |        71.44 |
-| Kimi-k2       |    21.52 |          0.74 |                         4.50 |                        4.17 |        63.57 |
-| Qwen3-32b     |     0.48*|          0.53*|                         4.83 |                        4.83 |        84.16 |
+| Llama-3.3-70b |     7.37 |          0.70 |                         4.33 |                        3.89 |         8.38 |
+| GPT-OSS-120b  |     9.79 |          0.69 |                         3.94 |                        3.89 |        18.39 |
+| Kimi-k2       |    21.54 |          0.74 |                         0.28 |                        0.22 |         9.38 |
+| Qwen3-32b     |     0.59 |          0.54 |                         0.00 |                        0.00 |        37.59 |
 
 > **Note**: Qwen3-32b output included reasoning traces (`<think>...`), which heavily impacted automated metrics (BLEU/BERTScore) but was correctly rated by the LLM Judge.
 

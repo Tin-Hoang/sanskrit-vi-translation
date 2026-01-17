@@ -83,16 +83,21 @@ def main():
 
         # 1. Translate
         print(f"Translating {len(df)} sentences...")
-        start_time = time.time()
+        # 1. Translate
+        print(f"Translating {len(df)} sentences...")
+        # start_time = time.time()  <-- No longer needed for inference timing
         try:
-            translations = translator.batch_translate(df["sanskrit_text"].tolist())
+            translations, elapsed_time = translator.batch_translate(
+                df["sanskrit_text"].tolist()
+            )
         except Exception as e:
             print(f"Failed to translate with {model_name}: {e}")
             # Fill with empty strings on failure
             translations = [""] * len(df)
+            elapsed_time = 0.0
 
-        elapsed_time = time.time() - start_time
-        print(f"Translation completed in {elapsed_time:.2f}s")
+        # elapsed_time = time.time() - start_time <-- Removed
+        print(f"Translation completed in {elapsed_time:.2f}s (inference time)")
 
         # Store translations
         col_trans = f"trans_{model_name}"

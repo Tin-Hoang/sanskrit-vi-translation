@@ -1,660 +1,527 @@
 id,sanskrit_text,ref_han_viet,ref_viet_modern,source,trans_Llama-3.3-70b,judge_Llama-3.3-70b,trans_GPT-OSS-120b,judge_GPT-OSS-120b,trans_Kimi-k2,judge_Kimi-k2,trans_Qwen3-32b,judge_Qwen3-32b
-1,ārya-avalokiteśvaro bodhisattvo gambhīrāṃ prajñāpāramitā caryāṃ caramāṇo vyavalokayati sma: pañca-skandhās tāṃś ca svabhāva śūnyān paśyati sma.,"Quán Tự Tại Bồ Tát hành thâm Bát nhã Ba la mật đa thời, chiếu kiến ngũ uẩn giai không, độ nhất thiết khổ ách.","Ngài Bồ Tát Quán Tự Tại khi thực hành thâm sâu về trí tuệ Bát Nhã Ba la mật, thì soi thấy năm uẩn đều là không, do đó vượt qua mọi khổ đau ách nạn.",Heart Sutra (Budsas),"Bồ Tát Quán Thế Âm đang thực hành sâu sắc Bát Nhã Ba La Mật, ngài quán chiếu và thấy rằng năm uẩn đều không có tự tính.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'Bồ Tát Quán Thế Âm' instead of 'Quán Tự Tại Bồ Tát' and 'không có tự tính' which is a good but slightly different expression for 'śūnyān'. The fluency is good, but the sentence structure is slightly formal and less common in everyday Vietnamese.""
-}","Bồ tát Avalokiteśvara cao quý, đang thực hành sâu sắc pháp Bát Nhã, quan sát năm uẩn và nhận thấy chúng là không có bản chất tự tánh.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly formal and less common Vietnamese phrases, such as 'thực hành sâu sắc pháp Bát Nhã' instead of 'hành thâm Bát nhã'.""
-}","Bồ Tát Quán Tự Tại hành sâu xa pháp Ba-la-mật-đa, chiếu kiến ngũ uẩn giai không, độ nhất thiết khổ ách.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but 'hành sâu xa pháp' could be more accurately translated to 'hành thâm Bát nhã' to match the reference translation, and 'Bồ Tát Quán Tự Tại' should be 'Quán Tự Tại Bồ Tát' for better fluency and consistency.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified only the translation without any extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
-
-The text is: ārya-avalokiteśvaro bodhisattvo gambhīrāṃ prajñāpāramitā caryāṃ caramāṇo vyavalokayati sma: pañca-skandhās tāṃś ca svabhāva śūnyān paśyati sma.
-
-Breaking it down, ""Ārya-Avalokiteśvara Bodhisattva"" is a common term in Mahayana Buddhism, referring to the Bodhisattva of Compassion. ""Gambhīrāṃ prajñāpāramitā caryāṃ caramāṇo"" translates to ""practicing the profound Prajñāpāramitā,"" which is the perfection of wisdom. ""Vyavalokayati sma"" means ""observes"" or ""contemplates."" Then, ""pañca-skandhās tāṃś ca svabhāva śūnyān paśyati sma"" refers to the five aggregates (skandhas) being empty in nature.
-
-Now, translating this into Vietnamese. I need to use the correct Buddhist terminology. ""Ārya-Avalokiteśvara Bodhisattva"" would be ""Bồ Tát Đại Sĩ Đồng Tử"" or ""Bồ Tát Quan Thế Âm"" depending on the tradition. Since the user provided ""Avalokiteśvara,"" which is often translated as Quan Thế Âm in Vietnamese, I'll go with that. 
-
-""Gambhīrāṃ prajñāpāramitā"" is ""thiền định sâu xa"" or ""trí tuệ sâu xa,"" but ""Prajñāpāramitā"" specifically refers to the Perfection of Wisdom, so ""Vi Diệu Trí Tuệ"" might be more accurate. ""Caryāṃ caramāṇo"" is ""thực hành"" or ""thi hành."" 
-
-""Vyavalokayati sma"" is ""nhìn lại"" or ""quan sát."" ""Pañca-skandhās"" are the five aggregates, which in Vietnamese is ""năm uẩn."" ""Tāṃś ca svabhāva śūnyān paśyati sma"" would be ""nhìn thấy chúng không có tự tính,"" meaning ""sees them as empty of inherent existence.""
-
-Putting it all together: ""Bồ Tát Quan Thế Âm đang thực hành Vi Diệu Trí Tuệ sâu xa quan sát năm uẩn không có tự tính.""
-
-Wait, let me check again. The original says ""prajñāpāramitā caryāṃ caramāṇo,"" which is ""practicing the path of Prajñāpāramitā."" So maybe ""đang thực hành giáo pháp Vi Diệu Trí Tuệ sâu xa"" would be better. Also, ""vyavalokayati sma"" is ""quán sát"" or ""nhìn lại."" The five aggregates (pañca-skandhās) are ""năm uẩn,"" and ""śūnyān"" is ""không,"" so ""không có tự tính.""
-
-So the final translation would be: ""Bồ Tát Quan Thế Âm đang thực hành giáo pháp Vi Diệu Trí Tuệ sâu xa quán sát năm uẩn không có tự tính.""
-
-I think that's accurate. Let me cross-verify with existing translations. Yes, this aligns with standard translations of the Heart Sutra into Vietnamese. The key terms are correctly rendered. The structure is clear and concise, as required by the user.
-</think>
-
-Bồ Tát Quan Thế Âm đang thực hành giáo pháp Vi Diệu Trí Tuệ sâu xa quán sát năm uẩn không có tự tính.","{
+1,ārya-avalokiteśvaro bodhisattvo gambhīrāṃ prajñāpāramitā caryāṃ caramāṇo vyavalokayati sma: pañca-skandhās tāṃś ca svabhāva śūnyān paśyati sma.,"Quán Tự Tại Bồ Tát hành thâm Bát nhã Ba la mật đa thời, chiếu kiến ngũ uẩn giai không, độ nhất thiết khổ ách.","Ngài Bồ Tát Quán Tự Tại khi thực hành thâm sâu về trí tuệ Bát Nhã Ba la mật, thì soi thấy năm uẩn đều là không, do đó vượt qua mọi khổ đau ách nạn.",Heart Sutra (Budsas),"Bồ Tát Quan Thế Âm đang thực hành sâu sắc trí tuệ Ba La Mật, ngài quán chiếu và thấy rằng năm uẩn đều không có tự tính.","{
   ""accuracy"": 5,
    ""fluency"": 5,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is written in clear, natural Vietnamese.""
-}"
-2,iha śāriputra: rūpaṃ śūnyatā śūnyataiva rūpaṃ; rūpān na pṛthak śūnyatā śunyatāyā na pṛthag rūpaṃ; yad rūpaṃ sā śūnyatā; ya śūnyatā tad rūpaṃ.,"Xá Lợi Tử, sắc bất dị không, không bất dị sắc, sắc tức thị không, không tức thị sắc,","Nầy Xá Lợi Tử, sắc chẳng khác gì không, không chẳng khác gì sắc, sắc chính là không, không chính là sắc,",Heart Sutra (Budsas),"Ở đây, này Xá Lợi Phất, sắc tức là không, không tức là sắc; sắc không khác với không, không không khác với sắc; cái gì là sắc tức là không, cái gì là không tức là sắc.","{
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text and is phrased in natural Vietnamese.""
+}","Bồ tát Avarôkitesvara cao quý, khi đang thực hành sâu sắc pháp Bát Nhã, quan sát và thấy năm uẩn là không có bản chất cố định.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'cố định' instead of 'tự tính' or 'bản chất' which is more commonly used to translate 'svabhāva', and the phrase 'quan sát và thấy' could be more naturally translated as 'nhìn thấy' or 'chiếu kiến' to match the reference translation.""
+}","Bồ Tát Quán Tự Tại hành sâu xa pháp Ba-la-mật đa, chiếu kiến năm u đều không tự tánh.",{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra comments. First, I need to make sure I understand the Sanskrit text correctly.
+
+The text starts with ""ārya-avalokiteśvaro bodhisattvo,"" which refers to Arya Avalokiteshvara, a bodhisattva. Then ""gambhīrāṃ prajñāpāramitā caryāṃ caramāṇo"" – ""gambhīrā"" means profound, ""prajñāpāramitā"" is the perfection of wisdom, ""caryāṃ"" is a path or practice, and ""caramāṇo"" is practicing. So the first part is ""Arya Avalokiteshvara, the bodhisattva, while practicing the profound perfection of wisdom.""
+
+Next, ""vyavalokayati sma: pañca-skandhās tāṃś ca svabhāva śūnyān paśyati sma."" ""Vyavalokayati"" is to observe or look at, ""sma"" is a past tense marker. ""Pañca-skandhās"" are the five aggregates. ""Tāṃś ca"" means ""those"" or ""them,"" ""svabhāva"" is inherent nature, ""śūnyān"" is empty, and ""paśyati sma"" is sees or perceives. So the second part is ""observed that the five aggregates are empty of inherent nature.""
+
+Putting it all together, the translation should convey that Arya Avalokiteshvara, while practicing profound wisdom, observes the five aggregates as empty. Now, translating into Vietnamese. I need to ensure the terms are correctly rendered. ""Arya Avalokiteshvara"" is usually transliterated, so ""Đại Sĩ Đồng Tử Quan Thế Âm"" or similar. ""Bodhisattva"" is ""Bồ Tát."" ""Profound perfection of wisdom"" is ""vi diệu pháp môn Bát Nhã Ba La Mật."" ""Five aggregates"" is ""năm uẩn."" ""Empty of inherent nature"" is ""vô tự tánh.""
+
+Check if the structure flows naturally in Vietnamese. The sentence structure in Sanskrit is a bit different, so adjusting for clarity. Maybe start with ""Đại Sĩ Đồng Tử Quan Thế Âm, vị Bồ Tát này, khi thực hành pháp môn Bát Nhã Ba La Mật Vi Diệu, đã quán sát rằng năm uẩn vốn vô tự tánh."" That seems to capture the meaning. Let me verify each term again to make sure there's no mistake. Yes, that should be correct.
+</think>
+
+Đại Sĩ Đồng Tử Quan Thế Âm, vị Bồ Tát này, khi thực hành pháp môn Bát Nhã Ba La Mật Vi Diệu, đã quán sát rằng năm uẩn vốn vô tự tánh.",{}
+2,iha śāriputra: rūpaṃ śūnyatā śūnyataiva rūpaṃ; rūpān na pṛthak śūnyatā śunyatāyā na pṛthag rūpaṃ; yad rūpaṃ sā śūnyatā; ya śūnyatā tad rūpaṃ.,"Xá Lợi Tử, sắc bất dị không, không bất dị sắc, sắc tức thị không, không tức thị sắc,","Nầy Xá Lợi Tử, sắc chẳng khác gì không, không chẳng khác gì sắc, sắc chính là không, không chính là sắc,",Heart Sutra (Budsas),"Ở đây, này Xá Lợi Phất, hình thể (rūpa)就是 chân không (śūnyatā), chân không cũng chính là hình thể; hình thể không khác với chân không, chân không cũng không khác với hình thể; cái gì là hình thể thì chính là chân không, cái gì là chân không thì chính là hình thể.","{
   ""accuracy"": 5,
    ""fluency"": 4,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be slightly more natural in Vietnamese.""
-}","Ở đây, Śāriputra: hình tướng là không tính, không tính cũng là hình tướng; hình tướng không tách rời khỏi không tính, không tính không tách rời khỏi hình tướng; những gì là hình tướng thì là không tính; những gì là không tính thì là hình tướng.","{
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the use of parentheses and the phrase 'chính là' could be more naturally expressed in Vietnamese.""
+}","Ở đây, Śāriputra: hình là không, không chính là hình; hình không tách rời khỏi không, không không tách rời khỏi hình; những gì là hình, chính là không; những gì là không, chính là hình.","{
   ""accuracy"": 5,
    ""fluency"": 4,
    ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural and fluent in Vietnamese.""
-}","Ở đây, Xá Lợi Tử: sắc là không, không chính là sắc; không khác sắc là không, không không khác sắc; cái gì là sắc tức là không, cái gì là không tức là sắc.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural in Vietnamese.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified only the translation without any extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
+}","Ở đây, Xá Lợi Tử: sắc là không, không chính là sắc; không khác sắc là không, không không khác sắc; cái gì là sắc tức là không, cái gì là không tức là sắc.",{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified only the translation without any extra commentary. First, I need to make sure I understand the original text correctly.
 
-The text starts with ""iha śāriputra"" which is addressing Śāriputra, a significant figure in Buddhist texts. The main content is about the concept of śūnyatā (emptiness) and rūpa (form). The structure seems to be a dialogue or a statement explaining the non-duality of form and emptiness. 
+The text starts with ""iha śāriputra"" which is a common Buddhist formula addressing Śāriputra. The main content is about the concept of śūnyatā (emptiness) and rūpa (form). The structure is a classic example from the Heart Sutra, which states that form is emptiness and emptiness is form, and so on.
 
-I recall that in Buddhist philosophy, especially in the Prajna Paramita texts, there's a famous line ""Form is emptiness, emptiness is form."" This might be a part of that. The original Sanskrit here is similar to that, so the translation should reflect that core teaching.
+Now, translating this into Vietnamese requires attention to the philosophical terms. ""Śūnyatā"" is often translated as ""không"" in Vietnamese, but in Buddhist contexts, it's more accurately rendered as ""sự Không"" or ""Vô tướng"" depending on the context. However, the standard translation for śūnyatā in the Heart Sutra is ""không"" here. 
 
-Now, translating each part: ""rūpaṃ śūnyatā śūnyataiva rūpaṃ"" – ""Form is emptiness, emptiness is form."" Then ""rūpān na pṛthak śūnyatā śunyatāyā na pṛthag rūpaṃ"" – ""Form is not separate from emptiness, emptiness is not separate from form."" Finally, ""yad rūpaṃ sā śūnyatā; ya śūnyatā tad rūpaṃ."" – ""What is form is emptiness; what is emptiness is form.""
+The sentence structure in Sanskrit is quite repetitive for emphasis, so the Vietnamese translation should maintain that structure. For example, ""rūpaṃ śūnyatā śūnyataiva rūpaṃ"" becomes ""Hình tướng là Không, Không chính là hình tướng."" The next part talks about non-separation: ""rūpān na pṛthak śūnyatā śunyatāyā na pṛthag rūpaṃ"" which translates to ""Hình tướng không tách rời khỏi Không, Không không tách rời khỏi hình tướng."" 
 
-I need to ensure the Vietnamese translation captures the philosophical nuance accurately. Words like ""śūnyatā"" are often translated as ""không"" or ""trống rỗng,"" but in Buddhist context, ""không"" is commonly used. ""Rūpa"" is ""hình tướng"" or ""hình sắc."" 
+Then the final part: ""yad rūpaṃ sā śūnyatā; ya śūnyatā tad rūpaṃ."" This is ""Gì là hình tướng, đó là Không; gì là Không, đó là hình tướng."" 
 
-Putting it all together in Vietnamese while maintaining the structure and meaning. Let me check if there are any standard translations for this passage in Vietnamese Buddhist texts to ensure consistency. If there's a well-known version, it's better to use that for accuracy and recognition.
+I need to check if the terms are correctly translated. ""Hình tướng"" is the standard term for rūpa in Vietnamese Buddhist texts. ""Không"" is the direct translation for śūnyatā here. The structure should mirror the original's parallelism to preserve the meaning and rhythm. 
 
-Also, the user emphasized providing only the translation, so I must avoid any explanations or notes. Just the translated text. Let me review the translation again to make sure it's clear and faithful to the original.
+Also, the user mentioned providing only the translation, so I must avoid any explanations or notes. Just the translated text. Let me review once more to ensure accuracy and that it's in line with standard Buddhist translations in Vietnamese. Looks good. Time to present the translation as specified.
 </think>
 
-Ở đây, Śāriputra, hình tướng là không, không chính là hình tướng; hình tướng không tách rời không, không không tách rời hình tướng; gì là hình tướng thì là không; gì là không thì là hình tướng.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation perfectly preserves the meaning and philosophical nuance of the original Sanskrit text, with native-level fluency in Vietnamese.""
-}"
+Ở đây, Śāriputra, hình tướng là Không, Không chính là hình tướng; hình tướng không tách rời khỏi Không, Không không tách rời khỏi hình tướng; gì là hình tướng, đó là Không; gì là Không, đó là hình tướng.",{}
 3,evam eva vedanā saṃjñā saṃskāra vijñānaṃ.,thọ tưởng hành thức diệc phục như thị.,thọ tưởng hành thức cũng đều như thế.,Heart Sutra (Budsas),"Vậy, thọ, tưởng, hành, thức.","{
   ""accuracy"": 4,
    ""fluency"": 2,
-   ""explanation"": ""The candidate translation preserves the key terms from the Sanskrit text but lacks the connecting phrases and grammatical structure, making it somewhat awkward in Vietnamese.""
-}","Như vậy, cảm thọ, nhận biết, nghiệp, ý thức.","{
+   ""explanation"": ""The candidate translation preserves the key terms from the Sanskrit text but lacks grammatical structure and connectivity, making it somewhat awkward in Vietnamese.""
+}","Như vậy, cảm thọ, nhận biết, nghiệp, thức.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation 'Như vậy, cảm thọ, nhận biết, nghiệp, ý thức' generally preserves the meaning of the Sanskrit text, with 'cảm thọ' corresponding to 'vedanā', 'nhận biết' to 'saṃjñā', 'nghiệp' to 'saṃskāra', and 'ý thức' to 'vijñānaṃ'. The phrase is readable and mostly natural in Vietnamese, but the word order and minor imperfections prevent it from being perfect.""
-}","Cũng vậy, cảm thọ, tưởng, hành, thức.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the word order and phrasing could be more natural in Vietnamese.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text ""evam eva vedanā saṃjñā saṃskāra vijñānaṃ"" translated into Vietnamese. First, I need to make sure I understand each term correctly.
+   ""explanation"": ""The candidate translation generally preserves the meaning of the Sanskrit text, but 'như vậy' is a more literal translation of 'evam eva' and the word order could be improved for better fluency.""
+}","Cũng vậy, thọ, tưởng, hành, thức.",{},"<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. The user provided the text: ""evam eva vedanā saṃjñā saṃskāra vijñānaṃ."" They want only the translation, no extra commentary.
 
-""Evam eva"" is a common phrase in Sanskrit texts. ""Evam"" means ""thus"" or ""in this way,"" and ""eva"" is an intensifier, so together they might translate to ""chính như vậy"" or ""như vậy này"" in Vietnamese. 
+First, I need to parse each term. ""Evam eva"" is a common phrase in Sanskrit texts. ""Evam"" means ""thus"" or ""in this way,"" and ""eva"" is a particle emphasizing the statement, so together it's like ""thus indeed"" or ""exactly so."" 
 
-Next, ""vedanā"" refers to feeling or sensation. In Buddhist terminology, this is one of the five aggregates, so the standard translation would be ""thọ"" in Vietnamese.
+Next, ""vedanā"" is a Pali term, but in Sanskrit, it's ""vedanā"" as well. It translates to ""sensation"" or ""feeling."" In Buddhist context, it's one of the five aggregates. 
 
-""Saṃjñā"" is about perception or recognition. Again, in the context of the five aggregates, it's ""tưởng"" in Vietnamese.
+Then ""saṃjñā"" is another key term, meaning ""perception"" or ""discrimination."" 
 
-""Saṃskāra"" is a tricky one. It usually translates to ""hành"" in Vietnamese, referring to volitional actions or formations. But I need to confirm if there's a more precise term here. In the context of the twelve links of dependent origination, ""saṃskāra"" is part of the formula, so ""hành"" is appropriate.
+""Saṃskāra"" is a bit tricky. It's often translated as ""karma"" or ""volitional formations,"" but in the context of the five aggregates, it's ""volitional formations"" or ""karmic formations."" 
 
-""Vijñānaṃ"" is consciousness. In Buddhist terms, this is ""thức,"" so the translation would be ""thức"" in Vietnamese.
+Finally, ""vijñānaṃ"" is the dative singular of ""vijñāna,"" which means ""consciousness."" 
 
-Putting it all together: ""Chính như vậy, thọ, tưởng, hành, thức."" I should check if the order is correct. The original text lists vedanā, saṃjñā, saṃskāra, vijñānaṃ. In Vietnamese, the order should match. Also, the structure in Sanskrit uses ""saṃ"" as a prefix, but in Vietnamese, the terms are already established as ""thọ, tưởng, hành, thức.""
+Putting it all together, the phrase is part of the twelve links of dependent origination in Buddhism. The structure is ""Thus indeed, sensation, perception, volitional formations, consciousness."" 
 
-Wait, the original text has ""saṃskāra"" which is ""hành"" in Vietnamese. So the sequence is thọ, tưởng, hành, thức. That's correct in the context of the five aggregates (form, feeling, perception, volitional formations, consciousness). But the text here is listing vedanā, saṃjñā, saṃskāra, vijñānaṃ. So it's omitting the first aggregate, rūpa (form). But the user just wants the translation as given. 
+Now, translating into Vietnamese. I need to use the standard Buddhist terminology. 
 
-So the translation would be ""Chính như vậy, thọ, tưởng, hành, thức."" I need to ensure that the commas are correctly placed. In Vietnamese, when listing items, commas are used similarly. Also, ""evam eva"" is translated as ""Chính như vậy"" to convey the emphasis. 
+""Evam eva"" can be ""Bởi vậy"" or ""Như vậy."" ""Vedanā"" is ""thọ,"" ""saṃjñā"" is ""tưởng,"" ""saṃskāra"" is ""hành,"" and ""vijñānaṃ"" is ""thức."" 
 
-Double-checking each term: vedanā = thọ, saṃjñā = tưởng, saṃskāra = hành, vijñānaṃ = thức. Yes, that's correct. The user specified to provide only the translation, so no need for extra commentary. Just the translated text.
+So the translation would be: ""Bởi vậy, thọ, tưởng, hành, thức."" 
+
+I should check if these terms are correctly translated in the context of Buddhist teachings. Yes, in the five aggregates, it's thọ (sensation), tưởng (perception), hành (volitional formations), and thức (consciousness). 
+
+Wait, the original text lists four terms, but the twelve links might have more. However, the user's text is just these four. So the translation should be accurate as per the given text. 
+
+No need for extra explanation, just the translation. So the final answer is: ""Bởi vậy, thọ, tưởng, hành, thức.""
 </think>
 
-Chính như vậy, thọ, tưởng, hành, thức.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation 'Chính như vậy, thọ, tưởng, hành, thức' accurately preserves the meaning of the Sanskrit text and is phrased in a natural, native-level Vietnamese.""
-}"
-4,"iha śāriputra: sarva-dharmāḥ śūnyatā-lakṣaṇā, anutpannā aniruddhā, amalā avimalā, anūnā aparipūrṇāḥ.","Xá Lợi Tử, thị chư pháp không tướng, bất sanh bất diệt, bất cấu bất tịnh, bất tăng bất giảm.","Nầy Xá Lợi Tử, tướng không của các pháp ấy chẳng sinh chẳng diệt, chẳng nhơ chẳng sạch, chẳng thêm chẳng bớt.",Heart Sutra (Budsas),"Ở đây, Śāriputra, tất cả các pháp đều có đặc tính của sự vô thường, không sinh không diệt, không dơ không sạch, không thiếu không đủ.","{
-  ""accuracy"": 3,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning but incorrectly translates 'śūnyatā-lakṣaṇā' as 'đặc tính của sự vô thường' instead of 'dấu hiệu của sự空', and the rest of the sentence is fluent and natural in Vietnamese.""
-}","Ở đây, Śāriputra: mọi pháp đều mang tính không, không sinh ra, không bị cản trở, tinh khiết, không ô nhiễm, không sinh ra, chưa trọn vẹn.","{
+Bởi vậy, thọ, tưởng, hành, thức.",{}
+4,"iha śāriputra: sarva-dharmāḥ śūnyatā-lakṣaṇā, anutpannā aniruddhā, amalā avimalā, anūnā aparipūrṇāḥ.","Xá Lợi Tử, thị chư pháp không tướng, bất sanh bất diệt, bất cấu bất tịnh, bất tăng bất giảm.","Nầy Xá Lợi Tử, tướng không của các pháp ấy chẳng sinh chẳng diệt, chẳng nhơ chẳng sạch, chẳng thêm chẳng bớt.",Heart Sutra (Budsas),"Ở đây, Śāriputra, tất cả các pháp đều có đặc tính của sự vô tận, không sinh không diệt, không dơ không sạch, không thiếu không đủ.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but has minor imperfections, such as the repetition of 'không sinh ra' and the phrase 'chưa trọn vẹn' which could be more naturally translated as 'không đầy đủ'.""
-}","Ở đây, Xá Lợi Tử, tất cả pháp đều mang tướng Không, không sanh, không diệt, không ô nhiễm, không thanh tịnh, không thiếu, không đủ.","{
+   ""explanation"": ""The translation generally preserves the meaning, but 'vô tận' is not the most accurate translation of 'śūnyatā-lakṣaṇā', which refers to the characteristic of emptiness, and some phrases are slightly awkward.""
+}","Ở đây, Shāriputra: mọi pháp đều mang tính không tánh, không sinh ra, không bị cản trở, trong sạch, không ô nhiễm, không thay đổi, chưa trọn vẹn.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly formal and less common vocabulary, such as 'mang tướng Không' instead of 'không tướng'.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified only the translation without any extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly awkward phrasing and word choices, such as 'chưa trọn vẹn' instead of 'thiếu' or 'chưa đầy đủ' for 'anūnā aparipūrṇāḥ'.""
+}","Ở đây, Xá Lợi Tử, tất cả các pháp đều có tướng không, không sanh, không diệt, không ô nhiễm, không thanh tịnh, không thiếu, không đủ.",{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra comments. First, I need to make sure I understand the Sanskrit text correctly.
 
-The text is in Sanskrit, and it's a quote from a Buddhist scripture, probably from the Prajna Paramita sutras, given the terms like ""śūnyatā"" (emptiness). The speaker is addressing Śāriputra, a prominent disciple of the Buddha. The sentence structure is typical of these texts, listing various characteristics of all phenomena (sarva-dharmāḥ).
+The text starts with ""iha śāriputra"" which is addressing Śāriputra, a disciple of the Buddha. The main part is ""sarva-dharmāḥ śūnyatā-lakṣaṇā, anutpannā aniruddhā, amalā avimalā, anūnā aparipūrṇāḥ."" 
 
-Breaking down the sentence:
+Breaking it down: ""sarva-dharmāḥ"" means all phenomena or all dharmas. ""Śūnyatā-lakṣaṇā"" is the characteristic of emptiness. Then there are several terms: anutpannā (not arising), aniruddhā (not ceasing), amalā (pure), avimalā (spotless), anūnā (incomplete), aparipūrṇāḥ (unfilled). 
 
-- ""iha śāriputra"" – ""Here, Śāriputra""
-- ""sarva-dharmāḥ"" – ""all phenomena""
-- ""śūnyatā-lakṣaṇā"" – ""are marked by emptiness"" or ""have the characteristic of emptiness""
-- ""anutpannā aniruddhā"" – ""unarisen, unceased""
-- ""amalā avimalā"" – ""uncorrupted, unspoiled""
-- ""anūnā aparipūrṇāḥ"" – ""unproduced, unperfected""
+Now, translating into Vietnamese. The names and terms need to be accurate. ""Śāriputra"" is commonly translated as Tu Bồ Đề in Vietnamese Buddhist texts. ""Śūnyatā"" is Không (Emptiness). The adjectives need to be in the right order and use appropriate terms. 
 
-Now, translating each part into Vietnamese. I need to ensure that the terms are correctly rendered in Buddhist Vietnamese terminology. For example, ""śūnyatā"" is commonly translated as ""không"" (emptiness) in Vietnamese Buddhist texts. 
+""Anutpannā aniruddhā"" – not arising and not ceasing. In Vietnamese, ""không sinh và không diệt"". ""Amalā avimalā"" – pure and spotless. ""Tinh tuyền và vô nhiễm"". ""Anūnā aparipūrṇāḥ"" – incomplete and unfulfilled. ""Chưa đầy đủ và chưa viên mãn"". 
 
-""iha śāriputra"" would be ""Ở đây, Thiện Tuệ"" since ""Śāriputra"" is often translated as ""Thiện Tuệ"" in Vietnamese.
+Putting it all together: ""Ở đây này Tu Bồ Đề, tất cả các pháp đều mang đặc tướng Không, không sinh không diệt, tinh tuyền vô nhiễm, chưa đầy đủ, chưa viên mãn."" 
 
-""śūnyatā-lakṣaṇā"" – ""đặc tướng của không"" (characteristic of emptiness). But sometimes, ""lakṣaṇā"" can be translated as ""đặc tướng"" or ""đặc tính"".
+Wait, let me check the order. The original lists the characteristics after stating the main point. The structure in Vietnamese should follow the same order. Also, make sure the terms are standard in Buddhist Vietnamese. ""Tinh tuyền"" for amalā and ""vô nhiễm"" for avimalā. ""Chưa đầy đủ"" for anūnā and ""chưa viên mãn"" for aparipūrṇāḥ. 
 
-""anutpannā aniruddhā"" – ""chưa sinh, chưa diệt"" (unarisen, unceased). These are terms related to the transient nature of phenomena, so ""chưa sinh"" for ""anutpanna"" (unarisen) and ""chưa diệt"" for ""aniruddha"" (unceased).
-
-""amalā avimalā"" – ""vô nhiễm, bất tịnh"" (uncorrupted, unspoiled). However, ""avimalā"" might be better as ""không bị ô nhiễm"" but in classical terms, ""vô nhiễm"" is standard.
-
-""anūnā aparipūrṇāḥ"" – ""chưa thành tựu, chưa viên mãn"" (unproduced, unperfected). ""Anūnā"" is ""unproduced"" and ""aparipūrṇāḥ"" is ""unperfected"" or ""not complete"".
-
-Putting it all together, making sure the sentence flows naturally in Vietnamese while maintaining the original meaning. Let me check each term again for accuracy. Also, the structure in Vietnamese might need to adjust the order for clarity. However, since the original is a list, keeping the order is important.
-
-Final translation: ""Ở đây, Thiện Tuệ, tất cả các pháp đều có đặc tướng của không, chưa sinh, chưa diệt, vô nhiễm, bất tịnh, chưa thành tựu, chưa viên mãn.""
-
-I should double-check if ""bất tịnh"" is correct for ""avimalā"". Wait, ""avimalā"" means ""unspoiled"" or ""pure"", so maybe ""vô nhiễm"" and ""không ô nhiễm"" would be better. But in classical translations, ""avimalā"" is sometimes rendered as ""bất tịnh"" (unspoiled). Alternatively, ""vô nhiễm, bất tịnh"" might be redundant. Let me verify. In some contexts, ""amalā avimalā"" is translated as ""vô nhiễm, bất tịnh"" to emphasize purity and lack of impurity. So it's correct.
-
-Yes, this seems accurate. The user wants only the translation, so I'll present it without any additional notes.
+Yes, that seems right. Double-checking the translation for any possible errors. The user specified only the translation, so no need for explanations. Just the translated text.
 </think>
 
-Ở đây, Thiện Tuệ, tất cả các pháp đều có đặc tướng của không, chưa sinh, chưa diệt, vô nhiễm, bất tịnh, chưa thành tựu, chưa viên mãn.","{
+Ở đây này Tu Bồ Đề, tất cả các pháp đều mang đặc tướng Không, không sinh không diệt, tinh tuyền vô nhiễm, chưa đầy đủ, chưa viên mãn.",{}
+5,tasmāc chāriputra śūnyatayāṃ na rūpaṃ na vedanā na saṃjñā na saṃskārāḥ na vijñānam.,"Thị cố không trung vô sắc, vô thọ tưởng hành thức.","Cho nên trong cái không đó, nó không có sắc, không thọ tưởng hành thức.",Heart Sutra (Budsas),"Vì vậy, ô Śāriputra, trong tính không, không có hình sắc, không có cảm giác, không có nhận thức, không có tạo tác, không có thức.","{
   ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation accurately preserves the original meaning and flows naturally in Vietnamese.""
-}"
-5,tasmāc chāriputra śūnyatayāṃ na rūpaṃ na vedanā na saṃjñā na saṃskārāḥ na vijñānam.,"Thị cố không trung vô sắc, vô thọ tưởng hành thức.","Cho nên trong cái không đó, nó không có sắc, không thọ tưởng hành thức.",Heart Sutra (Budsas),"Vì vậy, ô Śāriputra, trong sự vô tận, không có hình sắc, không có cảm giác, không có nhận thức, không có tạo tác, không có thức.","{
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrase 'tính không' could be more fluently translated as 'trống rỗng' or 'vô tính' to better fit native Vietnamese expression.""
+}","Vì vậy, chàng con của Charita, nhờ sự không (trống rỗng) không có hình, không có cảm thọ, không có nhận biết, không có nghiệp, không có tri thức.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but 'vô tận' might be more accurately translated as 'emptiness' or 'voidness' instead of 'sự vô tận', which means 'infinity'. The fluency is good, but some phrases could be more naturally expressed in Vietnamese.""
-}","Vì vậy, hỡi con của Charipa, nhờ tánh không, không có hình tướng, không có cảm thọ, không có nhận biết, không có các saṃskāra, không có tri thức.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrase 'hỡi con của Charipa' is a bit formal and less common in modern Vietnamese, which slightly affects fluency.""
-}","Vì vậy, này Xá Lợi Tử, trong Không không có sắc, không có thọ, không có tưởng, không có hành, không có thức.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text and is phrased in a natural and fluent Vietnamese manner.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified only the translation without any extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses a slightly formal and less common Vietnamese phrase 'chàng con của Charita' instead of a more natural 'này, ô chàng con của Charita' or 'vậy, này chàng con của Charita', and 'nhờ sự không (trống rỗng)' could be more naturally translated as 'trong sự không' or 'về sự không'.""
+}","Vì vậy, này Xá Lợi Tử, trong Không không có sắc, không có thọ, không có tưởng, không có hành, không có thức.",{},"<think>
+Okay, let's see. The user wants me to translate a Sanskrit text into Vietnamese. They specified to provide only the translation without any extra commentary. The text given is ""tasmāc chāriputra śūnyatayāṃ na rūpaṃ na vedanā na saṃjñā na saṃskārāḥ na vijñānam."" 
 
-The text is: ""tasmāc chāriputra śūnyatayāṃ na rūpaṃ na vedanā na saṃjñā na saṃskārāḥ na vijñānam.""
+First, I need to make sure I understand the Sanskrit terms correctly. ""Tasmāc"" means ""therefore"" or ""thus."" ""Chāriputra"" is a term often used in Buddhist texts, addressing someone as ""Friend"" or ""Dear friend."" ""Śūnyatayāṃ"" is the locative case of ""śūnyatā,"" which translates to ""emptiness."" The rest are the five aggregates: ""rūpa"" (form), ""vedanā"" (sensation), ""saṃjñā"" (perception), ""saṃskārāḥ"" (mental formations), and ""vijñānam"" (consciousness). The structure is ""na...na...na..."" which means ""not this, not that..."" So the sentence is saying ""Therefore, O Friend, in emptiness there is no form, no sensation, no perception, no mental formations, no consciousness.""
 
-Breaking it down, ""tasmāc"" means ""therefore"" or ""thus."" ""Chāriputra"" is a term often used in Buddhist texts as a respectful address, like ""O Shariputra."" ""Śūnyatayāṃ"" is the locative case of ""śūnyatā,"" which is ""emptiness"" or ""voidness."" The rest are the five aggregates: rūpa (form), vedanā (sensation), saṃjñā (perception), saṃskārāḥ (mental formations), and vijñānam (consciousness). The structure is ""na...na...na..."" which means ""neither...nor...nor..."" in Sanskrit.
+Now, translating this into Vietnamese. I need to make sure the Buddhist terminology is correctly rendered. ""Chāriputra"" is often translated as ""Này Ạnanda"" or ""Này bạn"" depending on the context. Since it's a general address, ""Này bạn"" might be more appropriate. ""Śūnyatā"" is ""Không tính"" or ""Vô ngã"" but in this context, ""Không tính"" (emptiness) is better. The negations should be ""không có"" for each aggregate. Let me check each term again to ensure accuracy. Form is ""sắc"", sensation is ""thọ"", perception is ""tưởng"", mental formations are ""hành"", and consciousness is ""thức"". 
 
-So the sentence structure in English would be ""Therefore, O Shariputra, in emptiness there is neither form nor sensation nor perception nor mental formations nor consciousness.""
-
-Now translating this into Vietnamese. Let's start with ""tasmāc"" which is ""Vì vậy"" or ""Do đó."" ""Chāriputra"" is a name, so it's usually transliterated as ""Xá Lợi Phất"" in Vietnamese Buddhist texts. ""Śūnyatayāṃ"" is ""trong pháp không"" or ""trong sự không có."" The five aggregates need accurate translation:
-
-- rūpaṃ: sắc (form)
-- vedanā: thọ (sensation)
-- saṃjñā: tưởng (perception)
-- saṃskārāḥ: hành (mental formations)
-- vijñānam: thức (consciousness)
-
-The structure in Vietnamese would be ""Vì vậy, Xá Lợi Phất, trong pháp không không có sắc, không có thọ, không có tưởng, không có hành, không có thức.""
-
-I should check if the terms are correctly transliterated and if the sentence structure is natural in Vietnamese. Also, confirm that ""śūnyatayāṃ"" is correctly translated as ""trong pháp không."" Sometimes ""pháp không"" is used for ""śūnyatā,"" but ""trong pháp không"" might be more precise here. Alternatively, ""trong sự không có"" could be another option, but ""pháp không"" is more common in Buddhist contexts.
-
-Another point is the use of ""Xá Lợi Phất"" as the transliteration for ""Shariputra."" Yes, that's standard. The negations ""không có"" are correctly used for each aggregate. The sentence flows well in Vietnamese, maintaining the original meaning without adding extra information. The user specified only the translation, so I need to ensure there's no commentary. Just the translated text.
+Putting it all together: ""Vì vậy, này bạn, trong Không tính không có sắc, không có thọ, không có tưởng, không có hành, không có thức."" I should double-check the word order and make sure the translation flows naturally in Vietnamese. Also, confirm that ""Không tính"" is the correct term here. Yes, in Buddhist context, ""Không tính"" is commonly used for śūnyatā. Alright, that should be the correct translation.
 </think>
 
-Vì vậy, Xá Lợi Phất, trong pháp không không có sắc, không có thọ, không có tưởng, không có hành, không có thức.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation accurately preserves the original meaning and is fluent in Vietnamese, using standard Buddhist terminology.""
-}"
+Vì vậy, này bạn, trong Không tính không có sắc, không có thọ, không có tưởng, không có hành, không có thức.",{}
 6,na cakṣuḥ-śrotra-ghrāna-jihvā-kāya-manāṃsi.,"Vô nhãn nhĩ tỷ thiệt thân ý,","Không có mắt, tai, mũi, lưỡi, thân ý.",Heart Sutra (Budsas),"không phải là mắt, tai, mũi, lưỡi, thân và tâm.","{
   ""accuracy"": 5,
    ""fluency"": 4,
    ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly literal and awkward in Vietnamese.""
-}","không dành cho mắt, tai, mũi, lưỡi, thân thể và tâm trí.","{
+}","không phải trong mắt, tai, mũi, lưỡi, thân, tâm.","{
   ""accuracy"": 4,
    ""fluency"": 2,
-   ""explanation"": ""The candidate translation generally preserves the meaning but is quite literal and awkwardly phrased in Vietnamese.""
-}","Không có mắt, tai, mũi, lưỡi, thân, ý.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly literal and less idiomatic than the reference translation.""
-}","<think>
-Okay, let's tackle this Sanskrit to Vietnamese translation. The user wants only the translation with no extra commentary, so I need to be concise.
+   ""explanation"": ""The candidate translation generally preserves the meaning but is quite literal and lacks natural Vietnamese phrasing.""
+}","Không có mắt, tai, mũi, lưỡi, thân, ý.",{},"<think>
+Okay, let's see. The user wants me to translate a Sanskrit text into Vietnamese. The text is ""na cakṣuḥ-śrotra-ghrāna-jihvā-kāya-manāṃsi."" First, I need to make sure I understand the Sanskrit words correctly.
 
-First, I'll look at the Sanskrit text: ""na cakṣuḥ-śrotra-ghrāna-jihvā-kāya-manāṃsi."" Breaking it down, each part seems to be a list of senses or faculties. 
+Starting with ""na,"" which means ""not."" Then ""cakṣuḥ"" is the genitive form of ""cakṣus,"" meaning ""eye."" ""Śrotra"" is ""ear."" ""Ghrāna"" is ""nose."" ""Jihvā"" is ""tongue."" ""Kāya"" is ""body."" ""Manāṃsi"" is the plural of ""manas,"" which is ""mind."" So putting it all together, the phrase is listing the sense organs: eye, ear, nose, tongue, body, and mind, each in their respective forms.
 
-""cakṣuḥ"" is eyes, ""śrotra"" is ears, ""ghrāna"" is nose, ""jihvā"" is tongue, ""kāya"" is body, and ""manāṃsi"" is mind. The ""na"" at the beginning is a negation, so it's saying ""not in the eyes, ears, etc."" 
-
-Putting it all together in Vietnamese, the translation would be ""không phải ở mắt, tai, mũi, lưỡi, thân thể, tâm ý."" I need to make sure the order matches the original and that the terms are correctly translated. 
-
-Double-checking each term: eyes (mắt), ears (tai), nose (mũi), tongue (lưỡi), body (thân thể), mind (tâm ý). The structure in Vietnamese should be a list connected by commas, starting with ""không phải ở"" to convey ""not in."" 
-
-Yes, that seems accurate. No need for extra explanations, just the translation as requested.
+The user specified to provide only the translation without any commentary, so I need to make sure I don't add any extra information. The structure in Vietnamese should follow the same order. The correct translation would be ""không phải bằng mắt, tai, mũi, lưỡi, thân thể và tâm trí."" Let me double-check each term to ensure accuracy. ""Cakṣuḥ"" is definitely ""mắt,"" ""śrotra"" is ""tai,"" ""ghrāna"" is ""mũi,"" ""jihvā"" is ""lưỡi,"" ""kāya"" is ""thân thể,"" and ""manāṃsi"" is ""tâm trí."" The word ""na"" here is used to negate, so ""không phải bằng"" is the right way to start each item in the list. I think that's correct. No need for any additional notes since the user only wants the translation.
 </think>
 
-không phải ở mắt, tai, mũi, lưỡi, thân thể, tâm ý.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""Perfectly preserves the original meaning and is naturally fluent in Vietnamese.""
-}"
-7,na rūpa-śabda-gandha-rasa-spraṣṭavya-dharmāḥ.,"vô sắc thanh hương vị xúc pháp,","Không có sắc, thanh, hương vị, xúc pháp.",Heart Sutra (Budsas),"không có hình sắc, âm thanh, mùi, vị, xúc chạm.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly more literal and formal than the reference translation, which affects its fluency.""
-}","Các hiện tượng của hình, âm, hương, vị, xúc không nên bám víu.","{
+không phải bằng mắt, tai, mũi, lưỡi, thân thể và tâm trí.",{}
+7,na rūpa-śabda-gandha-rasa-spraṣṭavya-dharmāḥ.,"vô sắc thanh hương vị xúc pháp,","Không có sắc, thanh, hương vị, xúc pháp.",Heart Sutra (Budsas),"không có hình sắc, âm thanh, mùi, vị, và cảm xúc.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The candidate translation generally preserves the meaning of the Sanskrit text but adds an interpretation ('không nên bám víu' - should not be attached to) not present in the original, and uses a more verbose phrase ('Các hiện tượng của') than the reference.""
-}","Không có các pháp về sắc, thanh, hương, vị, xúc.","{
+   ""explanation"": ""The candidate translation generally preserves the meaning of the Sanskrit text, but uses more literal and slightly awkward phrasing compared to the reference translation.""
+}","Không có các hiện tượng của hình, âm, hương, vị, xúc.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses a more literal and formal tone, whereas the reference translation is more concise and idiomatic.""
+}","Không có các pháp về sắc, âm, hương, vị, xúc.","{
   ""accuracy"": 5,
    ""fluency"": 4,
    ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly formal and less natural compared to the reference translation.""
 }","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified to provide only the translation without any extra commentary. So first, I need to make sure I understand the Sanskrit sentence correctly.
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified to provide only the translation without any extra commentary. The text given is ""na rūpa-śabda-gandha-rasa-spraṣṭavya-dharmāḥ."" 
 
-The text is ""na rūpa-śabda-gandha-rasa-spraṣṭavya-dharmāḥ."" Breaking it down, ""na"" means ""not."" Then there are the terms rūpa (form), śabda (sound), gandha (smell), rasa (taste), and spraṣṭavya (touch). These are the five sense objects in Indian philosophy. The word ""dharmāḥ"" is plural, so it's ""qualities"" or ""characteristics.""
+First, I need to parse the Sanskrit words. Let's break it down. The sentence starts with ""na,"" which is a negative particle meaning ""not"" or ""do not."" Then there's a list of terms separated by hyphens: rūpa, śabda, gandha, rasa, spraṣṭavya. These are all abstract nouns. The ending ""-dharmāḥ"" is a bit tricky. ""Dharma"" in Sanskrit can mean ""property,"" ""characteristic,"" or ""attribute,"" and the suffix ""-āḥ"" is a plural nominative case ending.
 
-Putting it together, the sentence is saying ""Not the qualities of form, sound, smell, taste, and touch."" But in Vietnamese, I need to make sure the terms are correctly translated. ""Rūpa"" is ""hình tướng,"" ""śabda"" is ""tiếng,"" ""gandha"" is ""mùi,"" ""rasa"" is ""vị,"" and ""spraṣṭavya"" is ""sờ"" or ""cảm giác tiếp xúc."" The verb ""na"" is ""không phải"" or ""không phải là.""
+So, each of these terms likely represents a sense object or a characteristic. Let me check each term:
 
-So the translation would be ""Không phải là các đặc tính của hình tướng, tiếng, mùi, vị, và cảm giác tiếp xúc."" I should check if ""đặc tính"" is the right term for ""dharmāḥ"" here. Maybe ""đặc tính"" is better than ""chất lượng"" since it refers to inherent qualities. Also, ""cảm giác tiếp xúc"" is more precise for ""spraṣṭavya"" than just ""sờ."" 
+- rūpa: form or visual appearance
+- śabda: sound
+- gandha: smell
+- rasa: taste
+- spraṣṭavya: touchable, tactile sensation
 
-I need to ensure the structure is correct in Vietnamese. The order of the terms should follow the original Sanskrit list. Also, the use of ""các"" to make it plural. Let me confirm each term again. Yes, ""hình tướng"" for rūpa, ""tiếng"" for śabda, ""mùi"" for gandha, ""vị"" for rasa, and ""cảm giác tiếp xúc"" for spraṣṭavya. 
+Putting them together, the list seems to be the five sense objects in Buddhist or Hindu philosophy: form, sound, smell, taste, and touch. The phrase ""na ... dharmāḥ"" would then mean ""do not have the characteristics of..."" or ""are not the attributes of...""
 
-Putting it all together: ""Không phải là các đặc tính của hình tướng, tiếng, mùi, vị, và cảm giác tiếp xúc."" That seems accurate. No extra commentary, just the translation as requested.
+So the full translation would be something like ""Not the characteristics of form, sound, smell, taste, and touch."" But I need to make sure the structure is correct in Vietnamese. The user wants only the translation, so I should avoid any explanations. Let me confirm the terms in Vietnamese:
+
+- rūpa: sắc (form)
+- śabda: thanh (sound)
+- gandha: hương (smell)
+- rasa: vị (taste)
+- spraṣṭavya: xúc (touch)
+- dharma: pháp (characteristic/attribute)
+
+So the translation would be ""Không phải là các pháp của sắc, thanh, hương, vị, xúc."" But I should check if ""pháp"" is the right term here. In Buddhist context, ""pháp"" can be used as ""characteristics"" or ""attributes."" Alternatively, maybe ""tính chất"" (properties) is better. Let me think. The original uses ""dharmāḥ,"" which is plural, so ""các pháp"" is correct. However, in some contexts, ""tính chất"" might be more natural. But since the user is asking for a direct translation, sticking with ""pháp"" might be more accurate, especially if it's a technical term from a philosophical text.
+
+Another point: the structure ""na ... dharmāḥ"" is ""do not have the characteristics of..."" So ""Không phải là các pháp của..."" translates to ""Are not the characteristics of..."" Alternatively, ""Không có các pháp..."" which is ""Do not have the characteristics..."" But the original structure is ""na + list + dharmāḥ,"" so ""Không phải là các pháp của sắc, thanh, hương, vị, xúc."" That seems correct.
+
+I should also check if the order is correct. The original list is rūpa, śabda, gandha, rasa, spraṣṭavya. In Vietnamese, the order would be sắc, thanh, hương, vị, xúc. That's correct as the five sense objects. 
+
+So the final translation should be: ""Không phải là các pháp của sắc, thanh, hương, vị, xúc.""
 </think>
 
-Không phải là các đặc tính của hình tướng, tiếng, mùi, vị, và cảm giác tiếp xúc.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""Translation perfectly preserves the original meaning and is fluent in Vietnamese.""
-}"
-8,na cakṣūr-dhātur yāvan na manovijñāna-dhātuḥ.,vô nhãn giới nãi chí vô ý thức giới.,Không có nhãn giới cho đến không có ý thức giới.,Heart Sutra (Budsas),"Không phải là yếu tố của mắt, cũng không phải là yếu tố của thức nhận biết.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural and fluent in Vietnamese.""
-}",Yếu tố mắt không tồn tại cho đến khi yếu tố tâm trí nhận thức xuất hiện.,"{
-  ""accuracy"": 2,
-   ""fluency"": 4,
-   ""explanation"": ""The candidate translation conveys a somewhat opposite meaning to the original Sanskrit text and reference translation, which discuss the non-existence of certain elements, whereas the candidate implies their existence upon a condition.""
-}",Không có giới nhãn cho đến khi không có giới ý thức.,"{
+Không phải là các pháp của sắc, thanh, hương, vị, xúc.",{}
+8,na cakṣūr-dhātur yāvan na manovijñāna-dhātuḥ.,vô nhãn giới nãi chí vô ý thức giới.,Không có nhãn giới cho đến không có ý thức giới.,Heart Sutra (Budsas),"không phải là yếu tố của mắt, cũng không phải là yếu tố của thức nhận biết.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning but uses a slightly more literal and formal tone than the reference, affecting fluency.""
-}","<think>
-Okay, let's tackle this Sanskrit to Vietnamese translation. The user wants only the translation, no extra commentary, so I need to be concise.
-
-First, I'll look at the Sanskrit text: ""na cakṣūr-dhātur yāvan na manovijñāna-dhātuḥ."" 
-
-Breaking it down, ""na"" means ""not."" Then ""cakṣūr-dhātur"" – ""cakṣūr"" is related to the eye, and ""dhātur"" is a term often translated as ""element"" or ""faculty."" So ""cakṣūr-dhātur"" might be ""thiên nhãn"" or ""định nhãn"" in Vietnamese, but I need to confirm. 
-
-Next, ""yāvan"" is a bit tricky. It can mean ""as long as"" or ""until."" Then ""na manovijñāna-dhātuḥ."" ""Mano"" is mind, ""vijñāna"" is consciousness or knowledge, and ""dhātuḥ"" again is element or faculty. So ""manovijñāna-dhātuḥ"" could be ""thiên ý thức"" or ""định ý thức.""
-
-Putting it together: ""Không có thiên nhãn, cũng không có thiên ý thức."" That seems to flow well. Let me check if ""dhātur"" and ""dhātuḥ"" are both correctly translated as ""thiên"" here. Since they're both elements or faculties, using ""thiên"" for both makes sense. 
-
-I should verify if ""yāvan"" is correctly translated. If the structure is ""na... yāvan na..."" it's like ""không... cũng không..."" which is ""not... nor..."" in English. So in Vietnamese, ""Không có... cũng không có..."" fits. 
-
-Double-checking the terms: ""cakṣūr"" is definitely eye-related, so ""thiên nhãn"" (eye element) is correct. ""Manovijñāna"" is mind consciousness, so ""thiên ý thức"" works. 
-
-I think that's it. The translation should be accurate and concise, as per the user's request.
-</think>
-
-Không có thiên nhãn, cũng không có thiên ý thức.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""Perfectly preserves the original meaning and flows naturally in Vietnamese.""
-}"
-9,na-avidyā na-avidyā-kṣayo yāvan na jarā-maraṇam na jarā-maraṇa-kṣayo.,"Vô vô minh, diệc vô vô minh tận, nãi chí vô lão tử, diệc vô lão tử tận.","Không có vô minh, mà cũng không có hết vô minh. Không có già chết, mà cũng không có hết già chết.",Heart Sutra (Budsas),"không phải là sự vô minh, không phải là sự tiêu diệt của sự vô minh, cho đến khi không có già và chết, không có sự tiêu diệt của già và chết.","{
+   ""explanation"": ""The translation generally preserves the meaning but uses a more literal and slightly awkward phrasing compared to the reference.""
+}",Không có yếu tố mắt cho đến khi có yếu tố nhận thức tâm trí.,"{
   ""accuracy"": 4,
    ""fluency"": 3,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but the phrasing is somewhat literal and awkward, lacking native-level fluency in Vietnamese.""
-}","Không có vô minh, không có sự tiêu diệt của vô minh, cho tới khi không có già và chết, không có sự tiêu diệt của già và chết.","{
+   ""explanation"": ""The candidate translation generally preserves the meaning but uses a more literal and slightly awkward phrasing compared to the reference translation.""
+}",Không có giới nhãn cho đến khi không có giới ý thức.,{},"<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. The user provided the text: ""na cakṣūr-dhātur yāvan na manovijñāna-dhātuḥ."" They want only the translation, no extra commentary.
+
+First, I need to parse the Sanskrit words. ""Na"" means ""not."" ""Cakṣūr-dhātur"" – ""cakṣūr"" is related to the eye or vision, and ""dhātur"" is a suffix for ""element"" or ""faculty."" So ""cakṣūr-dhātur"" could be ""eye element"" or ""faculty of sight.""
+
+Next, ""yāvan"" is a bit tricky. It can mean ""as long as"" or ""until."" Then ""na manovijñāna-dhātuḥ."" ""Mano"" is mind, ""vijñāna"" is consciousness or knowledge, and ""dhātuḥ"" is the same element/faculty suffix. So ""manovijñāna-dhātuḥ"" would be ""mental consciousness element"" or ""faculty of mental consciousness.""
+
+Putting it together: ""Not the eye element as long as not the mental consciousness element."" But that sounds a bit awkward. Maybe a smoother translation would be ""Không phải pháp nhãn giới, cũng không phải pháp ý thức giới."" Here, ""pháp"" is used to denote ""element"" or ""faculty,"" ""nhãn giới"" is ""eye element,"" and ""ý thức giới"" is ""mental consciousness element."" The structure ""không phải... cũng không phải..."" translates to ""not... nor..."" which fits the original Sanskrit structure with two negatives.
+
+Wait, the original has ""na... yāvan na..."" which is ""not... as long as not..."" Hmm, maybe I need to adjust. Let me check again. The original sentence structure is ""na cakṣūr-dhātur yāvan na manovijñāna-dhātuḥ."" The ""yāvan"" here might be functioning as a conjunction, perhaps meaning ""nor"" in this context. So it's ""Not the eye element, nor the mental consciousness element.""
+
+In Vietnamese, that would be ""Không phải pháp nhãn giới, cũng không phải pháp ý thức."" Using ""cũng không phải"" for ""nor."" But the original uses ""dhātuḥ"" twice, so maybe ""giới"" (element) is the right term here. So ""pháp nhãn giới"" and ""pháp ý thức giới."" But ""pháp"" here might refer to ""element"" or ""faculty."" Alternatively, maybe ""không phải nhãn giới, cũng không phải ý thức giới."" But ""pháp"" is part of the term in Sanskrit, so including it as ""pháp"" makes sense in Vietnamese Buddhist terminology.
+
+I think the correct translation is: ""Không phải pháp nhãn giới, cũng không phải pháp ý thức giới."" That captures the two negatives and the elements mentioned. Let me double-check the terms. ""Cakṣūr-dhātur"" is indeed ""eye element,"" and ""manovijñāna-dhātuḥ"" is ""mental consciousness element."" So the translation should be accurate.
+</think>
+
+Không phải pháp nhãn giới, cũng không phải pháp ý thức giới.",{}
+9,na-avidyā na-avidyā-kṣayo yāvan na jarā-maraṇam na jarā-maraṇa-kṣayo.,"Vô vô minh, diệc vô vô minh tận, nãi chí vô lão tử, diệc vô lão tử tận.","Không có vô minh, mà cũng không có hết vô minh. Không có già chết, mà cũng không có hết già chết.",Heart Sutra (Budsas),"không phải là sự vô minh, không phải là sự đoạn trừ của sự vô minh, cho đến khi không có sự già chết, không có sự đoạn trừ của sự già chết.","{
+  ""accuracy"": 4,
+   ""fluency"": 3,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but the phrasing is somewhat awkward and not as natural as the reference translation.""
+}","Không có vô minh, không có sự diệt vong của vô minh; cho tới khi không còn già và chết, không có sự diệt vong của già và chết.","{
   ""accuracy"": 5,
    ""fluency"": 4,
    ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural in Vietnamese.""
-}","Không có vô minh, không có sự đoạn trừ vô minh; không có già chết, không có sự đoạn trừ già chết.","{
+}","Không có vô minh, không có sự đoạn tận vô minh; không có già chết, không có sự đoạn tận già chết.",{},"<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The sentence is: ""na-avidyā na-avidyā-kṣayo yāvan na jarā-maraṇam na jarā-maraṇa-kṣayo.""
+
+Breaking it down, ""na"" means ""không"" (not) in Vietnamese. ""Avidyā"" is a term from Sanskrit, often translated as ""vô minh"" in Buddhist contexts, which refers to ignorance or lack of wisdom. ""Kṣaya"" is ""diệt"" or ""tan vỡ."" So ""na-avidyā-kṣaya"" would be ""không vô minh tan vỡ.""
+
+Next, ""yāvan"" is a bit tricky. It usually means ""cho đến khi"" (until) or ""trong khi."" Then ""jarā-maraṇam"" is ""già và chết"" (old age and death). ""Na jarā-maraṇa-kṣaya"" would be ""không già và chết tan vỡ.""
+
+Putting it all together: The sentence seems to be a negation of both ignorance and its cessation, and similarly for old age and death. The structure is ""Không vô minh, không vô minh tan vỡ, cho đến khi không già và chết, không già và chết tan vỡ.""
+
+Wait, the original uses ""yāvan,"" which might be better translated as ""trong khi"" here. Let me check again. The structure is ""na A na A-kṣaya yāvan na B na B-kṣaya."" So maybe it's ""Không A, không A tan vỡ, trong khi không B, không B tan vỡ.""
+
+In Vietnamese, that would be: ""Không vô minh, không vô minh tan vỡ, trong khi không già và chết, không già và chết tan vỡ."" That seems to capture the original structure and meaning. I should make sure the terms are correctly translated and the sentence flows naturally in Vietnamese. Also, confirm that ""jarā-maraṇam"" is correctly translated as ""già và chết."" Yes, in Buddhist terminology, ""jarā"" is old age and ""maraṇa"" is death. So that's accurate.
+
+Double-checking the order: The original has ""na-avidyā na-avidyā-kṣaya yāvan na jarā-maraṇam na jarā-maraṇa-kṣayo."" The ""yāvan"" here acts as a conjunction, so ""trong khi"" (while) is appropriate. The translation should maintain the parallel structure. So the final translation should be as above.
+</think>
+
+Không vô minh, không vô minh tan vỡ, trong khi không già và chết, không già và chết tan vỡ.",{}
+10,na duhkha-samudaya-nirodha-mārgā.,"Vô khổ, tập, diệt, đạo.","Không có khổ, tập, diệt, đạo.",Heart Sutra (Budsas),không phải con đường diệt trừ nguyên nhân và sự chấm dứt của khổ đau.,"{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, conveying the idea of a path related to the cessation of suffering, but uses a slightly more verbose and less idiomatic expression than the reference.""
+}",Không có con đường chấm dứt khổ đau.,"{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation 'Không có con đường chấm dứt khổ đau' accurately conveys the meaning of 'na duhkha-samudaya-nirodha-mārgā' as 'no path to the cessation of suffering', but is a more interpretive translation, whereas 'Vô khổ, tập, diệt, đạo' is a more literal translation.""
+}","Không có khổ, tập khổ, diệt khổ, đạo.",{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text ""na duhkha-samudaya-nirodha-mārgā"" translated into Vietnamese. First, I need to make sure I understand each part of the Sanskrit term.
+
+Breaking it down: ""na"" is a negation particle meaning ""not."" Then ""duhkha"" is a key term in Buddhism, usually translated as ""suffering"" or ""dukkha."" ""Samudaya"" means ""origin"" or ""arising."" ""Nirodha"" translates to ""cessation"" or ""ending."" ""Mārga"" is ""path."" So putting it together, the phrase is ""not the origin of suffering, the cessation, the path.""
+
+Now, translating into Vietnamese. The standard translation for ""dukkha"" is ""khổ"" or ""nỗi khổ."" ""Samudaya"" would be ""nguyên nhân"" (origin/cause). ""Nirodha"" is ""diệt"" (cessation). ""Mārga"" is ""đường"" (path). The negation ""na"" here might be tricky. Since it's part of the Four Noble Truths, the structure is usually ""không phải là nguyên nhân của khổ, diệt, đường."" So the full translation would be ""không phải là nguyên nhân của khổ, diệt, đường.""
+
+Wait, but in the original, it's ""duhkha-samudaya-nirodha-mārgā."" The structure is ""not the origin of suffering, the cessation, the path."" So maybe in Vietnamese, it's ""không phải là khổ, tập, diệt, đạo."" But I need to check if ""tập"" is used for ""samudaya."" Yes, in the context of the Four Noble Truths, ""tập"" is the standard term for ""samudaya."" So the correct order is ""khổ, tập, diệt, đạo."" Therefore, the translation should be ""không phải là khổ, tập, diệt, đạo.""
+
+I should confirm if the user wants a direct translation or the standard Buddhist terminology in Vietnamese. Since the text is part of the Four Noble Truths, using the standard terms is appropriate. So the final translation is ""không phải là khổ, tập, diệt, đạo.""
+</think>
+
+không phải là khổ, tập, diệt, đạo.",{}
+11,"na jñānam, na prāptir na-aprāptiḥ.","Vô trí diệc vô đắc, dĩ vô sở đắc cố.","Không có trí cũng không có đắc, vì không có sở đắc.",Heart Sutra (Budsas),"không có sự hiểu biết, không có sự đạt được, cũng không có sự không đạt được.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly formal and less common in everyday Vietnamese.""
+}","Không có tri thức, không có sự đạt được, cũng không có sự không đạt được.","{
   ""accuracy"": 5,
    ""fluency"": 4,
    ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural in Vietnamese.""
-}","<think>
-Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The sentence is: ""na-avidyā na-avidyā-kṣayo yāvan na jarā-maraṇam na jarā-maraṇa-kṣayo."" 
+}","Không có tri thức, không có đạt được, không có không đạt được.",{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text ""na jñānam, na prāptir na-aprāptiḥ."" translated into Vietnamese. First, I need to make sure I understand each term correctly.
 
-Breaking it down, ""na"" means ""not,"" and ""avidyā"" is ""ignorance."" So ""na-avidyā"" would be ""not ignorance."" Then ""kṣaya"" is ""destruction"" or ""cessation,"" so ""na-avidyā-kṣaya"" is ""not the destruction of ignorance."" The conjunction ""yāvan"" is a bit tricky; it usually means ""as long as"" or ""so long as."" Then ""jarā-maraṇam"" is ""old age and death,"" and ""jarā-maraṇa-kṣaya"" would be ""the destruction of old age and death.""
+""Na"" means ""not"" or ""no."" ""Jñānam"" is ""knowledge."" Then ""prāptiḥ"" is ""attainment"" or ""achievement,"" and ""na-aprāptiḥ"" would be ""non-attainment."" So putting it together: ""No knowledge, no attainment, no non-attainment.""
 
-So putting the first part together: ""Not ignorance, not the destruction of ignorance, as long as not old age and death, not the destruction of old age and death."" 
+Now, translating into Vietnamese. ""Không có tri thức"" for ""no knowledge."" ""Không có sự chứng đắc"" for ""no attainment."" Then ""không có sự phi chứng đắc"" for ""no non-attainment."" Wait, is ""phi"" the right term here? Maybe ""không đạt được"" could be an alternative for ""non-attainment,"" but ""phi chứng đắc"" might be more accurate as it's the negation of ""chứng đắc."" Let me double-check the terms to ensure they're commonly used in Buddhist contexts, since this seems like a spiritual or philosophical text. 
 
-Now translating into Vietnamese. ""Not ignorance"" is ""không phải là vô minh."" ""Not the destruction of ignorance"" would be ""không phải là sự diệt của vô minh."" ""As long as"" is ""chừng nào"" or ""cho đến khi nào."" Then ""not old age and death"" is ""không phải là lão và tử,"" and ""not the destruction of old age and death"" is ""không phải là sự diệt của lão và tử.""
+Yes, ""chứng đắc"" is a term used in Buddhist Vietnamese translations for attainment. So ""không có sự chứng đắc"" and ""không có sự phi chứng đắc"" should be correct. Let me confirm the structure. The original uses ""na"" three times, so in Vietnamese, repeating ""không có"" each time makes sense. 
 
-Putting it all together in Vietnamese: ""Không phải là vô minh, không phải là sự diệt của vô minh, chừng nào không phải là lão và tử, không phải là sự diệt của lão và tử."" 
-
-Wait, let me check the structure again. The original uses ""na... na..."" which is a double negative, so in Vietnamese, using ""không phải là"" for each part makes sense. Also, ""yāvan"" is a conditional conjunction here, so ""chừng nào"" fits as ""as long as."" The repetition of ""na... na..."" structure should be maintained in Vietnamese to preserve the original's emphasis. 
-
-I think that's accurate. Let me confirm the terms: ""avidyā"" is indeed ""vô minh"" in Vietnamese Buddhist terminology. ""Jarā-maraṇa"" is ""lão và tử."" ""Kṣaya"" is ""diệt"" or ""sự chấm dứt."" So the translation seems correct. No extra commentary is needed, just the translation as requested.
+Putting it all together: ""Không có tri thức, không có sự chứng đắc, không có sự phi chứng đắc."" That should be the accurate translation. I don't see any extra commentary needed, just the translation as requested.
 </think>
 
-Không phải là vô minh, không phải là sự diệt của vô minh, chừng nào không phải là lão và tử, không phải là sự diệt của lão và tử.","{
+Không có tri thức, không có sự chứng đắc, không có sự phi chứng đắc.",{}
+12,tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharatyacittāvaraṇaḥ.,"Bồ đề tát đõa y Bát nhã Ba la mật đa cố, tâm vô quái ngại,","Khi vị Bồ Tát nương tựa vào trí tuệ Bát Nhã nầy thì tâm không còn chướng ngại,",Heart Sutra (Budsas),"Vì vậy, ô Xá Lợi Phất, do không đạt được, Bồ Tát dựa vào Bát Nhã Ba La Mật, sống không chướng ngại tâm.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""Translation generally preserves the original meaning with minor imperfections in phrasing and word choice, and is readable but slightly awkward in Vietnamese.""
-}"
-10,na duhkha-samudaya-nirodha-mārgā.,"Vô khổ, tập, diệt, đạo.","Không có khổ, tập, diệt, đạo.",Heart Sutra (Budsas),không phải con đường diệt trừ tập và khổ.,"{
-  ""accuracy"": 2,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally conveys the idea of a path, but incorrectly implies that the path is not about eliminating suffering and its causes, whereas the original text actually refers to the cessation of the causes of suffering as part of the path.""
-}",Không phải là con đường chấm dứt nguồn gốc khổ.,"{
-  ""accuracy"": 4,
-   ""fluency"": 5,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, conveying the idea of a path to end suffering, but uses a more interpretive and paraphrased approach rather than a direct translation.""
-}",không có con đường diệt tập khổ.,"{
-  ""accuracy"": 4,
-   ""fluency"": 3,
-   ""explanation"": ""The candidate translation generally preserves the meaning of the Sanskrit text, but the word order and phrasing are not very natural in Vietnamese.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text ""na duhkha-samudaya-nirodha-mārgā"" translated into Vietnamese. First, I need to make sure I understand the original text correctly.
-
-Breaking down the Sanskrit terms: ""duhkha"" is commonly translated as ""du khổ"" in Vietnamese, meaning suffering. ""Samudaya"" is ""sanh"" or ""sinh"", which refers to the origin or arising. ""Nirodha"" is ""diệt"" or ""tận"", meaning cessation. ""Mārga"" is ""đạo"" or ""con đường"", which translates to path or way. 
-
-Putting it together, the phrase seems to be part of the Four Noble Truths in Buddhism. The structure is ""na"" (not) + ""duhkha-samudaya-nirodha-mārgā"". So it's negating the path to the cessation of the origin of suffering. 
-
-In Vietnamese, the order might need adjustment for natural flow. The standard translation for the Four Noble Truths is ""Khổ, Tùy miên, Diệt, Đạo"". But here, it's specifically referring to the path (""đạo"") to the cessation (""diệt"") of the origin (""tùy miên"") of suffering (""khổ""). 
-
-So the translation would be ""Không phải là con đường dẫn đến tận diệt nguồn gốc của khổ đau."" I need to check if ""tận diệt"" is the right term for ""nirodha"" here. Yes, ""tận diệt"" means complete cessation. ""Nguồn gốc"" for ""samudaya"" is appropriate as origin. 
-
-Double-checking the negation: ""na"" translates to ""không phải"" in Vietnamese. The structure ""con đường dẫn đến tận diệt nguồn gốc của khổ đau"" makes sense. 
-
-I should ensure there are no extra words and that it's only the translation as requested. No commentary, just the direct translation. That should be it.
-</think>
-
-Không phải là con đường dẫn đến tận diệt nguồn gốc của khổ đau.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation 'Không phải là con đường dẫn đến tận diệt nguồn gốc của khổ đau' accurately preserves the meaning of the Sanskrit text and flows naturally in Vietnamese.""
-}"
-11,"na jñānam, na prāptir na-aprāptiḥ.","Vô trí diệc vô đắc, dĩ vô sở đắc cố.","Không có trí cũng không có đắc, vì không có sở đắc.",Heart Sutra (Budsas),"Không phải là sự hiểu biết, không phải là sự đạt được, cũng không phải là sự không đạt được.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly formal and less common in everyday Vietnamese.""
-}","Không có tri thức, không có đạt được, cũng không có không đạt được.","{
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but 'ô Xá Lợi Phất' could be more naturally translated to 'này Xá Lợi Phất' for better fluency, and 'do không đạt được' might be more accurately rendered as 'vì không đạt được' is correct but 'do' is more formal.""
+}","Vì vậy, Cāriputra, do chưa đạt được, dựa vào Prajñāpāramitā của vị Bồ Tát, người ấy sinh sống không có cản trở tâm.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but 'Không có đạt được' and 'cũng không có không đạt được' could be more naturally phrased as 'không có sự đạt được' and 'không có sự không đạt được' for better fluency.""
-}","Không có tri thức, không có đạt được, không có không đạt được.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but 'Không có đạt được' and 'không có không đạt được' could be more naturally phrased as 'không có sự đạt được' and 'không có sự không đạt được' for better fluency.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text ""na jñānam, na prāptir na-aprāptiḥ."" translated into Vietnamese, and only the translation, no extra commentary.
-
-First, I need to parse the Sanskrit words. ""Na"" means ""not"" or ""no."" ""Jñānam"" is ""knowledge."" Then ""prāptiḥ"" is ""attainment"" or ""achievement,"" and ""na-aprāptiḥ"" would be ""non-attainment"" with ""na"" negating ""aprāptiḥ."" So putting it together: ""Not knowledge, not attainment, not non-attainment.""
-
-Now, translating into Vietnamese. ""Không có tri thức"" for ""no knowledge."" ""Không có sự chứng đắc"" for ""not attainment."" Then ""không không chứng đắc"" for ""not non-attainment."" Wait, the original has ""na-aprāptiḥ,"" which is ""na"" (not) + ""aprāptiḥ"" (non-attainment). So in Vietnamese, that's ""không không chứng đắc."" The double negative here is important. It's saying neither attainment nor non-attainment. 
-
-Let me check if the structure is correct. The original is a list of three negatives. In Vietnamese, using ""không"" for each part. So ""Không tri thức, không sự chứng đắc, không không chứng đắc."" That seems right. I should make sure there's no extra words. The user specified only the translation, so no explanations. Just the Vietnamese sentence. Let me confirm the terms again. ""Jñānam"" is knowledge or wisdom, ""prāptiḥ"" is attainment, ""aprāptiḥ"" is non-attainment. So the translation should be accurate. Alright, that's it.
-</think>
-
-Không tri thức, không sự chứng đắc, không không chứng đắc.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""Translation generally preserves the meaning but has minor imperfections in phrasing and double negative usage.""
-}"
-12,tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharatyacittāvaraṇaḥ.,"Bồ đề tát đõa y Bát nhã Ba la mật đa cố, tâm vô quái ngại,","Khi vị Bồ Tát nương tựa vào trí tuệ Bát Nhã nầy thì tâm không còn chướng ngại,",Heart Sutra (Budsas),"Vì vậy, ô Xá Lợi Phất, do không đạt được, Bồ Tát trụ vào Bát Nhã Ba La Mật, không có chướng ngại tâm.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but 'do không đạt được' could be more naturally translated, and 'trụ vào' is a bit formal, while 'chướng ngại tâm' is a good translation of 'cittāvaraṇaḥ'.""
-}","Vì vậy, do chưa đạt được, Chāriputra dựa vào prajñāpāramitā của vị Bồ Tát, sống trong trạng thái không có cản trở của tâm.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses a slightly formal and less common phrase 'trạng thái không có cản trở của tâm' instead of 'tâm vô quái ngại', which is more natural and fluent in Vietnamese.""
-}","Vì vậy, này Xá Lợi Phất, do không chứng đắc, Bồ Tát trú trong bát-nhã-ba-la-mật-đa mà không bị chướng ngại tâm.","{
-  ""accuracy"": 5,
-   ""fluency"": 4,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be slightly more natural in Vietnamese.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra stuff. First, I need to parse the Sanskrit sentence.
-
-The text is: ""tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharatyacittāvaraṇaḥ.""
-
-Breaking it down, ""tasmāc"" means ""therefore"" or ""thus."" ""Chāriputra"" is a term often used in Buddhist texts as a vocative, like ""O Śāriputra."" ""Aprāptitvād"" might be a compound word. ""Aprāpta"" could mean ""not attained"" and ""tvād"" might be a suffix, so ""because of not attaining."" ""Bodhisattvasya"" is ""of the bodhisattva."" ""Prajñāpāramitām"" is ""perfection of wisdom."" ""Āśritya"" means ""relying on"" or ""depending on."" ""Viharati"" is ""dwells"" or ""resides."" ""Acittāvaraṇaḥ"" is a bit tricky. ""Cittāvaraṇa"" means ""mental hindrance,"" and ""a-"" is a negation prefix, so ""without mental hindrance.""
-
-Putting it all together: ""Therefore, O Śāriputra, because the bodhisattva has not attained the perfection of wisdom, he dwells without mental hindrance.""
-
-Now, translating this into Vietnamese. Let's check each part. ""Tasmāc"" is ""Vì vậy"" or ""Do đó."" ""Chāriputra"" is ""Này Śāriputra"" or ""Ôi Śāriputra."" ""Aprāptitvād"" would be ""bởi vì chưa đạt được."" ""Bodhisattvasya"" is ""của Bồ-tát."" ""Prajñāpāramitām"" is ""Vô thượng Bát-nhã"" or ""Vi diệu Bát-nhã."" ""Āśritya"" is ""nương tựa vào."" ""Viharati"" is ""an trú"" or ""thường trụ."" ""Acittāvaraṇaḥ"" is ""không có chướng ngại tâm ý.""
-
-So the full translation in Vietnamese would be: ""Vì vậy, này Śāriputra, Bồ-tát chưa đạt được Vi diệu Bát-nhã nên nương tựa vào đó mà an trú không chướng ngại tâm ý.""
-
-Wait, let me double-check the structure. The original says ""because of not attaining,"" so maybe ""bởi vì chưa đạt được..."" is correct. Also, ""prajñāpāramitām āśritya"" is ""relying on the perfection of wisdom."" So ""nương tựa vào Vi diệu Bát-nhã mà an trú."" The user specified to provide only the translation, so I need to make sure there's no extra explanation. Also, check if ""Vi diệu Bát-nhã"" is the standard term in Vietnamese Buddhist texts. Sometimes it's ""Vô thượng Bát-nhã,"" but ""Vi diệu"" is more like ""wonderful"" or ""sublime,"" so maybe ""Vi diệu Bát-nhã"" is acceptable. Also, ""acittāvaraṇaḥ"" is ""không chướng ngại tâm ý."" That seems right. Alright, I think that's the correct translation.
-</think>
-
-Vì vậy, này Śāriputra, Bồ-tát chưa đạt được Vi diệu Bát-nhã nên nương tựa vào đó mà an trú không chướng ngại tâm ý.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""Translation generally preserves the original meaning, but minor adjustments could enhance fluency and accuracy.""
-}"
-13,cittāvaraṇa-nāstitvād atrasto viparyāsa-atikrānto niṣṭhā-nirvāṇa-prāptaḥ.,"vô quái ngại cố, vô hữu khủng bố, viễn ly điên đảo mộng tưởng, cứu cánh Niết bàn.","vì tâm không chướng ngại nên không còn sợ hãi, xa lìa được cái điên đảo mộng tưởng, đạt đến cứu cánh Niết Bàn.",Heart Sutra (Budsas),"Do không có chướng ngại của tâm nên đã vượt qua sự đảo lộn, đạt được Niết bàn cuối cùng.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, conveying the idea of overcoming mental obstacles and achieving Nirvana, but minor details like 'atrasto' and 'niṣṭhā' are not perfectly captured, and the Vietnamese phrasing is mostly natural but could be slightly more polished.""
-}","Do không còn sự che phủ của tâm, người không bị cản trở đã vượt qua lầm lạc và đạt được Niết-bàn kiên định.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly formal language, and 'lầm lạc' could be more precisely translated as 'sự đảo lộn' to better match 'viparyāsa'.""
-}","Vì không còn chướng ngại của tâm, nên không còn sợ hãi, đã vượt qua mọi sai lầm, đạt đến niết bàn tối thượng.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly different wording and phrasing than the reference translation, and has minor imperfections in fluency.""
-}","<think>
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly formal and less common Vietnamese phrases, such as 'chưa đạt được' and 'cản trở tâm', which are understandable but not as natural as the reference translation.""
+}","Vì vậy, này Xá Lợi Tử, do không đắc nên Bồ Tát nhờ vào Bát-nhã ba-la-mật mà an trú, không còn chướng ngại tâm.",{},"<think>
 Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra comments. First, I need to parse the Sanskrit sentence.
+
+The text is: tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharatyacittāvaraṇaḥ.
+
+Breaking it down, ""tasmāc"" means ""therefore"" or ""thus"". ""Chāriputra"" is a term often used in Buddhist texts, addressing someone as ""Friend Śāriputra"". ""Aprāptitvād"" could be a compound word; ""a-"" as a negation, ""prāpti"" meaning attainment, so ""aprāptitvād"" might be ""due to non-attainment"". ""Bodhisattvasya"" is ""of the bodhisattva"". ""Prajñāpāramitām"" is ""perfection of wisdom"". ""Āśritya"" means relying on or depending on. ""Viharati"" is to dwell or reside. ""Acittāvaraṇaḥ"" is a compound; ""a-"" negation, ""citta"" mind, ""āvaraṇa"" covering, so ""without mental hindrances"".
+
+Putting it together: Therefore, O Śāriputra, because the bodhisattva has not attained the perfection of wisdom, they dwell without mental hindrances.
+
+Now, translating this into Vietnamese. Need to ensure the Buddhist terminology is correct. ""Bồ-tát"" for bodhisattva, ""bát-nhã ba-la-mật"" for prajñāpāramitā. The structure in Vietnamese should be clear. ""Vì vậy, nāng ạ, do Bồ-tát chưa chứng đắc Bát-nhã Ba-la-mật, nên Ngài an trú mà không có chướng ngại tâm ý.""
+
+Check if ""chướng ngại tâm ý"" is the right term for ""cittāvaraṇa"". Yes, ""mental hindrances"" translates to ""chướng ngại tâm ý"". Also, ""an trú"" is appropriate for ""viharati"" which means dwelling or residing. The address ""nāng ạ"" is a respectful way to say ""O Śāriputra"" in Vietnamese Buddhist context. Double-check the grammar and word order to ensure it's natural in Vietnamese. Looks good. No extra commentary needed, just the translation.
+</think>
+
+Vì vậy, nāng ạ, do Bồ-tát chưa chứng đắc Bát-nhã Ba-la-mật, nên Ngài an trú mà không có chướng ngại tâm ý.",{}
+13,cittāvaraṇa-nāstitvād atrasto viparyāsa-atikrānto niṣṭhā-nirvāṇa-prāptaḥ.,"vô quái ngại cố, vô hữu khủng bố, viễn ly điên đảo mộng tưởng, cứu cánh Niết bàn.","vì tâm không chướng ngại nên không còn sợ hãi, xa lìa được cái điên đảo mộng tưởng, đạt đến cứu cánh Niết Bàn.",Heart Sutra (Budsas),"Do không có chướng ngại của tâm nên đã vượt qua sự ngược chiều, đã đạt được Niết-bàn cuối cùng.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but some nuances like 'atrasto' and 'niṣṭhā' are not fully captured, and the Vietnamese phrasing, while clear, could be more polished.""
+}","Bởi vì không còn sự cản trở của tâm, không bị cản trở, đã vượt qua mọi sai lầm, đã đạt được Niết-bàn kiên định.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly formal and less common Vietnamese phrases, such as 'sự cản trở của tâm' and 'đã vượt qua mọi sai lầm'.""
+}","Vì không còn che lấp tâm thức, nên không còn sợ hãi, đã vượt qua mọi sai lầm, đạt đến Niết-bàn tối thượng.",{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified to provide only the translation without any extra commentary. So first, I need to make sure I understand the Sanskrit sentence correctly.
 
 The text is: cittāvaraṇa-nāstitvād atrasto viparyāsa-atikrānto niṣṭhā-nirvāṇa-prāptaḥ.
 
-Breaking it down into parts. ""Cittāvaraṇa"" is a compound word. ""Citta"" means mind, and ""āvaraṇa"" means covering or veil. So ""cittāvaraṇa"" is the covering of the mind, often translated as mental hindrances or obstacles. The suffix ""-nāstitvād"" would be ""the absence of"" or ""lacking in"". So ""cittāvaraṇa-nāstitvād"" is ""without mental hindrances"".
+Breaking it down, each part seems to be a compound word. Let's parse each component:
 
-Next part: ""atristo"". ""A-"" is a negative prefix, and ""trasta"" might be from ""trāsa"" meaning fear or anxiety. So ""atristo"" would be ""without fear"" or ""fearless"".
+1. cittāvaraṇa-nāstitvād: ""citta"" is mind, ""āvaraṇa"" means covering or veil, ""nāstitvād"" would be the absence (nāsti) of that covering. So ""because the veil over the mind is absent.""
 
-Then ""viparyāsa-atikrānto"". ""Viparyāsa"" is wrong perception or delusion. ""-Atikrānto"" is a suffix meaning having gone beyond. So ""having transcended delusion"".
+2. atrasto: This might be a form of ""trāṇa"" (to protect) with a prefix. Maybe ""without fear"" or ""unfearing."" Alternatively, ""atrasta"" could be a noun meaning fearlessness. So ""fearless.""
 
-Next, ""niṣṭhā-nirvāṇa-prāptaḥ"". ""Niṣṭhā"" is steadfastness or stability. ""Nirvāṇa"" is liberation or extinction. ""Prāptaḥ"" is ""attained"". So ""having attained the liberation of steadfastness"".
+3. viparyāsa-atikrānto: ""viparyāsa"" is distortion or delusion, ""atikrānto"" means having crossed beyond. So ""having crossed beyond delusion.""
 
-Putting it all together: ""Without mental hindrances, fearless, having transcended delusion, having attained the liberation of steadfastness.""
+4. niṣṭhā-nirvāṇa-prāptaḥ: ""niṣṭhā"" is steadfastness or establishment, ""nirvāṇa"" is liberation, ""prāptaḥ"" is attained. So ""has attained the liberation of steadfastness.""
 
-Now translating into Vietnamese. Need to make sure the terms are correctly translated. ""Cittāvaraṇa"" could be ""chướng ngại tâm thần"" or ""rào cản tâm trí"". ""Nāstitvād"" is ""không có"" or ""vắng mặt"". So ""không còn chướng ngại tâm thần"".
+Putting it all together in English first: ""Because the veil over the mind is absent, fearless, having crossed beyond delusion, has attained the liberation of steadfastness.""
 
-""Atrasto"" is ""không sợ hãi"" or ""vô úy"". 
+Now translating into Vietnamese. Let's find the right terms:
 
-""Viparyāsa-atikrānto"" is ""vượt qua sai lầm"" or ""vượt qua ảo tưởng"".
+- cittāvaraṇa-nāstitvād: ""Vì màn che tâm đã không còn""
+- atrasto: ""vô úy"" (fearless)
+- viparyāsa-atikrānto: ""đã vượt qua sai lầm"" (having crossed beyond delusion)
+- niṣṭhā-nirvāṇa-prāptaḥ: ""đạt được giải thoát của sự kiên định"" (attained the liberation of steadfastness)
 
-""Niṣṭhā-nirvāṇa-prāptaḥ"" would be ""đạt được giải thoát của sự kiên định"".
+So the full translation would be: ""Vì màn che tâm đã không còn, vô úy, đã vượt qua sai lầm, đạt được giải thoát của sự kiên định.""
 
-Putting it all together in Vietnamese: ""Không còn chướng ngại tâm thần, vô úy, đã vượt qua ảo tưởng, đạt được giải thoát của sự kiên định.""
+I need to check if the terms are accurate. ""Vô úy"" is correct for fearless. ""Sai lầm"" for viparyāsa (delusion) might be better as ""sự sai lầm"" or ""đảo điên."" Maybe ""đã vượt qua sự đảo điên"" is more precise. But ""sai lầm"" is more general. Let me confirm. Viparyāsa in Buddhist context is often translated as ""đảo điên"" (delusion). So perhaps ""đã vượt qua đảo điên.""
 
-Check if the terms are standard in Vietnamese Buddhist context. ""Chướng ngại tâm thần"" is a common term for mental hindrances. ""Vô úy"" is correct for fearless. ""Vượt qua ảo tưởng"" for transcending delusion. ""Giải thoát của sự kiên định"" might need to be ""giải thoát thông qua sự kiên định"" but ""của sự kiên định"" is acceptable. Alternatively, ""niṣṭhā"" could be translated as ""niềm tin vững chắc"" but ""kiên định"" is more like steadfastness. So the translation seems accurate.
+Similarly, ""niṣṭhā-nirvāṇa"" could be ""giải thoát của sự kiên định"" or ""giải thoát thông qua sự kiên định."" Maybe ""đạt được giải thoát thông qua sự kiên định.""
+
+But the original structure is ""niṣṭhā-nirvāṇa-prāptaḥ"" which is ""attained the liberation of steadfastness."" So ""đạt được giải thoát của sự kiên định"" is accurate.
+
+So adjusting the translation: ""Vì màn che tâm đã không còn, vô úy, đã vượt qua đảo điên, đạt được giải thoát của sự kiên định.""
+
+That seems better. Let me check each part again to ensure accuracy. Yes, that should be correct. Now present the translation without any extra text as per the user's request.
 </think>
 
-Không còn chướng ngại tâm thần, vô úy, đã vượt qua ảo tưởng, đạt được giải thoát của sự kiên định.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""Translation accurately preserves the original meaning and is phrased in a natural, native-level Vietnamese.""
-}"
-14,tryadhva-vyavasthitāḥ sarva-buddhāḥ prajñāpāramitām āśrityā-anuttarāṃ samyaksambodhim abhisambuddhāḥ.,"Tam thế chư Phật, y Bát nhã Ba la mật đa cố, đắc A nậu đa la Tam miệu Tam bồ đề.","Các vị Phật ba đời vì nương theo trí tuệ Bát Nhã nầy mà đắc quả vô thượng, chánh đẳng chánh giác.",Heart Sutra (Budsas),"Tất cả các Phật đều thành tựu trí tuệ tối thượng, đạt được giác ngộ hoàn toàn, nhờ nương tựa vào Bát-nhã Ba-la-mật-đa.","{
+Vì màn che tâm đã không còn, vô úy, đã vượt qua đảo điên, đạt được giải thoát của sự kiên định.",{}
+14,tryadhva-vyavasthitāḥ sarva-buddhāḥ prajñāpāramitām āśrityā-anuttarāṃ samyaksambodhim abhisambuddhāḥ.,"Tam thế chư Phật, y Bát nhã Ba la mật đa cố, đắc A nậu đa la Tam miệu Tam bồ đề.","Các vị Phật ba đời vì nương theo trí tuệ Bát Nhã nầy mà đắc quả vô thượng, chánh đẳng chánh giác.",Heart Sutra (Budsas),"Tất cả các Phật đã đạt được giác ngộ hoàn toàn cao nhất, nhờ nương tựa vào Bát-nhã Ba-la-mật-đa, sau khi thành tựu trí tuệ.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly different wording and phrasing than the reference translation, and the fluency is good but not perfect due to some minor awkwardness.""
+}","Tất cả các vị Phật, được sắp đặt theo ba phương, dựa vào Prajñāpāramitā, đã đạt được giác ngộ hoàn hảo vô song.","{
   ""accuracy"": 4,
    ""fluency"": 5,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but omits the phrase 'in three periods' and 'unexcelled', which are present in the reference translation. However, it is fluent and readable in Vietnamese.""
-}","Các vị Phật toàn thể, được sắp xếp ba phương, dựa vào Bát Nhã, đã đạt được giác ngộ hoàn hảo vô song.","{
-  ""accuracy"": 4,
-   ""fluency"": 5,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with 'các vị Phật toàn thể' accurately conveying 'sarva-buddhāḥ' and 'được sắp xếp ba phương' correctly interpreting 'tryadhva-vyavasthitāḥ'. The use of 'dựa vào Bát Nhã' for 'prajñāpāramitām āśrityā' and 'đạt được giác ngộ hoàn hảo vô song' for 'anuttarāṃ samyaksambodhim abhisambuddhāḥ' also shows a good understanding of the original text. The translation flows naturally in Vietnamese.""
-}","Tất cả các đức Phật trong ba thời đều nương nhờ vào Bát-nhã Ba-la-mật-đa mà chứng được sự giác ngộ hoàn toàn, không gì thượng hơn.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is expressed in natural, fluent Vietnamese.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra comments. First, I need to parse the Sanskrit sentence.
+   ""explanation"": ""The translation accurately conveys the meaning of the Sanskrit text, with 'Tất cả các vị Phật' correctly translating 'sarva-buddhāḥ' and 'đạt được giác ngộ hoàn hảo vô song' conveying 'anuttarāṃ samyaksambodhim abhisambuddhāḥ'. The use of 'Prajñāpāramitā' is also correct. However, 'được sắp đặt theo ba phương' is a minor imperfection in conveying 'tryadhva-vyavasthitāḥ', and the fluency is native-level.""
+}",Tất cả các Đức Phật trong ba thời đã chứng đắc vô thượng chánh đẳng chánh giác nhờ nương vào Bát-nhã ba-la-mật.,{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra stuff. First, I need to parse the Sanskrit sentence.
 
 The text is: ""tryadhva-vyavasthitāḥ sarva-buddhāḥ prajñāpāramitām āśrityā-anuttarāṃ samyaksambodhim abhisambuddhāḥ.""
 
-Breaking it down:
+Breaking it down, ""tryadhva-vyavasthitāḥ"" – ""tryadhva"" might refer to three realms or three worlds, and ""vyavasthitāḥ"" is ""established"" or ""residing"". So ""those established in the three realms"".
 
-- ""tryadhva-vyavasthitāḥ"" – This might refer to the three realms or three worlds (tryadhva) and ""vyavasthitāḥ"" meaning established or situated. So, ""những ai an trú trong ba cõi"" in Vietnamese.
+""Sarva-buddhāḥ"" is ""all Buddhas"". 
 
-- ""sarva-buddhāḥ"" – All Buddhas (""tất cả các Phật"").
+""Prajñāpāramitām āśritya"" – ""prajñāpāramitā"" is ""Perfection of Wisdom"", and ""āśritya"" means ""relying on"" or ""depending on"". So ""relying on the Perfection of Wisdom"".
 
-- ""prajñāpāramitām āśritya"" – Relying on Prajna Paramita (""dựa vào Bát Nhã Ba La Mật Đa"").
+""Anuttarāṃ samyaksambodhim abhisambuddhāḥ"" – ""anuttarāṃ"" is ""unsurpassed"", ""samyaksambodhim"" is ""complete enlightenment"", and ""abhisambuddhāḥ"" is ""have fully awakened"". So putting it together: ""have fully awakened to the unsurpassed complete enlightenment"".
 
-- ""anuttarāṃ samyaksambodhim abhisambuddhāḥ"" – Achieved the supreme, perfect enlightenment (""đạt đến Vô Thượng Chính Đẳng Chính Giác"").
+Now, translating this into Vietnamese. Let's check each part.
 
-Putting it all together: ""Những ai an trú trong ba cõi, tất cả các Phật đều dựa vào Bát Nhã Ba La Mật Đa mà đạt đến Vô Thượng Chính Đẳng Chính Giác.""
+""Tryadhva"" in Vietnamese Buddhist terminology is often ""ba cõi"" (three realms). ""Vyavasthitāḥ"" is ""thành lập"" or ""tồn tại"". So ""những vị thành lập trong ba cõi"" or ""những vị tồn tại trong ba cõi"".
 
-Wait, let me check the terms again. ""Prajñāpāramitā"" is commonly translated as Bát Nhã Ba La Mật Đa. ""Anuttarā samyaksambodhi"" is Vô Thượng Chính Đẳng Chính Giác. The structure seems correct. Also, ""abhisambuddhāḥ"" is past participle, so ""đã đạt đến"" but in Vietnamese, ""đạt đến"" is sufficient. The user didn't specify any particular style, so standard Buddhist terminology should be fine. I think that's accurate.
+""Sarva-buddhāḥ"" is ""tất cả các Phật"".
+
+""Prajñāpāramitām"" is ""Bát nhã Ba-la-mật-đa"" (Perfection of Wisdom). ""Āśritya"" is ""nương tựa vào"" or ""dựa vào"".
+
+""Anuttarāṃ samyaksambodhim"" is ""Vô thượng Chánh Giác"". ""Abhisambuddhāḥ"" is ""đã thành Phật"" or ""đã giác ngộ trọn vẹn"".
+
+Putting it all together:
+
+""Tất cả các Phật, nương tựa vào Bát nhã Ba-la-mật-đa, đã thành Phật Vô thượng Chánh Giác trong ba cõi.""
+
+Wait, maybe the structure should be: ""Tất cả các Phật, sau khi nương tựa vào Bát nhã Ba-la-mật-đa, đã giác ngộ Vô thượng Chánh Giác.""
+
+But the original says ""established in the three realms"". Maybe ""thành lập trong ba cõi"" is more literal. However, in Buddhist context, ""three realms"" is ""ba cõi"", so ""những vị thành lập trong ba cõi"" might not be the best. Maybe ""tồn tại trong ba cõi"" or ""thành tựu trong ba cõi"".
+
+Alternatively, ""tryadhva-vyavasthitāḥ"" could mean ""residing in the three realms"". So ""các Phật đang an trú trong ba cõi"".
+
+Hmm. Let me check some standard translations. For example, the Heart Sutra has similar phrases. ""Prajñāpāramitā"" is ""Bát nhã Ba-la-mật-đa"". ""Sarva-buddhāḥ"" is ""tất cả các Phật"". ""Abhisambuddhāḥ"" is ""đã thành Phật"".
+
+Putting it all together, maybe:
+
+""Tất cả các Phật, nương vào Bát nhã Ba-la-mật-đa, đã thành Phật Vô thượng Chánh Giác trong ba cõi.""
+
+But the original structure is ""established in the three realms, all Buddhas, relying on prajñāpāramitā, have fully awakened to the unsurpassed complete enlightenment.""
+
+So the Vietnamese would be:
+
+""Tất cả các Phật, sau khi nương tựa vào Bát nhã Ba-la-mật-đa, đã giác ngộ Vô thượng Chánh Giác trong ba cõi.""
+
+But ""vyavasthitāḥ"" is ""established"", so maybe ""thành lập"" or ""an trú"". ""An trú trong ba cõi"" is a common term. So:
+
+""Tất cả các Phật, an trú trong ba cõi, nương vào Bát nhã Ba-la-mật-đa, đã thành Vô thượng Chánh Giác.""
+
+Yes, that sounds better. Let me confirm the word order. The original Sanskrit structure is ""established in the three realms, all Buddhas, relying on prajñāpāramitā, have fully awakened..."" So in Vietnamese, the order would be:
+
+""Tất cả các Phật, an trú trong ba cõi, nương vào Bát nhã Ba-la-mật-đa, đã thành Vô thượng Chánh Giác.""
+
+That seems accurate. I think that's the correct translation. Let me double-check each term again to make sure there's no mistake. ""Abhisambuddhāḥ"" is ""đã thành Phật"" or ""đã giác ngộ"". ""Vô thượng Chánh Giác"" is correct for ""anuttarāṃ samyaksambodhim"". Yes, this should be the right translation.
 </think>
 
-Những ai an trú trong ba cõi, tất cả các Phật đều dựa vào Bát Nhã Ba La Mật Đa mà đạt đến Vô Thượng Chính Đẳng Chính Giác.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is written in fluent, native-level Vietnamese.""
-}"
-15,tasmāj jñātavyam: prajñāpāramitā mahā-mantro mahā-vidyā mantro 'nuttara-mantro samasama-mantraḥ.,"Cố tri Bát nhã Ba la mật đa, thị đại thần chú, thị đại minh chú, thị vô thượng chú, thị vô đẳng đẳng chú,","Cho nên phải biết rằng Bát nhã Ba la mật đa là đại thần chú, là đại minh chú, là chú vô thượng, là chú cao cấp nhất,",Heart Sutra (Budsas),"Do đó cần phải biết: prajñāpāramitā là chân ngôn lớn, là đại minh, là chân ngôn, là chân ngôn tối thượng, là chân ngôn bình đẳng.","{
+Tất cả các Phật, an trú trong ba cõi, nương vào Bát nhã Ba-la-mật-đa, đã thành Vô thượng Chánh Giác.",{}
+15,tasmāj jñātavyam: prajñāpāramitā mahā-mantro mahā-vidyā mantro 'nuttara-mantro samasama-mantraḥ.,"Cố tri Bát nhã Ba la mật đa, thị đại thần chú, thị đại minh chú, thị vô thượng chú, thị vô đẳng đẳng chú,","Cho nên phải biết rằng Bát nhã Ba la mật đa là đại thần chú, là đại minh chú, là chú vô thượng, là chú cao cấp nhất,",Heart Sutra (Budsas),"Do đó cần phải biết: prajñāpāramitā là chân ngôn vĩ đại, là đại minh, là chân ngôn, là chân ngôn tối thượng, là chân ngôn bình đẳng.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'chân ngôn' for both 'mantra' and 'vidyā', which might be slightly confusing, and the phrase 'bình đẳng' for 'samasama' is a good translation but could be more naturally phrased as 'bình đẳng với tất cả' to better convey the idea of equality.""
-}","Vì vậy, cần phải biết: Prajñāpāramitā là pháp chú lớn, là tri thức lớn, là pháp chú vô song, là pháp chú đồng đều.","{
-  ""accuracy"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'chân ngôn' for both 'mantra' and 'vidyā', which might be slightly confusing, and the phrase 'vĩ đại' is added to 'chân ngôn' which is not in the original text, the fluency is good but could be improved with more natural Vietnamese phrasing.""
+}","Vì vậy, cần phải biết: Prajñāpāramitā là bát chánh pháp lớn, là kiến thức lớn; pháp là pháp vô thượng, là pháp đồng nhất.","{
+  ""accuracy"": 2,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but 'pháp chú đồng đều' could be more naturally translated to 'pháp chú bình đẳng' to better convey 'samasama-mantraḥ', and 'vô song' is a good translation of 'anuttara', but 'Prajñāpāramitā' should be translated or transliterated more consistently with the reference.""
-}","Vì vậy, cần phải biết: Bát-nhã Ba-la-mật-đa là thần chú lớn, là chú trí tuệ lớn, là thần chú vô thượng, là thần chú bình đẳng.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with minor imperfections in word choice and phrasing, such as 'thần chú lớn' instead of 'đại thần chú', but overall it is accurate and readable.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified to provide only the translation without any extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
+   ""explanation"": ""The translation deviates from the original meaning by replacing 'mantra' with 'pháp' and misinterpreting 'mahā-mantro' and 'samasama-mantraḥ', but the Vietnamese phrasing is mostly natural and readable.""
+}","Vì vậy, cần phải biết: Bát-nhã Ba-la-mật-đa là đại chú, là minh chú lớn, là chú vô thượng, là chú bình đẳng.",{},"<think>
+Okay, let me tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified to provide only the translation without any extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
 
 The text is: ""tasmāj jñātavyam: prajñāpāramitā mahā-mantro mahā-vidyā mantro 'nuttara-mantro samasama-mantraḥ.""
 
-Breaking it down, ""tasmāj jñātavyam"" translates to ""Therefore, it should be known"" or ""Thus, it must be understood."" Then there's a list of terms related to the Prajna Paramita (Perfection of Wisdom) and various mantras. 
+Breaking it down, ""tasmāj jñātavyam"" means ""Therefore, it should be known"" or ""Thus, it is to be understood."" Then there's a list of terms: ""prajñāpāramitā"" which is a key Buddhist concept, often translated as ""Perfection of Wisdom."" The rest are terms related to mantras and vidya (knowledge). 
 
-The key here is to translate the technical terms accurately. ""Prajñāpāramitā"" is commonly translated as ""Bát Nhã Ba La Mật"" in Vietnamese. ""Mahā-mantro"" is ""Đại Mật Ngữ,"" ""mahā-vidyā"" as ""Đại Trí,"" ""anuttara-mantro"" is ""Vô Thượng Mật Ngữ,"" and ""samasama-mantraḥ"" would be ""Tất Cả Mật Ngữ."" 
+""Mahā-mantro"" is ""great mantra,"" ""mahā-vidyā"" is ""great knowledge,"" ""anuttara-mantro"" is ""unexcelled mantra,"" and ""samasama-mantraḥ"" is ""the same as the same mantra,"" which might be a bit tricky. 
 
-I need to ensure that the structure in Vietnamese flows naturally. The colon after ""tasmāj jñātavyam"" indicates a list, so in Vietnamese, using a colon followed by the list makes sense. Also, checking the order of the terms to maintain their original significance. 
+In Vietnamese, ""Perfection of Wisdom"" is commonly translated as ""Bát-nhã Ba-la-mật-đa"" or sometimes ""Tuệ Giác Ba-la-mật."" ""Mahā-mantro"" would be ""đại chú"" or ""đại ấn,"" but ""mantra"" is often kept as is in Vietnamese Buddhist texts. ""Vidya"" is ""thức"" or ""tri thức,"" but in this context, ""vidya"" is part of a compound term, so ""đại minh"" might be appropriate. 
 
-Double-checking the translations of each term to confirm they are standard in Buddhist Vietnamese terminology. For example, ""mahā-vidyā"" as ""Đại Trí"" is correct. ""Anuttara-mantro"" as ""Vô Thượng Mật Ngữ"" is also accurate. 
+The structure in Vietnamese should follow the order: ""Vì vậy, cần biết rằng: Bát-nhã Ba-la-mật-đa là đại chú, đại minh chú, vô thượng chú, chư chú đệ nhất, không thể sánh bằng..."" Wait, but the original doesn't have ""chư chú đệ nhất,"" so I need to check again. The original has ""anuttara-mantro"" which is ""vô thượng chú"" (unexcelled mantra) and ""samasama-mantraḥ"" which is ""tự tánh đồng nhất chú"" or ""tất cả các chú đều bình đẳng."" 
 
-Putting it all together: ""Do đó, cần phải biết: Bát Nhã Ba La Mật là Đại Mật Ngữ, Đại Trí Mật Ngữ, Vô Thượng Mật Ngữ, Tất Cả Mật Ngữ."" 
+Hmm, maybe ""samasama-mantraḥ"" is ""tất cả các chú đều bình đẳng"" or ""tự tánh đồng nhất."" Let me verify. The term ""samasama"" is ""same as same,"" so perhaps ""tất cả các chú đều như nhau"" or ""tất cả các chú đều bình đẳng."" 
 
-I should verify if there's any alternative translation for ""samasama-mantraḥ."" Since ""samasama"" means ""same"" or ""all,"" ""Tất Cả Mật Ngữ"" seems appropriate. 
+Putting it all together: ""Vì vậy, cần biết rằng: Bát-nhã Ba-la-mật-đa là đại chú, đại minh chú, vô thượng chú, không thể sánh bằng, tất cả các chú đều bình đẳng.""
 
-No extra commentary is needed, just the translation. Making sure there are no typos and that the terms are correctly ordered. That should be it.
+Wait, the original text lists four items: prajñāpāramitā is the great mantra, great knowledge mantra, unexcelled mantra, and samasama mantra. So in Vietnamese, it should be structured as four items. Let me check the original again:
+
+""prajñāpāramitā mahā-mantro mahā-vidyā mantro 'nuttara-mantro samasama-mantraḥ.""
+
+So the structure is: Prajñāpāramitā is the great mantra, the great knowledge mantra, the unexcelled mantra, and the equal-to-all mantra. 
+
+In Vietnamese, that would be: ""Bát-nhã Ba-la-mật-đa là đại chú, đại minh chú, vô thượng chú, chư chú bình đẳng.""
+
+But I need to make sure the terms are correctly translated. ""Mahā-vidyā mantro"" is ""great knowledge mantra,"" which could be ""đại minh chú."" ""Anuttara-mantro"" is ""vô thượng chú."" ""Samasama-mantraḥ"" is ""chư chú bình đẳng"" or ""tất cả các chú đều bình đẳng."" 
+
+So the full translation would be: ""Vì vậy, cần biết rằng: Bát-nhã Ba-la-mật-đa là đại chú, đại minh chú, vô thượng chú, chư chú bình đẳng.""
+
+I think that's accurate. Let me double-check each term to ensure there's no mistake. Yes, this should be correct.
 </think>
 
-Do đó, cần phải biết: Bát Nhã Ba La Mật là Đại Mật Ngữ, Đại Trí Mật Ngữ, Vô Thượng Mật Ngữ, Tất Cả Mật Ngữ.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and flows naturally in Vietnamese.""
-}"
-16,"sarva duḥkha praśamanaḥ, satyam amithyatāt.","năng trừ nhất thiết khổ, chân thật bất hư.","luôn trừ các khổ não, chân thật không hư dối.",Heart Sutra (Budsas),"là sự chấm dứt tất cả mọi đau khổ, chân lý vượt qua sự không chân lý.","{
+Vì vậy, cần biết rằng: Bát-nhã Ba-la-mật-đa là đại chú, đại minh chú, vô thượng chú, chư chú bình đẳng.",{}
+16,"sarva duḥkha praśamanaḥ, satyam amithyatāt.","năng trừ nhất thiết khổ, chân thật bất hư.","luôn trừ các khổ não, chân thật không hư dối.",Heart Sutra (Budsas),"là sự chấm dứt tất cả khổ đau, chân lý vượt qua sự không chân lý.","{
   ""accuracy"": 5,
    ""fluency"": 4,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural and fluent in Vietnamese.""
-}","Mọi khổ đau được xua tan, chân lý vượt lên trên dối trá.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text and flows naturally in Vietnamese.""
-}","Làm dịu mọi khổ đau, là chân lý, không phải điều sai lầm.","{
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural in Vietnamese.""
+}","Sự tiêu diệt mọi khổ đau, chân lý vượt lên trên dối trá.","{
   ""accuracy"": 4,
    ""fluency"": 5,
-   ""explanation"": ""The candidate translation accurately conveys the meaning of the Sanskrit text, with 'Làm dịu mọi khổ đau' corresponding to 'sarva duḥkha praśamanaḥ' and 'là chân lý, không phải điều sai lầm' to 'satyam amithyatāt', and it reads naturally in Vietnamese.""
-}","<think>
-Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation with no extra commentary. The text given is ""sarva duḥkha praśamanaḥ, satyam amithyatāt."" 
+   ""explanation"": ""The candidate translation accurately conveys the meaning of the Sanskrit text, with 'Sự tiêu diệt mọi khổ đau' correctly translating 'sarva duḥkha praśamanaḥ' and 'chân lý vượt lên trên dối trá' conveying 'satyam amithyatāt'. The language used is also fluent and natural in Vietnamese.""
+}","Người làm dịu mọi khổ đau, chân thật không giả dối.",{},"<think>
+Okay, I need to translate the Sanskrit text ""sarva duḥkha praśamanaḥ, satyam amithyatāt."" into Vietnamese. Let's break it down.
 
-First, I need to parse each part. ""Sarva"" means ""all"" or ""everything."" ""Duḥkha"" is a key term in Sanskrit, often translated as ""suffering"" or ""distress."" ""Praśamanaḥ"" is a verb form meaning ""calming"" or ""pacifying."" So the first part ""sarva duḥkha praśamanaḥ"" would be something like ""calming all suffering"" or ""pacifying all distress.""
+First, ""sarva"" means ""all"" or ""everything."" ""Duḥkha"" is a common term in Sanskrit that translates to ""suffering"" or ""pain."" ""Praśamanaḥ"" is a bit trickier. The root ""praśamana"" could be related to calming or pacifying. So ""sarva duḥkha praśamanaḥ"" might mean ""the one who calms all suffering"" or ""the one who pacifies all pain.""
 
-Next, ""satyam"" is straightforward, it means ""truth"" or ""reality."" Then ""amithyatāt"" – wait, that might be a typo. The correct Sanskrit term is usually ""amṛtyatāt"" which means ""immortality"" or ""deathlessness."" ""Amṛta"" is ""nectar"" or ""immortality,"" and the suffix ""-tāt"" might be a form of ""-tā"" (nominative case). So ""amṛtyatāt"" would be ""immortality"" or ""deathlessness."" 
+Next part: ""satyam amithyatāt."" ""Satyam"" is straightforward, meaning ""truth."" ""Amithyatāt"" – I'm not sure about this one. Maybe it's a form of ""amītya,"" which can mean ""infinite"" or ""limitless."" So ""amithyatāt"" could be ""infinite"" or ""limitless."" Putting it together: ""Truth is infinite"" or ""Truth is limitless.""
 
-Putting it all together: ""Calming all suffering, truth is immortality."" But the user wants it in Vietnamese. Let me check the Vietnamese translation for these terms. ""Sarva duḥkha praśamanaḥ"" would be ""Làm dịu mọi đau khổ"" or ""Giảm bớt mọi khổ đau."" ""Satyam amṛtyatāt"" would be ""Sự thật là bất tử"" or ""Chân lý là bất diệt.""
+Putting both parts together: ""The one who calms all suffering, truth is limitless."" But maybe the second part is a separate statement. Let me check again. The original has two clauses separated by a comma. So maybe it's ""The one who calms all suffering, truth is limitless."" But in Vietnamese, the structure might need adjustment for clarity.
 
-Now, considering the structure. The original seems to be a statement or a mantra. The first part is a verb phrase, the second is a noun phrase. In Vietnamese, the structure would be similar. So the full translation could be ""Làm dịu mọi đau khổ, chân lý là bất diệt."" Or ""Giảm bớt mọi khổ đau, sự thật là bất tử.""
+In Vietnamese, ""sarva duḥkha praśamanaḥ"" could be ""Người dẹp yên mọi đau khổ"" or ""Người xua tan mọi nỗi khổ."" For ""satyam amithyatāt,"" ""Sự thật là vô tận"" or ""Chân lý là vô hạn."" 
 
-I need to make sure the terms are correctly translated. ""Duḥkha"" in Buddhist context is ""khổ đau"" or ""đau khổ."" ""Satyam"" is ""chân lý"" or ""sự thật."" ""Amṛtyatāt"" is ""bất diệt"" or ""bất tử."" 
-
-So the most accurate translation would be ""Làm dịu mọi khổ đau, chân lý là bất diệt."" That's concise and matches the original structure. Let me double-check each part again. Yes, ""sarva"" is ""mọi,"" ""duḥkha"" is ""khổ đau,"" ""praśamanaḥ"" is ""làm dịu"" or ""giảm bớt."" ""Satyam"" is ""chân lý,"" ""amṛtyatāt"" is ""bất diệt."" 
-
-I think that's correct. The user specified to provide only the translation, so I'll present it without any additional explanation.
+So the full translation might be: ""Người xua tan mọi nỗi khổ, chân lý là vô hạn."" Let me check if that makes sense. The first part is about someone who removes all suffering, and the second part states that truth is limitless. That seems accurate. I'll go with that.
 </think>
 
-Làm dịu mọi khổ đau, chân lý là bất diệt.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""Perfectly preserves the original meaning and flows naturally in Vietnamese.""
-}"
+Người xua tan mọi nỗi khổ, chân lý là vô hạn.",{}
 17,prajñāpāramitāyām ukto mantraḥ tadyathā:,"Cố thuyết Bát nhã Ba la mật đa chú, tức thuyết chú viết:","Cho nên khi nói đến Bát nhã Ba la mật đa, tức là phải nói câu chú:",Heart Sutra (Budsas),"Trong Bát-nhã Ba-la-mật-đa, có một chú thuật như sau:","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning but uses slightly different wording and phrasing compared to the reference, and the language is mostly natural and readable.""
-}","Trong kinh Prajñāpāramitā, chú này được thốt ra như sau:","{
+   ""explanation"": ""The translation generally preserves the meaning, but 'có một chú thuật' could be more naturally phrased as 'có một mantra' to better match the Sanskrit and reference translations.""
+}","Trong Prajñāpāramitā, chú được nói như sau:","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning but uses a more literal and formal tone, which might make it slightly less fluent than native Vietnamese expressions.""
-}","Trong Bát-nhã Ba-la-mật-đa, bài chú đã được nói như sau:","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text and is phrased in natural Vietnamese.""
-}","<think>
-Okay, let me tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified to provide only the translation without any extra commentary. The text given is ""prajñāpāramitāyām ukto mantraḥ tadyathā:""
+   ""explanation"": ""The candidate translation generally preserves the meaning of the Sanskrit text but lacks the precision and nuance found in the reference translation, and the language used is clear but not entirely native-like.""
+}","Trong Bát-nhã Ba-la-mật-đa, bài chú đã được nói như sau:",{},"<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text ""prajñāpāramitāyām ukto mantraḥ tadyathā:"" translated into Vietnamese, and only the translation with no extra commentary.
 
-First, I need to make sure I understand the Sanskrit terms. ""Prajñāpāramitā"" is a key term in Mahayana Buddhism, often translated as ""Perfection of Wisdom."" The word ""ukto"" means ""spoken"" or ""uttered."" ""Mantraḥ"" is ""mantra,"" and ""tadyathā"" is a formulaic introduction to a mantra, often translated as ""thus"" or ""then.""
+First, I need to understand each part of the Sanskrit text. ""Prajñāpāramitāyām"" is a term from Buddhism, often translated as ""Bát Nhã Ba La Mật"" in Vietnamese. The word ""ukto"" means ""được nói"" or ""được tuyên bố"". ""Mantraḥ"" is ""mantra"", which in Vietnamese is also ""mantra"" or sometimes ""chú"". ""Tadyathā"" is a formulaic introduction to a mantra, usually translated as ""tadyatha"" in Vietnamese transliteration.
 
-So the sentence is stating that in the Prajñāpāramitā (Perfection of Wisdom), a mantra is spoken, followed by ""tadyathā,"" which introduces the actual mantra. The user probably wants this translated accurately into Vietnamese, maintaining the structure and the specific terms used in Buddhist texts.
+Putting it all together: ""Prajñāpāramitāyām ukto mantraḥ tadyathā:"" would be ""Trong Bát Nhã Ba La Mật, mantra được nói tadyatha:"" in Vietnamese. I should check if there's a standard translation for this phrase in Buddhist texts to ensure accuracy. Sometimes ""tadyatha"" is kept as is, so the translation should maintain that. Also, make sure the order is correct. The structure in Vietnamese would typically be [Trong + [tên kinh] + , + mantra được nói + tadyatha:]. 
 
-I should check if there are standard Vietnamese translations for these terms. ""Prajñāpāramitā"" is commonly translated as ""Bát Nhã"" or ""Bát Nhã Ba La Mật."" ""Mantra"" is usually kept as ""mantra"" in Vietnamese. ""Tadyathā"" is often translated as ""tát đá tha"" or ""tát địa tha."" 
+I think that's correct. Let me verify with some references. Yes, in Vietnamese Buddhist texts, ""Prajñāpāramitā"" is indeed translated as ""Bát Nhã Ba La Mật"" or sometimes shortened to ""Bát Nhã"". The phrase ""ukto mantraḥ"" would be ""mantra được nói"" or ""mantra được tuyên bố"". Since the user wants only the translation without extra, I'll present it as is without explanations. 
 
-Putting it all together: ""Trong Bát Nhã Ba La Mật, có mantra như sau: tát địa tha:"" 
-
-Wait, ""ukto"" is ""được nói"" or ""được tuyên thuyết."" So maybe ""Trong Bát Nhã Ba La Mật, mantra được tuyên thuyết như sau: tát địa tha:"" 
-
-But the user might prefer a more concise version. Let me verify. The original structure is ""prajñāpāramitāyām ukto mantraḥ tadyathā:"" which is ""In the Prajñāpāramitā, the mantra is spoken thus:""
-
-So in Vietnamese, ""Trong Bát Nhã Ba La Mật, mantra được nói như sau: tát địa tha:"" 
-
-But ""tadyathā"" is often transliterated as ""tát địa tha"" in Vietnamese Buddhist texts. So the final translation would be:
-
-""Trong Bát Nhã Ba La Mật, có mantra như sau: tát địa tha:""
-
-I think that's correct. Let me double-check each term. ""Prajñāpāramitāyām"" is locative singular, so ""trong Bát Nhã Ba La Mật."" ""Ukto mantraḥ"" is ""mantra được nói"" or ""mantra được tuyên thuyết."" ""Tadyathā"" is ""tát địa tha."" 
-
-Yes, that seems right. The user wants only the translation, so I'll present it without any additional notes.
+So the final translation should be: ""Trong Bát Nhã Ba La Mật, mantra được nói tadyatha:""
 </think>
 
-Trong Bát Nhã Ba La Mật, có mantra như sau: tát địa tha:","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is phrased in a natural and fluent Vietnamese manner.""
-}"
-18,gate gate pāragate pārasaṃgate bodhi svāhā.,"Yết đế yết đế, ba la yết đế, ba la tăng yết đế, bồ đề tát bà ha.","Yết đế yết đế, ba la yết đế, ba la tăng yết đế, bồ đề tát bà ha.",Heart Sutra (Budsas),"Đi, đi, đi đến bờ bên kia, đi đến bờ bên kia của bờ bên kia, sự thức tỉnh, sa ma ha.","{
+Trong Bát Nhã Ba La Mật, mantra được nói tadyatha:",{}
+18,gate gate pāragate pārasaṃgate bodhi svāhā.,"Yết đế yết đế, ba la yết đế, ba la tăng yết đế, bồ đề tát bà ha.","Yết đế yết đế, ba la yết đế, ba la tăng yết đế, bồ đề tát bà ha.",Heart Sutra (Budsas),"Đi, đi, đi qua, đi qua bờ bên kia, sự thức tỉnh, sa ha.","{
   ""accuracy"": 4,
    ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with 'đi' accurately conveying 'gate' as going or proceeding, and 'bờ bên kia' effectively translating 'pāra' as the other shore, but 'sự thức tỉnh' for 'bodhi' and 'sa ma ha' for 'svāhā' are slightly imperfect.""
-}","Đã vượt qua, đã vượt qua, đã vượt qua mọi giới hạn, giác ngộ, xú.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with 'đã vượt qua' accurately conveying 'gate' and 'pāragate', and 'giác ngộ' for 'bodhi'. However, 'xú' is not a perfect translation for 'svāhā', which is a mantra often translated as an affirmation or invocation, and 'mọi giới hạn' adds a slight interpretation to 'pārasaṃgate'. The fluency is good, but the use of 'xú' might sound slightly awkward to native speakers.""
-}","Đã đi, đã đi, đã đi bên kia, hoàn toàn đã đi bên kia, giác ngộ, svāhā.","{
-  ""accuracy"": 4,
-   ""fluency"": 4,
-   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with 'Đã đi' accurately conveying 'gate' as 'gone' or 'passed', and 'giác ngộ' correctly translating 'bodhi' as 'enlightenment'. However, the use of 'bên kia' for 'pāragate' and 'pārasaṃgate' might be slightly awkward, and 'svāhā' is left untranslated.""
-}","<think>
-Okay, let's see. The user wants me to translate the Sanskrit text ""gate gate pāragate pārasaṃgate bodhi svāhā"" into Vietnamese. They specified to provide only the translation with no extra commentary. 
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with 'Đi, đi, đi qua, đi qua bờ bên kia' conveying the idea of going beyond, and 'sự thức tỉnh' accurately representing 'bodhi' as enlightenment or awakening. However, 'sa ha' is a more literal translation of 'svāhā' and could be improved for better fluency and cultural adaptation.""
+}","Cái đã qua, cái đã qua, đã vượt qua mọi, giác ngộ, xú.","{
+  ""accuracy"": 2,
+   ""fluency"": 2,
+   ""explanation"": ""The translation does not preserve the original meaning, with 'Cái đã qua' not accurately conveying 'gate' as a spiritual concept, and 'xú' is not a suitable translation for 'svāhā', which is a Sanskrit mantra. The fluency is also affected due to awkward phrasing.""
+}","Đã đi, đã đi, đã đi qua bờ bên kia, đã hoàn toàn đi qua bờ bên kia, giác ngộ, svāhā.",{},"<think>
+Okay, I need to translate the Sanskrit text ""gate gate pāragate pārasaṃgate bodhi svāhā"" into Vietnamese. Let me start by recalling what each part means.
 
-First, I need to recognize what this Sanskrit phrase is. It looks familiar; I think it's a well-known Buddhist mantra. Specifically, it's the Heart Sutra's closing mantra, often translated as ""Gone, gone, gone beyond, gone completely beyond, hail to wisdom!"" in English.
+First, ""gate gate"" is a well-known phrase from the Heart Sutra, often translated as ""gone, gone"" or ""has gone, has gone."" It's part of the mantra at the end. 
 
-Now, translating this into Vietnamese. The standard translation for this mantra in Vietnamese Buddhist circles is ""Đi rồi, đi rồi, đã đi đến bờ kia, đã đi đến bờ kia hoàn toàn, Bồ đề, xá lợi."" Let me verify each part:
+Next, ""pāragate"" is usually translated as ""gone beyond"" or ""has gone beyond."" Then ""pārasaṃgate"" is a bit trickier. I think it's a compound word. ""Pāra"" means ""the other shore"" or ""beyond,"" and ""saṃgate"" might be related to ""saṃgati"" which means ""to arrive"" or ""to reach."" So ""pārasaṃgate"" could be ""arrived at the other shore"" or ""has arrived beyond.""
 
-- ""gate gate"" is ""Đi rồi, đi rồi"" (gone, gone)
-- ""pāragate"" is ""đã đi đến bờ kia"" (gone beyond)
-- ""pārasaṃgate"" is ""đã đi đến bờ kia hoàn toàn"" (gone completely beyond)
-- ""bodhi"" is ""Bồ đề"" (wisdom)
-- ""svāhā"" is ""xá lợi"" (hail or so be it)
+""Bodhi"" is straightforward, it means ""enlightenment"" or ""awakening."" ""Svāhā"" is a sacred syllable used to conclude mantras, often translated as ""so be it"" or ""thus be it,"" but in Vietnamese, it's usually kept as ""svāhā"" or sometimes transliterated.
 
-I should check if there are any variations in the Vietnamese translation. Sometimes, ""svāhā"" can be translated as ""hail"" or ""xá lợi,"" but in this context, ""xá lợi"" is more commonly used. Also, ""Bồ đề"" is the standard term for ""bodhi"" in Vietnamese. 
+Putting it all together in Vietnamese, the translation should maintain the structure and the meaning. Let me check existing translations to be sure. I remember that the standard Vietnamese translation for this mantra is ""Đi rồi, đi rồi, đi đến bờ kia, đã đến bờ kia, giác ngộ, svāhā."" 
 
-Make sure there's no additional commentary. The user wants only the translation. So the final answer should just be the Vietnamese version without any explanations. Let me confirm once more that each part is correctly translated and in the right order. Yes, that seems accurate. No need for extra notes. Just the translation as requested.
+Let me verify each part again. ""Gate gate"" is ""Đi rồi, đi rồi."" ""Pāragate"" is ""đi đến bờ kia."" ""Pārasaṃgate"" is ""đã đến bờ kia."" ""Bodhi"" is ""giác ngộ,"" and ""svāhā"" remains as is. That seems accurate. I don't see any parts that need adjustment. The user wants only the translation, so I'll present it without any extra commentary.
 </think>
 
-Đi rồi, đi rồi, đã đi đến bờ kia, đã đi đến bờ kia hoàn toàn, Bồ đề, xá lợi.","{
-  ""accuracy"": 5,
-   ""fluency"": 5,
-   ""explanation"": ""Perfectly preserves the meaning and is naturally fluent in Vietnamese.""
-}"
+Đi rồi, đi rồi, đi đến bờ kia, đã đến bờ kia, giác ngộ, svāhā.",{}
