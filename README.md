@@ -45,7 +45,7 @@ GROQ_API_KEY=your_key_here
 ### 2. Run Benchmark
 To run the full pipeline on the extended dataset:
 ```bash
-uv run sanskrit-vi-translation/src/main.py
+uv run src/main.py
 ```
 This will:
 1. Load `data/sanskrit_vi_heart_sutra.csv`.
@@ -58,15 +58,15 @@ To regenerate the dataset from scratch:
 
 **Step A: Crawl**
 ```bash
-uv run sanskrit-vi-translation/src/run_crawler.py --source budsas --url "https://budsas.net/uni/u-kinh-bt-ngan/bntk.htm"
+uv run src/run_crawler.py --source budsas --url "https://budsas.net/uni/u-kinh-bt-ngan/bntk.htm"
 ```
 **Step B: Clean & Segment**
 ```bash
-python3 sanskrit-vi-translation/src/clean_data.py
+uv run src/clean_data.py
 ```
 **Step C: Align**
 ```bash
-python3 sanskrit-vi-translation/src/align_data.py
+uv run src/align_data.py
 ```
 
 ## 🧠 Methodology

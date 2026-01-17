@@ -33,7 +33,7 @@ def is_noise(text):
 
 
 def process_data():
-    base_dir = Path("sanskrit-vi-translation/data")
+    base_dir = Path("data")
     raw_path = base_dir / "crawled_raw.csv"
     output_path = base_dir / "vietnamese_candidates.csv"
 

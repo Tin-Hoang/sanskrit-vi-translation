@@ -15,10 +15,9 @@ def save_crawled_data(data, output_file):
     file_exists = Path(output_file).exists()
     keys = data[0].keys() if data else []
 
-    with open(output_file, "a", newline="", encoding="utf-8") as f:
+    with open(output_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=keys)
-        if not file_exists:
-            writer.writeheader()
+        writer.writeheader()
         writer.writerows(data)
     print(f"Saved {len(data)} items to {output_file}")
 

@@ -4,7 +4,7 @@ from pathlib import Path
 
 def create_aligned_dataset():
     # 1. Load the cleaned Vietnamese candidates
-    candidates_path = Path("sanskrit-vi-translation/data/vietnamese_candidates.csv")
+    candidates_path = Path("data/vietnamese_candidates.csv")
     if not candidates_path.exists():
         print("Candidates file not found.")
         return
@@ -64,7 +64,7 @@ def create_aligned_dataset():
         }
         aligned_data.append(row)
 
-    out_path = Path("sanskrit-vi-translation/data/sanskrit_vi_heart_sutra.csv")
+    out_path = Path("data/sanskrit_vi_heart_sutra.csv")
     pd.DataFrame(aligned_data).to_csv(out_path, index=False)
     print(f"Saved aligned extended dataset to {out_path}")
     print("Sample:")

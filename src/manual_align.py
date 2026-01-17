@@ -85,7 +85,7 @@ def get_modern_aligned(raw_lines):
 
 
 def main():
-    raw_path = Path("sanskrit-vi-translation/data/crawled_raw.csv")
+    raw_path = Path("data/crawled_raw.csv")
     if not raw_path.exists():
         print("No raw data")
         return
@@ -133,7 +133,7 @@ def main():
             }
         )
 
-    out_path = Path("sanskrit-vi-translation/data/sanskrit_vi_heart_sutra.csv")
+    out_path = Path("data/sanskrit_vi_heart_sutra.csv")
     pd.DataFrame(aligned_data).to_csv(out_path, index=False)
     print(f"Saved manually aligned dataset to {out_path}")
     print("Sanity Check Link 18:")
