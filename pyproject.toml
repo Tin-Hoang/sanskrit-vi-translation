@@ -11,4 +11,9 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "sacrebleu>=2.6.0",
     "torch>=2.9.1",
+    "requests",
+    "beautifulsoup4",
+    "cloudscraper",
+    "sacremoses",
+    "tabulate",
 ]
