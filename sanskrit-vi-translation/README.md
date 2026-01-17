@@ -3,12 +3,17 @@
 This project benchmarks the performance of LLMs on translating Buddhist Sanskrit texts into Vietnamese, focusing on the **Heart Sutra**.
 
 ## 📊 Status & Results
-**Current Benchmark (`results_extended.csv`):**
-- **Dataset**: Full Heart Sutra (18 parallels), aligned with 4 diverse human reference translations (Hán-Việt, Modern, Poetic, Scholarly).
-- **Source**: `budsas.net` (Crawled & Aligned).
-- **Metrics**:
-  - **BLEU**: ~1.42 (Low due to diversity/literalness difference).
-  - **BERTScore**: ~0.66 (High semantic preservation).
+**Current Benchmark (`results_benchmark.csv`):**
+Date: 2026-01-17
+
+| Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| Llama-3.3-70b |     9.34 |          0.72 |                         4.17 |                        3.89 |        60.96 |
+| GPT-OSS-120b  |     7.18 |          0.69 |                         4.11 |                        4.06 |        71.44 |
+| Kimi-k2       |    21.52 |          0.74 |                         4.50 |                        4.17 |        63.57 |
+| Qwen3-32b     |     0.48*|          0.53*|                         4.83 |                        4.83 |        84.16 |
+
+> **Note**: Qwen3-32b output included reasoning traces (`<think>...`), which heavily impacted automated metrics (BLEU/BERTScore) but was correctly rated by the LLM Judge.
 
 ## 📂 Structure
 - `data/`:
@@ -17,7 +22,7 @@ This project benchmarks the performance of LLMs on translating Buddhist Sanskrit
     - `heart_sutra_crawled_raw.csv`: Raw data from `budsas.net`.
     - `heart_sutra_vietnamese_candidates.csv`: Intermediate cleaned segments.
 - `src/`:
-    - `main.py`: **Entry point**. Runs translation, evaluation, and saves results.
+    - `main.py`: **Entry point**. Runs benchmark on multiple models.
     - `crawlers/`:
         - `budsas.py`: Crawler for `budsas.net` (LiteSpeed, cleaner).
         - `thuvienhoasen.py`: (Deprecated) Crawler for `thuvienhoasen.org` (Cloudflare blocked).
@@ -43,10 +48,10 @@ To run the full pipeline on the extended dataset:
 uv run sanskrit-vi-translation/src/main.py
 ```
 This will:
-1. Load `data/sanskrit_vi_heart_sutra.csv` (automagically falls back to standard if missing).
-2. Translate Sanskrit texts using Llama-3 (via Groq).
-3. Evaluate against **all 4 reference columns** (`ref_han_viet`, `ref_viet_modern`, etc.).
-4. Save results to `results_extended.csv`.
+1. Load `data/sanskrit_vi_heart_sutra.csv`.
+2. Translate using 4 models (Llama-3, GPT-OSS, Kimi-k2, Qwen3).
+3. Evaluate against references.
+4. Generate `BENCHMARK_REPORT.md` and `results_benchmark.csv`.
 
 ### 3. Data Collection (Optional)
 To regenerate the dataset from scratch:
@@ -65,7 +70,11 @@ python3 sanskrit-vi-translation/src/align_data.py
 ```
 
 ## 🧠 Methodology
-- **Translation Model**: Llama-3.3-70b-versatile (via Groq key).
+- **Translation Models**:
+    - `groq/llama-3.3-70b-versatile`
+    - `groq/openai/gpt-oss-120b`
+    - `groq/moonshotai/kimi-k2-instruct-0905`
+    - `groq/qwen/qwen3-32b`
 - **Evaluation**:
     - **Quantitative**:
         - **BLEU**: Corpuse score against multiple references.
