@@ -36,4 +36,7 @@ Translation:
         translations = []
         for text in texts:
             translations.append(self.translate(text))
+            import time
+
+            time.sleep(3)  # Rate limit: 30 RPM = 1 per 2s. Using 3s to be safe.
         return translations
