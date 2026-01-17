@@ -1,7 +1,6 @@
 from typing import List, Dict
 import sacrebleu
 from bert_score import score
-import torch
 import litellm
 from dotenv import load_dotenv
 
@@ -30,10 +29,12 @@ class Evaluator:
 
         return {"BLEU": bleu.score, "BERTScore_F1": F1.mean().item()}
 
-    def llm_judge(self, source: str, reference: str, candidate: str) -> Dict[str, any]:
+    def llm_judge(
+        self, source: str, reference: str, candidate: str, source_lang: str = "Sanskrit"
+    ) -> Dict[str, any]:
         prompt = f"""
 You are a professional translator and evaluator.
-Rate the following Vietnamese translation of a Sanskrit text on a scale from 1 to 5 for:
+Rate the following Vietnamese translation of a {source_lang} text on a scale from 1 to 5 for:
 1. Accuracy (Meaning preservation)
 2. Fluency (Natural Vietnamese)
 
@@ -44,7 +45,7 @@ Rubric:
 4: Accurate and readable, but with minor imperfections or slight awkwardness.
 5: Perfect translation, professionally accurate and native-level fluency.
 
-Source (Sanskrit): {source}
+Source ({source_lang}): {source}
 Reference (Vietnamese): {reference}
 Candidate (Vietnamese): {candidate}
 

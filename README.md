@@ -1,73 +1,63 @@
-# Sanskrit to Vietnamese Translation Benchmark
+# Buddhist Text Translation Benchmark
 
-This project benchmarks the performance of LLMs on translating Buddhist Sanskrit texts into Vietnamese, focusing on the **Heart Sutra**.
+This project benchmarks the performance of LLMs on translating Buddhist texts from **Sanskrit** and **Pali** into Vietnamese.
 
-## 📊 Status & Results
-**Current Benchmark (`results_benchmark.csv`):**
-Date: 2026-01-17
+## 📊 Supported Benchmarks
 
-| Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
-|:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
-| Llama-3.3-70b |     7.37 |          0.70 |                         4.33 |                        3.89 |         8.38 |
-| GPT-OSS-120b  |     9.79 |          0.69 |                         3.94 |                        3.89 |        18.39 |
-| Kimi-k2       |    21.54 |          0.74 |                         0.28 |                        0.22 |         9.38 |
-| Qwen3-32b     |     0.59 |          0.54 |                         0.00 |                        0.00 |        37.59 |
-
-> **Note**: Qwen3-32b output included reasoning traces (`<think>...`), which heavily impacted automated metrics (BLEU/BERTScore) but was correctly rated by the LLM Judge.
+| Task | Description | Source Text |
+|------|-------------|-------------|
+| `sanskrit-vi` | Sanskrit → Vietnamese (Heart Sutra) | `sanskrit_vi_heart_sutra.csv` |
+| `pali-vi` | Pali → Vietnamese (Dhammapada) | `pali_vi_dhammapada.csv` |
+| `compare` | Pali vs Sanskrit comparison | `dhammapada_udanavarga_parallel.csv` |
 
 ## 📂 Structure
 - `data/`:
-    - `sanskrit_vi_heart_sutra.csv`: The **main benchmark dataset** (18 lines, multi-ref).
-    - `heart_sutra_sanskrit_vi_parallel.csv`: Initial small dataset (2 lines).
-    - `heart_sutra_crawled_raw.csv`: Raw data from `budsas.net`.
-    - `heart_sutra_vietnamese_candidates.csv`: Intermediate cleaned segments.
+    - `sanskrit_vi_heart_sutra.csv`: Sanskrit Heart Sutra benchmark (18 lines, multi-ref).
+    - `pali_vi_dhammapada.csv`: Pali Dhammapada benchmark (TBD).
+    - `dhammapada_udanavarga_parallel.csv`: Parallel Pali/Sanskrit verses (TBD).
 - `src/`:
-    - `main.py`: **Entry point**. Runs benchmark on multiple models.
-    - `crawlers/`:
-        - `budsas.py`: Crawler for `budsas.net` (LiteSpeed, cleaner).
-        - `thuvienhoasen.py`: (Deprecated) Crawler for `thuvienhoasen.org` (Cloudflare blocked).
-    - `run_crawler.py`: Utility to run crawlers.
-    - `clean_data.py`: Cleans and segments raw crawled data.
-    - `align_data.py`: Aligns cleaned Vietnamese text with standard Sanskrit source.
+    - `main.py`: **Entry point**. Runs benchmark with configurable tasks.
+    - `translator.py`: LLM translation wrapper (supports multiple source languages).
+    - `evaluator.py`: BLEU, BERTScore, and LLM Judge evaluation.
+    - `crawlers/`: Data collection utilities.
 
 ## 🚀 Usage
 
 ### 1. Setup
-Ensure you are using `uv` and have installed dependencies:
 ```bash
 uv sync
 ```
-Create a `.env` file at the root with your API key:
+Create a `.env` file at the root:
 ```
 GROQ_API_KEY=your_key_here
 ```
 
 ### 2. Run Benchmark
-To run the full pipeline on the extended dataset:
-```bash
-uv run src/main.py
-```
-This will:
-1. Load `data/sanskrit_vi_heart_sutra.csv`.
-2. Translate using 4 models (Llama-3, GPT-OSS, Kimi-k2, Qwen3).
-3. Evaluate against references.
-4. Generate `BENCHMARK_REPORT.md` and `results_benchmark.csv`.
 
-### 3. Data Collection (Optional)
-To regenerate the dataset from scratch:
+**Sanskrit → Vietnamese (default):**
+```bash
+uv run src/main.py --task sanskrit-vi
+```
 
-**Step A: Crawl**
+**Pali → Vietnamese:**
 ```bash
-uv run src/run_crawler.py --source budsas --url "https://budsas.net/uni/u-kinh-bt-ngan/bntk.htm"
+uv run src/main.py --task pali-vi
 ```
-**Step B: Clean & Segment**
+
+**Comparison Mode (both languages on parallel data):**
 ```bash
-uv run src/clean_data.py
+uv run src/main.py --task compare
 ```
-**Step C: Align**
+
+**Custom data file:**
 ```bash
-uv run src/align_data.py
+uv run src/main.py --task sanskrit-vi --data /path/to/custom.csv
 ```
+
+### 3. Output Files
+Each task generates:
+- `results_{task}_benchmark.csv`: Detailed translations and judgments
+- `BENCHMARK_REPORT_{TASK}.md`: Summary report with metrics
 
 ## 🧠 Methodology
 - **Translation Models**:
@@ -76,7 +66,11 @@ uv run src/align_data.py
     - `groq/moonshotai/kimi-k2-instruct-0905`
     - `groq/qwen/qwen3-32b`
 - **Evaluation**:
-    - **Quantitative**:
-        - **BLEU**: Corpuse score against multiple references.
-        - **BERTScore**: Semantic similarity (F1) against primary reference (Hán-Việt).
-    - **Qualitative**: LLM-as-a-Judge (Llama-3) rating accuracy/fluency.
+    - **Quantitative**: BLEU (corpus), BERTScore (semantic F1)
+    - **Qualitative**: LLM-as-a-Judge (5-point accuracy/fluency rubric)
+
+## 🔬 Research Question
+> Which original language (Sanskrit or Pali) produces better Vietnamese translations of Buddhist texts?
+
+The `compare` task enables direct comparison by running both source languages on parallel texts (e.g., Dhammapada vs Udanavarga).
+

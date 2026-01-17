@@ -1,42 +1,93 @@
-import sys
+import argparse
+import json
 import pandas as pd
 import time
 from pathlib import Path
 import warnings
-import litellm
-
-# Suppress Pydantic serializer warnings from litellm/pydantic interaction
-warnings.filterwarnings("ignore", message=".*Pydantic serializer warnings.*")
-
-# Add current directory to path to allow imports from same directory
-current_dir = Path(__file__).parent
-sys.path.append(str(current_dir))
 
 from translator import Translator
 from evaluator import Evaluator
 from utils import load_data, save_results
 
+# Suppress Pydantic serializer warnings from litellm/pydantic interaction
+warnings.filterwarnings("ignore", message=".*Pydantic serializer warnings.*")
 
-def main():
-    # Define paths
-    base_dir = current_dir.parent
-    # Prioritize extended dataset
-    data_path = base_dir / "data" / "sanskrit_vi_heart_sutra.csv"
-    if not data_path.exists():
-        print(
-            f"Extended dataset not found at {data_path}, falling back to parallel.csv"
-        )
-        data_path = base_dir / "data" / "heart_sutra_sanskrit_vi_parallel.csv"
+# Define current directory
+current_dir = Path(__file__).parent
 
-    output_csv_path = base_dir / "results_benchmark.csv"
-    report_md_path = base_dir / "BENCHMARK_REPORT.md"
+# Task configurations for different benchmarks
+TASK_CONFIG = {
+    "sanskrit-vi": {
+        "name": "Sanskrit-Vietnamese Heart Sutra",
+        "data_file": "sanskrit_vi_heart_sutra.csv",
+        "source_column": "sanskrit_text",
+        "source_lang": "Sanskrit",
+        "output_prefix": "sanskrit",
+    },
+    "pali-vi": {
+        "name": "Pali-Vietnamese (Dhammapada)",
+        "data_file": "pali_vi_dhammapada.csv",
+        "source_column": "pali_text",
+        "source_lang": "Pali",
+        "output_prefix": "pali",
+    },
+    "compare": {
+        "name": "Pali vs Sanskrit Comparison",
+        "data_file": "dhammapada_udanavarga_parallel.csv",
+        "source_columns": ["pali_text", "sanskrit_text"],
+        "source_langs": ["Pali", "Sanskrit"],
+        "output_prefix": "comparison",
+        "compare_mode": True,
+    },
+}
 
-    print(f"Loading data from {data_path}...")
-    try:
-        df = load_data(data_path)
-    except Exception as e:
-        print(f"Error: {e}")
-        return
+# Define models to benchmark
+MODELS_CONFIG = [
+    {"id": "groq/llama-3.3-70b-versatile", "name": "Llama-3.3-70b"},
+    {"id": "groq/openai/gpt-oss-120b", "name": "GPT-OSS-120b"},
+    {"id": "groq/moonshotai/kimi-k2-instruct-0905", "name": "Kimi-k2"},
+    {"id": "groq/qwen/qwen3-32b", "name": "Qwen3-32b"},
+]
+
+# Judge model (constant for fair comparison)
+JUDGE_MODEL = "groq/llama-3.3-70b-versatile"
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Benchmark LLM translation of Buddhist texts"
+    )
+    parser.add_argument(
+        "--task",
+        choices=list(TASK_CONFIG.keys()),
+        default="sanskrit-vi",
+        help="Benchmark task to run (default: sanskrit-vi)",
+    )
+    parser.add_argument(
+        "--data",
+        type=Path,
+        help="Custom data file path (overrides task default)",
+    )
+    return parser.parse_args()
+
+
+def run_single_benchmark(
+    task_name: str,
+    source_column: str,
+    source_lang: str,
+    df: pd.DataFrame,
+    evaluator: Evaluator,
+    output_prefix: str,
+    base_dir: Path,
+) -> tuple[pd.DataFrame, list[dict]]:
+    """Run benchmark for a single source language.
+
+    Returns:
+        Tuple of (results_df with translations, benchmark_results list)
+    """
+    print(f"\n{'#' * 60}")
+    print(f"# Running: {task_name} ({source_lang})")
+    print(f"{'#' * 60}")
 
     # Identify reference columns
     ref_cols = [c for c in df.columns if c.startswith("ref_")]
@@ -44,34 +95,17 @@ def main():
         ref_cols = ["vietnamese_reference"]
 
     print(f"Using reference columns: {ref_cols}")
+    print(f"Source column: {source_column}")
 
     # Prepare references for metric calculation
-    # list of lists where outer list is per-reference-source, inner is per-sample
     transposed_references = []
     for col in ref_cols:
         transposed_references.append(df[col].fillna("").astype(str).tolist())
 
-    # Define models to benchmark
-    # Using 'groq/' prefix for litellm to use Groq provider.
-    # The suffix is the model ID passed to Groq.
-    models_config = [
-        {"id": "groq/llama-3.3-70b-versatile", "name": "Llama-3.3-70b"},
-        {"id": "groq/openai/gpt-oss-120b", "name": "GPT-OSS-120b"},
-        {"id": "groq/moonshotai/kimi-k2-instruct-0905", "name": "Kimi-k2"},
-        {"id": "groq/qwen/qwen3-32b", "name": "Qwen3-32b"},
-    ]
-
-    # Judge model (constant for fair comparison)
-    judge_model = "groq/llama-3.3-70b-versatile"
-    evaluator = Evaluator(judge_model=judge_model)
-    print(f"Using Judge Model: {judge_model}")
-
     benchmark_results = []
+    results_df = df.copy()
 
-    # Initialize separate columns for each model if not present
-    # We will just append new columns
-
-    for model_info in models_config:
+    for model_info in MODELS_CONFIG:
         model_id = model_info["id"]
         model_name = model_info["name"]
 
@@ -82,30 +116,26 @@ def main():
         translator = Translator(model_name=model_id)
 
         # 1. Translate
-        print(f"Translating {len(df)} sentences...")
-        # 1. Translate
-        print(f"Translating {len(df)} sentences...")
-        # start_time = time.time()  <-- No longer needed for inference timing
+        print(f"Translating {len(df)} sentences from {source_lang}...")
         try:
             translations, elapsed_time = translator.batch_translate(
-                df["sanskrit_text"].tolist()
+                df[source_column].tolist(),
+                source_lang=source_lang,
             )
         except Exception as e:
             print(f"Failed to translate with {model_name}: {e}")
-            # Fill with empty strings on failure
             translations = [""] * len(df)
             elapsed_time = 0.0
 
-        # elapsed_time = time.time() - start_time <-- Removed
         print(f"Translation completed in {elapsed_time:.2f}s (inference time)")
 
-        # Store translations
-        col_trans = f"trans_{model_name}"
-        df[col_trans] = translations
+        # Store translations with source lang prefix for comparison mode
+        col_trans = f"trans_{source_lang}_{model_name}"
+        results_df[col_trans] = translations
 
         # 2. Evaluate (Quantitative)
         print("Calculating metrics...")
-        candidates = df[col_trans].tolist()
+        candidates = results_df[col_trans].tolist()
         try:
             metrics = evaluator.calculate_metrics(transposed_references, candidates)
         except Exception as e:
@@ -116,12 +146,10 @@ def main():
 
         # 3. Evaluate (Qualitative - Judge)
         print("Running LLM Judge...")
-        col_judge = f"judge_{model_name}"
+        col_judge = f"judge_{source_lang}_{model_name}"
         judgements = []
 
-        # Use first reference for judge
         primary_ref_col = ref_cols[0] if ref_cols else None
-
         total_rows = len(df)
         total_accuracy = 0
         total_fluency = 0
@@ -131,27 +159,23 @@ def main():
             print(f"Judging {idx + 1}/{total_rows}...", end="\r")
 
             primary_ref_text = str(row[primary_ref_col]) if primary_ref_col else ""
-            candidate_text = row[col_trans]
+            candidate_text = results_df.loc[idx, col_trans]
 
-            # Skip judging if empty translation (failed)
             if not candidate_text.strip():
                 judge_result = (
                     '{"accuracy": 0, "fluency": 0, "explanation": "Translation failed"}'
                 )
             else:
                 judge_result = evaluator.llm_judge(
-                    row["sanskrit_text"],
+                    row[source_column],
                     primary_ref_text,
                     candidate_text,
+                    source_lang=source_lang,
                 )
 
             judgements.append(judge_result)
 
-            # Simple parsing for averaging (assuming json string returned)
             try:
-                import json
-
-                # Handle cases where judge returns python dict string or actual json
                 if isinstance(judge_result, str):
                     clean_json = (
                         judge_result.replace("```json", "").replace("```", "").strip()
@@ -165,21 +189,20 @@ def main():
                 total_accuracy += acc
                 total_fluency += flu
                 valid_judgements += 1
-            except:
+            except Exception:
                 pass
 
-            # Rate limit mitigation mostly for Judge
-            time.sleep(3)
+            time.sleep(3)  # Rate limit
 
         print("\nJudge completed.")
-        df[col_judge] = judgements
+        results_df[col_judge] = judgements
 
         avg_accuracy = total_accuracy / valid_judgements if valid_judgements > 0 else 0
         avg_fluency = total_fluency / valid_judgements if valid_judgements > 0 else 0
 
-        # Collect consolidated stats
         benchmark_results.append(
             {
+                "Source Lang": source_lang,
                 "Model": model_name,
                 "BLEU": metrics.get("BLEU", 0),
                 "BERTScore": metrics.get("BERTScore_F1", 0),
@@ -189,14 +212,21 @@ def main():
             }
         )
 
-    # Save detailed CSV
-    save_results(df, output_csv_path)
+    return results_df, benchmark_results
 
-    # Generate Report
+
+def generate_report(
+    benchmark_results: list[dict],
+    task_name: str,
+    data_path: Path,
+    sample_count: int,
+    report_path: Path,
+):
+    """Generate markdown benchmark report."""
     benchmark_df = pd.DataFrame(benchmark_results)
 
-    # Rename columns with arrows and specific names
     column_mapping = {
+        "Source Lang": "Source",
         "Model": "Model",
         "BLEU": "BLEU ↑",
         "BERTScore": "BERTScore ↑",
@@ -208,11 +238,11 @@ def main():
 
     markdown_table = benchmark_df.to_markdown(index=False, floatfmt=".2f")
 
-    report_content = f"""# Sanskrit-Vietnamese Translation Benchmark Results
+    report_content = f"""# {task_name} Benchmark Results
 
 **Date**: {time.strftime("%Y-%m-%d %H:%M:%S")}
-**Judge Model**: {judge_model}
-**Dataset**: {data_path.name} ({len(df)} samples)
+**Judge Model**: {JUDGE_MODEL}
+**Dataset**: {data_path.name} ({sample_count} samples)
 
 ## Performance Summary
 
@@ -221,16 +251,92 @@ def main():
 *Evaluation powered by LLM Judge (Llama-3.3-70b) using a 5-point rubric for Accuracy and Fluency.*
 """
 
-    with open(report_md_path, "w") as f:
+    with open(report_path, "w") as f:
         f.write(report_content)
+
+    print(f"\nSummary:\n{markdown_table}")
+
+
+def main():
+    args = parse_args()
+    task_key = args.task
+    task_cfg = TASK_CONFIG[task_key]
+
+    base_dir = current_dir.parent
+
+    # Determine data path
+    if args.data:
+        data_path = args.data
+    else:
+        data_path = base_dir / "data" / task_cfg["data_file"]
+
+    # Output paths
+    output_prefix = task_cfg["output_prefix"]
+    output_csv_path = base_dir / f"results_{output_prefix}_benchmark.csv"
+    report_md_path = base_dir / f"BENCHMARK_REPORT_{output_prefix.upper()}.md"
+
+    print(f"Task: {task_cfg['name']}")
+    print(f"Loading data from {data_path}...")
+
+    try:
+        df = load_data(data_path)
+    except Exception as e:
+        print(f"Error: {e}")
+        return
+
+    evaluator = Evaluator(judge_model=JUDGE_MODEL)
+    print(f"Using Judge Model: {JUDGE_MODEL}")
+
+    all_benchmark_results = []
+
+    # Check if this is comparison mode
+    if task_cfg.get("compare_mode"):
+        # Run benchmark for each source language
+        source_columns = task_cfg["source_columns"]
+        source_langs = task_cfg["source_langs"]
+        results_df = df.copy()
+
+        for src_col, src_lang in zip(source_columns, source_langs):
+            results_df, benchmark_results = run_single_benchmark(
+                task_name=task_cfg["name"],
+                source_column=src_col,
+                source_lang=src_lang,
+                df=results_df,
+                evaluator=evaluator,
+                output_prefix=output_prefix,
+                base_dir=base_dir,
+            )
+            all_benchmark_results.extend(benchmark_results)
+    else:
+        # Single source language benchmark
+        results_df, benchmark_results = run_single_benchmark(
+            task_name=task_cfg["name"],
+            source_column=task_cfg["source_column"],
+            source_lang=task_cfg["source_lang"],
+            df=df,
+            evaluator=evaluator,
+            output_prefix=output_prefix,
+            base_dir=base_dir,
+        )
+        all_benchmark_results.extend(benchmark_results)
+
+    # Save detailed CSV
+    save_results(results_df, output_csv_path)
+
+    # Generate Report
+    generate_report(
+        all_benchmark_results,
+        task_cfg["name"],
+        data_path,
+        len(df),
+        report_md_path,
+    )
 
     print(f"\n{'=' * 50}")
     print("BENCHMARK COMPLETED")
     print(f"Detailed results: {output_csv_path}")
     print(f"Summary report: {report_md_path}")
     print(f"{'=' * 50}")
-    print("\nSummary:")
-    print(markdown_table)
 
 
 if __name__ == "__main__":
