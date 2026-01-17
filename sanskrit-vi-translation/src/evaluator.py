@@ -33,9 +33,16 @@ class Evaluator:
     def llm_judge(self, source: str, reference: str, candidate: str) -> Dict[str, any]:
         prompt = f"""
 You are a professional translator and evaluator.
-Rate the following Vietnamese translation of a Sanskrit text on a scale from 1 to 5 (5 is best) for:
-1. Accuracy (meaning preservation)
-2. Fluency (natural Vietnamese)
+Rate the following Vietnamese translation of a Sanskrit text on a scale from 1 to 5 for:
+1. Accuracy (Meaning preservation)
+2. Fluency (Natural Vietnamese)
+
+Rubric:
+1: Completely incorrect, meaningless, or hallucinated.
+2: Major errors, missing key information, or very awkward phrasing.
+3: Generally preserves meaning but has noticeable errors or unnatural phrasing.
+4: Accurate and readable, but with minor imperfections or slight awkwardness.
+5: Perfect translation, professionally accurate and native-level fluency.
 
 Source (Sanskrit): {source}
 Reference (Vietnamese): {reference}
