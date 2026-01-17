@@ -1,0 +1,1744 @@
+id,pali_text,sanskrit_text,ref_vietnamese,theme,source,trans_Pali_Llama-3.3-70b,judge_Pali_Llama-3.3-70b,trans_Pali_GPT-OSS-120b,judge_Pali_GPT-OSS-120b,trans_Pali_Kimi-k2,judge_Pali_Kimi-k2,trans_Pali_Qwen3-32b,judge_Pali_Qwen3-32b,trans_Sanskrit_Llama-3.3-70b,judge_Sanskrit_Llama-3.3-70b,trans_Sanskrit_GPT-OSS-120b,judge_Sanskrit_GPT-OSS-120b,trans_Sanskrit_Kimi-k2,judge_Sanskrit_Kimi-k2,trans_Sanskrit_Qwen3-32b,judge_Sanskrit_Qwen3-32b
+1,"Manopubbaṅgamā dhammā, manoseṭṭhā manomayā; Manasā ce paduṭṭhena, bhāsati vā karoti vā; Tato naṃ dukkhamanveti, cakkaṃva vahato padaṃ.",Manaḥpūrvāṅgamā dharmā manaḥśreṣṭhā manojavāḥ; Manasā hi praduṣṭena bhāṣate vā karoti vā; Tato'sya duḥkham anveti cakram iva vahataḥ padam.,"Ý dẫn đầu các pháp, Ý làm chủ, ý tạo; Nếu với ý ô nhiễm, Nói lên hay hành động, Khổ não bước theo sau, Như xe, chân vật kéo.",Mind (Impure),Dhammapada 1 / Udanavarga 31.23,"Các pháp đều do tâm dẫn đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm bị ô nhiễm, thì lời nói và hành động sẽ theo đó mà bị nhiễm ô; và từ đó, khổ sẽ theo đuổi người như bánh xe theo chân con bò.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and flows naturally in Vietnamese, conveying the idea that the mind leads and creates all phenomena, and that a polluted mind leads to suffering.""
+}","Mọi pháp đều bắt nguồn từ tâm, do tâm làm chủ và được tạo nên từ tâm; khi tâm tà, người nói hay làm gì, thì khổ sẽ theo sau như bánh xe theo chân trâu.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Pali text, with minor adjustments for natural Vietnamese phrasing, such as using 'mọi pháp' for 'dhammā' and 'bánh xe theo chân trâu' for 'cakkaṃva vahato padaṃ', which enhances readability.""
+}","Tâm dẫn đầu các pháp, tâm là chủ, tâm tạo; nếu với tâm ô nhiễm, nói hay làm; thì khổ đeo đuổi người ấy, như bánh xe theo dấu chân con vật kéo.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is phrased in a natural and fluent Vietnamese manner.""
+}","<think>
+Okay, let's see. The user wants me to translate this Pali text into Vietnamese. They specified to provide only the translation, no extra commentary. So I need to make sure I don't add any explanations or notes.
+
+First, I need to understand the Pali text. The text is a verse from the Dhammapada, right? Let me check each line. The first line is ""Manopubbaṅgamā dhammā, manoseṭṭhā manomayā;"" – I remember this is about the mind being the forerunner of all phenomena. The second line: ""Manasā ce paduṭṭhena, bhāsati vā karoti vā;"" – if one speaks or acts with a corrupted mind. Then the third line: ""Tato naṃ dukkhamanveti, cakkaṃva vahato padaṃ."" – suffering follows them like the wheel of the cart.
+
+Now, translating into Vietnamese. Let me recall the standard translation of this verse. The first part: ""Những pháp do tâm khởi đầu..."" Hmm, ""Manopubbaṅgamā dhammā"" is ""Những pháp do tâm khởi đầu"". Then ""manoseṭṭhā manomayā"" – ""tâm làm chủ, tâm tạo nên"". 
+
+Next line: ""Nếu người nào tâm tà ác..."" for ""Manasā ce paduṭṭhena"". Then ""nói năng hay hành động..."" for ""bhāsati vā karoti vā"". 
+
+Third line: ""Chỗ ấy đau khổ theo gót..."" for ""Tato naṃ dukkhamanveti"". And the last part: ""như bánh xe theo bánh xe."" for ""cakkaṃva vahato padaṃ"".
+
+Wait, let me check the exact wording. Sometimes different translations might vary slightly. For example, ""cakkaṃva vahato padaṃ"" is often translated as ""như bánh xe theo bánh xe"" or ""như bánh xe theo chân lăn"". I think the former is more common. Also, making sure the punctuation matches the original. The original uses semicolons and periods, so I should follow that structure in Vietnamese.
+
+Let me piece it together line by line. First line: ""Những pháp do tâm khởi đầu, tâm làm chủ, tâm tạo nên;"" Second line: ""Nếu người nào tâm tà ác, nói năng hay hành động;"" Third line: ""Chỗ ấy đau khổ theo gót, như bánh xe theo bánh xe.""
+
+Wait, the original third line starts with ""Tato naṃ dukkhamanveti"", which is ""Therefore, suffering follows him..."" So maybe ""Chỗ ấy đau khổ theo gót"" is correct. But sometimes it's translated as ""Nơi ấy, đau khổ theo gót"". Hmm. Also, ""cakkaṃva vahato padaṃ"" – ""like the wheel of the cart"" – so ""như bánh xe theo bánh xe"" is a common metaphor here. 
+
+I think the standard Vietnamese translation of this verse is:
+
+Những pháp do tâm khởi đầu,
+Tâm làm chủ, tâm tạo nên;
+Nếu người nào tâm tà ác,
+Nói năng hay hành động;
+Chỗ ấy đau khổ theo gót,
+Như bánh xe theo bánh xe.
+
+Yes, that seems right. Let me check a reference. Yes, in the Dhammapada, this is the standard translation. So I'll present that without any extra text, as the user requested. Make sure there's no commentary, just the translation. Also, check for any typos or line breaks. The user provided the original with line breaks, so I'll keep the same structure in Vietnamese with line breaks and semicolons as in the original.
+</think>
+
+Những pháp do tâm khởi đầu, tâm làm chủ, tâm tạo nên;  
+Nếu người nào tâm tà ác, nói năng hay hành động;  
+Chỗ ấy đau khổ theo gót, như bánh xe theo bánh xe.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation perfectly preserves the meaning of the original Pali text and is written in native-level Vietnamese.""
+}","Các pháp đều bắt đầu từ tâm, là những điều tốt đẹp nhất và nhanh nhẹn nhất của tâm. Bởi vì khi tâm bị ô nhiễm, thì lời nói và hành động của người đó cũng sẽ bị ảnh hưởng; và từ đó, khổ đau sẽ theo đuổi người đó như bánh xe theo chân ngựa kéo.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly more verbose language than the reference translation, and the phrase 'những điều tốt đẹp nhất và nhanh nhẹn nhất của tâm' could be more concise.""
+}","Đức pháp đi trước tâm, tinh hoa của tâm là sự sáng suốt; khi tâm bị xáo trộn, người ta sẽ nói hoặc hành động; rồi nỗi khổ của người ấy sẽ theo sau như bánh xe được mang theo bước chân.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly different wording and phrasing, such as 'đức pháp' instead of 'ý' and 'tinh hoa của tâm là sự sáng suốt' which is a more interpretive translation of 'manojavāḥ'. The fluency is good, but some phrases like 'rồi nỗi khổ của người ấy sẽ theo sau' could be more naturally expressed in Vietnamese.""
+}","Mọi điều thiện đều khởi đầu từ tâm, tâm là tối thượng, tâm dẫn đầu; nếu tâm bị ô nhiễm, thì dù nói hay làm gì cũng đều theo đó mà trở nên xấu; và như bánh xe lăn theo dấu chân xe, khổ đau liền đeo đuổi người ấy.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is expressed in natural, native-level Vietnamese.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to make sure I understand the original text correctly. The Sanskrit verse is about the mind's role in actions and their consequences.
+
+The first line: ""Manaḥpūrvāṅgamā dharmā manaḥśreṣṭhā manojavāḥ"" – Here, ""manaḥpūrvāṅgamā"" probably means that actions (dharmā) are preceded by the mind. ""Manaḥśreṣṭhā"" might be saying that the mind is the best, and ""manojavāḥ"" could mean swift like the mind. So, the idea is that the mind is the starting point of actions, superior, and quick.
+
+Second line: ""Manasā hi praduṣṭena bhāṣate vā karoti vā"" – This seems to say that through a polluted mind, one speaks or acts. The pollution of the mind leads to speech or actions.
+
+Third line: ""Tato'sya duḥkham anveti cakram iva vahataḥ padam."" – This part is a bit trickier. ""Tato'sya duḥkham anveti"" might mean that from this, suffering follows. ""Cakram iva vahataḥ padam"" – comparing it to a wheel (cakra) that follows the foot, so like a wheel following a foot, implying that suffering follows actions like a wheel following a chariot.
+
+Now, translating into Vietnamese. Need to keep the poetic structure but make sure the meaning is clear. Let's break it down line by line.
+
+First line: ""Những điều thiện lành đều bắt nguồn từ tâm, tâm là điều cao quý nhất, nhanh nhạy nhất."" Here, ""dharmā"" is translated as ""điều thiện lành,"" ""manaḥśreṣṭhā"" as ""cao quý nhất,"" and ""manojavāḥ"" as ""nhanh nhạy nhất.""
+
+Second line: ""Bởi tâm nhiễm ô, người ta nói năng hay hành động."" ""Praduṣṭena"" is ""nhiễm ô,"" and the structure is explaining that through a polluted mind, one speaks or acts.
+
+Third line: ""Nên khổ đau theo đuổi y như bánh xe theo chân ngựa."" Comparing suffering to a wheel following a foot, here ""cakram iva vahataḥ padam"" is rendered as ""bánh xe theo chân ngựa,"" which is a common metaphor in Vietnamese for something that follows closely.
+
+Check for consistency and flow. Make sure the metaphors make sense in Vietnamese. The wheel following the foot is a bit abstract, but using ""chân ngựa"" (horse's foot) makes the metaphor clearer. Also, ensure that the terms like ""tâm"" (mind) are correctly used in the context of Buddhist or philosophical texts in Vietnamese.
+
+Double-check the grammar and word order to match Vietnamese syntax. For example, in the first line, the order is adjusted to make sense in Vietnamese. Also, confirm that ""duḥkham"" is correctly translated as ""khổ đau"" (suffering).
+
+Finally, review the entire translation to ensure it's faithful to the original and conveys the intended meaning without any added commentary, as per the user's request.
+</think>
+
+Những điều thiện lành đều bắt nguồn từ tâm, tâm là điều cao quý nhất, nhanh nhạy nhất; Bởi tâm nhiễm ô, người ta nói năng hay hành động; Nên khổ đau theo đuổi y như bánh xe theo chân ngựa.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with minor imperfections in conveying the poetic structure and metaphors, and is readable with slight awkwardness in a few phrases.""
+}"
+2,"Manopubbaṅgamā dhammā, manoseṭṭhā manomayā; Manasā ce pasannena, bhāsati vā karoti vā; Tato naṃ sukhamanveti, chāyāva anapāyinī.",Manaḥpūrvāṅgamā dharmā manaḥśreṣṭhā manojavāḥ; Manasā hi prasannena bhāṣate vā karoti vā; Tato'sya sukham anveti chāyā iva anapāyinī.,"Ý dẫn đầu các pháp, Ý làm chủ, ý tạo; Nếu với ý thanh tịnh, Nói lên hay hành động, An lạc bước theo sau, Như bóng, không rời hình.",Mind (Pure),Dhammapada 2 / Udanavarga 31.24,"Các pháp do tâm dẫn đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm trong sáng, thì bất cứ điều gì người ta nói hay làm, hạnh phúc sẽ theo đuổi họ như một bóng không bao giờ rời bỏ.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and flows naturally in Vietnamese.""
+}","Những hiện tượng đều do tâm sinh ra, tâm là chủ nhân, tâm là nguồn gốc; khi tâm vui vẻ, dù nói hay hành động, hạnh phúc sẽ theo như bóng không thể tránh được.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly different wording and phrasing than the reference translation, and has minor imperfections in conveying the original message.""
+}","Mọi pháp đều do tâm dẫn đầu, tâm là chủ, do tâm tạo; nếu với tâm thanh tịnh, người ấy nói hay làm; thì hạnh phúc theo đuổi như bóng không rời.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Pali text, but has a slightly formal tone and word choice, which is very close to native-level fluency.""
+}","<think>
+Okay, I need to translate this Pali text into Vietnamese. Let me start by looking at each line carefully. The first line is ""Manopubbaṅgamā dhammā, manoseṭṭhā manomayā;"". I remember that ""Mano"" in Pali often relates to the mind or intention. ""Pubbaṅgamā"" might be a compound word. Breaking it down, ""pubba"" could mean front or beginning, and ""gamā"" might be related to going or movement. So ""Manopubbaṅgamā"" could mean ""led by the mind"" or ""mind-led"". ""Dhammā"" is usually translated as ""phenomena"" or ""laws"". 
+
+Next part: ""manoseṭṭhā manomayā;"". ""Manoseṭṭhā"" – ""seṭṭha"" means best or chief, so ""mind is the chief"". ""Manomayā"" – ""maya"" can mean made of or created, so ""mind-made"". So the first line might be something like ""Phenomena are led by the mind, mind is the chief, mind-made.""
+
+Second line: ""Manasā ce pasannena, bhāsati vā karoti vā;"". ""Manasā"" is with the mind. ""Ce pasannena"" – ""ce"" is if, ""pasannena"" is with purity or clear. So ""If one speaks or acts with a pure mind..."" ""Bhāsati vā karoti vā"" – ""bhāsati"" is speaks, ""karoti"" is does, so ""speaking or acting"".
+
+Third line: ""Tato naṃ sukhamanveti, chāyāva anapāyinī."" ""Tato"" means from that, ""naṃ"" is him/her, ""sukhamanveti"" – ""sukha"" is happiness, ""manveti"" might be follows or pursues. ""Chāyāva"" is like a shadow, ""anapāyinī"" – ""an"" is not, ""apāyinī"" is lost or destroyed. So ""Happiness follows him like a shadow that never departs.""
+
+Putting it all together, making sure the Vietnamese flows naturally. Let me check each term again for accuracy. Maybe ""dhammā"" as ""các pháp"" (phenomena). ""Manopubbaṅgamā"" could be ""các pháp do tâm làm đầu"". Wait, maybe ""Các pháp do tâm phát khởi, tâm là chủ, tâm tạo ra;"". Then the second line: ""Nếu người nào nói năng hay hành động với tâm trong sạch;"". Third line: ""Người ấy sẽ theo đó mà được hạnh phúc, như bóng hình không bao giờ rời xa."" 
+
+I should verify if ""sukhamanveti"" is ""happiness follows"" or ""happiness is pursued"". Also, ""chāyāva anapāyinī"" as ""bóng hình không bao giờ rời xa"" seems right. Let me make sure the grammar is correct in Vietnamese. Maybe adjust the structure for better clarity. For example, ""Các pháp do tâm phát khởi, tâm là chủ chốt, tâm tạo thành;"" for the first line. Second line: ""Nếu người ấy nói năng hay hành động với tâm thanh tịnh;"" Third line: ""Người ấy sẽ theo đó mà được hạnh phúc, như bóng theo hình không bao giờ rời xa."" 
+
+I think that's accurate. Let me cross-check with existing translations if possible. Some parts might be similar to well-known Buddhist sayings. This seems like a version of the Karaniya Metta Sutta or similar. The structure and message align with teachings on the mind's role in creating experiences. The translation should reflect that the mind is the forerunner, the chief, made by the mind. If one speaks or acts with a pure mind, happiness follows like a shadow. 
+
+Yes, I think the translation is correct. Now, present only the translation without any extra commentary as requested.
+</think>
+
+Các pháp do tâm phát khởi, tâm là chủ chốt, tâm tạo thành; Nếu người ấy nói năng hay hành động với tâm thanh tịnh; Người ấy sẽ theo đó mà được hạnh phúc, như bóng theo hình không bao giờ rời xa.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and flows naturally in Vietnamese, reflecting a deep understanding of both the source language and the target language.""
+}","Đạo đức đi trước tâm, là điều tốt đẹp nhất của tâm, và nhanh như tâm; Bằng một tâm vui vẻ, người ta nói hoặc hành động; Từ đó, hạnh phúc theo đuổi họ như một bóng không bao giờ rời bỏ.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but has minor imperfections in wording and phrasing, such as 'đi trước tâm' instead of 'dẫn đầu các pháp' and 'hạnh phúc theo đuổi' instead of 'an lạc bước theo sau'. The fluency is good, but not native-level, with some slightly awkward expressions.""
+}","Đức pháp xuất phát từ tâm, là điều tốt nhất của tâm, sáng suốt của tâm; khi tâm thanh thản, người ấy nói hoặc hành động; khi ấy, hạnh phúc của người ấy sẽ theo như bóng, không thể tránh được.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly different wording and phrasing compared to the reference translation, and the fluency is good but not perfect due to some minor awkwardness.""
+}","Các pháp đều do tâm dẫn đầu, tâm là cao nhất, tâm hành động nhanh nhất; vì khi tâm thanh tịnh, dù nói hay làm gì, hạnh phúc liền theo sau như bóng không rời.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with minor imperfections in wording and phrasing, and is readable with slight awkwardness in Vietnamese.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The user provided a Sanskrit verse and wants it translated into Vietnamese without any extra commentary.
+
+Looking at the Sanskrit lines:
+
+1. Manaḥpūrvāṅgamā dharmā manaḥśreṣṭhā manojavāḥ;
+2. Manasā hi prasannena bhāṣate vā karoti vā;
+3. Tato'sya sukham anveti chāyā iva anapāyinī.
+
+I'll start by breaking down each line. The first line seems to mention ""dharmā"" (dharma) being connected to the mind (manas). Words like ""pūrvāṅgamā"" might mean ""prior"" or ""previous,"" so maybe ""Dharma is prior to the mind..."" Then ""manasḥreṣṭhā"" could be ""the best of the mind"" and ""manojavāḥ"" as ""swift of mind.""
+
+Second line: ""Manasā hi prasannena bhāṣate vā karoti vā;"" Here, ""prasannena"" means ""happy"" or ""joyful,"" so ""With a joyful mind, one speaks or acts..."" The ""hi"" is a particle, maybe emphasizing the statement.
+
+Third line: ""Tato'sya sukham anveti chāyā iva anapāyinī."" ""Tataḥ"" means ""thereafter,"" ""sukham"" is happiness, ""anveti"" follows, ""chāyā iva"" like a shadow, ""anapāyinī"" imperishable. So something like ""Happiness follows like an imperishable shadow.""
+
+Now, translating each part into Vietnamese while keeping the poetic structure. Need to ensure that terms like ""dharma"" are correctly translated. In Vietnamese, ""dharma"" is often ""pháp"" but in context, maybe ""đạo lý"" or ""pháp tắc."" However, since it's a philosophical text, using ""pháp"" might be appropriate.
+
+First line: ""Những điều thuộc về pháp tắc đều xuất phát từ tâm, tâm là điều cao quý nhất, nhanh nhạy nhất;""
+Second line: ""Bởi vì với tâm hồn vui vẻ, người ta nói năng hay hành động;""
+Third line: ""Từ đó, niềm vui sẽ theo đuổi như bóng hình không bao giờ mất đi.""
+
+Wait, checking the structure. The original Sanskrit uses ""manas"" repeatedly, so the translation should reflect the emphasis on the mind. Also, ""manojavāḥ"" is ""swift of mind,"" so ""nhanh nhạy nhất"" seems right. 
+
+For the third line, ""chāyā iva anapāyinī"" is ""like an imperishable shadow,"" so ""bóng hình không bao giờ mất đi"" captures that. 
+
+Double-checking the flow. The first line sets up the mind's role in dharma, the second line explains action and speech from a joyful mind, leading to the third line about happiness following like a shadow. The translation should maintain that logical flow. 
+
+I think this should be accurate. Let me put it all together now.
+</think>
+
+Những điều thuộc về đạo lý đều xuất phát từ tâm, tâm là điều cao quý nhất, nhanh nhạy nhất; bởi vì với tâm hồn vui vẻ, người ta nói năng hay hành động; từ đó, niềm vui sẽ theo đuổi như bóng hình không bao giờ mất đi.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with minor imperfections in conveying the nuances of 'dharma' and 'manojavāḥ', but maintains a readable and natural flow in Vietnamese.""
+}"
+3,"Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me; Ye ca taṃ upanayhanti, veraṃ tesaṃ na sammati.","Ākrośan mām avocan mām, ayojan mām ajāpayet; Atra ye hy upanahyanti, vairaṃ teṣāṃ na śāmyati.","Nó mắng tôi, đánh tôi, Nó thắng tôi, cướp tôi. Ai ôm hiềm hận ấy, Hận thù không thể nguôi.",Hatred (Holding),Dhammapada 3 / Udanavarga 14.9,"Không ai có thể làm hại tôi, tôi không làm hại ai; Những ai gợi chuyện với tôi, tôi không xem đó là oán thù.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation does not preserve the original meaning, as it changes the context of harm and retaliation to a more passive and vague statement, but the Vietnamese phrasing is natural and readable.""
+}","Ai chửi tôi, đánh tôi, hay gọi tôi là kẻ nói dối; những kẻ làm như vậy, hận thù của họ không được chấp nhận.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the original Pali text, but uses slightly more formal language than the reference translation, and changes 'Nó' to 'Ai', which is a reasonable but not perfect choice.""
+}","Người đã mắng ta, đánh ta, thắng ta, cướp ta; Những ai ôm giữ hận thù ấy, oán đối với họ không bao giờ dừng.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the original meaning, but the phrasing could be slightly more natural in Vietnamese.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The Pali sentence is: ""Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me; Ye ca taṃ upanayhanti, veraṃ tesaṃ na sammati.""
+
+Starting with the first part: ""Akkocchi maṃ avadhi maṃ."" Breaking it down, ""Akkocchi"" might be a form of ""akkocana"" meaning to blame or accuse. ""Maṃ"" is ""me."" ""Avadhi"" could be from ""avadāna"" meaning to strike or punish. So maybe ""You blamed me, you struck me.""
+
+Next, ""ajini maṃ ahāsi me."" ""Ajini"" might be ""ajina"" meaning skin or perhaps a name. ""Ahāsi"" is from ""āhāsati"" meaning to say or speak. So ""O Ajina, you spoke to me."" But since ""me"" is at the end, maybe ""you said to me, O Ajina.""
+
+The second line: ""Ye ca taṃ upanayhanti, veraṃ tesaṃ na sammati."" ""Ye ca"" is ""those who."" ""Upanayhanti"" is from ""upanaya"" meaning to bring near or lead. ""Veraṃ"" is ""enmity"" or ""hatred."" ""Tesaṃ"" is ""their."" ""Na sammati"" is ""do not agree"" or ""do not approve."" So ""Those who bring him near, their enmity is not approved.""
+
+Putting it all together, considering the structure and possible poetic form. The first part is someone accusing or blaming the speaker, perhaps in a legal or confrontational context. The second part talks about those who bring someone close not being approved in their enmity.
+
+Now translating into Vietnamese. Need to maintain the poetic structure if possible. Let's check each part again.
+
+""Akkocchi maṃ avadhi maṃ"" – ""Bạn đã trách mắng tôi, bạn đã đánh tôi."" 
+
+""Ajini maṃ ahāsi me"" – ""Ajini, bạn đã nói với tôi."" But since ""me"" is at the end, maybe ""Ajini, bạn đã bảo tôi."" 
+
+""Ye ca taṃ upanayhanti, veraṃ tesaṃ na sammati."" – ""Những ai dẫn anh ta đến, lòng thù oán của họ không được chấp nhận."" 
+
+Wait, ""upanayhanti"" is ""lead him to"" or ""bring him near."" So maybe ""Những người dẫn anh ta đến, lòng thù hận của họ không được chấp thuận.""
+
+But need to check the flow. Also, ""veraṃ tesaṃ na sammati"" – ""their enmity is not approved."" So ""lòng thù hận của họ không được chấp nhận.""
+
+Putting it all together:
+
+""Bạn đã trách mắng tôi, bạn đã đánh tôi, Ajini, bạn đã bảo tôi; Những người dẫn anh ta đến, lòng thù hận của họ không được chấp nhận.""
+
+Wait, the original has a semicolon between the two parts. Maybe in Vietnamese, it's better to split into two lines for poetic effect. Also, ""avadhi"" as ""đánh"" (hit) might be too literal. Maybe ""trừng phạt"" (punish) is better. Let me check again.
+
+""Akkocchi"" – to blame or accuse. ""Ava"" + ""dhi"" – ""avadhi"" could be ""trừng phạt"" (punish). So ""Bạn đã trách mắng tôi, bạn đã trừng phạt tôi.""
+
+""Ajini maṃ ahāsi me"" – ""Ajini, bạn đã bảo tôi."" Or ""Ajini, bạn đã nói với tôi.""
+
+Second line: ""Ye ca taṃ upanayhanti, veraṃ tesaṃ na sammati."" – ""Những người dẫn anh ta đến, lòng thù hận của họ không được chấp nhận.""
+
+So the full translation:
+
+Bạn đã trách mắng tôi, bạn đã trừng phạt tôi, Ajini, bạn đã bảo tôi; Những người dẫn anh ta đến, lòng thù hận của họ không được chấp nhận.
+
+But maybe adjust for better flow. Perhaps:
+
+Bạn đã trách mắng tôi, trừng phạt tôi; Ajini, bạn đã nói với tôi. Những ai dẫn anh ta đến, lòng thù hận của họ không được chấp nhận.
+
+That splits the first part into two clauses, which might be better. Also, ""avadhi"" as ""trừng phạt"" is more accurate. Also, ""ahāsi me"" is ""spoke to me,"" so ""nói với tôi.""
+
+Final check for accuracy and flow. Seems okay. The second line is about those who bring him near, their enmity is not approved. So the translation captures that.
+</think>
+
+Bạn đã trách mắng tôi, trừng phạt tôi; Ajini, bạn đã nói với tôi. Những ai dẫn anh ta đến, lòng thù hận của họ không được chấp nhận.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the original Pali text, but minor imperfections and slight awkwardness in phrasing are present.""
+}","Đừng la mắng tôi, đừng trách móc tôi; Ở đây, những ai buộc tôi phải im lặng, thì sự thù hận của họ sẽ không bao giờ nguôi.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation does not accurately preserve the original meaning, with 'la mắng' and 'trách móc' not conveying the intensity of 'Ākrośan' and 'ayojan', and 'buộc tôi phải im lặng' misinterpreting 'upanahyanti'. However, the Vietnamese phrasing is generally fluent and natural.""
+}","Đừng chỉ trích tôi, đừng khiêu khích tôi; ở đây, những người tức giận, thù hận của họ không nguôi ngoai.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the original Sanskrit text, but uses more polite language than the reference translation, and the word choice is natural and fluent in Vietnamese.""
+}","Người chửi mắng tôi, nói xấu tôi, không liên kết vôi, không sai khiến tôi; những ai gây thù hằn ấy, mối thù của họ không bao giờ lắng dịu.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning but has noticeable errors, such as 'không liên kết vôi' which seems to be a mistranslation, and 'không sai khiến tôi' which doesn't fully convey the original meaning. However, the fluency is good, with natural Vietnamese phrasing.""
+}","<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation with no extra commentary. First, I need to make sure I understand the Sanskrit correctly.
+
+The text is: Ākrośan mām avocan mām, ayojan mām ajāpayet; Atra ye hy upanahyanti, vairaṃ teṣāṃ na śāmyati.
+
+Breaking it down, ""Ākrośan"" could be a form of ""ākrośa"" meaning to curse or scold. ""Mām"" is ""me."" ""Avocan"" might be from ""avacana"" meaning to speak or say. ""Ayojan"" could be from ""ayojana"" meaning to not destroy or not cause to perish. ""Ajāpayet"" is likely from ""jāpayati"" meaning to destroy, so ""ajāpayet"" would be ""does not destroy."" 
+
+The second part: ""Atra"" is ""here."" ""Ye hy upanahyanti"" – ""upanahyanti"" might be from ""upanāh"" meaning to hide or conceal. ""Vairaṃ"" is ""enmity"" or ""hatred."" ""Teṣāṃ"" is ""their."" ""Na śāmyati"" – ""śāmyati"" means to cease or subside, so ""na śāmyati"" is ""does not subside.""
+
+Putting it together in English first: ""They curse me, they speak to me; they do not destroy me. Here, those who hide, their enmity does not subside.""
+
+Now translating that into Vietnamese. ""Họ chửi tôi, họ nói với tôi; họ không tiêu diệt tôi. Ở đây, những người che giấu, lòng thù hận của họ không dứt.""
+
+Wait, let me check again. ""Avocan mām"" – ""avocan"" is ""they say"" or ""they speak."" So maybe ""Họ mắng tôi, họ nói với tôi; họ không thể tiêu diệt tôi. Ở đây, những người che giấu, lòng thù hận của họ không bao giờ dứt.""
+
+I think ""avocan"" here is more like ""they speak to me"" but in context, maybe ""they curse me"" or ""they scold me."" ""Ākrośan mām"" is definitely ""they curse me."" So ""Họ chửi tôi, họ nói với tôi; họ không tiêu diệt tôi. Ở đây, những người che giấu, lòng thù hận của họ không dứt.""
+
+I should make sure the verbs are correctly translated. ""Ayojan mām ajāpayet"" – ""they do not destroy me."" So ""họ không tiêu diệt tôi."" 
+
+For the second line: ""Atra ye hy upanahyanti"" – ""those who hide here."" ""Vairaṃ teṣāṃ na śāmyati"" – ""their enmity does not subside."" So ""lòng thù hận của họ không dứt.""
+
+Yes, that seems accurate. Now, the final translation in Vietnamese should be concise and match the original structure. Let me put it all together again.
+</think>
+
+Họ chửi tôi, họ nói với tôi; họ không tiêu diệt tôi. Ở đây, những người che giấu, lòng thù hận của họ không dứt.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the original meaning with minor imperfections in verb choice and sentence structure.""
+}"
+4,"Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me; Ye ca taṃ nūpanayhanti, veraṃ tesūpasammati.","Ākrośan mām avocan mām, ayojan mām ajāpayet; Atra ye na hy upanahyanti, vairaṃ teṣāṃ praśāmyati.","Nó mắng tôi, đánh tôi, Nó thắng tôi, cướp tôi. Không ôm hiềm hận ấy, Hận thù được tự nguôi.",Hatred (Releasing),Dhammapada 4 / Udanavarga 14.10,"Không ai có thể ngăn cản tôi, không ai có thể đánh bại tôi; Những ai tạo ra thù hận với tôi, thù hận đó sẽ bị tiêu diệt.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The candidate translation loses key information and changes the original meaning, but is phrased naturally in Vietnamese.""
+}","Người ấy đã mắng tôi, trói tôi, gọi tôi là ngu; và những người truyền lại điều ấy, họ đồng ý với hận thù.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the meaning but has noticeable errors, such as 'trói' (tie) instead of 'đánh' (hit) and 'gọi tôi là ngu' (call me stupid) which is not present in the original text, while fluency is good with natural Vietnamese phrasing.""
+}","Người đó đã mắng tôi, đánh tôi, thắng tôi, cướp của tôi; những ai không còn ôm giữ điều ấy, thù hận sẽ được lắng dịu.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Pali text and is phrased in a natural and fluent Vietnamese manner.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The Pali sentence is: ""Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me; Ye ca taṃ nūpanayhanti, veraṃ tesūpasammati.""
+
+Breaking it down, ""Akkocchi"" might be a form of ""akocchi"" meaning ""to accuse"" or ""to blame."" ""Maṃ avadhi maṃ"" could be ""you have blamed me."" ""Ajini"" might be ""ajjhin"" meaning ""now"" or ""presently."" ""Ahāsi me"" could be ""you have done to me."" The second part: ""Ye ca taṃ nūpanayhanti"" – ""those who carry him away"" or ""who take him away."" ""Veraṃ tesūpasammati"" – ""they are satisfied with the enemy.""
+
+Putting it together: ""You have blamed me, you have done this to me now; those who carry him away are satisfied with the enemy.""
+
+Now translating into Vietnamese. ""Akkocchi maṃ avadhi maṃ"" could be ""Ngươi đã trách mắng ta, ngươi đã xúc phạm ta."" ""Ajini maṃ ahāsi me"" – ""Ngươi đã làm điều này với ta ngay lúc này."" Then the second part: ""Những ai đưa hắn đi, họ hài lòng với kẻ thù.""
+
+Wait, maybe ""nūpanayhanti"" is ""take away"" or ""carry off,"" so ""đưa hắn đi"" or ""kéo hắn đi."" ""Veraṃ tesūpasammati"" – ""hài lòng với kẻ thù."" Let me check the structure again. The original might have a poetic structure, so the translation should maintain that. Maybe adjust for flow: ""Ngươi trách mắng ta, xúc phạm ta ngay lúc này; Những ai kéo hắn đi, đều hài lòng với kẻ thù."" That sounds better. Make sure the verbs are correct and the meaning is clear. Double-check each term to ensure accuracy. Yes, this should be the correct translation.
+</think>
+
+Ngươi trách mắng ta, xúc phạm ta ngay lúc này; Những ai kéo hắn đi, đều hài lòng với kẻ thù.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the original meaning, but minor adjustments could enhance fluency and accuracy, such as refining verb choices and poetic flow.""
+}","Họ la mắng tôi, họ nói xấu tôi, họ ghen ghét tôi; Nhưng những ai không làm như vậy, tôi sẽ chấm dứt hận thù với họ.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning but has noticeable errors, such as 'ghen ghét' which doesn't perfectly convey 'ayojan' and 'cướp' is not present, while fluency is good with natural Vietnamese phrasing.""
+}","Đừng la mắng tôi, đừng chửi bới tôi, đừng giao việc cho tôi; ở đây, những người không đến gần, độc tố của họ sẽ được làm dịu.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation has major errors in preserving the original meaning, but the Vietnamese phrasing is relatively natural and fluent.""
+}","Người chửi mắng ta, nói xấu ta, gây thù oán với ta; những ai không đáp lại điều ấy, mối thù của họ sẽ được dịu lại.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'gây thù oán' which slightly deviates from the original. However, the Vietnamese is fluent and natural.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to make sure I understand the original text correctly. The Sanskrit verse is:
+
+""Ākrośan mām avocan mām, ayojan mām ajāpayet; Atra ye na hy upanahyanti, vairaṃ teṣāṃ praśāmyati.""
+
+Breaking it down, I'll start by identifying each word and its meaning. 
+
+""Ākrośan"" could be a form of ""ākrośa"" meaning to curse or scold. ""Mām"" is ""me."" So ""Ākrośan mām"" would be ""they curse me."" 
+
+""Avocan mām"" – ""avocan"" is from ""vac"" meaning to speak, so ""they speak to me"" or ""they address me."" 
+
+""Ayojan mām ajāpayet"" – ""ayojan"" might be a form of ""ayuj"" meaning to fight or attack. ""Ajāpayet"" could be from ""jāpay"" meaning to destroy. So ""they do not destroy me"" or ""they cannot destroy me.""
+
+The second line: ""Atra ye na hy upanahyanti"" – ""atra"" is ""here,"" ""ye"" is ""those who,"" ""na"" is ""not,"" ""upanahyanti"" might be from ""upanāhi"" meaning to approach or come near. So ""those who do not approach here.""
+
+""Vairaṃ teṣāṃ praśāmyati"" – ""vairaṃ"" is enmity or hostility, ""teṣāṃ"" is ""their,"" ""praśāmyati"" could be from ""praśāman"" meaning to be pacified. So ""their hostility is pacified.""
+
+Putting it all together in English: ""They curse me, they speak to me, they cannot destroy me; those who do not come near here, their hostility is pacified.""
+
+Now translating into Vietnamese. Need to ensure the meaning is preserved. 
+
+""Chúng mắng nhiếc ta, chúng nói với ta, chúng không thể tiêu diệt ta; những ai không đến gần đây, lòng thù hận của họ sẽ được xoa dịu.""
+
+Check for accuracy. ""Ākrośan"" as ""mắng nhiếc"" is correct. ""Avocan"" as ""nói với"" is good. ""Ajāpayet"" as ""không thể tiêu diệt"" makes sense. 
+
+Second part: ""Atra ye na hy upanahyanti"" translates to ""những ai không đến gần đây."" ""Vairaṃ teṣāṃ praśāmyati"" becomes ""lòng thù hận của họ sẽ được xoa dịu.""
+
+Yes, that seems accurate. Make sure the structure is poetic and matches the original's intent. The verse seems to convey that despite others' hostility, the speaker remains unharmed, and those who don't approach have their enmity calmed. The translation captures that.
+</think>
+
+Chúng mắng nhiếc ta, chúng nói với ta, chúng không thể tiêu diệt ta; những ai không đến gần đây, lòng thù hận của họ sẽ được xoa dịu.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original Sanskrit meaning and flows naturally in Vietnamese.""
+}"
+5,"Na hi verena verāni, sammantīdha kudācanaṃ; Averena ca sammanti, esa dhammo sanantano.","Na hi vaireṇa vairāṇi, śāmyantīha kadācana; Avaireṇa ca śāmyanti, eṣa dharmaḥ sanātanaḥ.","Với hận diệt hận thù, Ðời này không có được. Không hận diệt hận thù, Là định luật ngàn thu.",Non-violence,Dhammapada 5 / Udanavarga 14.12,"Không phải bởi oán thù mà oán thù được dập tắt, mà bằng không oán thù, oán thù được dập tắt; Đây là một quy luật古 dài.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses '古 dài' which is not a common Vietnamese phrase, and the sentence structure is slightly awkward.""
+}","Không có thù hận sinh thù hận; chúng không bao giờ cùng nhau xuất hiện. Nhưng khi có ác độc, chúng lại cùng sinh; đó là pháp bất diệt.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses 'ác độc' (evil) instead of 'hận thù' (hatred), which is a minor imperfection. However, the Vietnamese phrasing is natural and fluent.""
+}","Không bao giờ có thể dứt hận bằng hận; chỉ có phi hận mới dứt được hận, đây là đạo lý muôn đời.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is phrased in a natural and fluent Vietnamese manner.""
+}","<think>
+Okay, let's tackle this Pali translation. First, I need to understand the original text. The Pali sentence is: ""Na hi verena verāni, sammantīdha kudācanaṃ; Averena ca sammanti, esa dhammo sanantano."" 
+
+Breaking it down, ""Na hi verena verāni"" – ""verena"" means hatred, and ""verāni"" is the plural of hatred. So maybe ""Hatred does not cease by hatred."" Then ""sammantīdha kudācanaṃ"" – ""sammanti"" could be a form of ""to cease,"" ""idha"" is ""here,"" and ""kudācanaṃ"" might be ""in any way, ever."" So the first part might be ""Indeed, hatred does not cease in any way here.""
+
+Next line: ""Averena ca sammanti, esa dhammo sanantano."" ""Averena"" is ""without hatred,"" ""ca"" is ""but,"" ""sammanti"" again ""cease,"" ""esa dhammo sanantano"" – ""this is the eternal law."" So putting it together: ""But by non-hatred, they cease; this is the eternal law.""
+
+Now, translating into Vietnamese. The first part: ""Sự hận thù không bao giờ dứt bằng sự hận thù; ở đây, sự hận thù không thể dứt được."" Wait, maybe ""Sự hận thù không thể dứt bằng sự hận thù; ở đây, sự hận thù không bao giờ dứt."" Then the second part: ""Nhưng bằng lòng không hận thù, chúng dứt; đây là pháp bất diệt."" 
+
+Wait, ""sanantano"" is ""eternal"" or ""unending,"" but in Buddhist context, ""sanantano"" is often translated as ""bất diệt"" (unending) or ""vĩnh cửu"" (eternal). ""Dhammo"" is ""pháp"" in Vietnamese. So ""esa dhammo sanantano"" would be ""đây là pháp bất diệt"" or ""đây là pháp vĩnh cửu."" 
+
+Let me check again. The original is ""Averena ca sammanti"" – ""by non-hatred, they cease."" So in Vietnamese, ""Nhưng bằng lòng không hận thù, chúng dứt."" Then ""esa dhammo sanantano"" – ""this is the eternal law."" So ""đây là pháp bất diệt."" 
+
+Putting it all together:
+
+Sự hận thù không thể dứt bằng sự hận thù; ở đây, sự hận thù không bao giờ dứt. Nhưng bằng lòng không hận thù, chúng dứt; đây là pháp bất diệt.
+
+Wait, maybe adjust the first part for clarity. ""Sự hận thù không thể dứt bằng sự hận thù; ở đây, sự hận thù không thể dứt được."" Then the second part as before. Hmm. Also, ""kudācanaṃ"" is ""in any way, ever,"" so maybe ""trong bất kỳ trường hợp nào"" or ""bất cứ khi nào."" But the original says ""sammantīdha kudācanaṃ"" – ""here, they do not cease in any way."" So maybe ""ở đây, sự hận thù không thể dứt trong bất kỳ trường hợp nào.""
+
+So revised translation:
+
+Sự hận thù không thể dứt bằng sự hận thù; ở đây, sự hận thù không thể dứt trong bất kỳ trường hợp nào. Nhưng bằng lòng không hận thù, chúng dứt; đây là pháp bất diệt.
+
+But the user wants only the translation, no commentary. Let me confirm the Pali text again. The user provided the text, and the translation should be accurate. Let me check a standard translation. This is similar to the Dhammapada verse 5, which is often translated as ""Hatred does not cease by hatred at any time; hatred ceases by non-hatred. This is an eternal law."" 
+
+In Vietnamese, a standard translation might be: ""Sự hận thù không thể nào dứt bằng hận thù; hận thù chỉ dứt bằng lòng không hận thù. Đó là lẽ vĩnh hằng."" But the user wants the translation based on the given Pali text. Let me stick to the structure. 
+
+Original Pali: Na hi verena verāni, sammantīdha kudācanaṃ; Averena ca sammanti, esa dhammo sanantano.
+
+Breaking down again:
+
+Na hi verena verāni – ""Indeed, by hatred, hatred does not cease""
+
+sammantīdha kudācanaṃ – ""cease here in any way""
+
+Averena ca sammanti – ""But by non-hatred, they cease""
+
+esa dhammo sanantano – ""this is the eternal law""
+
+So translating directly:
+
+""Thật vậy, hận thù không thể dứt bằng hận thù; ở đây, hận thù không thể dứt trong bất kỳ trường hợp nào. Nhưng bằng lòng không hận thù, chúng dứt; đây là pháp bất diệt.""
+
+But maybe adjust for naturalness in Vietnamese. Perhaps:
+
+""Thật ra, hận thù không thể dứt bằng hận thù; ở đây, hận thù không bao giờ dứt. Nhưng bằng lòng không hận thù, chúng dứt; đây là pháp vĩnh cửu.""
+
+""Vĩnh cửu"" is ""eternal,"" ""bất diệt"" is ""unending."" Depending on context. The term ""sanantano"" can mean both. In Buddhist texts, ""sanantano"" is often translated as ""bất diệt"" for ""eternal"" in the sense of unchanging, but sometimes ""vĩnh cửu"" is used. 
+
+I think the most accurate translation would be:
+
+""Thật vậy, hận thù không thể dứt bằng hận thù; ở đây, hận thù không thể dứt trong bất kỳ trường hợp nào. Nhưng bằng lòng không hận thù, chúng dứt; đây là pháp bất diệt.""
+
+But maybe simplify ""trong bất kỳ trường hợp nào"" to ""bất cứ khi nào"" or ""không bao giờ."" Let me check the standard Vietnamese translation of Dhammapada verse 5. If it's similar, that would be better. However, since I can't access external sources, I'll proceed with the translation based on my analysis.
+</think>
+
+Thật vậy, hận thù không thể dứt bằng hận thù; ở đây, hận thù không thể dứt trong bất kỳ trường hợp nào. Nhưng bằng lòng không hận thù, chúng dứt; đây là pháp bất diệt.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""Translation accurately preserves the original Pali text's meaning, but minor adjustments could enhance natural Vietnamese fluency.""
+}","Không phải bằng thù hận mà thù hận được dập tắt, ở đây thù hất không bao giờ được dập tắt; Bằng không thù hận, thù hất mới được dập tắt, đây là chân lý muôn thuở.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be slightly more natural in Vietnamese.""
+}",Không phải bằng kẻ thù mà kẻ thù được làm dịu ở đây bao giờ; mà bằng người không phải kẻ thù thì họ được làm dịu; đây là pháp vĩnh cửu.,"{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be more natural in Vietnamese.""
+}","Không bao giờ có thể dập tắt oán thù bằng oán thù; chỉ có thể dập tắt oán thù bằng không oán thù, đây là đạo lý muôn đời.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is phrased in a natural and fluent Vietnamese manner.""
+}","<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra comments. First, I need to make sure I understand the Sanskrit correctly.
+
+The text is: ""Na hi vaireṇa vairāṇi, śāmyantīha kadācana; Avaireṇa ca śāmyanti, eṣa dharmaḥ sanātanaḥ.""
+
+Breaking it down, ""Na hi vaireṇa vairāṇi"" – ""Na"" is ""no"" or ""not"", ""hi"" is an intensifier, ""vaireṇa"" is ""by hatred"", ""vairāṇi"" is ""hatreds"" or ""enmities"". So the first part might be ""By hatred, enmities do not cease.""
+
+Next part: ""śāmyantīha kadācana;"" – ""śāmyanti"" is ""cease"" or ""subside"", ""iha"" is ""here"", ""kadācana"" is ""never"" or ""at any time"". So ""Here, they do not subside at any time.""
+
+Then the second line: ""Avaireṇa ca śāmyanti,"" – ""Avaireṇa"" is ""by non-hatred"" or ""without hatred"", ""ca"" is ""and"", ""śāmyanti"" again ""cease"". So ""And by non-hatred, they cease.""
+
+Last part: ""eṣa dharmaḥ sanātanaḥ."" – ""eṣa"" is ""this"", ""dharmaḥ"" is ""dharma"" (often translated as ""law"" or ""principle""), ""sanātanaḥ"" is ""eternal"" or ""timeless"". So ""This is the eternal law.""
+
+Putting it all together in English, it's something like: ""Indeed, hatred does not cease by hatred ever; by non-hatred, they do cease. This is the eternal law.""
+
+Now translating that into Vietnamese. Let's check the key terms:
+
+- ""Hatred"" is ""sự oán hận"" or ""sự căm ghét"".
+- ""Cease"" can be ""chấm dứt"" or ""tận diệt"".
+- ""Non-hatred"" might be ""bất oán"" or ""không oán hận"".
+- ""Eternal law"" is ""luật bất diệt"" or ""định luật vĩnh cửu"".
+
+The structure in Vietnamese should mirror the original's contrast. The first part says hatred doesn't end with hatred, the second that non-hatred does end them, followed by the declaration of the eternal law.
+
+Possible translation: ""Chẳng bao giờ oán hận chấm dứt bởi oán hận; Bất oán mới là chìa khóa để chấm dứt. Đây là luật bất diệt.""
+
+Wait, let me check again. The original Sanskrit uses ""vaireṇa"" and ""avaireṇa"", so ""by hatred"" and ""by non-hatred"". The first line says hatred doesn't end by hatred, the second that they end by non-hatred. So maybe:
+
+""Chẳng bao giờ oán hận chấm dứt bởi oán hận; Bất oán mới là cách để chấm dứt. Đây là luật bất diệt.""
+
+But ""bất oán"" is ""non-hatred"". Alternatively, ""bằng cách không oán hận"" for ""by non-hatred"".
+
+Another version: ""Không bao giờ oán hận tan biến nhờ oán hận; Tan biến nhờ không oán hận. Đó là định luật vĩnh cửu.""
+
+Hmm, need to make sure the structure is parallel. Let me check the original again. The first part is ""Na hi vaireṇa vairāṇi, śāmyantīha kadācana;"" – ""By hatred, enmities do not cease here at any time."" So ""Chẳng bao giờ oán hận chấm dứt bởi oán hận"" seems good. Then ""Bằng cách không oán hận, chúng chấm dứt. Đây là luật bất diệt.""
+
+Yes, that's more accurate. So the final translation would be:
+
+""Chẳng bao giờ oán hận chấm dứt bởi oán hận; Bằng cách không oán hận, chúng chấm dứt. Đây là luật bất diệt.""
+
+I think that's the correct translation. Let me verify once more. The original is a well-known verse from the Dhammapada, so checking if the Vietnamese translation matches standard versions. Some sources might use slightly different terms, but the structure should be similar. Yes, this seems accurate.
+</think>
+
+Chẳng bao giờ oán hận chấm dứt bởi oán hận; Bằng cách không oán hận, chúng chấm dứt. Đây là luật bất diệt.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original meaning and is phrased in a natural, native-level Vietnamese.""
+}"
+6,"Pare ca na vijānanti, mayamettha yamāmase; Ye ca tattha vijānanti, tato sammanti medhagā.","Pare ca na vijānanti, vayam atra yamāmahe; Ye ca tatra vijānanti, tataḥ śāmyanti medhakāḥ.","Người khác không hiểu rằng, Chúng ta đây bị diệt. Ai hiểu được điều này, Tranh luận được lắng nguôi.",Quarrels/Death,Dhammapada 6 / Udanavarga 14.15,"Những người khác không biết, chúng tôi biết điều đó; những ai biết điều đó, sau đó họ sẽ ngợi khen trí tuệ.","{
+  ""accuracy"": 2,
+   ""fluency"": 3,
+   ""explanation"": ""The translation does not preserve the original meaning, particularly the concept of 'diệt' (destruction) and 'tranh luận' (argument) is not accurately conveyed. The phrase 'ngợi khen trí tuệ' (praising intelligence) does not match the original context of 'sammanti medhagā' (calming of arguments).""
+}","Những người khác không biết, chúng ta ở đây; những người biết ở đó, họ là những người trung dung.","{
+  ""accuracy"": 2,
+   ""fluency"": 3,
+   ""explanation"": ""The translation fails to preserve the original meaning, particularly in conveying the concept of 'diệt' (destruction) and 'tranh luận' (debate) as in the reference translation. The phrase 'những người biết ở đó' also deviates from the intended meaning of 'those who understand'. However, the sentence structure is mostly natural and fluent in Vietnamese.""
+}","Người khác thì không hiểu, chúng tôi ở đây đang kiểm soát; những ai hiểu được điều đó, thì tranh chấp sẽ được dàn xếp.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation inaccurately conveys the original meaning, using 'kiểm soát' (control) instead of 'diệt' (destruction) and 'dàn xếp' (settle) which slightly deviates from 'lắng nguôi' (subside), but the sentence structure is fluent and natural in Vietnamese.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The Pali sentence is: ""Pare ca na vijānanti, mayamettha yamāmase; Ye ca tattha vijānanti, tato sammanti medhagā."" 
+
+Breaking it down, ""Pare ca na vijānanti"" – ""Pare"" might be a plural form of ""para"" meaning ""others"" or ""those people"". ""Ca"" is ""also"". ""Na vijānanti"" – ""na"" is negation, ""vijānanti"" is ""they know"" or ""they understand"". So the first part could be ""They do not know (something)"".
+
+Next part: ""mayamettha yamāmase"" – ""mayam"" is ""we"", ""ettha"" is ""here"", ""yamāmase"" – this is tricky. ""Yamā"" might be a form of ""yam"" (to hold, to control) and ""āmase"" could be a verb form. Maybe ""we are holding here"" or ""we are controlling here""?
+
+Second line: ""Ye ca tattha vijānanti, tato sammanti medhagā."" ""Ye ca"" is ""those who also"", ""tattha"" is ""there"", ""vijānanti"" again ""know/understand"". ""Tato sammanti"" – ""tato"" from ""tathā"" meaning ""thus"" or ""therefrom"", ""sammanti"" could be ""they come together"" or ""they gather"". ""Medhagā"" – ""medha"" is ""wisdom"", ""gā"" might be a plural suffix. So maybe ""the wise ones"" or ""those with wisdom"".
+
+Putting it all together, the first line seems to contrast those who don't know with those who do. The second line talks about those who know gathering the wise. 
+
+Now translating into Vietnamese. Need to make sure the structure is clear. First part: ""Những người kia không biết, chúng ta ở đây đang nắm giữ..."" Then the second part: ""Những ai biết ở đó, họ sẽ tụ họp những người có trí tuệ.""
+
+Wait, ""yamāmase"" – maybe ""yamā"" is a name or a term? Or perhaps ""yamāmase"" is ""they hold back""? Maybe ""chúng ta ở đây đang nắm giữ"" is correct. 
+
+Check if ""medhagā"" is ""những người có trí tuệ"". Yes. So the translation would be:
+
+Những người kia không biết, chúng ta ở đây đang nắm giữ; Những ai biết ở đó, họ sẽ tụ họp những người có trí tuệ.
+
+Does that flow well in Vietnamese? Maybe ""tụ họp"" could be ""tụ tập"" or ""gặp gỡ"". But ""tụ họp"" is more formal. ""Sammanti"" is ""gather"", so ""tụ họp"" is appropriate. 
+
+Double-checking the original Pali again to make sure. Yes, that seems accurate. The translation should capture the contrast between those who don't know and those who do, and the action of gathering the wise.
+</think>
+
+Những người kia không biết, chúng ta ở đây đang nắm giữ; Những ai biết ở đó, họ sẽ tụ họp những người có trí tuệ.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the original meaning but has minor imperfections and slight awkwardness in phrasing.""
+}","Những người khác không biết, chúng ta ở đây đang bị ràng buộc; Những người biết, từ nơi đó tâm trí họ trở nên yên tĩnh.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'ràng buộc' (bound) instead of 'diệt' (destroyed) and 'yên tĩnh' (quiet) which is close to the original meaning of 'śāmyanti' (calmed). The fluency is good, but some phrases could be more naturally expressed in Vietnamese.""
+}","Những người khác không biết chúng ta, chúng ta ở đây là Yama; những người biết ở đó, thì những con ong sẽ bình tĩnh.","{
+  ""accuracy"": 2,
+   ""fluency"": 2,
+   ""explanation"": ""The translation contains major errors, 'Yama' is incorrectly used as a noun, and 'con ong' (bees) is a mistranslation of 'medhakāḥ' (the wise). The sentence structure is also awkward.""
+}","Người khác không hiểu, chúng tôi thì cố gắng; những ai hiểu được, ruồi ấy liền lặng.","{
+  ""accuracy"": 2,
+   ""fluency"": 2,
+   ""explanation"": ""The translation deviates significantly from the original meaning and reference translation, with 'cố gắng' not conveying 'bị diệt' and 'ruồi ấy liền lặng' not accurately representing 'tranh luận được lắng nguôi'.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The user provided the Sanskrit verse:
+
+""Pare ca na vijānanti, vayam atra yamāmahe; Ye ca tatra vijānanti, tataḥ śāmyanti medhakāḥ.""
+
+I'll start by breaking it down into parts. The first part is ""Pare ca na vijānanti, vayam atra yamāmahe."" 
+
+""Pare"" likely refers to ""they"" or ""those people."" ""Ca"" means ""also"" or ""and."" ""Na vijānanti"" is a negative form of ""vijānanti,"" which is the third person plural of ""vijānāti,"" meaning ""to know"" or ""to understand."" So ""Pare ca na vijānanti"" translates to ""They do not know"" or ""Those people do not know.""
+
+Next, ""vayam atra yamāmahe."" ""Vayam"" is ""we."" ""Atra"" means ""here"" or ""in this."" ""Yamāmahe"" is a bit trickier. The root is ""yam,"" which can mean ""to control"" or ""to restrain."" The suffix ""-āmahe"" might be a form of ""āmahe,"" which could be a present tense or a command. So ""yamāmahe"" could be ""we control"" or ""we restrain."" So the first half might be ""They do not know, we here control"" or ""They do not understand, we here restrain.""
+
+Now the second part: ""Ye ca tatra vijānanti, tataḥ śāmyanti medhakāḥ.""
+
+""Ye ca"" is ""those who also"" or ""those who."" ""Tatra"" means ""there"" or ""in that."" ""Vijānanti"" again is ""know"" or ""understand."" So ""Ye ca tatra vijānanti"" is ""Those who there know"" or ""Those who understand in that.""
+
+""Tataḥ śāmyanti medhakāḥ."" ""Tataḥ"" means ""then"" or ""thereafter."" ""Śāmyanti"" is the third person plural of ""śāyati,"" which means ""to become quiet"" or ""to be silent."" ""Medhakāḥ"" is a noun meaning ""the wise ones"" or ""the intelligent ones."" So this part could be ""Then the wise ones become silent"" or ""Then the intelligent ones calm down.""
+
+Putting it all together, the first part is about others not knowing while the speaker controls or restrains here. The second part is about those who understand causing the wise to become silent or calm.
+
+Now translating into Vietnamese. Let's start with the first sentence:
+
+""Pare ca na vijānanti, vayam atra yamāmahe""
+
+""They do not know, we here control."" In Vietnamese, that might be ""Họ không biết, chúng ta ở đây kiểm soát."" But maybe ""kiểm soát"" is too strong. ""Yamāmahe"" might be more about restraint or discipline. So perhaps ""chúng ta ở đây kiềm chế"" or ""chúng ta ở đây điều khiển.""
+
+Second sentence: ""Ye ca tatra vijānanti, tataḥ śāmyanti medhakāḥ.""
+
+""Those who understand there, then the wise ones become silent."" In Vietnamese: ""Những ai ở đó hiểu biết, sau đó những người khôn ngoan trở nên im lặng.""
+
+Putting it all together:
+
+""Họ không biết, chúng ta ở đây kiềm chế; Những ai ở đó hiểu biết, sau đó những người khôn ngoan trở nên im lặng.""
+
+Wait, ""tatra"" is ""there,"" so maybe ""ở đó"" is correct. Also, ""tataḥ"" is ""then"" or ""thereafter."" ""Śāmyanti"" is ""become silent"" or ""calm down."" ""Medhakāḥ"" is ""the wise ones.""
+
+Let me check if ""kiềm chế"" is the best term for ""yamāmahe."" ""Yam"" is ""to control"" or ""restrain,"" so ""kiềm chế"" fits. Alternatively, ""kiểm soát"" is ""control,"" but ""kiềm chế"" is more about restraint. Depending on context, maybe ""chúng ta ở đây kiềm chế"" is better.
+
+Another possible translation for the first part: ""Họ không hiểu, chúng ta ở đây kiềm chế.""
+
+Second part: ""Những ai ở đó hiểu biết, sau đó những người khôn ngoan trở nên im lặng.""
+
+So the full translation would be:
+
+""Họ không hiểu, chúng ta ở đây kiềm chế; Những ai ở đó hiểu biết, sau đó những người khôn ngoan trở nên im lặng.""
+
+I think that captures the meaning. Let me double-check each term again to make sure there's no mistake. ""Vijānanti"" is ""know/understand,"" so ""hiểu"" is correct. ""Yamāmahe"" is ""we control/restrain,"" so ""kiềm chế"" works. ""Śāmyanti"" is ""become silent,"" so ""trở nên im lặng"" is good. ""Medhakāḥ"" is ""the wise ones,"" so ""những người khôn ngoan"" is appropriate.
+
+Yes, this should be the correct translation.
+</think>
+
+Họ không hiểu, chúng ta ở đây kiềm chế; Những ai ở đó hiểu biết, sau đó những người khôn ngoan trở nên im lặng.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but minor imperfections and slight awkwardness in phrasing are present.""
+}"
+7,"Subhānupassiṃ viharantaṃ, indriyesu asaṃvutaṃ; Bhojanamhi cāmattaññuṃ, kusītaṃ hīnavīriyaṃ; Taṃ ve pasahati māro, vāto rukkhaṃva dubbalaṃ.","Śubhānupaśyī viharann, indriyeṣv asaṃvṛtaḥ; Bhojane cāpi amātrajñaḥ, kuśīto hīnavīryavān; Taṃ vai prasahate rāgo, vātaḥ śuṣkam iva drumam.","Ai sống nhìn tịnh tướng, Không hộ trì các căn, Ăn uống thiếu tiết độ, Biếng nhác, chẳng tinh cần, Ma uy hiếp kẻ ấy, Như cây yếu trước gió.",Temptation (Weak),Dhammapada 7 / Udanavarga 29.15,"Người sống không quán sát thân, không kiểm soát các giác quan; ăn uống vô độ, lười biếng và yếu đuối; Người như vậy sẽ bị Ma quật ngã, như gió quật ngã cây yếu.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses 'quán sát thân' instead of 'nhìn tịnh tướng', and 'quật ngã' which is a bit different from 'pasahati', also 'vô độ' is a good translation of 'amattaññu' but the phrase 'yếu đuối' is a bit more literal than 'hīnavīriyaṃ' which implies a lack of energy or vigor.""
+}","Người đang sinh sống trong hiện diện của điều tốt, không bị các giác quan xao lạc; trong bữa ăn lại lười biếng, thiếu dũng khí; Mara thật sự đẩy người ấy ra, như gió làm gãy cây yếu.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses 'hiện diện của điều tốt' which is not a direct translation of 'Subhānupassiṃ', and 'lười biếng' which doesn't fully convey 'kusītaṃ hīnavīriyaṃ'. The fluency is good, but some phrases could be more naturally expressed in Vietnamese.""
+}","Kẻ sống thấy chỉ toàn cái đẹp, không chế ngự các căn, ăn uống không biết vừa phải, biếng nhác, tinh thần sa sút; Ma vương thật dễ đánh bại kẻ ấy, như gió làm đổ cây yếu ớt.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly different wording and phrasing, such as 'kẻ sống thấy chỉ toàn cái đẹp' instead of 'ai sống nhìn tịnh tướng', and 'tinh thần sa sút' instead of 'hịu hắt, chẳng tinh cần'. The fluency is good, but some phrases may sound slightly less natural than the reference translation.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The user provided the Pali verse and wants only the translation without any commentary. 
+
+The first line: ""Subhānupassiṃ viharantaṃ, indriyesu asaṃvutaṃ;"" – ""Subhānupassiṃ"" might be a name or a term. ""Viharantaṃ"" is probably a form of ""vihāra,"" meaning dwelling or residing. ""Indriyesu asaṃvutaṃ"" – ""indriya"" are senses or faculties, ""asaṃvuta"" could mean uncontrolled or not restrained. So maybe ""dwelling in Subhānupassi, with uncontrolled senses.""
+
+Next line: ""Bhojanamhi cāmattaññuṃ, kusītaṃ hīnavīriyaṃ;"" – ""Bhojana"" is food, ""cāmattaññuṃ"" might be ""not satisfied"" or ""unsatisfied."" ""Kusītaṃ"" could be ""laziness"" or ""sloth,"" ""hīnavīriyaṃ"" is ""weak effort"" or ""little energy."" So something like ""unsatisfied with food, lazy with little energy.""
+
+Third line: ""Taṃ ve pasahati māro, vāto rukkhaṃva dubbalaṃ."" – ""Taṃ ve pasahati māro"" – ""That very one the demon attacks,"" ""vāto rukkhaṃva dubbalaṃ"" – ""like the wind attacks a weak tree."" 
+
+Putting it all together in Vietnamese. Need to make sure the terms are correctly translated. For example, ""māro"" is often translated as ""Māra,"" the demon in Buddhist context. ""Vāto rukkhaṃva dubbalaṃ"" – ""gió thổi cây yếu"" (wind blows a weak tree). 
+
+Check for consistency in terms like ""indriyesu asaṃvutaṃ"" – ""các căn không siết chặt"" (senses not restrained). ""Bhojanamhi cāmattaññuṃ"" – ""không no đủ"" (not full, unsatisfied). 
+
+Make sure the structure flows naturally in Vietnamese. Maybe adjust the order for better readability. For example, ""Sống tại Subhānupatti, các căn không siết chặt; Ăn uống không no đủ, lười biếng, thiếu tinh tấn;"" Then ""Chính vì vậy Ma vương tấn công, như gió thổi cây yếu.""
+
+Wait, the original says ""Subhānupassiṃ viharantaṃ"" – maybe ""Sống tại Subhānupatti"" is better. Also, ""hīnavīriyaṃ"" is ""thiếu tinh tấn"" (lack of effort). 
+
+Double-check the translation of each term. ""Cāmattaññuṃ"" – ""không no đủ"" or ""không thỏa mãn."" ""Kusītaṃ"" – ""lười biếng."" 
+
+Putting it all together, the translation should be accurate and natural in Vietnamese. Ensure that the Buddhist terms are correctly rendered, like ""tinh tấn"" for ""vīriya."" 
+
+Final check: The user wants only the translation, no extra. So after translating, just present the Vietnamese lines without any explanation.
+</think>
+
+Sống tại Subhānupatti, các căn không siết chặt; Ăn uống không no đủ, lười biếng, thiếu tinh tấn; Chính vì vậy Ma vương tấn công, như gió thổi cây yếu.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the original meaning, with minor adjustments for natural Vietnamese flow, but could refine certain terms for perfect accuracy and fluency.""
+}","Người sống không chú ý, không kiểm soát các giác quan, ăn uống vô độ, tâm trí yếu đuối; Người đó sẽ bị ham muốn áp đảo, như gió làm khô một cây cối.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'không chú ý' instead of 'nhìn tịnh tướng', and 'tâm trí yếu đuối' which slightly deviates from 'biếng nhác, chẳng tinh cần'. The fluency is good, but could be improved with more natural Vietnamese phrasing.""
+}","Người sống luôn nhìn thấy điều tốt lành, các giác quan không bị che mờ; khi ăn uống cũng không nhận ra nguồn gốc, lầm lạc và yếu sức; điều ấy thực sự bị phá hủy bởi ác cảm, như gió khô làm cho trống khô héo.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning but has some noticeable errors, such as 'nguồn gốc' which doesn't perfectly convey 'asaṃvṛtaḥ', and 'lầm lạc' which doesn't perfectly convey 'hīnavīryavān'. However, the fluency is good, with natural Vietnamese phrasing.""
+}","Kẻ thấy điều thiện mà vẫn lang thang, không kiểm soát các căn; ăn uống không biết độ; biếng nhác, thiếu tinh tấn; ái dục dễ dàng chiếm lấy người ấy như gió lay cây khô.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be slightly more natural in Vietnamese.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The user provided a Sanskrit verse and wants only the translation into Vietnamese without any extra commentary. 
+
+Looking at the Sanskrit text: ""Śubhānupaśyī viharann, indriyeṣv asaṃvṛtaḥ; Bhojane cāpi amātrajñaḥ, kuśīto hīnavīryavān; Taṃ vai prasahate rāgo, vātaḥ śuṣkam iva drumam.""
+
+I'll break it down line by line. The first line: ""Śubhānupaśyī viharann, indriyeṣv asaṃvṛtaḥ"". ""Śubhānupaśyī"" might mean ""seeing auspicious things"" or ""looking with good eyes"". ""Viharann"" is ""dwelling"" or ""residing"". ""Indriyeṣu"" is ""in the senses"", and ""asaṃvṛtaḥ"" could be ""uncovered"" or ""not restrained"". So the first line might be about someone who dwells while not restraining their senses.
+
+Second line: ""Bhojane cāpi amātrajñaḥ, kuśīto hīnavīryavān"". ""Bhojane"" is ""while eating"", ""cāpi"" is ""also"", ""amātrajñaḥ"" could be ""without knowledge of measure"" or ""gluttonous"". ""Kuśīto"" might be ""sated"" or ""satisfied"", but maybe it's a typo for ""kuśīto"" meaning ""sated"". ""Hīnavīryavān"" is ""of low energy"" or ""weak"".
+
+Third line: ""Taṃ vai prasahate rāgo, vātaḥ śuṣkam iva drumam"". ""Taṃ"" is ""him"", ""vai"" is a particle, ""prasahate"" might be ""attacks"" or ""strikes"". ""Rāgo"" is ""desire"". ""Vātaḥ"" is ""wind"", ""śuṣkam"" is ""dry"", ""iva"" is ""like"", ""drumam"" is ""tree"". So ""Desire attacks him like wind attacks a dry tree"".
+
+Now translating into Vietnamese. Need to make sure the structure is correct and the meaning is preserved. Let's check each part again.
+
+First line: ""Śubhānupaśyī viharann, indriyeṣv asaṃvṛtaḥ"" – ""Người sống không kiềm chế các căn, nhìn thấy điều tốt đẹp"". Wait, maybe ""Người sống không kiềm chế các căn, nhìn thấy điều tốt đẹp"" but the order might need adjustment. Maybe ""Người sống không kiềm chế các căn, nhìn thấy điều tốt đẹp"" is better.
+
+Second line: ""Bhojane cāpi amātrajñaḥ, kuśīto hīnavīryavān"" – ""Trong bữa ăn lại không biết tiết độ, no mà sức yếu"". ""Amātrajñaḥ"" is ""without knowledge of measure"", so ""không biết tiết độ"". ""Kuśīto"" might be ""no"" but ""hīnavīryavān"" is ""sức yếu"".
+
+Third line: ""Taṃ vai prasahate rāgo, vātaḥ śuṣkam iva drumam"" – ""Tham dục tấn công y như gió thổi vào cây khô"". ""Prasahate"" is ""attacks"" or ""strikes"", so ""tấn công"". ""Vātaḥ śuṣkam iva drumam"" is ""gió thổi vào cây khô"".
+
+Putting it all together in Vietnamese:
+
+Người sống không kiềm chế các căn, nhìn thấy điều tốt đẹp; Trong bữa ăn lại không biết tiết độ, no mà sức yếu; Tham dục tấn công y như gió thổi vào cây khô.
+
+Wait, maybe ""người sống không kiềm chế các căn"" is better as ""người không kiềm chế các căn mà sống"". Let me check the original again. The first line is ""Śubhānupaśyī viharann, indriyeṣv asaṃvṛtaḥ"". ""Viharann"" is ""dwelling"" or ""living"". So ""Người sống không kiềm chế các căn, nhìn thấy điều tốt đẹp"". Maybe ""người sống không kiềm chế các căn, thấy điều tốt đẹp"".
+
+Second line: ""Trong bữa ăn lại không biết tiết độ, no mà sức yếu"". ""Amātrajñaḥ"" is ""without measure"", so ""không biết tiết độ"". ""Kuśīto hīnavīryavān"" is ""sated with low energy"", so ""no mà sức yếu"".
+
+Third line: ""Tham dục tấn công y như gió thổi vào cây khô"". ""Rāgo prasahate"" is ""desire attacks"", ""vātaḥ śuṣkam drumam iva"" is ""like wind on a dry tree"".
+
+I think that's accurate. Let me verify each term again to make sure. ""Śubhānupaśyī"" is ""looking at auspicious things"" or ""seeing good things"". So ""nhìn thấy điều tốt đẹp"". ""Indriyeṣv asaṃvṛtaḥ"" is ""unrestrained in the senses"". ""Bhojane amātrajñaḥ"" is ""without measure in eating"". ""Kuśīto hīnavīryavān"" is ""sated but weak"". ""Prasahate rāgo"" is ""desire attacks"". ""Vātaḥ śuṣkam drumam iva"" is ""like wind on a dry tree"".
+
+Yes, the translation seems correct. Now, present only the translation as requested.
+</think>
+
+Người sống không kiềm chế các căn, thấy điều tốt đẹp; Trong bữa ăn lại không biết tiết độ, no mà sức yếu; Tham dục tấn công y như gió thổi vào cây khô.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the original Sanskrit text, but minor adjustments in word order and phrasing could enhance fluency and accuracy.""
+}"
+8,"Asubhānupassiṃ viharantaṃ, indriyesu susaṃvutaṃ; Bhojanamhi ca mattaññuṃ, saddhaṃ āraddhavīriyaṃ; Taṃ ve nappasahati māro, vāto selaṃva pabbataṃ.","Aśubhānupaśyī viharann, indriyeṣu susaṃvṛtaḥ; Bhojane cāpi mātrajñaḥ, śrāddha ārabdhavīryavān; Taṃ na prasahate rāgo, vātaḥ śailam iva parvatam.","Ai sống quán bất tịnh, Khéo hộ trì các căn, Ăn uống có tiết độ, Có lòng tin, tinh cần, Ma không uy hiếp được, Như núi đá trước gió.",Temptation (Strong),Dhammapada 8 / Udanavarga 29.16,"Người thực hành quán bất tịnh, sống kiểm soát các giác quan, biết vừa đủ về thức ăn, và có lòng tin cùng tinh tấn vững chắc, thì Ma không thể chế ngự được, giống như gió không thể lay động được đá núi.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text, but the phrasing could be slightly more natural in Vietnamese.""
+}","Người sống trong bẩn thỉu, các giác quan được kiểm soát tốt; trong ăn uống cũng là người say rượu, đức tin kiên định và gan dạ mạnh mẽ; Mara không thể chịu đựng người ấy, như gió thổi vào núi.","{
+  ""accuracy"": 2,
+   ""fluency"": 2,
+   ""explanation"": ""Translation contains major errors, such as 'Người sống trong bẩn thỉu' instead of 'quán bất tịnh', and 'người say rượu' which is completely incorrect, it should be 'có tiết độ' or 'có chừng mực'. Fluency is also affected due to awkward phrasing.""
+}","Người sống quán niệm về sự bất tịnh, điều phục căn tốt, biết chừng mực trong ăn uống, có lòng tin, tinh tấn dũng mãnh; Ma vương không thể lay chuyển người ấy, như gió không lay chuyển núi đá.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and flows naturally in Vietnamese.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The sentence is in Pali, a language I'm not super familiar with, but I can use my knowledge of Sanskrit and some context clues.
+
+Breaking down the first part: ""Asubhānupassiṃ viharantaṃ"". ""Asubha"" might be related to ""asubha"" meaning impurity or unattractive. ""Anupassiṃ"" could be a form of ""anupassana"" which is contemplation or observation. ""Viharantaṃ"" is probably ""vihāra"" meaning dwelling or residing. So maybe ""dwelling in contemplation of impurity""?
+
+Next part: ""indriyesu susaṃvutaṃ"". ""Indriya"" is senses or faculties. ""Susaṃvuta"" might be ""well-controlled"" or ""well-restrained"". So ""with well-controlled senses"".
+
+""Bhojanamhi ca mattaññuṃ"". ""Bhojana"" is food. ""Mattaññu"" could be ""moderate"" or ""measured"". So ""and moderate in food"".
+
+""Saddhaṃ āraddhavīriyaṃ"". ""Saddha"" is faith. ""Āraddha"" is applied or exerted. ""Vīriya"" is effort. So ""with faith and exerted effort"".
+
+""Taṃ ve nappasahati māro, vāto selaṃva pabbataṃ."" ""Taṃ ve"" is ""that one"". ""Nappasahati"" might be ""cannot withstand"". ""Māro"" is Mara, the tempter. ""Vāto selaṃva pabbataṃ"" – ""vāto"" is wind, ""selā"" is a type of mountain? Maybe ""like the wind cannot shake a mountain"".
+
+Putting it all together in Vietnamese: The translation should maintain the structure and meaning. Need to ensure that terms related to Buddhist concepts are correctly translated. For example, ""asubha"" is often translated as ""vô thường"" or ""vô ngã"", but here it's ""impurity"", so maybe ""vô thường"" isn't right. Wait, ""asubha"" in Buddhist context is ""impurity"" as in the 32 body parts contemplation. So ""thiền quán về sự bất tịnh"" for ""asubha anupassanā"".
+
+Check each part again. ""Dwelling in contemplation of impurity, with well-controlled senses; moderate in food, with faith and exerted effort; Mara cannot withstand that one, like wind cannot shake a mountain.""
+
+Now translate to Vietnamese. Make sure the terms are correct. ""Thiền quán về sự bất tịnh"" for ""asubha anupassanā"". ""Giữ các căn được an tịnh"" for ""indriyesu susaṃvutaṃ"". ""Chế ngự thực phẩm"" for ""mattaññuṃ"". ""Tín tâm và tinh tấn"" for ""saddhaṃ āraddhavīriyaṃ"". The last line: ""Māro"" is ""Ma vương"" or ""Mara"". ""Vāto selaṃva pabbataṃ"" is a simile, so ""như gió không lay chuyển được núi đá"".
+
+Double-check the structure. The original has two parts before the semicolon. In Vietnamese, maybe use commas or semicolons similarly. Ensure the flow is natural. Maybe:
+
+""Thiền quán về sự bất tịnh, giữ các căn được an tịnh; chế ngự thực phẩm, với tín tâm và tinh tấn; Ma vương không thể ngăn cản được, như gió không lay chuyển được núi đá.""
+
+Check for any possible errors. ""Chế ngự thực phẩm"" might be better as ""chế ngự trong việc ăn uống"" but ""chế ngự thực phẩm"" is concise. ""Tinh tấn"" is correct for ""vīriya"". ""Tín tâm"" for ""saddha"". The simile is clear. Looks good.
+</think>
+
+Thiền quán về sự bất tịnh, giữ các căn được an tịnh; chế ngự thực phẩm, với tín tâm và tinh tấn; Ma vương không thể ngăn cản được, như gió không lay chuyển được núi đá.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the original Pali text and flows naturally in Vietnamese, using correct Buddhist terminology and a clear structure.""
+}","Người luôn quán sát những điều không may mắn, sống kiểm soát các giác quan, biết vừa đủ khi ăn uống, bắt đầu tinh tấn với lòng tin. ham muốn không làm khó được người ấy, giống như gió không làm lay động được núi.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly different wording and phrasing compared to the reference translation, and has minor imperfections in fluency.""
+}","Người sống khi nhìn thấy những điều không lành, các giác quan được bao phủ tốt; khi ăn cũng nhớ mẹ, với sự kính trọng bắt đầu và mang dũng lực; người ấy không bị rối loạn bởi dục vọng, gió như núi đá.","{
+  ""accuracy"": 3,
+   ""fluency"": 2,
+   ""explanation"": ""The translation generally preserves the meaning but has noticeable errors, such as 'nhớ mẹ' which doesn't accurately convey 'mātrajñaḥ', and 'rối loạn bởi dục vọng' which is a bit awkward. The fluency is also affected by unnatural phrasing.""
+}","Sống thấy rõ điều bất tịnh, các căn được thu thúc kỹ; ăn uống biết đúng mực, có lòng tin, đã tinh tấn; dục không thể lay chuyển người ấy, như gió không thể lay núi đá.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text and flows naturally in Vietnamese, closely matching the reference translation.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The user provided a Sanskrit verse and wants it translated into Vietnamese with only the translation, no extra comments.
+
+Looking at the Sanskrit lines, I'll break them down. The first line: ""Aśubhānupaśyī viharann, indriyeṣu susaṃvṛtaḥ;"" This seems to be about someone who avoids impure things and is well-controlled in their senses. ""Aśubha"" means impure or unwholesome, ""anupaśyī"" could be ""not seeing"" or ""avoiding"". ""Viharann"" is ""dwelling"" or ""living"". ""Indriyeṣu susaṃvṛtaḥ"" refers to being well-controlled in the senses.
+
+Second line: ""Bhojane cāpi mātrajñaḥ, śrāddha ārabdhavīryavān;"" ""Bhojane"" is ""eating"", ""mātrajñaḥ"" might mean ""knowing the measure"" or ""moderate"". ""Śrāddha"" is faith or conviction, ""ārabdhavīryavān"" could be ""one who has begun with energy"" or ""determined"".
+
+Third line: ""Taṃ na prasahate rāgo, vātaḥ śailam iva parvatam."" ""Taṃ"" refers to that person, ""na prasahate"" is ""does not touch"", ""rāgo"" is desire. The last part is a simile: ""vātaḥ śailam iva parvatam"" – wind does not touch a mountain. So the simile is comparing desire not affecting the person like wind doesn't affect a mountain.
+
+Now translating each part into Vietnamese. Need to make sure the structure is proper. The first line: ""Người sống tránh xa điều bất tịnh, giữ gìn các căn cửa."" ""Bất tịnh"" for impure, ""các căn cửa"" for senses.
+
+Second line: ""Ăn uống có chừng mực, nỗ lực với lòng tin vững chắc."" ""Chừng mực"" for moderate, ""lòng tin vững chắc"" for strong faith.
+
+Third line: ""Tham dục không thể lay chuyển, như gió không lay được núi."" ""Tham dục"" for desire, ""lay chuyển"" for move, ""gió không lay được núi"" as the simile.
+
+Check for flow and accuracy. Make sure the simile is clear. Also, ensure that the translation is in Vietnamese without any extra text. The user specified only the translation, so no explanations. Let me put it all together.
+</think>
+
+Người sống tránh xa điều bất tịnh, giữ gìn các căn cửa; Ăn uống có chừng mực, nỗ lực với lòng tin vững chắc; Tham dục không thể lay chuyển, như gió không lay được núi.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""Translation generally preserves the original meaning with minor imperfections, but the Vietnamese phrasing is natural and fluent.""
+}"
+9,"Anikkasāvo kāsāvaṃ, yo vatthaṃ paridahissati; Apeto damasaccena, na so kāsāvamarahati.","Aniṣkaṣāyaḥ kāṣāyaṃ, yo vastraṃ paridhāsyati; Apetadamasauratyo, nāsau kāṣāyam arhati.","Ai mặc áo cà sa, Tâm chưa rời uế trược, Không tự chế, không thực, Không xứng áo cà sa.",Robes (Unworthy),Dhammapada 9 / Udanavarga 29.7,"Người không bị ô nhiễm là người mặc áo ca sa, là người che giấu thân thể bằng sự thật về chế độ ăn uống; người ấy đã từ bỏ sự thối nát của dục vọng, không xứng đáng được gọi là người mặc áo ca sa.","{
+  ""accuracy"": 2,
+   ""fluency"": 2,
+   ""explanation"": ""The translation contains major errors and awkward phrasing, failing to preserve the original meaning of the Pali text, and sounds unnatural in Vietnamese.""
+}","Kẻ không giết Kasa, người sẽ phá hủy mọi vật; khi không đạt được sự thật của pháp, người ấy không giết Kasa.","{
+  ""accuracy"": 1,
+   ""fluency"": 2,
+   ""explanation"": ""The translation completely misinterprets the original Pali text, and the Vietnamese phrasing is awkward.""
+}","Người chưa rửa sạch cấu uế mà mặc y ca-sa, không có giới hạnh và chân lý, thì không xứng đáng với y ca-sa.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly formal and less common vocabulary, such as 'rửa sạch cấu uế' and 'giới hạnh và chân lý', which, while accurate, may not be as naturally fluent as the reference translation.""
+}","<think>
+Okay, let's tackle this Pali translation. First, I need to make sure I understand the original text correctly. The Pali verse is:
+
+""Anikkasāvo kāsāvaṃ, yo vatthaṃ paridahissati; Apeto damasaccena, na so kāsāvamarahati.""
+
+Breaking it down word by word:
+
+- Anikkasāvo: This is a combination of ""ani"" (not) and ""kkasāvo"" (perhaps a form of ""kāsāvo"" meaning ""monk"" or ""bhikkhu""). So ""Anikkasāvo"" might mean ""not a true monk"" or ""one who is not properly ordained.""
+
+- kāsāvaṃ: This is likely ""kāsāva"" (a type of robe worn by monks), so ""kāsāvaṃ"" could be ""the robe"" or ""monastic robe.""
+
+- yo vatthaṃ paridahissati: ""yo"" is ""who,"" ""vatthaṃ"" might be a form of ""vātthu"" (a seat or position), and ""paridahissati"" is a future tense of ""paridahati,"" meaning ""to surround"" or ""to encircle."" So maybe ""who surrounds a position"" or ""who encircles a seat.""
+
+- Apeto damasaccena: ""Apeto"" could be ""without,"" ""dama"" is ""restraint"" or ""self-control,"" and ""saccena"" is ""truth."" So ""without restraint and truth.""
+
+- na so kāsāvamarahati: ""na"" is ""not,"" ""so"" is ""he,"" ""kāsāvamarahati"" might be ""is worthy of the robe"" or ""deserves the monastic robe.""
+
+Putting it all together, the first line seems to say something like ""One who is not a true monk, who surrounds a position (or seat)..."" The second line talks about lacking self-control and truth, thus not being worthy of the robe.
+
+Now, translating into Vietnamese. Let's see:
+
+""Anikkasāvo kāsāvaṃ"" could be ""Người không phải Tỳ-kheo, mặc y tăng"" (Someone not a monk wearing the monastic robe).
+
+""Yo vatthaṃ paridahissati"" – ""Ai chiếm giữ nơi ngồi"" (Who occupies a seat/position).
+
+""Apeto damasaccena"" – ""Không có giới và chánh ngữ"" (Lacking restraint and truth; ""dama"" as self-control, ""saccena"" as truth).
+
+""Na so kāsāvamarahati"" – ""Người ấy không xứng đáng mặc y tăng"" (He is not worthy of the robe).
+
+Putting it all together, making sure the structure is poetic and matches the original's rhythm. Vietnamese often uses parallelism in such verses. Let me check the word order and flow again. Maybe adjust for better clarity and poetic feel. For example:
+
+""Người không phải Tỳ-kheo, mặc y tăng,  
+Ai chiếm giữ nơi ngồi,  
+Không có giới và chánh ngữ,  
+Người ấy không xứng đáng mặc y tăng.""
+
+Wait, the original has two lines. Let me check again. The original Pali is two lines, so the translation should also be two lines. Let me adjust:
+
+First line: ""Người không phải Tỳ-kheo, mặc y tăng, ai chiếm giữ nơi ngồi..."" Maybe combine the first two parts into one line. Then the second line: ""Không có giới và chánh ngữ, người ấy không xứng đáng mặc y tăng.""
+
+Yes, that makes two lines. Let me verify each term again. ""Dama"" is self-control, which in Buddhist terms is part of ""sila"" (precepts), so ""giới"" (precepts) is appropriate. ""Saccena"" is truth, so ""chánh ngữ"" (right speech) or just ""chân thật"" (truth). But ""chánh ngữ"" is part of the Noble Eightfold Path, so maybe ""chánh ngữ"" is better here. However, the original says ""dama"" (restraint) and ""saccena"" (truth). So maybe ""giới"" (precepts/restraint) and ""chân thật"" (truth). Alternatively, ""giới và chân thật"".
+
+Another consideration: ""kāsāvaṃ"" is the robe, so ""y tăng"" (monastic robe). ""Paridahissati"" is to surround or encircle, so ""chiếm giữ nơi ngồi"" (occupy a seat) might be better than ""surround a seat."" The idea is someone who is not a true monk but occupies a position (like a seat of authority) without self-control and truth, thus not worthy of the robe.
+
+Final check for accuracy and poetic structure. The translation should be concise and maintain the original's meaning. I think the above translation captures that.
+</think>
+
+Người không phải Tỳ-kheo, mặc y tăng, ai chiếm giữ nơi ngồi; không có giới và chân thật, người ấy không xứng đáng mặc y tăng.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the original meaning but has minor imperfections in phrasing and word choice, and it is readable with slight awkwardness in some expressions.""
+}","Những ai không dệt may áo cà sa, nhưng lại mặc áo cà sa, kẻ đó không xứng đáng với áo cà sa.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation fails to preserve the original meaning, which emphasizes the importance of inner purity and self-control, not the act of weaving or making the robe.""
+}","Ai mặc áo không nhuộm màu, nếu không phải là kẻ ngu ngốc, thì không xứng đáng có cà sa.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation loses key information about the impurity of the mind and self-control, but is phrased in a relatively natural way in Vietnamese.""
+}","Người không có tà niệm mặc áo cà-sa, nhưng nếu không có giới đức và đoạn dục, thì người ấy không xứng đáng mặc cà-sa.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly different wording and phrasing compared to the reference translation, and the fluency is good but not perfect due to the use of formal language.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The user provided the Sanskrit verse and wants only the translation, no extra commentary. 
+
+Looking at the Sanskrit text: ""Aniṣkaṣāyaḥ kāṣāyaṃ, yo vastraṃ paridhāsyati; Apetadamasauratyo, nāsau kāṣāyam arhati.""
+
+Breaking it down. The first part: ""Aniṣkaṣāyaḥ kāṣāyaṃ"" – ""Aniṣkaṣāyaḥ"" might be a compound word. ""Niṣka"" in Sanskrit refers to a type of gold coin, so ""Aniṣka"" could mean without a niṣka. ""Kāṣāyaṃ"" is the accusative form of ""kāṣāya"", which means saffron or the saffron-colored robe worn by monks. So ""Aniṣkaṣāyaḥ kāṣāyaṃ"" could translate to ""without a niṣka, the saffron robe"".
+
+Next part: ""yo vastraṃ paridhāsyati"" – ""yo"" is ""who"", ""vastraṃ"" is ""clothing"", ""paridhāsyati"" is the future tense of ""paridhāna"" which means to wear. So ""who will wear clothing"".
+
+Then the second line: ""Apetadamasauratyo"" – ""Apetadama"" might be a compound. ""A"" as a prefix meaning not, ""petadama"" – perhaps ""petadama"" is a term related to wealth or riches. ""Sauratyo"" could be a name or a term. Maybe ""Apetadamasauratyo"" is a proper noun, like a name. 
+
+""Nāsau kāṣāyam arhati"" – ""nāsau"" is ""he does not"", ""kāṣāyam"" is the accusative of ""kāṣāya"", so ""saffron robe"", ""arhati"" is ""deserves"" or ""is worthy of"". So ""he does not deserve the saffron robe"".
+
+Putting it all together, the first line seems to say that someone who doesn't have a niṣka (a coin) and wears clothing (maybe as a monk). The second line says that a certain person (Apetadamasauratyo) doesn't deserve the saffron robe. 
+
+Now translating into Vietnamese. Need to make sure the terms are correctly rendered. ""Kāṣāya"" is ""áo cà sa"" in Vietnamese, referring to the monastic robe. ""Niṣka"" is a coin, so ""ni xu"" or ""đồng tiền niṣka"". ""Paridhāsyati"" is ""sẽ mặc"". 
+
+The name ""Apetadamasauratyo"" might be transliterated. In Vietnamese, names are often kept in their original form with diacritics adjusted. So ""Apetadamasauratyo"" becomes ""Apetadamasauratya"" or similar. 
+
+So the translation would be: ""Người không có ni xu, người mặc áo cà sa; Apetadamasauratyo, người này không xứng đáng với áo cà sa.""
+
+Wait, the first part: ""Aniṣkaṣāyaḥ kāṣāyaṃ, yo vastraṃ paridhāsyati"" – maybe ""Người không có ni xu, người sẽ mặc áo cà sa"". Then the second line: ""Apetadamasauratyo, người này không xứng đáng với áo cà sa.""
+
+I need to check if ""Apetadamasauratyo"" is a known name. If it's a proper noun, keep it as is. Also, ""niṣka"" is a type of coin, so ""ni xu"" is acceptable in Vietnamese. 
+
+Double-checking the structure. The first line has two parts: the first part is about someone without a niṣka wearing the saffron robe, the second part introduces a person who doesn't deserve it. Maybe the first line is saying that someone who doesn't have a niṣka and wears the robe, but the second line says that Apetadamasauratyo doesn't deserve it. 
+
+So the translation should capture that. Maybe: ""Người không có ni xu, người mặc áo cà sa; Apetadamasauratyo, người này không xứng đáng với áo cà sa.""
+
+Yes, that seems to fit. The semicolon separates the two clauses. The first part is a statement about someone without a niṣka wearing the robe, and the second part is about Apetadamasauratyo not being worthy. 
+
+I think that's the correct translation. Now present it as the answer.
+</think>
+
+Người không có ni xu, người mặc áo cà sa; Apetadamasauratyo, người này không xứng đáng với áo cà sa.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the meaning but has noticeable errors, such as incorrect interpretation of 'Aniṣkaṣāyaḥ' and 'Apetadamasauratyo', while the fluency is good with natural Vietnamese phrasing.""
+}"
+10,"Yo ca vantakasāvassa, sīlesu susamāhito; Upeto damasaccena, sa ve kāsāvamarahati.","Yas tu vāntakaṣāyaḥ syāt, śīleṣu susamāhitaḥ; Upetadamasauratyaḥ, sa vai kāṣāyam arhati.","Ai rời bỏ uế trược, Giới luật khéo nghiêm trì, Tự chế, sống chân thực, Xứng đáng áo cà sa.",Robes (Worthy),Dhammapada 10 / Udanavarga 29.8,"Người nào đã dứt sạch các lậu hoặc, đã tu tập tốt đẹp trong giới; Người ấy, với sự thật về giới, sẽ vượt qua các lậu hoặc.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The candidate translation generally preserves the meaning of the Pali text, but uses slightly formal and less common vocabulary, and the sentence structure is mostly natural but could be more fluent.""
+}","Ai đã nhận lời thề Vantakasāva, trong giới luật đã chặt chẽ; đã đạt được sự thật của pháp, thì người ấy sẽ đạt được Kāsāva.","{
+  ""accuracy"": 3,
+   ""fluency"": 2,
+   ""explanation"": ""The candidate translation generally preserves the meaning but contains noticeable errors and unnatural phrasing, such as incorrectly translating 'vantakasāvassa' to 'nhận lời thề Vantakasāva' and 'sīlesu susamāhito' to 'đã chặt chẽ trong giới luật'.""
+}","Người nào đã từ bỏ các chất bất tịnh, giữ gìn giới luật nghiêm mật; có đầy đủ sự tự chế và chân thật, thì mới xứng đáng mặc áo cà-sa.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Pali text, but has a slightly formal tone and word choice, making it less fluent than the reference translation.""
+}","<think>
+Okay, I need to translate this Pali text into Vietnamese. Let me start by looking at each line.
+
+First line: ""Yo ca vantakasāvassa, sīlesu susamāhito;"" 
+
+Breaking it down: ""Yo ca"" is ""Người nào"" or ""Người ấy"". ""vantakasāvassa"" – ""vantaka"" might be a compound word. ""vanta"" could mean ""đi"" (go) and ""kasāvassa"" – maybe ""kasāva"" is a color, like ""kasaya"" which is saffron, the color of monks' robes. So ""vantakasāvassa"" might be ""đi đến màu saffron"" or ""đi vào màu saffron"". So the first part could be ""Người nào đi đến màu saffron"".
+
+Next part: ""sīlesu susamāhito"". ""sīlesu"" is ""trong giới"" (in the precepts). ""susamāhito"" – ""samāhita"" means composed, collected, so ""susamāhito"" is ""rất có kỷ luật"" or ""rất siêng năng"". So maybe ""rất có kỷ luật trong giới luật"".
+
+Second line: ""Upeto damasaccena, sa ve kāsāvamarahati.""
+
+""Upeto"" is ""đã đạt được"" (has attained). ""damasaccena"" – ""dama"" is control, ""sacca"" is truth. So ""damasaccena"" could be ""bằng sự kiểm soát và chân lý"" or ""bằng sự chế ngự và chân lý"". 
+
+""sa ve kāsāvamarahati"" – ""sa"" is ""người ấy"", ""ve"" is ""thì"", ""kāsāvamarahati"" – ""kāsāva"" is saffron, ""marahati"" is to wear. So ""thì người ấy mặc áo saffron"".
+
+Putting it all together:
+
+""Người nào đi đến màu saffron, rất có kỷ luật trong giới luật; Đã đạt được sự chế ngự và chân lý, người ấy thì mặc áo saffron.""
+
+Wait, but ""vantakasāvassa"" might be a compound word. Let me check again. ""Vantaka"" could be a name or a term. Maybe ""vantaka"" is a verb form of ""vanta"" (to go) plus ""kasāva"" (saffron). So ""đi đến màu saffron"" is correct. 
+
+Another thought: ""kāsāvamarahati"" – ""kāsāva"" is the same as ""kasāva"", so ""mặc áo saffron"" is correct. 
+
+So the translation seems okay. Let me check if there's any standard translation for this verse. If this is a known verse, maybe from the Dhammapada, but I don't recall it. But since the user wants only the translation, no commentary, I'll proceed with the above.
+</think>
+
+Người nào đi đến màu saffron, rất có kỷ luật trong giới luật; Đã đạt được sự chế ngự và chân lý, người ấy thì mặc áo saffron.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the meaning, but 'đi đến màu saffron' could be more naturally translated as 'rời bỏ uế trược' to better convey the idea of leaving impurities behind, and some phrases may sound slightly awkward.""
+}","Người nào có tâm thức thanh tịnh, luôn tập trung vào các phẩm hạnh; người đó xứng đáng được mặc áo cà sa.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The candidate translation generally preserves the meaning of the Sanskrit text, but slightly deviates from the reference translation by using 'tâm thức thanh tịnh' instead of 'rời bỏ uế trược' and 'tập trung vào các phẩm hạnh' instead of 'Giới luật khéo nghiêm trì', however, it still conveys the main idea and is fluent in Vietnamese.""
+}","Người có dầu Vantaka, đã rèn luyện đạo đức tốt, đạt được sự không bạo lực, thì người ấy xứng đáng nhận áo cà sa.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation contains major errors, such as incorrectly translating 'vāntakaṣāyaḥ' to 'dầu Vantaka', and 'upetadamasauratyaḥ' to 'đạt được sự không bạo lực', which alters the original meaning. However, the sentence structure and wording are generally fluent in Vietnamese.""
+}","Người nào đã lìa bỏ cấu uế, giữ gìn giới hạnh trọn vẹn, đạt được sự kiềm chế và đoạn trừ kiêu mạn, thì thật xứng đáng mặc áo cà-sa.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly formal and less natural compared to the reference translation.""
+}","<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation with no extra commentary. First, I need to make sure I understand the Sanskrit correctly.
+
+The text is: ""Yas tu vāntakaṣāyaḥ syāt, śīleṣu susamāhitaḥ; Upetadamasauratyaḥ, sa vai kāṣāyam arhati.""
+
+Breaking it down, ""Yas tu"" is a relative pronoun meaning ""whoever"" or ""anyone who."" ""Vāntakaṣāyaḥ syāt"" – ""vāntakaṣāyaḥ"" might be a compound word. ""Vāntaka"" could be ""vāntaka"" (to destroy) and ""kṣayaḥ"" (destruction), so maybe ""destroyer of the cankers"" or ""destroyer of the taints."" ""Syāt"" is ""is"" or ""becomes.""
+
+Next part: ""śīleṣu susamāhitaḥ"" – ""śīleṣu"" is ""in the virtues"" or ""in the disciplines,"" ""susamāhitaḥ"" is ""well-composed"" or ""well-established.""
+
+Then: ""Upetadamasauratyaḥ"" – ""upeta"" means ""attained,"" ""damas"" might be a typo for ""damaḥ"" (control), ""sauratyaḥ"" could be ""anger"" or ""wrath."" So maybe ""one who has attained control over anger.""
+
+Finally: ""sa vai kāṣāyam arhati"" – ""sa"" is ""he,"" ""vai"" is an intensifier, ""kāṣāyam"" is ""taints"" or ""cankers,"" ""arhati"" is ""attains"" or ""deserves.""
+
+Putting it all together: Whoever is a destroyer of the taints, well-established in the virtues, and has attained control over anger, he indeed attains the taints (or perhaps overcomes them). Wait, ""kāṣāyam arhati"" – ""kāṣāya"" are the taints, so maybe ""attains freedom from the taints"" or ""overcomes the taints.""
+
+Now translating into Vietnamese. Need to ensure the terms are correctly rendered. ""Kāṣāya"" in Buddhist context is ""các phiền tạp"" or ""các taints."" ""Śīleṣu"" is ""các giới"" (precepts). ""Damaḥ sauratyaḥ"" is ""kiềm chế sự sân hận.""
+
+So the translation would be: Ai là người diệt được các phiền tạp, giữ gìn các giới luật một cách trọn vẹn, đã kiềm chế được sự sân hận, người ấy mới xứng đáng được gọi là đã diệt các phiền tạp.
+
+Wait, the original says ""sa vai kāṣāyam arhati"" – ""he indeed attains the taints""? That doesn't make sense. Maybe it's ""he attains the destruction of the taints"" or ""he overcomes the taints."" So ""người ấy mới xứng đáng được gọi là đã diệt các phiền tạp.""
+
+Let me check again. The last part: ""sa vai kāṣāyam arhati."" ""Arhati"" is from ""arhati"" meaning ""to attain, to deserve."" So ""he attains the taints"" – but that's not right. It should be ""he attains the destruction of the taints"" or ""he overcomes the taints."" Maybe ""người ấy mới xứng đáng được gọi là đã đoạn diệt các phiền tạp.""
+
+So adjusting the translation accordingly. Also, ""vāntakaṣāyaḥ"" – ""destroyer of the taints."" So the first part is ""Ai là người diệt được các phiền tạp, giữ gìn các giới luật một cách trọn vẹn, đã kiềm chế được sự sân hận, người ấy mới xứng đáng được gọi là đã đoạn diệt các phiền tạp.""
+
+I think that's accurate. Let me make sure the structure is correct in Vietnamese. The sentence structure should flow naturally. Yes, that seems right. No extra commentary, just the translation.
+</think>
+
+Ai là người diệt được các phiền tạp, giữ gìn các giới luật một cách trọn vẹn, đã kiềm chế được sự sân hận, người ấy mới xứng đáng được gọi là đã đoạn diệt các phiền tạp.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and flows naturally in Vietnamese.""
+}"
+11,"Asāre sāramatino, sāre cāsāradassino; Te sāraṃ nādhigacchanti, micchāsaṅkappagocarā.","Asāre sāramatayaḥ, sāre cāsārasaṃjñinaḥ; Te sāraṃ nādhigacchanti, mithyā saṃkalpagocarāḥ.","Không chân, tưởng chân thật, Chân thật, thấy không chân. Chúng không đạt chân thật, Do tà tư tà hạnh.",False Views,Dhammapada 11 / Udanavarga 29.3,"Những người không có giá trị nhưng cho là có giá trị, những người có giá trị nhưng lại cho là không có giá trị; Những người đó không đạt được giá trị, vì họ đi vào phạm vi của tư duy sai lầm.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses more formal and abstract language, and the phrase 'phạm vi của tư duy sai lầm' could be more naturally expressed as 'vì tư duy sai lầm' to improve fluency.""
+}","Trong không‑tự, người bám vào tự; trong tự, người thấy không‑tự; họ không đạt được bản chất, vì họ bị chi phối bởi ý định sai.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly different wording and phrasing, such as 'bám vào tự' instead of 'tưởng chân thật', and 'bản chất' instead of 'chân thật'. The fluency is good, but some phrases may sound slightly formal or less common in everyday Vietnamese.""
+}","Những người coi cái không phải là cốt lõi là cốt lõi, và coi cái là cốt lõi lại không phải là cốt lõi; Họ không đạt được điều gì là cốt lõi, vì họ sống theo những tư duy sai lầm.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly formal and less common Vietnamese expressions, and minor rephrasing for better fluency.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to make sure I understand the original text correctly. The Pali verse is:
+
+""Asāre sāramatino, sāre cāsāradassino; Te sāraṃ nādhigacchanti, micchāsaṅkappagocarā.""
+
+Breaking it down into parts. The first line: ""Asāre sāramatino, sāre cāsāradassino"". ""Asāre"" means without essence or without substance. ""Sāramatino"" could be ""those who are pleased with essence"" or ""those who delight in the essential"". Then the second part: ""sāre cāsāradassino"" – ""those who see the essence as essence"". 
+
+The second line: ""Te sāraṃ nādhigacchanti, micchāsaṅkappagocarā."" ""Te"" refers to those people. ""Sāraṃ nādhigacchanti"" – ""do not attain the essence"". ""Micchāsaṅkappagocarā"" – ""they dwell in wrong intention"" or ""they follow wrong thoughts"".
+
+Putting it all together in English first: ""Those who are pleased with the non-essential and see the essential as non-essential do not attain the essence; they dwell in wrong intention.""
+
+Now translating that into Vietnamese. Need to make sure the terms are accurate. ""Asāre"" is ""không có tinh túy"" or ""không có bản chất"". ""Sāramatino"" could be ""những người vui thích với tinh túy"". ""Cāsāradassino"" – ""nhìn thấy tinh túy như tinh túy"". 
+
+Second line: ""Te sāraṃ nādhigacchanti"" – ""họ không đạt đến tinh túy"". ""Micchāsaṅkappagocarā"" – ""họ sống trong vọng tưởng sai lầm"" or ""họ đi theo ý nghĩ sai lầm"".
+
+So the Vietnamese translation would be: ""Những người vui thích với phi tinh túy và nhìn thấy tinh túy như phi tinh túy, họ không đạt đến tinh túy; họ sống trong vọng tưởng sai lầm.""
+
+Wait, let me check again. The first part is ""Asāre sāramatino"" – ""those who delight in the non-essential"". ""Sāre cāsāradassino"" – ""those who see the essential as non-essential"". So maybe ""Những người vui thích với phi tinh túy và nhìn thấy tinh túy như phi tinh túy..."" Yes, that seems right. 
+
+I think that's accurate. Let me make sure the terms are consistent. ""Tinh túy"" is the essence. ""Phi tinh túy"" is non-essence. ""Vọng tưởng sai lầm"" for wrong intention or wrong thoughts. 
+
+Yes, that should be the correct translation.
+</think>
+
+Những người vui thích với phi tinh túy và nhìn thấy tinh túy như phi tinh túy, họ không đạt đến tinh túy; họ sống trong vọng tưởng sai lầm.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is expressed in natural, native-level Vietnamese.""
+}","Những thứ không có giá trị thì được cho là có giá trị, và những thứ có giá trị thì lại bị coi là không có giá trị; Những người như vậy không đạt được bản chất thực sự, vì họ bị che khuất bởi những quan niệm sai lầm.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses more abstract terms like 'giá trị' (value) instead of directly translating 'chân' (reality/truth), and 'bản chất thực sự' (true nature) for 'sāraṃ' (essence), which is a minor imperfection.""
+}","Trong phi‑bản chất, những người có bản chất; trong bản chất, những người được gọi là phi‑bản chất; họ không đạt được bản chất, họ là những kẻ lầm tưởng sai lầm.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly formal and less common vocabulary, which affects its fluency.""
+}","Những người coi cái không có giá trị là có giá trị, lại xem cái có giá trị là không có giá trị; Họ không đạt được điều gì quý giá, vì họ đang đi theo những tưởng tượng sai lầm.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses a more interpretative and paraphrased approach, which may slightly deviate from the original. The Vietnamese is fluent and natural.""
+}","<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra comments. First, I need to understand the Sanskrit verse properly.
+
+The text is: ""Asāre sāramatayaḥ, sāre cāsārasaṃjñinaḥ; Te sāraṃ nādhigacchanti, mithyā saṃkalpagocarāḥ.""
+
+Breaking it down, ""Asāre"" means without essence or without the true self. ""Sāramatayaḥ"" would be those who think there is an essence. The second line starts with ""sāre cāsārasaṃjñinaḥ,"" which contrasts those who recognize the absence of essence. Then ""Te sāraṃ nādhigacchanti"" – they do not attain the essence. Finally, ""mithyā saṃkalpagocarāḥ"" refers to false mental constructs or incorrect perceptions.
+
+Now, translating this into Vietnamese. I need to make sure the terms are accurately rendered. ""Asāre"" could be ""không có bản chất"" (without essence). ""Sāramatayaḥ"" might be ""những người cho rằng có bản chất"" (those who believe there is an essence). The second line: ""sāre cāsārasaṃjñinaḥ"" – ""những người nhận ra không có bản chất"" (those who realize there is no essence). ""Te sāraṃ nādhigacchanti"" – ""họ không thể đạt đến bản chất"" (they cannot attain the essence). Lastly, ""mithyā saṃkalpagocarāḥ"" – ""bị chi phối bởi những suy tưởng sai lầm"" (governed by false mental constructs).
+
+Putting it all together in Vietnamese while maintaining the structure and meaning. I need to check if the terms are commonly used in Buddhist contexts since this seems related to Buddhist philosophy. Words like ""bản chất"" (essence) and ""suy tưởng sai lầm"" (false thoughts) are appropriate. Also, the structure should mirror the original Sanskrit's contrast between those with and without the correct understanding.
+
+Double-checking the translation for accuracy and flow. Making sure that the contrast between the two groups is clear. The first part talks about people who wrongly believe in an essence, the second about those who realize there isn't one, and the conclusion that the former don't attain the essence due to false constructs.
+
+I think that's it. The translation should be clear and accurate, sticking to the original meaning without any additional explanations.
+</think>
+
+Những người cho rằng có bản chất thì không có bản chất, những người nhận ra không có bản chất thì không thể đạt đến bản chất, vì họ bị chi phối bởi những suy tưởng sai lầm.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the original meaning with minor imperfections in phrasing and word choice.""
+}"
+12,"Sārañca sārato ñatvā, asārañca asārato; Te sāraṃ adhigacchanti, sammāsaṅkappagocarā.","Sāraṃ ca sārato jñātvā, asāraṃ ca asārataḥ; Te sāraṃ adhigacchanti, samyak saṃkalpagocarāḥ.","Chân thật, biết chân thật, Không chân, biết không chân. Chúng đạt được chân thật, Do chánh tư chánh hạnh.",Right Views,Dhammapada 12 / Udanavarga 29.4,"Biết rõ điều có giá trị từ nơi có giá trị, biết rõ điều không có giá trị từ nơi không có giá trị. Những người như vậy đạt được điều có giá trị, trong phạm vi của tư tưởng chánh trực.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, with minor imperfections in wording and phrasing, and is readable with slight awkwardness in Vietnamese.""
+}","Biết được bản chất và không bản chất; họ đạt được bản chất, những người đi theo đúng ý định.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly different wording and phrasing compared to the reference translation, and has minor imperfections in fluency.""
+}","Biết rõ cái gì là chân thật thì là chân thật, cái gì không chân thật thì không chân thật; những người sống đúng với tư duy chánh niệm sẽ đạt được điều chân thật.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the original Pali text, but with minor imperfections in conveying the nuances of 'sammāsaṅkappagocarā' as 'sống đúng với tư duy chánh niệm'. The Vietnamese translation is fluent and readable.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The Pali verse is:
+
+Sārañca sārato ñatvā, asārañca asārato; Te sāraṃ adhigacchanti, sammāsaṅkappagocarā.
+
+Breaking it down, ""Sārañca sārato ñatvā"" – ""Sāra"" means essence or core, ""sārato"" is from the root ""sāra"" with a suffix, so maybe ""those who know the essence"" or ""understand the core."" ""Asārañca asārato"" – ""asāra"" is the opposite, non-essence, so ""those who know the non-essence."" Then ""Te sāraṃ adhigacchanti"" – ""they attain the essence."" ""Sammāsaṅkappagocarā"" – ""sammā"" is right or correct, ""saṅkappa"" is intention or thought, ""gocarā"" is related to going or direction. So maybe ""those with right intention.""
+
+Putting it all together: Knowing the essence and non-essence, they attain the essence through right intention. Now, translating this into Vietnamese. The key terms are ""sāra"" as ""bản chất"" or ""hạt nhân,"" ""asāra"" as ""phi bản chất."" ""Sammāsaṅkappagocarā"" would be ""hướng đến ý định đúng đắn"" or ""với tâm hướng đúng.""
+
+So the translation would be: Nhận thức được bản chất và phi bản chất, họ đạt đến bản chất nhờ tâm hướng đúng.
+
+Wait, let me check again. ""Sārañca sārato ñatvā"" – ""ñatvā"" is knowing, so ""biết được bản chất và phi bản chất."" Then ""Te sāraṃ adhigacchanti"" – ""họ đạt đến bản chất."" And ""sammāsaṅkappagocarā"" – ""hướng đến ý định đúng đắn."" Maybe ""hướng theo ý định đúng đắn.""
+
+So adjusting: Biết được bản chất và phi bản chất, họ đạt đến bản chất, hướng theo ý định đúng đắn.
+
+Hmm, but the original structure is two parts. Maybe split into two lines. Also, in Vietnamese, the order might be different. Let me check a similar translation. Maybe ""Những người biết bản chất và phi bản chất, họ đạt đến bản chất nhờ ý định đúng đắn.""
+
+Yes, that sounds better. So the final translation would be:
+
+Những người biết bản chất và phi bản chất, họ đạt đến bản chất nhờ ý định đúng đắn.
+</think>
+
+Những người biết bản chất và phi bản chất, họ đạt đến bản chất nhờ ý định đúng đắn.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is phrased in a natural, fluent Vietnamese style, but minor imperfections in conveying the nuances of the original text prevent it from being perfect.""
+}","Biết điều quan trọng từ những điều quan trọng, và biết điều không quan trọng từ những điều không quan trọng; Những người có sự suy nghĩ đúng đắn và có phạm vi nhận thức phù hợp sẽ đạt được điều quan trọng.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, using appropriate Vietnamese phrases to convey the ideas of importance and correct understanding, with a natural and fluent expression.""
+}","Biết được bản chất và phi bản chất, những người có quyết tâm đúng đắn sẽ đạt được bản chất.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'bản chất' for both 'sāraṃ' (essence) and 'asāraṃ' (non-essence), which might be slightly misleading. However, the Vietnamese phrasing is natural and fluent.""
+}",Biết rõ cái gì là tinh túy và cái gì không phải tinh túy; những người có chánh tư duy sẽ đạt được điều tinh túy.,"{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'tinh túy' for both 'sāraṃ' (essence) and 'asāraṃ' (non-essence), which might slightly reduce accuracy. However, the Vietnamese phrasing is natural and fluent.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The verse is in Sanskrit, so I'll start by breaking down each part.
+
+The first line: ""Sāraṃ ca sārato jñātvā, asāraṃ ca asārataḥ;"" 
+
+- ""Sāraṃ"" means essence or the core.
+- ""ca"" is a conjunction meaning ""and"".
+- ""sārato"" is from ""sāra"" (essence) with the suffix ""-ato"", possibly indicating from the essence.
+- ""jñātvā"" is the past participle of ""jñāna"" (knowledge, knowing), so ""having known"".
+- ""asāraṃ"" is the opposite of ""sāra"", meaning inessential or without essence.
+- ""asārataḥ"" similarly would be from ""asāra"" with the suffix, so ""from the inessential"".
+
+So the first line might translate to something like ""Having known the essence from the essence, and the inessential from the inessential;""
+
+Next line: ""Te sāraṃ adhigacchanti, samyak saṃkalpagocarāḥ.""
+
+- ""Te"" refers to ""they"" or ""those who"".
+- ""sāraṃ"" again essence.
+- ""adhigacchanti"" is the present tense of ""adhigacchati"", meaning to attain or achieve.
+- ""samyak"" means perfectly or correctly.
+- ""saṃkalpa"" is intention or resolve.
+- ""ucarāḥ"" is from ""ucar"" meaning moving or proceeding, so ""those who proceed with correct intention"".
+
+Putting it together: ""Those who proceed with correct intention attain the essence.""
+
+Now, translating this into Vietnamese. Let's make sure the terms are correctly rendered. ""Sāra"" is ""bản chất"" or ""hạt nhân"", but in philosophical contexts, ""bản chất"" (essence) is more common. ""Asāra"" would be ""phi bản chất"" or ""không bản chất"". 
+
+First line: ""Biết rõ bản chất từ bản chất, và phi bản chất từ phi bản chất;""
+
+Second line: ""Những người có ý định đúng đắn đạt được bản chất.""
+
+Wait, ""samyak saṃkalpa"" is ""đúng đắn"" or ""chính xác"". Maybe ""ý định chính xác"" or ""niềm tin đúng đắn"". ""Ucarāḥ"" is those who proceed, so ""những người đi theo"" or ""những người hành động"".
+
+So refining the second line: ""Những người có ý định chính xác đạt được bản chất.""
+
+Let me check again. The original structure is about distinguishing essence from inessence and then attaining it through correct intention. The translation should reflect that clarity. Maybe ""Biết rõ bản chất từ bản chất, và phi bản chất từ phi bản chất; Những người có ý định chính xác đạt được bản chất.""
+
+Yes, that seems accurate. I need to ensure that the terms are consistent and the meaning is clear. No extra commentary, just the translation as requested.
+</think>
+
+Biết rõ bản chất từ bản chất, và phi bản chất từ phi bản chất; Những người có ý định chính xác đạt được bản chất.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the original Sanskrit text, with minor imperfections in phrasing and terminology consistency.""
+}"
+13,"Yathā agāraṃ ducchannaṃ, vuṭṭhī samativijjhati; Evaṃ abhāvitaṃ cittaṃ, rāgo samativijjhati.","Yathāgāraṃ ducchannaṃ, vṛṣṭiḥ samatividhyati; Evam abhāvitaṃ cittaṃ, rāgaḥ samatividhyati.","Như nhà lợp không kín, Mưa liền xâm nhập vào. Cũng vậy tâm không tu, Tham dục liền xâm nhập.",Mind (Leaky),Dhammapada 13 / Udanavarga 31.27,"Giống như một ngôi nhà bị hư hỏng, gió thổi qua mọi nơi; cũng vậy, một tâm trí không được tu dưỡng, tham sân si thâm nhập khắp nơi.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning, but replaces 'mưa' (rain) with 'gió' (wind) and 'rāgo' (lust) with 'tham sân si' (greed, anger, delusion), which is a broader concept.""
+}","Như một ngôi nhà kém xây, lũ lụt sẽ phá hủy hoàn toàn; cũng như một tâm không được nuôi dưỡng, tham sẽ phá hủy hoàn toàn.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning but uses 'lũ lụt' (flood) instead of 'mưa' (rain) and 'phá hủy hoàn toàn' (completely destroy) which is not entirely equivalent to the original 'xâm nhập vào' (penetrate) and 'samativijjhati' (penetrates completely), affecting the accuracy.""
+}","Như ngôi nhà mái dột, mưa xuyên thấm vào; cũng vậy tâm không tu, tham dục xuyên thấm vào.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is phrased in natural Vietnamese.""
+}","<think>
+Okay, let's tackle this Pali translation. First, I need to understand the original text. The Pali sentence is: Yathā agāraṃ ducchannaṃ, vuṭṭhī samativijjhati; Evaṃ abhāvitaṃ cittaṃ, rāgo samativijjhati.
+
+Breaking it down, ""Yathā"" means ""Just as"" or ""Like"". ""Agāraṃ"" is ""house"" or ""home"". ""Ducchannaṃ"" is the past participle of ""ucchanna"", which means ""covered"" or ""hidden"". So ""agāraṃ ducchannaṃ"" would be ""a house that is hidden"" or ""a covered house"".
+
+Next part: ""vuṭṭhī samativijjhati"". ""Vuṭṭhī"" is ""arising"" or ""rising"". ""Samativijjhati"" is a compound verb. ""Sama"" can mean ""together"" or ""completely"", and ""vijjhati"" is the third person singular of ""vijjhāti"", which means ""to arise"" or ""to appear"". So ""samativijjhati"" might be ""arises completely"" or ""fully arises"". So the first line is ""Just as a hidden house, the arising fully arises"".
+
+Wait, that doesn't make much sense. Maybe ""vuṭṭhī"" is the subject here. Let me check again. ""Vuṭṭhī"" is the nominative singular of ""vuṭṭhāna"", which means ""arising"" or ""rising"". So ""vuṭṭhī samativijjhati"" would be ""the arising fully arises"" or ""the rising completely appears"".
+
+Now the second line: ""Evaṃ abhāvitaṃ cittaṃ, rāgo samativijjhati."" ""Evaṃ"" is ""thus"" or ""in this way"". ""Abhāvitaṃ"" is the past participle of ""abhāveti"", which means ""to cover"" or ""to conceal"". So ""abhāvitaṃ cittaṃ"" is ""a concealed mind"" or ""a hidden mind"". ""Rāgo"" is ""desire"" or ""lust"". So the second line would be ""Thus, a hidden mind, desire fully arises"".
+
+Putting it all together: ""Just as a hidden house, the arising fully arises; thus, a hidden mind, desire fully arises."" But that's a bit awkward. Maybe a smoother translation would be: ""Just as a hidden house, the arising completely appears; in the same way, a concealed mind, desire completely appears.""
+
+Wait, maybe ""samativijjhati"" is better translated as ""arises fully"" or ""completely arises"". Also, ""ducchannaṃ"" is ""covered"" or ""hidden"". So the first line is ""Just as a house that is hidden, the arising fully arises"". The second line: ""In the same way, a concealed mind, desire fully arises.""
+
+I think that's the intended meaning. Let me check if there's a standard translation for this. It seems like a simile comparing a hidden house to a concealed mind leading to the arising of desire. So the translation should maintain the parallel structure. Maybe:
+
+""Giống như một ngôi nhà được che giấu, sự sinh khởi trọn vẹn nảy sinh; Cũng vậy, tâm bị che giấu, dục vọng trọn vẹn nảy sinh.""
+
+Yes, that makes sense. ""Trọn vẹn nảy sinh"" for ""samativijjhati"". ""Che giấu"" for ""ducchannaṃ"" and ""abhāvitaṃ"". The structure is maintained with ""Giống như...; Cũng vậy..."" which is ""Just as...; Thus..."" in English. I think this is accurate.
+</think>
+
+Giống như một ngôi nhà được che giấu, sự sinh khởi trọn vẹn nảy sinh; Cũng vậy, tâm bị che giấu, dục vọng trọn vẹn nảy sinh.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning and structure of the original Pali text, but minor imperfections in wording and phrasing are noticeable.""
+}","Giống như một ngôi nhà không mái che, mưa sẽ thấm vào khắp nơi; cũng vậy, một tâm trí không được tu dưỡng, tham lam sẽ thấm vào khắp nơi.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is phrased in a natural, native-level Vietnamese.""
+}","Như mưa rơi vào ngôi nhà hỏng, như vậy khi tâm trí không có gì, ái dục tràn ngập.","{
+  ""accuracy"": 3,
+   ""fluency"": 2,
+   ""explanation"": ""The translation generally preserves the meaning but has noticeable errors and unnatural phrasing, such as 'ngôi nhà hỏng' instead of 'nhà lợp không kín' and 'tâm trí không có gì' which doesn't accurately convey 'tâm không tu'.""
+}","Như ngôi nhà mái dột, mưa xuyên thấu; tâm không tu tập, tham dục xuyên thấu.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Sanskrit text and is phrased in natural Vietnamese.""
+}","<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation with no extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
+
+The text is: Yathāgāraṃ ducchannaṃ, vṛṣṭiḥ samatividhyati; Evam abhāvitaṃ cittaṃ, rāgaḥ samatividhyati.
+
+Breaking it down, ""Yathāgāraṃ ducchannaṃ"" – ""Yathāgāraṃ"" probably means ""as a house"" or ""like a house"". ""Ducchannaṃ"" is ""well-covered"" or ""properly covered"". So the first part is about a house that's well-covered.
+
+Next, ""vṛṣṭiḥ samatividhyati"" – ""vṛṣṭiḥ"" is ""rain"", and ""samatividhyati"" might be a form of ""to penetrate"" or ""to enter"". So the first line could be ""Rain penetrates a house that is not well-covered.""
+
+Then the second line: ""Evam abhāvitaṃ cittaṃ, rāgaḥ samatividhyati."" ""Evam"" is ""thus"" or ""in this way"". ""Abhāvitaṃ cittaṃ"" – ""citta"" is ""mind"", ""abhāvita"" might be ""unprotected"" or ""not protected"". ""Rāgaḥ"" is ""desire"" or ""attachment"". So the second line would be ""Similarly, desire penetrates a mind that is unprotected.""
+
+Putting it all together, the metaphor is comparing the mind to a house. If the house isn't properly covered, rain (representing desire) gets in. Similarly, if the mind isn't protected, desire enters.
+
+Now, translating this into Vietnamese. Let me check the terms:
+
+- ""Yathāgāraṃ ducchannaṃ"" → ""Một ngôi nhà được che chắn kỹ lưỡng""
+- ""vṛṣṭiḥ samatividhyati"" → ""mưa không thể thấm vào""
+- ""Evam abhāvitaṃ cittaṃ"" → ""Tương tự, một tâm trí không được bảo vệ""
+- ""rāgaḥ samatividhyati"" → ""sự tham ái sẽ thấm vào""
+
+Wait, the original says ""samatividhyati"" which is ""penetrates"" or ""enters"". So maybe ""mưa thấm vào"" for the first part. Let me adjust.
+
+First line: ""Giống như mưa thấm vào ngôi nhà không được che chắn kỹ lưỡng,""
+
+Second line: ""sự tham ái cũng thấm vào tâm trí không được bảo vệ.""
+
+But the original structure is ""Yathā... vṛṣṭi..., evam... rāga..."". So maybe a more direct translation:
+
+""Giống như mưa thấm vào ngôi nhà không được che chắn kỹ lưỡng, sự tham ái cũng thấm vào tâm trí không được bảo vệ.""
+
+That seems to capture the parallel structure. Let me double-check the terms for accuracy. ""Ducchannaṃ"" is ""well-covered"", so ""không được che chắn kỹ lưỡng"" is correct. ""Rāgaḥ"" is ""desire"" or ""attachment"", so ""sự tham ái"" is appropriate. ""Citta"" is ""mind"" or ""heart"", so ""tâm trí"" works.
+
+I think that's a solid translation. Just need to ensure the grammar and flow are natural in Vietnamese. The structure ""Giống như... cũng..."" sets up the comparison correctly. Yeah, this should be the correct translation.
+</think>
+
+Giống như mưa thấm vào ngôi nhà không được che chắn kỹ lưỡng, sự tham ái cũng thấm vào tâm trí không được bảo vệ.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original meaning and is phrased in a natural, native-level Vietnamese.""
+}"
+14,"Yathā agāraṃ suchannaṃ, vuṭṭhī na samativijjhati; Evaṃ subhāvitaṃ cittaṃ, rāgo na samativijjhati.","Yathāgāraṃ succhannaṃ, vṛṣṭir na samatividhyati; Evaṃ subhāvitaṃ cittaṃ, rāgo na samatividhyati.","Như nhà khéo lợp kín, Mưa không xâm nhập vào. Cũng vậy tâm khéo tu, Tham dục không xâm nhập.",Mind (Guarded),Dhammapada 14 / Udanavarga 31.28,"Giống như một ngôi nhà được lau chùi sạch sẽ, gió không thổi tung lên; Cũng vậy, một tâm được tu dưỡng tốt, tham không xâm chiếm.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning but uses 'gió' (wind) instead of 'mưa' (rain) and 'tham' (greed) instead of 'tham dục' (craving or desire), and the phrase 'lau chùi sạch sẽ' (swept and cleaned) does not perfectly match 'suchannaṃ' (well-thatched).""
+}","Như một ngôi nhà được xây dựng chắc chắn, lửa không tắt; như vậy, tâm trí đã được rèn luyện tốt, dục vọng không tắt.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation incorrectly preserves the original meaning, using 'lửa không tắt' (fire not extinguished) instead of 'mưa không xâm nhập' (rain not penetrating), and 'dục vọng không tắt' (desire not extinguished) instead of 'tham dục không xâm nhập' (craving not penetrating), but the sentence structure is fluent and natural in Vietnamese.""
+}","Như ngôi nhà được lợp kín, mưa không thể xuyên thấm; Cũng vậy tâm được tu tập tốt, tham không thể xuyên thấm.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text, but the phrase 'xuyên thấm' is slightly less common in Vietnamese than 'xâm nhập' used in the reference translation.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The first line is ""Yathā agāraṃ suchannaṃ, vuṭṭhī na samativijjhati;"" and the second line is ""Evaṃ subhāvitaṃ cittaṃ, rāgo na samativijjhati."" 
+
+Starting with the first line: ""Yathā"" probably means ""just as"" or ""like."" ""Agāraṃ"" could be ""house"" or ""home."" ""Suchannaṃ"" might be a form of ""succharita"" which means ""well-covered"" or ""well-protected."" ""Vuṭṭhī"" is likely ""arising"" or ""rising."" ""Na samativijjhati"" seems to be a negative form, maybe ""does not arise"" or ""does not stand.""
+
+So the first line could be translated as ""Just as a well-protected house, arising does not stand."" But that doesn't sound natural in Vietnamese. Maybe ""Giống như một ngôi nhà được che chắn cẩn thận, sự nổi lên không thể tồn tại.""
+
+Now the second line: ""Evaṃ"" is ""thus"" or ""in this way."" ""Subhāvitaṃ"" might be ""well-cultivated"" or ""well-trained."" ""Cittaṃ"" is ""mind."" ""Rāgo"" is ""desire"" or ""lust."" Again, ""na samativijjhati"" is ""does not arise.""
+
+Putting it together: ""Tương tự như vậy, tâm được nuôi dưỡng tốt, dục vọng không thể sinh khởi.""
+
+Wait, let me check the terms again. ""Agāra"" is definitely ""house."" ""Suchannaṃ"" is ""covered"" or ""protected."" ""Vuṭṭhī"" is ""arising."" So the first part is comparing a well-protected house to the mind. The second line says that if the mind is well-cultivated, desire doesn't arise.
+
+I need to make sure the structure is parallel. In Vietnamese, maybe:
+
+""Giống như ngôi nhà được che chắn kỹ lưỡng, sự nổi lên không thể tồn tại; Tương tự như vậy, tâm được nuôi dưỡng tốt, dục vọng không thể sinh khởi.""
+
+But ""vuṭṭhī"" is ""arising,"" so maybe ""sự nổi lên"" is okay. ""Samativijjhati"" is ""establishes"" or ""stands,"" so ""không thể tồn tại"" for ""does not stand.""
+
+Alternatively, ""Giống như ngôi nhà được che chắn kỹ lưỡng, sự phát sinh không thể tồn tại; Tâm được nuôi dưỡng tốt, dục vọng không thể phát sinh.""
+
+That might flow better. Using ""phát sinh"" for both ""arising"" and ""desire"" in the second line. Let me check the Pali again. The first line's ""vuṭṭhī"" is ""arising,"" and the second line's ""rāgo"" is ""desire."" So the structure is comparing a protected house to a well-cultivated mind, where desire doesn't arise.
+
+Finalizing the translation:
+
+""Giống như ngôi nhà được che chắn kỹ lưỡng, sự phát sinh không thể tồn tại; Tương tự như vậy, tâm được nuôi dưỡng tốt, dục vọng không thể phát sinh.""
+
+That seems accurate and maintains the parallel structure. I think that's the correct translation.
+</think>
+
+Giống như ngôi nhà được che chắn kỹ lưỡng, sự phát sinh không thể tồn tại; Tương tự như vậy, tâm được nuôi dưỡng tốt, dục vọng không thể phát sinh.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the original meaning and has a natural flow in Vietnamese, but minor adjustments could further refine the wording for perfect accuracy and fluency.""
+}","Giống như một ngôi nhà được che chắn kỹ, mưa không thấm vào; cũng vậy, một tâm thức được tu dưỡng tốt, tham ái không xâm chiếm.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing is slightly formal and less common in everyday Vietnamese.""
+}","Như mưa không rơi vào ngôi nhà sạch sẽ, thì tâm trí trong sáng cũng không bị rạgo chi phối.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning, but uses 'mưa không rơi vào' instead of 'mưa không xâm nhập' and 'tâm trí trong sáng' instead of 'tâm khéo tu', and 'rạgo' seems to be a typo of 'rago' or should be 'tham dục' for better accuracy and fluency.""
+}","Như ngôi nhà được lợp kín, mưa không thể xuyên thấu; cũng vậy, tâm được tu tập tốt, tham không thể xuyên thấu.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrase 'tâm được tu tập tốt' could be more naturally expressed as 'tâm được tu dưỡng tốt' or 'tâm được rèn luyện tốt' to achieve native-level fluency.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The Sanskrit verse is:
+
+""Yathāgāraṃ succhannaṃ, vṛṣṭir na samatividhyati; Evaṃ subhāvitaṃ cittaṃ, rāgo na samatividhyati.""
+
+Breaking it down, ""Yathāgāraṃ succhannaṃ"" – ""Yathā"" means ""as"" or ""like"", ""gāra"" is ""house"", ""succhannaṃ"" is ""well-covered"" or ""well-protected"". So the first part is ""A well-covered house"".
+
+Next, ""vṛṣṭir na samatividhyati"" – ""vṛṣṭi"" is ""rain"", ""na"" is ""not"", ""samatividhyati"" – the verb here is ""to enter"" or ""to penetrate"". So ""rain does not penetrate"".
+
+Then the second half: ""Evaṃ subhāvitaṃ cittaṃ"" – ""Evaṃ"" is ""thus"" or ""in the same way"", ""subhāvitaṃ"" is ""well-trained"" or ""well-cultivated"", ""cittaṃ"" is ""mind"". So ""a well-trained mind"".
+
+Finally, ""rāgo na samatividhyati"" – ""rāga"" is ""desire"" or ""passion"", ""na samatividhyati"" again ""does not penetrate"". 
+
+Putting it all together: Just as a well-covered house is not penetrated by rain, a well-trained mind is not penetrated by desire.
+
+Now translating this into Vietnamese. The key is to maintain the metaphor and the structure. 
+
+""Y như ngôi nhà được che đậy kín, mưa không thể thấm vào; Cũng vậy, tâm được tu tập tốt, dục vọng không thể xâm nhập.""
+
+Let me check each part. ""Y như"" is ""Just as"", ""ngôi nhà được che đậy kín"" is ""the house covered tightly"". ""Mưa không thể thấm vào"" – ""rain cannot seep in"". The second part: ""Cũng vậy"" – ""So too"", ""tâm được tu tập tốt"" – ""mind well-trained"", ""dục vọng không thể xâm nhập"" – ""desire cannot penetrate"". 
+
+I think that's accurate. The structure mirrors the original Sanskrit, using the same comparative structure. The terms for ""well-trained mind"" and ""desire"" are appropriate in Vietnamese. No extra commentary, just the translation as requested.
+</think>
+
+Y như ngôi nhà được che đậy kín, mưa không thể thấm vào; Cũng vậy, tâm được tu tập tốt, dục vọng không thể xâm nhập.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original meaning and is phrased in a natural, native-level Vietnamese.""
+}"
+15,"Idha socati pecca socati, pāpakārī ubhayattha socati; So socati so vihaññati, disvā kammakiliṭṭhamattano.","Iha śocati pretya śocati, pāpakārī ubhayatra śocati; Sa śocati sa vihanyate, dṛṣṭvā karmakliṣṭam ātmanaḥ.","Nay sầu, đời sau sầu, Kẻ ác, hai đời sầu. Nó sầu, nó ưu não, Thấy nghiệp uế mình làm.",Grief (Evil),Dhammapada 15 / Udanavarga 9.5,"Ở đây, người làm ác sẽ phải khóc than sau khi chết, và cũng khóc than ở nơi khác; Người ấy khóc than, người ấy than thở, khi thấy nghiệp dơ bẩn của mình.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly formal and less common expressions, such as 'khóc than' and 'nơi khác', which, although understandable, are not as fluent as the reference translation.""
+}","Ở đây người buồn, ở kia người buồn, kẻ làm ác buồn ở cả hai nơi; người buồn ấy tự hủy hoại mình khi thấy những việc mình đã làm.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the original meaning, with minor adjustments for natural Vietnamese phrasing, but 'tự hủy hoại mình' slightly deviates from 'sorrow' to 'self-destruction'.""
+}","Ở đây, người ấy khóc; sau khi chết vẫn khóc; kẻ làm ác khóc ở cả hai nơi. Người ấy khóc, người ấy đau khổ, khi thấy hậu quả bất thiện của chính mình.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text, but the wording could be more natural and fluent in Vietnamese.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The Pali verse is:
+
+""Idha socati pecca socati, pāpakārī ubhayattha socati; So socati so vihaññati, disvā kammakiliṭṭhamattano.""
+
+Breaking it down, ""socati"" means to grieve or lament. ""Idha"" is ""here,"" ""pecca"" is ""after,"" ""pāpakārī"" is someone who does evil, ""ubhayattha"" is ""in both cases,"" ""vihaññati"" might be a form of ""to vanish"" or ""to disappear,"" ""disvā"" is ""seeing,"" ""kammakiliṭṭhamattano"" could be related to the result of one's actions.
+
+So the first line: ""Here he grieves, after he grieves, the evildoer grieves in both cases."" The second line: ""He who grieves, he vanishes, having seen the result of his own actions.""
+
+Now translating to Vietnamese. Need to make sure the terms are accurate. ""Pāpakārī"" is ""người làm điều ác."" ""Ubhayattha socati"" would be ""buồn đau trong cả hai trường hợp."" ""Vihaññati"" could be ""mất đi"" or ""biến mất."" ""Kammakiliṭṭhamattano"" is ""kết quả của chính hành động của mình.""
+
+Putting it all together:
+
+""Ở đây anh ta buồn đau, sau này anh ta cũng buồn đau, người làm điều ác buồn đau trong cả hai trường hợp; Ai buồn đau thì sẽ mất đi, khi nhìn thấy kết quả của chính hành động của mình.""
+
+Check for flow and accuracy. Make sure the translation captures the cause and effect, the consequence of one's actions leading to their own downfall. Avoid adding any extra commentary as per the user's request. Just the translation.
+</think>
+
+Ở đây anh ta buồn đau, sau này anh ta cũng buồn đau, người làm điều ác buồn đau trong cả hai trường hợp; Ai buồn đau thì sẽ mất đi, khi nhìn thấy kết quả của chính hành động của mình.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the original meaning with minor imperfections and slight awkwardness in phrasing.""
+}","Ở đây người đó than thở, sau khi chết cũng than thở, kẻ làm ác than thở ở cả hai nơi; Người đó than thở và suy sụp, khi nhìn thấy nghiệp ác của mình.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses slightly formal and less common vocabulary, making it less fluent than native Vietnamese expressions.""
+}","Ở đời người ấy buồn, sau khi chết người ấy cũng buồn; kẻ làm ác buồn ở cả hai nơi; người buồn ấy sẽ bị tiêu diệt khi thấy bản thân mình bị nhốt trong nghiệp.","{
+  ""accuracy"": 3,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning but has noticeable errors, such as 'tiêu diệt' which doesn't perfectly convey the original meaning of 'vihanyate', and 'nhốt trong nghiệp' which is a bit awkward. However, the fluency is good, with natural Vietnamese phrasing.""
+}","Ở đây nó khóc, sau khi chết nó cũng khóc; kẻ làm ác khóc ở cả hai nơi. Nó khóc, nó đau khổ, khi thấy nghiệp nặng của chính mình.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but uses 'nó khóc' (it cries) instead of 'sầu' (sorrow), and 'nghiệp nặng' (heavy karma) instead of 'nghiệp uế' (defiled karma), which are minor imperfections.""
+}","<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and only the translation, no extra comments. First, I need to make sure I understand the Sanskrit verse correctly.
+
+The text is: ""Iha śocati pretya śocati, pāpakārī ubhayatra śocati; Sa śocati sa vihanyate, dṛṣṭvā karmakliṣṭam ātmanaḥ.""
+
+Breaking it down, ""Iha"" means ""here"" or ""in this life,"" ""śocati"" is ""sorrows"" or ""laments."" ""Pretya"" refers to the afterlife. ""Pāpakārī"" is someone who commits sins. ""Ubhayatra"" means ""both ways"" or ""in both places."" The second part: ""Sa śocati sa vihanyate"" – ""He who sorrows, he perishes."" ""Dṛṣṭvā karmakliṣṭam ātmanaḥ"" – ""Seeing the polluted self by karma.""
+
+Now, translating into Vietnamese. Need to maintain the poetic structure. Let's check each part:
+
+""Iha śocati pretya śocati"" – ""Ở đời này khóc lóc, đời sau cũng khóc lóc""
+""pāpakārī ubhayatra śocati"" – ""Người tạo ác nghiệp hai đời đều khóc lóc""
+""Sa śocati sa vihanyate"" – ""Ai khóc lóc, người ấy sẽ tiêu vong""
+""dṛṣṭvā karmakliṣṭam ātmanaḥ"" – ""Nhìn thấy thân mình ô uế do nghiệp chướng""
+
+Wait, ""karmakliṣṭam"" is ""polluted by karma,"" so maybe ""thân mình ô uế do nghiệp chướng"" is accurate. Let me confirm the terms. ""Karma"" in Vietnamese is often translated as ""nghiệp,"" so ""nghiệp chướng"" makes sense. ""Ātmanaḥ"" is ""self"" or ""soul,"" so ""thân mình"" or ""bản thân mình"" could work. 
+
+Putting it all together, making sure the lines flow naturally in Vietnamese. Also, check for any possible errors in the translation. For example, ""pretya"" is afterlife, so ""đời sau"" is correct. ""Pāpakārī"" is one who does evil, so ""người tạo ác nghiệp"" is good. 
+
+Double-checking the structure: The first line talks about sorrow in this life and the next. The second line says the sinner sorrows in both. The third line connects sorrow to perishing. The last line about seeing the self polluted by karma. 
+
+I think the translation is accurate. Let me make sure there are no typos. Looks good. Now present only the translation as requested.
+</think>
+
+Ở đời này khóc lóc, đời sau cũng khóc lóc, người tạo ác nghiệp hai đời đều khóc lóc; Ai khóc lóc, người ấy sẽ tiêu vong, nhìn thấy thân mình ô uế do nghiệp chướng.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""Translation perfectly preserves the original meaning and flows naturally in Vietnamese.""
+}"
+16,"Idha modati pecca modati, katapuñño ubhayattha modati; So modati so pamodati, disvā kammavisuddhimattano.","Iha modate pretya modate, kṛtapuṇyo ubhayatra modate; Sa modate sa pramodate, dṛṣṭvā karmaviśuddhim ātmanaḥ.","Nay vui, đời sau vui, Người thiện, hai đời vui. Nó vui, nó an vui, Thấy nghiệp tịnh mình làm.",Joy (Good),Dhammapada 16 / Udanavarga 9.6,"Ở đây, người ngu si này và người ngu si kia, cả hai đều ngu si vì đã làm ác; người ngu si này nhìn người ngu si kia, và thấy sự trong sạch của nghiệp báo của mình.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation has major errors in preserving the original meaning, but the Vietnamese phrasing is relatively natural and fluent.""
+}","Ở đây người ấy vui mừng, sau này người ấy cũng vui mừng; người đã làm công đức thì vui mừng ở cả hai nơi. Người ấy vui mừng, người ấy hân hoan khi thấy sự thanh tịnh của hành động của mình.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is written in natural, fluent Vietnamese.""
+}","Ở đây người ấy vui, sau khi chết cũng vui, người đã làm phước vui ở cả hai nơi; người ấy vui và hoan hỷ, thấy rõ nghiệp thanh tịnh của chính mình.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is expressed in natural, fluent Vietnamese.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The Pali sentence is: ""Idha modati pecca modati, katapuñño ubhayattha modati; So modati so pamodati, disvā kammavisuddhimattano.""
+
+Breaking it down word by word. ""Idha"" means ""here"" or ""in this way."" ""Modati"" is a verb meaning ""is joyful"" or ""is happy."" ""Pecca"" can mean ""after"" or ""later."" ""Katapuñño"" is a bit tricky; it's a compound word. ""Kata"" means ""done"" or ""performed,"" and ""puñña"" is ""merit"" or ""good deed."" So ""katapuñño"" might be ""one who has done merit"" or ""a person with merit."" ""Ubhayattha"" is ""both ways"" or ""in both respects."" ""Pamodati"" is similar to ""modati,"" but maybe with a nuance of ""rejoices"" or ""is delighted."" ""Disvā"" is ""seeing"" or ""having seen."" ""Kammavisuddhi"" is ""purification of action"" or ""cleansing of deeds."" ""Matta""no"" could be a contraction or part of another term. Maybe ""mattano"" is ""his own"" or ""self.""
+
+Putting the first part together: ""Here he rejoices, later he rejoices, one with merit rejoices in both ways."" The second part: ""He rejoices, he rejoices again, having seen the purification of his own deeds.""
+
+Now, translating into Vietnamese. Need to make sure the terms are correctly rendered. ""Modati"" is ""vui mừng"" or ""hân hoan."" ""Katapuñño"" could be ""người đã tạo phước"" (one who has created merit). ""Ubhayattha"" as ""cả hai"" (both). ""Pamodati"" might be ""hân hoan"" again. ""Kammavisuddhi"" is ""sự thanh tịnh của các hành động"" (purification of actions). ""Matta""no"" as ""bản thân mình"" (himself).
+
+First line: ""Ở đây, người ấy vui mừng, sau này người ấy vui mừng, người có phước vui mừng cả hai cách."" Second line: ""Người ấy vui mừng, người ấy hân hoan, đã thấy sự thanh tịnh của các hành động của chính mình.""
+
+Wait, ""pamodati"" might be a different form of ""modati,"" so maybe ""hân hoan"" is better. Also, ""disvā"" is ""đã thấy"" (having seen). Let me check again. The second line: ""So modati so pamodati"" – ""He rejoices, he rejoices again."" Then ""disvā kammavisuddhimattano"" – ""having seen the purification of his own deeds.""
+
+So final translation: ""Ở đây, người ấy vui mừng, sau này người ấy vui mừng, người có phước vui mừng cả hai cách; Người ấy vui mừng, người ấy hân hoan, đã thấy sự thanh tịnh của các hành động của chính mình.""
+
+I think that's accurate. Let me double-check each term to ensure there's no mistake. ""Katapuñño"" is definitely ""người có phước."" ""Ubhayattha"" is ""cả hai."" ""Pamodati"" as ""hân hoan"" is correct. ""Kammavisuddhi"" is ""sự thanh tịnh của các hành động."" ""Matta""no"" is ""của chính mình."" Yes, that seems right.
+</think>
+
+Ở đây, người ấy vui mừng, sau này người ấy vui mừng, người có phước vui mừng cả hai cách; Người ấy vui mừng, người ấy hân hoan, đã thấy sự thanh tịnh của các hành động của chính mình.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original meaning and is written in native-level Vietnamese, with correct terminology and natural phrasing.""
+}","Ở đây vui, sau khi chết cũng vui, người tích công đức vui ở cả hai nơi; Người ấy vui, người ấy hoan hỷ, khi chứng kiến sự trong sạch của nghiệp báo của mình.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but some phrases could be more naturally expressed in Vietnamese.""
+}","Ở đây người ấy vui sướng, sau khi chết cũng vui sướng; người làm công đức vui sướng ở cả hai nơi. Người ấy vui sướng, người ấy được hạnh phúc khi thấy sự trong sạch của hành động của mình.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is written in natural, fluent Vietnamese.""
+}","Ở đây thì vui, sau khi chết cũng vui; người có phước đức thì hai nơi đều vui; người ấy vui mừng khôn xiết khi thấy nghiệp của mình đã được thanh tịnh.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text and is expressed in natural, native-level Vietnamese.""
+}","<think>
+Okay, let's tackle this translation. The user wants the Sanskrit text translated into Vietnamese, and they specified to provide only the translation without any extra commentary. First, I need to make sure I understand the Sanskrit text correctly.
+
+The text is a verse, so it's likely from a philosophical or religious context, maybe Hindu or Buddhist. Let's break it down word by word.
+
+""Iha modate pretya modate"" – ""Iha"" means ""here"" or ""in this life,"" ""modate"" is ""he rejoices"" or ""he is happy."" ""Pretya"" could be ""after death"" or ""in the next life."" So the first part is about rejoicing in this life and the next.
+
+""kṛtapuṇyo ubhayatra modate"" – ""kṛtapuṇyo"" might be a compound word. ""Kṛta"" could mean ""done"" or ""performed,"" and ""puṇya"" is ""merit"" or ""good deed."" ""Ubhayatra"" is ""in both"" (places). So someone who has performed meritorious deeds rejoices in both (this life and the next).
+
+""Sa modate sa pramodate"" – ""Sa"" means ""he,"" so ""he rejoices, he greatly rejoices."" The second ""modate"" here might be an intensification.
+
+""dṛṣṭvā karmaviśuddhim ātmanaḥ."" – ""dṛṣṭvā"" is ""having seen,"" ""karma"" is ""action"" or ""deeds,"" ""viśuddhi"" is ""purification,"" ""ātmanaḥ"" is ""of the self."" So ""having seen the purification of his own deeds.""
+
+Putting it all together, the verse seems to talk about someone who rejoices in this life and the next through meritorious actions, and by seeing the purification of their own karma, they achieve greater joy.
+
+Now, translating this into Vietnamese. I need to ensure that the terms used are appropriate for the context. Words like ""merit"" or ""karma"" might have specific translations in Buddhist Vietnamese. For example, ""phước đức"" for merit, ""nghiệp"" for karma.
+
+Let me check each part:
+
+""Iha modate pretya modate"" – ""Ở đời này vui sướng, đời sau cũng vui sướng.""
+
+""kṛtapuṇyo ubhayatra modate"" – ""Người tạo phước đức ở cả hai đời đều vui sướng.""
+
+""Sa modate sa pramodate"" – ""Người vui sướng thì người ấy vui sướng lớn.""
+
+""dṛṣṭvā karmaviśuddhim ātmanaḥ."" – ""Sau khi thấy sự thanh tịnh của nghiệp mình.""
+
+Wait, ""pramodate"" might be ""greatly rejoices,"" so maybe ""vui sướng lớn"" is okay. Also, ""karmaviśuddhi"" is purification of karma, so ""sự thanh tịnh của nghiệp"" makes sense. 
+
+Let me make sure the structure is correct. The first two lines talk about rejoicing in this and next life, the third line about rejoicing and greatly rejoicing, and the last line about seeing the purification of one's deeds. 
+
+Double-checking the translation for accuracy. Maybe ""đời này"" for ""iha,"" ""đời sau"" for ""pretya."" ""Kṛtapuṇyo"" is someone who has done good deeds, so ""người tạo phước đức."" ""Ubhayatra"" is both places, so ""cả hai đời."" 
+
+Third line: ""Sa modate sa pramodate"" – ""Người vui sướng, người ấy vui sướng lớn."" 
+
+Last line: ""Sau khi thấy sự thanh tịnh của nghiệp mình."" 
+
+I think that's accurate. Let me put it all together in Vietnamese as the final translation.
+</think>
+
+Ở đời này vui sướng, đời sau cũng vui sướng, người tạo phước đức ở cả hai đời đều vui sướng; người vui sướng, người ấy vui sướng lớn, sau khi thấy sự thanh tịnh của nghiệp mình.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, with minor imperfections in wording and phrasing that slightly affect fluency.""
+}"
+17,"Idha tappati pecca tappati, pāpakārī ubhayattha tappati; Pāpaṃ me katanti tappati, bhiyyo tappati duggatiṃ gato.",(Unique to Pali - No direct Udanavarga parallel),"Nay than, đời sau than, Kẻ ác, hai đời than. Nó than: Ta làm ác, Ðọa cõi dữ, than hơn.",Remorse,Dhammapada 17 / No Parallel,"Ở đây, người làm ác bị đốt, và ở thế giới sau khi chết, người đó cũng bị đốt; Người nghĩ ""Tôi đã làm ác"" bị đốt, và bị đốt nhiều hơn khi rơi vào cõi khổ.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text, but the phrasing could be more natural and fluent in Vietnamese.""
+}","Ở đây ngã, ở kia ngã, kẻ làm ác ở cả hai nơi đều ngã; kẻ làm ác ngã, người theo sau cũng ngã vào địa ngục tồi tệ.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but uses slightly formal and less common vocabulary, such as 'ngã' instead of 'than' and 'địa ngục tồi tệ' instead of 'đọa cõi dữ'.""
+}","Ở đây, kẻ làm ác đau khổ trong hiện tại và cũng đau khổ sau khi chết; kẻ làm ác đau khổ ở cả hai nơi. Khi nghĩ “Ta đã làm điều ác”, y đau khổ; đi vào đường dữ, y càng đau khổ hơn.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text, but the phrasing could be more natural and fluent in Vietnamese.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The sentence structure in Pali can be tricky, so I'll break it down word by word.
+
+""Idha tappati pecca tappati"" – ""Idha"" means ""here"" or ""in this way,"" ""tappati"" is a verb that might mean ""to burn"" or ""to suffer."" ""Pecca"" could be a form of ""pacceka,"" meaning ""after"" or ""later."" So maybe ""Here he burns, later he burns.""
+
+Next, ""pāpakārī ubhayattha tappati;"" ""Pāpaka"" is ""evil"" or ""bad,"" ""kārī"" might be a form of ""kāraka,"" meaning ""doer"" or ""perpetrator."" ""Ubhayattha"" is ""both ways"" or ""in both cases."" So ""The evildoer burns in both ways.""
+
+Then, ""Pāpaṃ me katanti tappati,"" ""Pāpaṃ"" is ""evil"" or ""sin,"" ""me"" is ""my,"" ""katanti"" is ""they do"" or ""they make,"" so ""Because I have done evil, he burns.""
+
+Finally, ""bhiyyo tappati duggatiṃ gato."" ""Bhiyyo"" means ""more"" or ""increasingly,"" ""duggatiṃ"" is ""bad destination"" or ""evil destination,"" ""gato"" is ""gone."" So ""He burns more having gone to a bad destination.""
+
+Putting it all together in Vietnamese, I need to make sure the translation flows naturally while preserving the original meaning. Let me check each part again for accuracy. The key is to maintain the contrast between the immediate and future suffering of the evildoer. Also, terms like ""tappati"" should be consistently translated as ""chịu khổ"" (suffer) or ""cháy"" (burn), depending on context. Since the original uses ""tappati"" multiple times, maybe ""chịu khổ"" is better here for ""suffer.""
+
+So the translation would be: ""Ở đây, người ấy chịu khổ, sau này người ấy chịu khổ; kẻ ác làm điều ác ở cả hai phương diện; vì đã tạo ác, người ấy chịu khổ nhiều hơn, đi đến nơi dữ.""
+
+I should double-check the terms for ""ubhayattha"" to ensure it's ""cả hai phương diện"" (both aspects) and that ""duggatiṃ"" is correctly rendered as ""nơi dữ"" (bad place). Also, confirm that ""pāpakārī"" is accurately translated as ""kẻ ác"" (evil person). Everything seems to align correctly. The structure in Vietnamese should mirror the original's progression from present to future suffering, emphasizing the consequences of evil actions.
+</think>
+
+Ở đây, người ấy chịu khổ, sau này người ấy chịu khổ; kẻ ác làm điều ác ở cả hai phương diện; vì đã tạo ác, người ấy chịu khổ nhiều hơn, đi đến nơi dữ.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original meaning and flows naturally in Vietnamese, effectively conveying the contrast between immediate and future suffering of the evildoer.""
+}",(Duy nhất trong Pali - Không có song song trực tiếp Udanavarga),"{
+  ""accuracy"": 1,
+   ""fluency"": 1,
+   ""explanation"": ""The candidate translation does not preserve the meaning of the source text and is not fluent in Vietnamese.""
+}",Could you please provide the Sanskrit text you’d like translated?,"{
+  ""accuracy"": 1,
+   ""fluency"": 1,
+   ""explanation"": ""The candidate did not provide a translation, instead requested the Sanskrit text.""
+}",(Độc nhất trong tiếng Pali – Không có đoạn tương đương trực tiếp trong Udanavarga),"{
+  ""accuracy"": 1,
+   ""fluency"": 1,
+   ""explanation"": ""The candidate translation does not convey the meaning of the source text at all, it seems to be a translation of a note about the text rather than the text itself.""
+}","<think>
+Okay, the user wants me to translate a Sanskrit text into Vietnamese. But the text they provided is ""(Unique to Pali - No direct Udanavarga parallel)"" and the translation is empty. Hmm, maybe they're referring to a specific text that's only found in Pali and not in the Udanavarga. Wait, the user might have intended to include the actual Sanskrit text but forgot to paste it. Let me check again.
+
+Looking at the query, the text section is empty except for the note about being unique to Pali. The translation part is just ""Translation:"" with nothing after. So perhaps there was a mistake in formatting or copying the text. Since there's no actual Sanskrit text to translate, I can't provide a translation. The user might need to provide the correct text. But they also specified to provide only the translation, no extra commentary. If I respond with a request for the text, that would be commentary. But since there's no text to translate, maybe I should just leave it blank? However, the user might expect an error message. But the instructions say to provide only the translation. So if there's no text, maybe just leave the translation part empty. Alternatively, maybe the user made a mistake in their query. I'll proceed by noting that there's no text provided to translate, but since they want only the translation, perhaps just leave it as is. Wait, the example shows that when there's no text, the assistant's response is empty. So maybe in this case, since there's no actual text to translate, the correct response is nothing. But the user might have intended to include the text in their query. Let me double-check. The user wrote ""Translate the following Sanskrit text into Vietnamese. Provide ONLY the translation, no extra commentary. Text: (Unique to Pali - No direct Udanavarga parallel) Translation:"" So the text they provided is just the note about being unique to Pali, not the actual Sanskrit text. Therefore, there's nothing to translate. The correct response would be to leave the translation section empty. But maybe the user intended to include the text in the note. However, the note is in English, not Sanskrit. So perhaps there's a misunderstanding. I need to follow the instructions strictly. Since there's no Sanskrit text provided, I can't translate anything. Therefore, the translation would be empty. But the user might have made an error in their request. However, I must adhere to their instruction to provide only the translation. So the answer is nothing after ""Translation:"".
+</think>
+
+Translation:","{
+  ""accuracy"": 1,
+   ""fluency"": 1,
+   ""explanation"": ""No Sanskrit text provided to translate.""
+}"
+18,"Idha nandati pecca nandati, katapuñño ubhayattha nandati; Puññaṃ me katanti nandati, bhiyyo nandati suggatiṃ gato.",(Unique to Pali - No direct Udanavarga parallel),"Nay hoan đời sau hoan, Người thiện, hai đời hoan. Nó hoan: Ta làm thiện, Sanh cõi lành, hoan hơn.",Rejoicing,Dhammapada 18 / No Parallel,"Ở đây, người ấy vui khi còn sống, vui khi đã chết, người ấy vui ở cả hai nơi vì đã làm phúc; người ấy vui vì đã làm phúc, và vui hơn khi đã đi đến cõi thiện.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text, but the phrasing could be more natural and fluent in Vietnamese.""
+}","Ở đời này người ta vui, sau đời cũng vui; người đã làm công đức thì vui ở cả hai thế giới; những người làm công đức của tôi đều vui, và sau này còn vui khi đã đạt được nơi an lạc.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Pali text, but has minor imperfections and slight awkwardness in phrasing, such as using 'đạt được nơi an lạc' which could be more naturally translated as 'đạt đến cõi lành'.""
+}","Ở đây người vui mừng, sau khi chết vẫn vui mừng; người đã làm phước vui mừng ở cả hai nơi. Người vui mừng vì đã làm phước, lại càng vui mừng hơn khi được sinh lên cõi lành.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is written in natural, fluent Vietnamese.""
+}","<think>
+Okay, let's see. The user wants me to translate this Pali text into Vietnamese. They specified only the translation, no extra commentary. So I need to make sure I don't add anything else.
+
+First, I should check if I know the Pali words here. The text is: ""Idha nandati pecca nandati, katapuñño ubhayattha nandati; Puññaṃ me katanti nandati, bhiyyo nandati suggatiṃ gato.""
+
+Breaking it down, ""Idha"" means ""here"" or ""in this world"", ""nandati"" is ""is joyful"" or ""is happy"". ""Pecca"" could be ""after"" or ""in the next world"". ""Katapuñño"" is ""one who has done merit"" or ""a person with good deeds"". ""Ubhayattha"" might mean ""both"" or ""in both cases"". ""Puññaṃ me katanti"" is ""I have done merit"" or ""I have performed good deeds"". ""Bhiyyo"" could be ""more"" or ""greater"". ""Suggatiṃ gato"" is ""gone to a good destination"" or ""reached a happy rebirth"".
+
+Putting it together in English, it's something like: ""Here he is joyful, after he is joyful, the one who has done merit is joyful in both; 'I have done merit,' he is joyful, more joyful is he who has gone to a good destination.""
+
+Now translating that into Vietnamese. Let me make sure the terms are correctly rendered. ""Nandati"" is ""vui mừng"" or ""hạnh phúc"". ""Katapuñño"" could be ""người đã làm phước"" or ""người có công đức"". ""Suggatiṃ gato"" might be ""đi đến cõi tốt"" or ""được tái sinh vào cõi lành"".
+
+So the Vietnamese translation would be: ""Ở đây, người ấy vui mừng, sau này người ấy vui mừng, người đã làm phước vui mừng cả hai; 'Tôi đã làm phước,' người ấy vui mừng, người đi đến cõi tốt vui mừng nhiều hơn.""
+
+Wait, let me check the structure again. The original has two parts separated by a semicolon. The first part talks about being joyful here and after, the second part about doing merit and going to a good destination. The Vietnamese should mirror that structure.
+
+Maybe adjust the punctuation. Also, ""ubhayattha nandati"" is ""vui mừng cả hai"" or ""vui mừng ở cả hai cõi"". Hmm. Maybe ""vui mừng ở cả hai"" is better. Let me revise:
+
+""Ở đây người ấy vui mừng, sau này người ấy vui mừng, người đã làm phước vui mừng ở cả hai; 'Tôi đã làm phước,' người ấy vui mừng, người đi đến cõi tốt vui mừng nhiều hơn.""
+
+Yes, that seems accurate. I should double-check the terms for ""good destination"" or ""happy rebirth"" to ensure they're standard in Buddhist Vietnamese context. ""Cõi tốt"" is acceptable, but maybe ""cõi lành"" is better. Let's go with ""cõi lành"".
+
+Final version: ""Ở đây người ấy vui mừng, sau này người ấy vui mừng, người đã làm phước vui mừng ở cả hai; 'Tôi đã làm phước,' người ấy vui mừng, người đi đến cõi lành vui mừng nhiều hơn.""
+</think>
+
+Ở đây người ấy vui mừng, sau này người ấy vui mừng, người đã làm phước vui mừng ở cả hai; ""Tôi đã làm phước,"" người ấy vui mừng, người đi đến cõi lành vui mừng nhiều hơn.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original meaning and is phrased in a natural, native-level Vietnamese.""
+}",(Dộc nhất trong Pali - Không có song song trực tiếp trong Udanavarga),"{
+  ""accuracy"": 1,
+   ""fluency"": 1,
+   ""explanation"": ""The candidate translation does not convey the meaning of the Sanskrit text, instead it seems to be a translation of the note about the text's uniqueness in Pali.""
+}",Could you please provide the Sanskrit passage you’d like translated into Vietnamese?,"{
+  ""accuracy"": 1,
+   ""fluency"": 1,
+   ""explanation"": ""The candidate did not provide a translation, instead requested the Sanskrit passage.""
+}",(Không có văn bản Sanskrit để dịch),"{
+  ""accuracy"": 1,
+   ""fluency"": 1,
+   ""explanation"": ""No translation provided to evaluate.""
+}","<think>
+Okay, the user wants me to translate a Sanskrit text into Vietnamese. But the text provided is ""(Unique to Pali - No direct Udanavarga parallel)"" and the translation is empty. Hmm, maybe they're referring to a specific text that's only found in Pali and not in the Udanavarga. Wait, the user might have made a mistake here. Let me check again.
+
+The user's instruction says to translate the Sanskrit text into Vietnamese, but the actual text they provided is a note about it being unique to Pali. So perhaps the actual Sanskrit text they want translated is missing? Or maybe they included the note instead of the actual text. But the example response is just ""Translation:"" with nothing after it. 
+
+Wait, maybe the user is testing if I can handle cases where the text isn't provided. They might be checking if I follow instructions to only provide the translation without extra commentary. The note says ""Provide ONLY the translation, no extra commentary."" So if the text to translate is missing, what should I do? 
+
+In this case, the user might have intended to include the Sanskrit text but forgot. However, since the given text is just a note about being unique to Pali, perhaps the actual translation task is not present. But the user still wants me to respond with only the translation. Since there's no text to translate, maybe the correct response is just ""Translation:"" as shown in the example. 
+
+Alternatively, maybe the user is trying to see if I can recognize when there's no text to translate. But the example shows that when the text is present, the assistant provides the translation. Here, the text is a note, not the actual Sanskrit content. So perhaps the correct approach is to leave the translation blank, as there's no actual text to translate. 
+
+Therefore, the response should be ""Translation:"" with nothing after it, as per the user's instruction to provide only the translation and no extra commentary. I need to make sure not to add any explanations or questions, just follow the format given in the example.
+</think>
+
+Translation:",{}
+19,"Bahumpi ce sahitaṃ bhāsamāno, na takkaro hoti naro pamatto; Gopova gāvo gaṇayaṃ paresaṃ, na bhāgavā sāmaññassa hoti.","Subahv apīha sahitaṃ bhāṣamāṇo, na tat karo bhavati naraḥ pramattaḥ; Gopaiva gāḥ saṃgaṇayan pareṣāṃ, na bhāgavān śrāmaṇyārthasya bhavati.","Nếu người nói nhiều kinh, Không hành trì, phóng dật. Như kẻ chăn bò người, Không phần Sa môn hạnh.",Practice vs Speech,Dhammapada 19 / Udanavarga 4.22,"Dù cho người đó có nói nhiều về kinh điển, nhưng nếu người đó là kẻ bê tha, không phải là người trí tuệ. Người chăn bò chỉ biết đếm bò của người khác, chứ không phải là người chia phần cho bậc Sa-môn.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the meaning of the Pali text and is phrased in a natural, fluent Vietnamese manner.""
+}","Dù có nhiều người cùng nói, người chỉ nghĩ đến mình vẫn không phải là người nói; như người chăn trâu đếm trâu của người khác, không phải là người tu hành.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the original Pali text, but with a slight deviation in the first part, and a more natural Vietnamese phrasing.""
+}","Dù có thuộc nhiều kinh mà nói ra, nếu người không thực hành, phóng túng, thì cũng như kẻ chăn bò đếm bò của người khác – không phải là người chia sẻ đời sống Sa-môn.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The candidate translation accurately preserves the meaning of the Pali text and flows naturally in Vietnamese, closely matching the reference translation.""
+}","<think>
+Okay, let's tackle this Pali translation. First, I need to understand the original text. The sentence is in Pali, and I need to translate it into Vietnamese. The user wants only the translation, no extra commentary, so I have to be precise.
+
+The first part: ""Bahumpi ce sahitaṃ bhāsamāno, na takkaro hoti naro pamatto;"" Let's break it down. ""Bahumpi"" might be ""bahu"" (many) with a suffix. ""Sahitaṃ"" means ""together"" or ""with others"". ""Bhāsamāno"" is ""speaking"". So ""speaking much with others"". ""Na takkaro hoti"" could be ""is not careful"" or ""does not act properly"". ""Naro pamatto"" is ""a heedless man"".
+
+So the first line might translate to: ""Nếu người vô tâm nói nhiều với người khác, thì không có sự cẩn trọng.""
+
+Second part: ""Gopova gāvo gaṇayaṃ paresaṃ, na bhāgavā sāmaññassa hoti."" ""Gopova"" is ""cowherd"". ""Gāvo"" is ""cows"". ""Gaṇayaṃ paresaṃ"" could be ""counting others' cows"". ""Na bhāgavā sāmaññassa hoti."" ""Bhāgavā"" is ""Lord"" or ""Blessed One"". ""Sāmaññassa"" relates to ""asceticism"" or ""monastic life"". So maybe ""The Lord does not approve of counting others' cows.""
+
+Putting it all together in Vietnamese: ""Nếu người vô tâm nói nhiều với người khác, thì không có sự cẩn trọng; Giống như người chăn bò đếm bò của người khác, Đấng Thế Tôn không tán thành đời sống ẩn dật như vậy.""
+
+Wait, I need to check if ""sāmaññassa"" is correctly translated. Maybe ""asceticism"" is better as ""đời sống ẩn dật"". Also, ""pamatto"" is ""heedless"" or ""careless"". Let me adjust for clarity. Maybe ""người vô tâm"" is correct. The cowherd analogy is about not being careful, so the translation should reflect that. Let me verify each term again to ensure accuracy. Once confirmed, the translation should be accurate and natural in Vietnamese.
+</think>
+
+Nếu người vô tâm nói nhiều với người khác, thì không có sự cẩn trọng; Giống như người chăn bò đếm bò của người khác, Đấng Thế Tôn không tán thành đời sống ẩn dật như vậy.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""Translation generally preserves the original meaning with minor imperfections and slight awkwardness in phrasing.""
+}","Buổi sáng cũng nói chuyện với nhau, nhưng người đàn ông không bao giờ làm việc đó, bị phân tâm; người chăn bò chỉ đếm bò của người khác, không phải là người chia sẻ lợi ích của nhà sư.","{
+  ""accuracy"": 2,
+   ""fluency"": 2,
+   ""explanation"": ""The translation fails to preserve the original meaning, with 'buổi sáng' being unrelated to the context and 'người đàn ông không bao giờ làm việc đó' being a mistranslation. The sentence structure is also awkward and unnatural in Vietnamese.""
+}","Khi nói chuyện cùng Subahv ở đây, người không trở nên ngu ngốc; như Gopa, những con bò tụ tập những người khác, không phải là vị thần trở thành mục đích của việc dạo chơi.","{
+  ""accuracy"": 2,
+   ""fluency"": 2,
+   ""explanation"": ""The translation fails to preserve the original meaning, with incorrect interpretations of key phrases and concepts, and the Vietnamese phrasing is awkward and unnatural.""
+}","Người nào nói nhiều cùng người khác mà không làm theo lời nói, thì không phải là người tỉnh thức; như người chăn bò đếm bò của người khác, không phải là người đạt được mục đích ẩn sĩ.","{
+  ""accuracy"": 5,
+   ""fluency"": 4,
+   ""explanation"": ""The translation accurately preserves the meaning of the Sanskrit text, but the phrasing could be slightly more natural in Vietnamese.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The user provided the Sanskrit verse and wants only the translation without any extra commentary. 
+
+Looking at the Sanskrit text: ""Subahv apīha sahitaṃ bhāṣamāṇo, na tat karo bhavati naraḥ pramattaḥ; Gopaiva gāḥ saṃgaṇayan pareṣāṃ, na bhāgavān śrāmaṇyārthasya bhavati.""
+
+I'll start by breaking down each part. The first line: ""Subahv apīha sahitaṃ bhāṣamāṇo, na tat karo bhavati naraḥ pramattaḥ."" 
+
+""Subahv"" might be a name or a term. ""Apīha"" could be a contraction of ""api"" (also) and ""iha"" (here). ""Sahitaṃ"" means together. ""Bhāṣamāṇo"" is from ""bhāṣā"" (language) with a suffix, so maybe ""speaking"" or ""talking."" So the first part could be ""Subahv, even here, speaking together..."" 
+
+Then ""na tat karo bhavati naraḥ pramattaḥ."" ""Na"" is not, ""tat"" that, ""karo"" doer or actor, ""bhavati"" becomes, ""naraḥ"" person, ""pramattaḥ"" careless or negligent. So maybe ""a person does not become careless in doing that.""
+
+Second line: ""Gopaiva gāḥ saṃgaṇayan pareṣāṃ, na bhāgavān śrāmaṇyārthasya bhavati.""
+
+""Gopaiva"" could be ""like a cowherd"" (gopa) plus ""eva"" (indeed). ""Gāḥ"" cows. ""Saṃgaṇayan"" gathering together. ""Pareṣāṃ"" others. So ""Like a cowherd gathering cows for others..."" 
+
+""Na bhāgavān śrāmaṇyārthasya bhavati."" ""Bhāgavān"" is a respectful term, maybe ""the Lord"" or ""the divine."" ""Śrāmaṇyārthasya"" relates to the purpose of asceticism or labor. ""Bhavati"" becomes. So ""the Lord does not become the purpose of ascetic labor.""
+
+Putting it all together, the translation in Vietnamese should convey the meaning accurately. Let me check each part again for accuracy. 
+
+First line: ""Subahv, even while speaking together here, a person does not become careless in doing that."" 
+
+Second line: ""Like a cowherd gathering cows for others, the Lord does not become the purpose of ascetic labor.""
+
+Wait, the second line's meaning might be that the cowherd gathers cows for others, but the Lord isn't the purpose of ascetic labor. Maybe the idea is that just as a cowherd manages cows for others, the divine isn't the one undergoing the labor. 
+
+Now translating into Vietnamese. Let's make sure the terms are correctly rendered. ""Subahv"" might be a proper noun, so keep it as is. ""Pramattaḥ"" is careless or negligent. ""Gopa"" is cowherd. ""Śrāmaṇyārthasya"" is the purpose of asceticism or labor. 
+
+Final check for grammar and flow in Vietnamese. Ensure that the sentences are coherent and the metaphors are clear. Avoid literal translations that might confuse the reader. 
+
+So the final translation should be:
+
+Subahv, dù nói chuyện cùng nhau ở đây, con người không trở nên lơ đãng khi làm điều đó; Giống như người chăn bò thu gom bò cho người khác, Ngài không phải là mục đích của việc khổ hạnh.
+</think>
+
+Subahv, dù nói chuyện cùng nhau ở đây, con người không trở nên lơ đãng khi làm điều đó; Giống như người chăn bò thu gom bò cho người khác, Ngài không phải là mục đích của việc khổ hạnh.",{}
+20,"Appampi ce sahitaṃ bhāsamāno, dhammassa hoti anudhammacārī; Rāgañca dosañca pahāya mohaṃ, sammappajāno suvimuttacitto; Anupādiyāno idha vā huraṃ vā, sa bhāgavā sāmaññassa hoti.","Alpam api cet sahitaṃ bhāṣamāṇo, dharmasya bhavati hy anudharmacārī; Rāgaṃ ca doṣaṃ ca tathaiva mohaṃ, prahāyabhāgī śrāmaṇyārthasya bhavati.","Nếu người nói ít kinh, Nhưng hành pháp, tùy pháp. Từ bỏ tham, sân, si, Tịnh trí, tâm giải thoát, Không chấp đời này, sau, Có phần Sa môn hạnh.",Practice (True),Dhammapada 20 / Udanavarga 4.23,"Không có giới hạn trong lời nói của người ấy, người ấy sống theo pháp; Loại bỏ tham, sân, si, người ấy có trí tuệ đúng đắn, tâm được giải thoát hoàn toàn; Không bám víu vào hiện tại hay tương lai, người ấy là Phật, là bậc Thánh.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation contains major errors, such as 'Không có giới hạn trong lời nói' which misinterprets 'Appampi ce sahitaṃ bhāsamāno' as 'no limit in speech' instead of 'speaks little', and 'người ấy là Phật' which incorrectly translates 'sāmaññassa' as 'is a Buddha' instead of 'is a monk'. However, the fluency of the translation is relatively good.""
+}","Nếu một người nói chung, thì trở thành người đi theo Dhamma; đã loại bỏ ràng, hận và mê, người hiểu đúng pháp, tâm trí đã giải thoát hoàn toàn; không bám víu ở đây hay ở kia, người ấy là người có phước, là một tăng.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the original meaning, but uses 'người có phước' which is not a direct equivalent of 'sāmaññassa' and 'tăng' which is not the best translation for 'bhāgavā' in this context. The fluency is good, but some phrases could be more naturally expressed in Vietnamese.""
+}","Dù chỉ nói được ít lời đúng pháp, nhưng sống theo chánh pháp, đoạn trừ tham, sân, si, trí tuệ chánh, tâm giải thoát, không chấp thủ đời này hay đời sau, người ấy thật sự là bậc Thánh, thuộc về phạm hạnh.","{
+  ""accuracy"": 5,
+   ""fluency"": 5,
+   ""explanation"": ""The translation accurately preserves the original meaning and is phrased in a natural, fluent Vietnamese manner.""
+}","<think>
+Okay, let's tackle this Pali to Vietnamese translation. First, I need to understand the original text. The user wants only the translation, no extra commentary, so I'll focus on accuracy.
+
+Starting with the first sentence: ""Appampi ce sahitaṃ bhāsamāno, dhammassa hoti anudhammacārī;"" 
+
+- ""Appampi"" might be a form of ""appa"" meaning ""not"" or ""un-"". ""Ce"" is a conjunction like ""if"" or ""even if"". ""Sahitaṃ"" is ""with others"" or ""together"". ""Bhāsamāno"" is ""speaking"" or ""talking"". So ""Even if he speaks with others,"". 
+
+""Dhammassa hoti anudhammacārī;"" ""Dhammassa"" is ""of the Dhamma"". ""Anudhammacārī"" is a compound word. ""Anu"" means ""following"", ""dhamma"" again, and ""cārī"" is ""practice"" or ""conduct"". So ""he becomes a follower of the Dhamma's practice.""
+
+Next line: ""Rāgañca dosañca pahāya mohaṃ,"" 
+
+""Rāga"" is ""desire"", ""dosa"" is ""aversion"", ""pahāya"" is ""abandoning"", ""mohaṃ"" is ""delusion"". So ""Abandoning desire, aversion, and delusion,""
+
+Third line: ""sammappajāno suvimuttacitto;"" 
+
+""Sammappajāno"" is ""rightly knowing"" or ""correctly understanding"". ""Suvimuttacitto"" is ""freely released mind"" or ""mind liberated"". So ""with a rightly knowing, liberated mind;""
+
+Last line: ""Anupādiyāno idha vā huraṃ vā, sa bhāgavā sāmaññassa hoti.""
+
+""Anupādiyāno"" is ""not clinging"" or ""not adhering"". ""Idha vā huraṃ vā"" means ""here or elsewhere"". ""Sa bhāgavā"" is ""he is the Bhagavā"" (a title for the Buddha). ""Sāmaññassa hoti"" is ""becomes a contemplative"" or ""a mendicant"".
+
+Putting it all together in Vietnamese, making sure the terms are correctly translated. For example, ""Dhamma"" is often translated as ""Pháp"", ""Bhagavā"" as ""Phật"" or ""Đức Thế Tôn"". ""Sāmaññassa"" could be ""thiền tăng"" or ""đạo sĩ"".
+
+Need to check if the compounds are correctly broken down. Also, ensure the sentence structure flows naturally in Vietnamese. Let me verify each part again to avoid mistakes. Once confirmed, present the translation as requested without any extra notes.
+</think>
+
+Ngay cả khi nói chuyện cùng người khác, người ấy trở thành người hành theo Pháp; bỏ lại tham, sân, si, tâm người ấy được giải thoát, hiểu biết đúng đắn; không bám víu ở đây hay nơi khác, người ấy là bậc đáng kính, người tu hành.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""Translation generally preserves the original meaning with minor imperfections, but flows naturally in Vietnamese.""
+}","Dù chỉ nói ít thôi, nếu cùng nhau nói, cũng sẽ trở thành người theo pháp; và cũng sẽ loại bỏ tham, sân, si, trở thành người có phần trong sự nghiệp của bậc Sa-môn.","{
+  ""accuracy"": 4,
+   ""fluency"": 4,
+   ""explanation"": ""The translation generally preserves the meaning of the Sanskrit text, but omits some details and has slight awkwardness in phrasing, such as 'nếu cùng nhau nói' which doesn't perfectly convey 'sahitaṃ bhāṣamāṇo'.""
+}","Ngay cả khi chỉ nói ít lời mà vẫn có tâm tính gắn bó, thì hành động đó sẽ trở thành không tuân theo dharma; Tương tự, tham ái, tội lỗi và si mê cũng sẽ trở thành sự hủy diệt cho người khao khát hưởng thụ.","{
+  ""accuracy"": 2,
+   ""fluency"": 4,
+   ""explanation"": ""The translation preserves some meaning but contains major errors, such as misinterpreting 'anudharmacārī' and omitting key information about 'Rāgaṃ ca doṣaṃ ca tathaiva mohaṃ', while the language used is generally fluent and natural Vietnamese.""
+}","Dù chỉ nói được một chút, nếu hợp lý, người ấy vẫn đang thực hành chánh pháp; bỏ được tham, sân và si, người ấy sẽ đạt được mục đích của người tu hành.","{
+  ""accuracy"": 4,
+   ""fluency"": 5,
+   ""explanation"": ""The translation generally preserves the meaning of the original Sanskrit text, but minor details like 'Alpam api cet sahitaṃ bhāṣamāṇo' being translated to 'Dù chỉ nói được một chút' slightly deviates from the original nuance, while the fluency is native-level.""
+}","<think>
+Okay, let's tackle this Sanskrit to Vietnamese translation. First, I need to understand the original text. The user provided a Sanskrit verse and wants it translated into Vietnamese without any extra commentary.
+
+Starting with the first line: ""Alpam api cet sahitaṃ bhāṣamāṇo, dharmasya bhavati hy anudharmacārī;"" Breaking it down, ""Alpam api"" means ""even a little."" ""Cet sahitaṃ bhāṣamāṇo"" – ""cet"" is ""if,"" ""sahitaṃ"" is ""with others,"" ""bhāṣamāṇo"" is ""speaking."" So the first part is ""Even if one speaks a little with others."" Then ""dharmasya bhavati hy anudharmacārī"" – ""dharmasya"" is ""of Dharma,"" ""bhavati"" is ""becomes,"" ""anudharmacārī"" – ""anudharma"" is following Dharma, ""cārī"" is a follower. So maybe ""one becomes a follower of Dharma.""
+
+Second line: ""Rāgaṃ ca doṣaṃ ca tathaiva mohaṃ, prahāyabhāgī śrāmaṇyārthasya bhavati."" ""Rāgaṃ"" is attachment, ""doṣaṃ"" is faults, ""tathaiva mohaṃ"" – same as ""moha"" which is delusion. ""Prahāyabhāgī"" – ""prahāya"" means to abandon, ""bhāgī"" is a share or partaker. ""Śrāmaṇyārthasya bhavati."" ""Śrāmaṇya"" is renunciation or monastic life, ""artha"" is purpose, ""bhavati"" is becomes. So putting it together: ""Abandoning attachment, faults, and delusion, one becomes a partaker of the purpose of renunciation.""
+
+Now translating into Vietnamese. Need to make sure the terms like Dharma, renunciation are correctly translated. ""Dharma"" is often ""Pháp"" in Vietnamese Buddhist context. ""Śrāmaṇya"" is ""Sắc Cốt"" or ""Sắc Cụ"" which refers to monastic life. ""Anudharmacārī"" could be ""người theo Pháp"" or ""người hành Pháp."" 
+
+First line translation: ""Dù chỉ nói ít với người khác, người ấy trở thành người hành Pháp."" 
+
+Second line: ""Bỏ lìa ái nhiễm, lỗi lầm và si mê, người ấy trở thành người tham dự vào mục đích của đời Sắc Cốt.""
+
+Check for accuracy. ""Rāgaṃ ca doṣaṃ ca tathaiva mohaṃ"" – ""Ái nhiễm, lỗi lầm và si mê."" ""Prahāyabhāgī"" – ""bỏ lìa"" or ""lìa bỏ."" ""Śrāmaṇyārthasya"" – ""mục đích của đời Sắc Cốt."" 
+
+Double-checking the terms. ""Sắc Cốt"" is the term used for monastic life in Vietnamese Buddhism. ""Hành Pháp"" is ""practice the Dharma."" 
+
+Looks good. Now present the translation without any extra text.
+</think>
+
+Dù chỉ nói ít với người khác, người ấy trở thành người hành Pháp; Bỏ lìa ái nhiễm, lỗi lầm và si mê, người ấy trở thành người tham dự vào mục đích của đời Sắc Cốt.",{}
