@@ -9,11 +9,7 @@ def load_data(file_path: Path) -> pd.DataFrame:
 
     try:
         df = pd.read_csv(file_path)
-        # Check for sanskrit_text
-        if "sanskrit_text" not in df.columns:
-            raise ValueError("CSV file missing 'sanskrit_text' column")
-
-        # We don't enforce vietnamese_reference anymore as we might have ref_* columns
+        # Source column validation is handled by task config in main.py
         return df
     except Exception as e:
         raise ValueError(f"Error reading CSV file: {e}")
