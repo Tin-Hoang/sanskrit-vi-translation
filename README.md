@@ -15,13 +15,13 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
 
 ### Sanskrit → Vietnamese
 
-| Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
-|:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
-| Llama-3.3-70b |     7.37 |          0.70 |                         4.33 |                        3.89 |         8.38 |
-| GPT-OSS-120b  |     9.79 |          0.69 |                         3.94 |                        3.89 |        18.39 |
-| Kimi-k2       |    21.54 |          0.74 |                         0.28 |                        0.22 |         9.38 |
-| Qwen3-32b     |     0.59 |          0.54 |                         0.00 |                        0.00 |        37.59 |
-
+| Source   | Model            |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:---------|:-----------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| Sanskrit | Llama-3.3-70b    |    14.89 |          0.71 |                         4.28 |                        4.61 |         3.37 |
+| Sanskrit | GPT-OSS-120b     |     9.55 |          0.71 |                         3.17 |                        3.56 |         8.66 |
+| Sanskrit | Kimi-k2          |    33.21 |          0.76 |                         4.89 |                        4.94 |         4.42 |
+| Sanskrit | Qwen3-32b        |    19.27 |          0.75 |                         4.00 |                        4.56 |         7.55 |
+| Sanskrit | Gemini-2.5-Flash |    36.40 |          0.78 |                         4.94 |                        4.94 |        11.71 |
 
 ### Pali → Vietnamese
 

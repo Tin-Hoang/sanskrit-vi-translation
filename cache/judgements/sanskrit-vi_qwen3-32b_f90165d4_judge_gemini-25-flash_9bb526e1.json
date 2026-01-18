@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "groq/qwen/qwen3-32b",
+    "judge": "gemini/gemini-2.5-flash",
+    "task": "sanskrit-vi",
+    "created": "2026-01-18T12:49:20.990869"
+  },
+  "entries": {
+    "e9e8524712c1390d": "{\"accuracy\": 1, \"fluency\": 3, \"explanation\": \"Incorrectly identifies the Bodhisattva as Manjushri (V\\u0103n Th\\u00f9 S\\u01b0 L\\u1ee3i) instead of Avalokiteshvara (Qu\\u00e1n T\\u1ef1 T\\u1ea1i).\"}",
+    "1969ed5b63e366f0": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A highly accurate and natural translation that clearly distinguishes the nuances of the Sanskrit phrases.\"}",
+    "707cfe01bc39b7b4": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A concise and perfectly accurate and fluent translation.\"}",
+    "e425b1005a47fb50": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation of the Sanskrit terms.\"}",
+    "c29179a6db71f989": "{\"accuracy\": 1, \"fluency\": 3, \"explanation\": \"Completely reverses the meaning of 'na r\\u016bpa\\u1e43' (no form) to 'c\\u00f3 s\\u1eafc' (there is form) instead of 'kh\\u00f4ng c\\u00f3 s\\u1eafc'.\"}",
+    "36c3e3f69119a316": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation.\"}",
+    "30b2d764acbf246e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation.\"}",
+    "25009e6910958974": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation.\"}",
+    "515c048579cb43f3": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation.\"}",
+    "f749702c33038488": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation.\"}",
+    "18c6adb39fb66305": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Accurately translates all negations, including 'no non-attainment'. The phrasing 'kh\\u00f4ng ph\\u1ea3i l\\u00e0' is correct but slightly less common than 'kh\\u00f4ng c\\u00f3' or 'v\\u00f4' in this specific context.\"}",
+    "3ba799fa2295be84": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Incorrectly uses 'n\\u00e0ng' (she/miss) for Shariputra (a male disciple); adds 'Ma Ha T\\u00e1t' which is not present in the Sanskrit source.\"}",
+    "8d59992b7cc5ef8c": "{\"accuracy\": 4, \"fluency\": 5, \"explanation\": \"Generally accurate, but 'phi\\u1ec1n n\\u00e3o' (afflictions) is a slightly broader term than `vipary\\u0101sa` (perversions/delusions), and 'an \\u1ed5n' is an addition.\"}",
+    "cd2c029daff9c9a3": "{\"accuracy\": 1, \"fluency\": 4, \"explanation\": \"Fundamentally misunderstands 'tryadhva' (three times - past, present, future) as 'ba xe' (three vehicles).\"}",
+    "3d1ed1ff226a2753": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation.\"}",
+    "d1ded3c1adffdb57": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation, with a natural contextual addition.\"}",
+    "d7c0e729b915bd6b": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation.\"}",
+    "2b47674284f1dfca": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"Mistranslates `sv\\u0101h\\u0101` as 'x\\u00e1 l\\u1ee3i' (\\u015bar\\u012bra), which is a completely different Sanskrit term.\"}"
+  }
+}

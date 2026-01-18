@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "gemini/gemini-2.5-flash",
+    "judge": "gemini/gemini-2.5-flash",
+    "task": "sanskrit-vi",
+    "created": "2026-01-18T12:50:17.790038"
+  },
+  "entries": {
+    "ff7ad4a8903955e5": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is highly accurate, specifically capturing 'svabh\\u0101va \\u015b\\u016bny\\u0101n' as 'kh\\u00f4ng c\\u00f3 t\\u1ef1 t\\u00e1nh', which is a key philosophical point. The phrasing is natural and clear in Vietnamese.\"}",
+    "53e94d80d0289eca": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"The translation captures all the core meanings ('is emptiness', 'is not separate from emptiness'). However, the repetition of 's\\u1eafc t\\u1ee9c l\\u00e0 kh\\u00f4ng, kh\\u00f4ng t\\u1ee9c l\\u00e0 s\\u1eafc' and 's\\u1eafc l\\u00e0 kh\\u00f4ng, kh\\u00f4ng l\\u00e0 s\\u1eafc' makes it slightly redundant and less concise than the original Sanskrit's nuanced repetition or the standard Vietnamese translation. The order is also slightly mixed compared to the Sanskrit.\"}",
+    "f76e0af62cd888d3": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and concise translation, accurately conveying the meaning and flowing naturally in Vietnamese.\"}",
+    "9961026af2c29ead": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is highly accurate, using modern and natural Vietnamese equivalents for the negated pairs (e.g., 'kh\\u00f4ng nh\\u01a1 kh\\u00f4ng s\\u1ea1ch', 'kh\\u00f4ng th\\u00eam kh\\u00f4ng b\\u1edbt').\"}",
+    "e85af194dc278fd9": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately conveying the meaning of 'in emptiness' and listing the negated skandhas clearly and naturally.\"}",
+    "36c3e3f69119a316": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and straightforward translation of the sense organs.\"}",
+    "30b2d764acbf246e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and straightforward translation of the sense objects.\"}",
+    "b9affa3f6f0935b2": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately conveying the range from 'eye element' to 'mind-consciousness element'.\"}",
+    "4a8395fdb2aafd02": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately conveying the negation of ignorance and its cessation, up to old age and death and its cessation.\"}",
+    "f749702c33038488": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and concise translation of the Four Noble Truths in their negated form.\"}",
+    "fe4b9ccb985bdda9": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is perfectly accurate, clearly distinguishing 'knowledge', 'attainment', and 'non-attainment'. The reference adds an extra phrase not present in the Sanskrit source for this line.\"}",
+    "5181aeba7f37bb0b": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately conveying the meaning of 'due to non-attainment' and 'dwells without mental obscuration' in natural Vietnamese.\"}",
+    "04f4eb880de741dd": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately conveying the consequences of having no mental obscuration, leading to ultimate Nirvana.\"}",
+    "ba3e82396b964f23": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately conveying the meaning of all Buddhas in the three times attaining unsurpassed perfect enlightenment by relying on Praj\\u00f1\\u0101p\\u0101ramit\\u0101.\"}",
+    "61adbcacb2e69afc": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately listing the attributes of Praj\\u00f1\\u0101p\\u0101ramit\\u0101 as various types of mantras.\"}",
+    "f13ddb549044cd21": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately conveying the mantra's power to eliminate suffering and its truthfulness.\"}",
+    "ddf32dfd6fe21250": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect translation, accurately introducing the mantra that follows.\"}",
+    "dd3e1955c6f3bda3": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and standard transliteration of the mantra, which is the expected form for such texts.\"}"
+  }
+}

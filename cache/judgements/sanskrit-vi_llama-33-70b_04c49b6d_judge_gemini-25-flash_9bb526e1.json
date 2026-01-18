@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "groq/llama-3.3-70b-versatile",
+    "judge": "gemini/gemini-2.5-flash",
+    "task": "sanskrit-vi",
+    "created": "2026-01-18T12:46:37.876388"
+  },
+  "entries": {
+    "606efb76a739d054": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is perfectly accurate, capturing the meaning of 'svabh\\u0101va \\u015b\\u016bny\\u0101n' as 'kh\\u00f4ng c\\u00f3 t\\u1ef1 t\\u00ednh' precisely. The Vietnamese phrasing is natural and fluent.\"}",
+    "77c0167603f22cdf": "{\"accuracy\": 3, \"fluency\": 2, \"explanation\": \"The use of the Chinese character '\\u5c31\\u662f' is a major fluency error. 'V\\u00f4 t\\u00ednh' for '\\u015b\\u016bnyat\\u0101' (emptiness) is an interpretive choice that deviates from the standard 'kh\\u00f4ng' and can be less precise. The overall phrasing is a bit clunky.\"}",
+    "0f1e8f4deb185f37": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A concise and perfectly accurate translation that flows naturally in Vietnamese.\"}",
+    "4e4e49176865104c": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"The translation of '\\u015b\\u016bnyat\\u0101-lak\\u1e63a\\u1e47\\u0101' as 'd\\u1ea5u hi\\u1ec7u c\\u1ee7a v\\u00f4 t\\u00ednh' is a bit wordy and 'v\\u00f4 t\\u00ednh' for '\\u015b\\u016bnyat\\u0101' is an interpretive choice. However, the rest of the translation is accurate and fluent.\"}",
+    "fe6d80a868cee1a2": "{\"accuracy\": 4, \"fluency\": 5, \"explanation\": \"The meaning is well-preserved. The consistent use of 'v\\u00f4 t\\u00ednh' for '\\u015b\\u016bnyat\\u0101' is the main point of deviation from standard terminology, but the fluency is excellent.\"}",
+    "dbb13c5f0aea6593": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and natural translation.\"}",
+    "ffced1ab066bfe13": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and natural translation.\"}",
+    "a79485a60254cb52": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is accurate and uses appropriate terminology ('c\\u1ea3nh gi\\u1edbi' for 'dh\\u0101tu'). The phrasing is natural.\"}",
+    "724e82d94b2fbcd9": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation, capturing all negations and the 'up to' phrase correctly.\"}",
+    "cee03fcfad977ddc": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfect and natural translation of the Four Noble Truths in negation.\"}",
+    "6925cbf0eedd9ca8": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation, including the double negation for 'na-apr\\u0101pti\\u1e25'.\"}",
+    "262618407d8c984b": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"There is a major error in translating 'ch\\u0101riputra' (Shariputra) as '\\u00f4 thi\\u1ec7n t\\u1eed' (kulaputra), which changes the addressee. The phrase 'apr\\u0101ptitv\\u0101d' is also omitted. The rest of the sentence is fluent.\"}",
+    "fbd16d7a782eac0d": "{\"accuracy\": 3, \"fluency\": 5, \"explanation\": \"A significant part of the source, 'atrasto' (fearless), is omitted from the translation, which impacts the overall meaning. The translated parts are fluent.\"}",
+    "cf50a4deaa3bffee": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"The phrase 'tryadhva-vyavasthit\\u0101\\u1e25' (established in the three times) is mistranslated as '\\u0111\\u01b0\\u1ee3c thi\\u1ebft l\\u1eadp tr\\u00ean ba \\u0111\\u01b0\\u1eddng' (established on three paths), which is a major conceptual error. The rest of the translation is accurate and fluent.\"}",
+    "0627be0c247d066f": "{\"accuracy\": 4, \"fluency\": 5, \"explanation\": \"The translation is mostly accurate and fluent. However, it omits 'mantro' (mantra) when translating 'mah\\u0101-vidy\\u0101 mantro' as '\\u0111\\u1ea1i minh', which is a minor inaccuracy.\"}",
+    "316dd8348c169516": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and fluent translation, capturing the essence of pacifying suffering and being an unfailing truth.\"}",
+    "44c4af95495354f0": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A perfectly accurate and natural translation, clearly introducing the mantra.\"}",
+    "203dfd4ed5648a83": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"The translation accurately conveys the meaning of each part of the mantra. However, keeping 'bodhi svaha' in Sanskrit rather than the traditional Vietnamese transliteration 'b\\u1ed3 \\u0111\\u1ec1 t\\u00e1t b\\u00e0 ha' makes it slightly less fluent for a Vietnamese Buddhist context, though it's common for mantras.\"}"
+  }
+}
