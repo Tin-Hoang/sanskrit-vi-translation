@@ -7,6 +7,7 @@ import warnings
 
 from translator import Translator
 from evaluator import Evaluator
+from cache import BenchmarkCache
 from utils import load_data, save_results
 
 # Suppress Pydantic serializer warnings from litellm/pydantic interaction
@@ -70,6 +71,16 @@ def parse_args():
         type=Path,
         help="Custom data file path (overrides task default)",
     )
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Disable caching (start fresh, don't save results)",
+    )
+    parser.add_argument(
+        "--clear-cache",
+        action="store_true",
+        help="Clear existing cache before running",
+    )
     return parser.parse_args()
 
 
@@ -81,6 +92,7 @@ def run_single_benchmark(
     evaluator: Evaluator,
     output_prefix: str,
     base_dir: Path,
+    cache: BenchmarkCache = None,
 ) -> tuple[pd.DataFrame, list[dict]]:
     """Run benchmark for a single source language.
 
@@ -123,6 +135,7 @@ def run_single_benchmark(
             translations, elapsed_time = translator.batch_translate(
                 df[source_column].tolist(),
                 source_lang=source_lang,
+                cache=cache,
             )
         except Exception as e:
             print(f"Failed to translate with {model_name}: {e}")
@@ -181,6 +194,8 @@ def run_single_benchmark(
                 valid_candidates,
                 source_lang=source_lang,
                 batch_size=30,  # 30 items per API call
+                cache=cache,
+                model_id=model_id,
             )
         else:
             batch_results = []
@@ -300,6 +315,18 @@ def main():
     output_csv_path = results_dir / f"results_{output_prefix}_benchmark.csv"
     report_md_path = results_dir / f"BENCHMARK_REPORT_{output_prefix.upper()}.md"
 
+    # Initialize cache
+    cache = None
+    if not args.no_cache:
+        cache_dir = base_dir / "cache"
+        cache = BenchmarkCache(cache_dir, task_key)
+        if args.clear_cache:
+            cache.clear()
+            print("Cache cleared.")
+        print(f"Caching enabled: {cache_dir}")
+    else:
+        print("Caching disabled (--no-cache)")
+
     print(f"Task: {task_cfg['name']}")
     print(f"Loading data from {data_path}...")
 
@@ -330,6 +357,7 @@ def main():
                 evaluator=evaluator,
                 output_prefix=output_prefix,
                 base_dir=base_dir,
+                cache=cache,
             )
             all_benchmark_results.extend(benchmark_results)
     else:
@@ -342,6 +370,7 @@ def main():
             evaluator=evaluator,
             output_prefix=output_prefix,
             base_dir=base_dir,
+            cache=cache,
         )
         all_benchmark_results.extend(benchmark_results)
 

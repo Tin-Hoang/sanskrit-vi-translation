@@ -1,4 +1,7 @@
-from typing import List, Dict
+from typing import List, Dict, Optional, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from cache import BenchmarkCache
 import json
 import sacrebleu
 from bert_score import score
@@ -37,6 +40,8 @@ class Evaluator:
         candidates: List[str],
         source_lang: str = "Sanskrit",
         batch_size: int = 20,
+        cache: Optional["BenchmarkCache"] = None,
+        model_id: str = "",
     ) -> List[Dict[str, any]]:
         """
         Evaluate multiple translations in batched API calls to reduce RPM usage.
@@ -46,29 +51,57 @@ class Evaluator:
             references: List of reference translations
             candidates: List of candidate translations
             source_lang: Source language name
-            batch_size: Number of items to evaluate per API call (default: 5)
+            batch_size: Number of items to evaluate per API call (default: 20)
+            cache: Optional BenchmarkCache instance for caching judgements
+            model_id: Model that produced the translations (for cache key)
 
         Returns:
             List of judgement dictionaries for each item
         """
-        all_results = []
+        all_results: List[Optional[str]] = [None] * len(sources)
         total = len(sources)
+        cache_hits = 0
 
-        for batch_start in range(0, total, batch_size):
-            batch_end = min(batch_start + batch_size, total)
-            batch_sources = sources[batch_start:batch_end]
-            batch_refs = references[batch_start:batch_end]
-            batch_candidates = candidates[batch_start:batch_end]
+        # First pass: check cache for existing judgements
+        items_to_judge: List[tuple[int, str, str, str]] = []  # (idx, src, ref, cand)
+        for idx, (src, ref, cand) in enumerate(zip(sources, references, candidates)):
+            if cache and model_id:
+                cached = cache.get_judgement(model_id, self.judge_model, src, cand)
+                if cached is not None:
+                    all_results[idx] = cached
+                    cache_hits += 1
+                    continue
+            items_to_judge.append((idx, src, ref, cand))
 
+        if cache_hits > 0:
             print(
-                f"  Judging batch {batch_start + 1}-{batch_end} of {total}...", end="\r"
+                f"  Cache: {cache_hits}/{total} judgements cached, {len(items_to_judge)} to judge"
+            )
+
+        if not items_to_judge:
+            # All judgements were cached
+            return [
+                r
+                if r is not None
+                else '{"accuracy": 0, "fluency": 0, "explanation": "Missing"}'
+                for r in all_results
+            ]
+
+        # Second pass: batch judge remaining items
+        for batch_start in range(0, len(items_to_judge), batch_size):
+            batch_end = min(batch_start + batch_size, len(items_to_judge))
+            batch_items = items_to_judge[batch_start:batch_end]
+
+            progress_start = batch_start + cache_hits + 1
+            progress_end = batch_end + cache_hits
+            print(
+                f"  Judging batch {progress_start}-{progress_end} of {total}...",
+                end="\r",
             )
 
             # Build batch prompt
             items_text = ""
-            for i, (src, ref, cand) in enumerate(
-                zip(batch_sources, batch_refs, batch_candidates)
-            ):
+            for i, (_, src, ref, cand) in enumerate(batch_items):
                 items_text += f"""
 --- Item {i + 1} ---
 Source ({source_lang}): {src}
@@ -115,8 +148,11 @@ Provide the output as a JSON object with an "evaluations" array containing one o
                 parsed = json.loads(clean_json)
                 evaluations = parsed.get("evaluations", [])
 
-                # Map results back to individual judgements
+                # Map results back to original indices
                 for i, eval_item in enumerate(evaluations):
+                    if i >= len(batch_items):
+                        break
+                    original_idx, src, ref, cand = batch_items[i]
                     result_json = json.dumps(
                         {
                             "accuracy": eval_item.get("accuracy", 0),
@@ -124,24 +160,37 @@ Provide the output as a JSON object with an "evaluations" array containing one o
                             "explanation": eval_item.get("explanation", ""),
                         }
                     )
-                    all_results.append(result_json)
+                    all_results[original_idx] = result_json
+
+                    # Cache the result
+                    if cache and model_id:
+                        cache.set_judgement(
+                            model_id, self.judge_model, src, cand, result_json
+                        )
 
                 # Handle case where fewer results returned than expected
-                while len(all_results) < batch_end:
-                    all_results.append(
+                for i in range(len(evaluations), len(batch_items)):
+                    original_idx = batch_items[i][0]
+                    all_results[original_idx] = (
                         '{"accuracy": 0, "fluency": 0, "explanation": "Batch parse error"}'
                     )
 
             except Exception as e:
                 print(f"\nError in batch judge: {e}")
                 # Fill with error results for this batch
-                for _ in range(batch_end - batch_start):
-                    all_results.append(
-                        '{"accuracy": 0, "fluency": 0, "explanation": "API error"}'
-                    )
+                for original_idx, _, _, _ in batch_items:
+                    if all_results[original_idx] is None:
+                        all_results[original_idx] = (
+                            '{"accuracy": 0, "fluency": 0, "explanation": "API error"}'
+                        )
 
         print()  # New line after progress
-        return all_results
+        return [
+            r
+            if r is not None
+            else '{"accuracy": 0, "fluency": 0, "explanation": "Missing"}'
+            for r in all_results
+        ]
 
     def llm_judge(
         self, source: str, reference: str, candidate: str, source_lang: str = "Sanskrit"

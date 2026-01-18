@@ -56,6 +56,7 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
     - `main.py`: **Entry point**. Runs benchmark with configurable tasks.
     - `translator.py`: LLM translation wrapper (supports multiple source languages).
     - `evaluator.py`: BLEU, BERTScore, and LLM Judge evaluation.
+    - `cache.py`: Caching module for rate limit resilience.
     - `crawlers/`: Data collection utilities.
 
 ## 🚀 Usage
@@ -90,6 +91,23 @@ uv run src/main.py --task compare
 ```bash
 uv run src/main.py --task sanskrit-vi --data /path/to/custom.csv
 ```
+
+### Caching (Rate Limit Handling)
+
+The benchmark caches API outputs to handle rate limits gracefully. If interrupted, re-run to resume from cached results.
+
+```bash
+# Default: caching enabled, resumes from cache
+uv run src/main.py --task pali-vi
+
+# Clear cache and start fresh
+uv run src/main.py --task pali-vi --clear-cache
+
+# Disable caching entirely
+uv run src/main.py --task pali-vi --no-cache
+```
+
+Cache files are stored in `cache/` (auto-created).
 
 ### 3. Output Files
 Each task generates:

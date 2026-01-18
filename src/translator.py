@@ -1,5 +1,8 @@
 import json
-from typing import List
+from typing import List, Optional, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from cache import BenchmarkCache
 import litellm
 import time
 from dotenv import load_dotenv
@@ -34,7 +37,11 @@ Translation:
             return ""
 
     def batch_translate(
-        self, texts: List[str], source_lang: str = "Sanskrit", batch_size: int = 10
+        self,
+        texts: List[str],
+        source_lang: str = "Sanskrit",
+        batch_size: int = 10,
+        cache: Optional["BenchmarkCache"] = None,
     ) -> tuple[List[str], float]:
         """
         Translate multiple texts using batched API calls to reduce RPM usage.
@@ -43,20 +50,46 @@ Translation:
             texts: List of source texts to translate
             source_lang: Source language name
             batch_size: Number of texts to translate per API call (default: 10)
+            cache: Optional BenchmarkCache instance for caching translations
 
         Returns:
             Tuple of (translations list, total inference time in seconds)
         """
-        all_translations = []
+        all_translations: List[Optional[str]] = [None] * len(texts)
         total_inference_time = 0.0
         total = len(texts)
+        cache_hits = 0
 
-        for batch_start in range(0, total, batch_size):
-            batch_end = min(batch_start + batch_size, total)
-            batch_texts = texts[batch_start:batch_end]
+        # First pass: check cache for existing translations
+        texts_to_translate: List[tuple[int, str]] = []  # (original_index, text)
+        for idx, text in enumerate(texts):
+            if cache:
+                cached = cache.get_translation(self.model_name, text)
+                if cached is not None:
+                    all_translations[idx] = cached
+                    cache_hits += 1
+                    continue
+            texts_to_translate.append((idx, text))
 
+        if cache_hits > 0:
             print(
-                f"  Translating batch {batch_start + 1}-{batch_end} of {total}...",
+                f"  Cache: {cache_hits}/{total} translations cached, {len(texts_to_translate)} to translate"
+            )
+
+        if not texts_to_translate:
+            # All translations were cached
+            return [t if t is not None else "" for t in all_translations], 0.0
+
+        # Second pass: batch translate remaining texts
+        for batch_start in range(0, len(texts_to_translate), batch_size):
+            batch_end = min(batch_start + batch_size, len(texts_to_translate))
+            batch_items = texts_to_translate[batch_start:batch_end]
+            batch_texts = [item[1] for item in batch_items]
+
+            progress_start = batch_start + cache_hits + 1
+            progress_end = batch_end + cache_hits
+            print(
+                f"  Translating batch {progress_start}-{progress_end} of {total}...",
                 end="\r",
             )
 
@@ -97,22 +130,41 @@ Return a JSON object with a "translations" array containing each translation in 
                 parsed = json.loads(clean_json)
                 translations = parsed.get("translations", [])
 
-                # Extract translations in order
-                for item in translations:
+                # Extract translations and map back to original indices
+                for i, item in enumerate(translations):
+                    if i >= len(batch_items):
+                        break
+                    original_idx = batch_items[i][0]
+                    original_text = batch_items[i][1]
+
                     if isinstance(item, dict):
-                        all_translations.append(item.get("translation", ""))
+                        translation = item.get("translation", "")
                     elif isinstance(item, str):
-                        all_translations.append(item)
+                        translation = item
+                    else:
+                        translation = ""
+
+                    all_translations[original_idx] = translation
+
+                    # Cache the result
+                    if cache and translation:
+                        cache.set_translation(
+                            self.model_name, original_text, translation
+                        )
 
                 # Handle case where fewer translations returned than expected
-                while len(all_translations) < batch_end:
-                    all_translations.append("")
+                for i in range(len(translations), len(batch_items)):
+                    original_idx = batch_items[i][0]
+                    all_translations[original_idx] = ""
 
             except Exception as e:
                 print(f"\nError in batch translate: {e}")
                 # Fill with empty translations for this batch
-                for _ in range(batch_end - batch_start):
-                    all_translations.append("")
+                for original_idx, _ in batch_items:
+                    if all_translations[original_idx] is None:
+                        all_translations[original_idx] = ""
 
         print()  # New line after progress
-        return all_translations, total_inference_time
+        return [
+            t if t is not None else "" for t in all_translations
+        ], total_inference_time
