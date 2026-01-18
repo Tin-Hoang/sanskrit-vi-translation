@@ -7,6 +7,11 @@ import litellm
 import time
 from dotenv import load_dotenv
 
+from system_prompts.translator.current import (
+    SINGLE_TRANSLATE_PROMPT,
+    BATCH_TRANSLATE_PROMPT,
+)
+
 load_dotenv()
 
 
@@ -18,13 +23,11 @@ class Translator:
         self, text: str, source_lang: str = "Sanskrit", target_lang: str = "Vietnamese"
     ) -> str:
         """Single text translation (kept for backwards compatibility)."""
-        prompt = f"""
-Translate the following {source_lang} text into {target_lang}.
-Provide ONLY the translation, no extra commentary.
-
-Text: {text}
-Translation:
-"""
+        prompt = SINGLE_TRANSLATE_PROMPT.format(
+            source_lang=source_lang,
+            target_lang=target_lang,
+            text=text,
+        )
         try:
             response = litellm.completion(
                 model=self.model_name,
@@ -98,20 +101,10 @@ Translation:
             for i, text in enumerate(batch_texts):
                 items_text += f"\n--- Item {i + 1} ---\nText: {text}\n"
 
-            prompt = f"""Translate each of the following {source_lang} texts into Vietnamese.
-Provide ONLY the translations in JSON format.
-
-{items_text}
-
-Return a JSON object with a "translations" array containing each translation in ORDER:
-{{
-  "translations": [
-    "{{"item": 1, "translation": "<Vietnamese translation of item 1>"}}",
-    "{{"item": 2, "translation": "<Vietnamese translation of item 2>"}}",
-    ...
-  ]
-}}
-"""
+            prompt = BATCH_TRANSLATE_PROMPT.format(
+                source_lang=source_lang,
+                items_text=items_text,
+            )
             try:
                 start_time = time.time()
                 response = litellm.completion(

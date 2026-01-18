@@ -58,6 +58,9 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
     - `evaluator.py`: BLEU, BERTScore, and LLM Judge evaluation.
     - `cache.py`: Caching module for rate limit resilience.
     - `crawlers/`: Data collection utilities.
+    - `system_prompts/`: Versioned prompt templates.
+        - `translator/v1.py`, `current.py`: Translation prompts.
+        - `evaluator/v1.py`, `current.py`: LLM Judge prompts.
 
 ## 🚀 Usage
 

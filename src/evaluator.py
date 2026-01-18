@@ -8,6 +8,12 @@ from bert_score import score
 import litellm
 from dotenv import load_dotenv
 
+from system_prompts.evaluator.current import (
+    EVALUATION_RUBRIC,
+    BATCH_JUDGE_PROMPT,
+    SINGLE_JUDGE_PROMPT,
+)
+
 load_dotenv()
 
 
@@ -109,29 +115,11 @@ Reference (Vietnamese): {ref}
 Candidate (Vietnamese): {cand}
 """
 
-            prompt = f"""You are a professional translator and evaluator.
-Rate EACH of the following Vietnamese translations of {source_lang} texts on a scale from 1 to 5 for:
-1. Accuracy (Meaning preservation)
-2. Fluency (Natural Vietnamese)
-
-Rubric:
-1: Completely incorrect, meaningless, or hallucinated.
-2: Major errors, missing key information, or very awkward phrasing.
-3: Generally preserves meaning but has noticeable errors or unnatural phrasing.
-4: Accurate and readable, but with minor imperfections or slight awkwardness.
-5: Perfect translation, professionally accurate and native-level fluency.
-
-{items_text}
-
-Provide the output as a JSON object with an "evaluations" array containing one object per item, in the SAME ORDER as the items above:
-{{
-  "evaluations": [
-    {{"item": 1, "accuracy": <number>, "fluency": <number>, "explanation": "<short explanation>"}},
-    {{"item": 2, "accuracy": <number>, "fluency": <number>, "explanation": "<short explanation>"}},
-    ...
-  ]
-}}
-"""
+            prompt = BATCH_JUDGE_PROMPT.format(
+                source_lang=source_lang,
+                rubric=EVALUATION_RUBRIC,
+                items_text=items_text,
+            )
             try:
                 response = litellm.completion(
                     model=self.judge_model,
@@ -196,30 +184,13 @@ Provide the output as a JSON object with an "evaluations" array containing one o
         self, source: str, reference: str, candidate: str, source_lang: str = "Sanskrit"
     ) -> Dict[str, any]:
         """Single-item evaluation (kept for backwards compatibility)."""
-        prompt = f"""
-You are a professional translator and evaluator.
-Rate the following Vietnamese translation of a {source_lang} text on a scale from 1 to 5 for:
-1. Accuracy (Meaning preservation)
-2. Fluency (Natural Vietnamese)
-
-Rubric:
-1: Completely incorrect, meaningless, or hallucinated.
-2: Major errors, missing key information, or very awkward phrasing.
-3: Generally preserves meaning but has noticeable errors or unnatural phrasing.
-4: Accurate and readable, but with minor imperfections or slight awkwardness.
-5: Perfect translation, professionally accurate and native-level fluency.
-
-Source ({source_lang}): {source}
-Reference (Vietnamese): {reference}
-Candidate (Vietnamese): {candidate}
-
-Provide the output in the following JSON format ONLY:
-{{
-  "accuracy": <number>,
-  "fluency": <number>,
-  "explanation": "<short explanation>"
-}}
-"""
+        prompt = SINGLE_JUDGE_PROMPT.format(
+            source_lang=source_lang,
+            rubric=EVALUATION_RUBRIC,
+            source=source,
+            reference=reference,
+            candidate=candidate,
+        )
         try:
             response = litellm.completion(
                 model=self.judge_model,

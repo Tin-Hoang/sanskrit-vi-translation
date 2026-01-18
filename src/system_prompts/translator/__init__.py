@@ -1,0 +1,1 @@
+"""Translator prompts with versioning."""
