@@ -270,10 +270,12 @@ def main():
     else:
         data_path = base_dir / "data" / task_cfg["data_file"]
 
-    # Output paths
+    # Output paths (results folder)
     output_prefix = task_cfg["output_prefix"]
-    output_csv_path = base_dir / f"results_{output_prefix}_benchmark.csv"
-    report_md_path = base_dir / f"BENCHMARK_REPORT_{output_prefix.upper()}.md"
+    results_dir = base_dir / "results"
+    results_dir.mkdir(exist_ok=True)
+    output_csv_path = results_dir / f"results_{output_prefix}_benchmark.csv"
+    report_md_path = results_dir / f"BENCHMARK_REPORT_{output_prefix.upper()}.md"
 
     print(f"Task: {task_cfg['name']}")
     print(f"Loading data from {data_path}...")
