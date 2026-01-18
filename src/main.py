@@ -47,10 +47,12 @@ MODELS_CONFIG = [
     {"id": "groq/openai/gpt-oss-120b", "name": "GPT-OSS-120b"},
     {"id": "groq/moonshotai/kimi-k2-instruct-0905", "name": "Kimi-k2"},
     {"id": "groq/qwen/qwen3-32b", "name": "Qwen3-32b"},
+    {"id": "gemini/gemini-3-flash-preview", "name": "Gemini-3-Flash"},  # Judge model
 ]
 
 # Judge model (constant for fair comparison)
-JUDGE_MODEL = "groq/llama-3.3-70b-versatile"
+# Using Gemini 3 Flash Preview for powerful evaluation with generous free tier
+JUDGE_MODEL = "gemini/gemini-3-flash-preview"
 
 
 def parse_args():
@@ -144,37 +146,59 @@ def run_single_benchmark(
 
         print(f"Metrics: {metrics}")
 
-        # 3. Evaluate (Qualitative - Judge)
-        print("Running LLM Judge...")
+        # 3. Evaluate (Qualitative - Judge) using batched evaluation
+        print("Running LLM Judge (batched)...")
         col_judge = f"judge_{source_lang}_{model_name}"
-        judgements = []
 
         primary_ref_col = ref_cols[0] if ref_cols else None
-        total_rows = len(df)
+
+        # Prepare data for batch evaluation
+        sources_list = df[source_column].tolist()
+        refs_list = [
+            str(row[primary_ref_col]) if primary_ref_col else ""
+            for _, row in df.iterrows()
+        ]
+        candidates_list = results_df[col_trans].tolist()
+
+        # Handle empty translations before batching
+        valid_indices = []
+        valid_sources = []
+        valid_refs = []
+        valid_candidates = []
+
+        for i, cand in enumerate(candidates_list):
+            if cand and cand.strip():
+                valid_indices.append(i)
+                valid_sources.append(sources_list[i])
+                valid_refs.append(refs_list[i])
+                valid_candidates.append(cand)
+
+        # Batch evaluate valid translations
+        if valid_candidates:
+            batch_results = evaluator.batch_llm_judge(
+                valid_sources,
+                valid_refs,
+                valid_candidates,
+                source_lang=source_lang,
+                batch_size=30,  # 30 items per API call
+            )
+        else:
+            batch_results = []
+
+        # Reconstruct full judgements list
+        judgements = [
+            '{"accuracy": 0, "fluency": 0, "explanation": "Translation failed"}'
+        ] * len(df)
+        for i, idx in enumerate(valid_indices):
+            if i < len(batch_results):
+                judgements[idx] = batch_results[i]
+
+        # Calculate averages
         total_accuracy = 0
         total_fluency = 0
         valid_judgements = 0
 
-        for idx, row in df.iterrows():
-            print(f"Judging {idx + 1}/{total_rows}...", end="\r")
-
-            primary_ref_text = str(row[primary_ref_col]) if primary_ref_col else ""
-            candidate_text = results_df.loc[idx, col_trans]
-
-            if not candidate_text.strip():
-                judge_result = (
-                    '{"accuracy": 0, "fluency": 0, "explanation": "Translation failed"}'
-                )
-            else:
-                judge_result = evaluator.llm_judge(
-                    row[source_column],
-                    primary_ref_text,
-                    candidate_text,
-                    source_lang=source_lang,
-                )
-
-            judgements.append(judge_result)
-
+        for judge_result in judgements:
             try:
                 if isinstance(judge_result, str):
                     clean_json = (
@@ -186,15 +210,14 @@ def run_single_benchmark(
 
                 acc = float(j.get("accuracy", 0))
                 flu = float(j.get("fluency", 0))
-                total_accuracy += acc
-                total_fluency += flu
-                valid_judgements += 1
+                if acc > 0 or flu > 0:  # Only count valid judgements
+                    total_accuracy += acc
+                    total_fluency += flu
+                    valid_judgements += 1
             except Exception:
                 pass
 
-            time.sleep(3)  # Rate limit
-
-        print("\nJudge completed.")
+        print("Judge completed.")
         results_df[col_judge] = judgements
 
         avg_accuracy = total_accuracy / valid_judgements if valid_judgements > 0 else 0
@@ -248,7 +271,7 @@ def generate_report(
 
 {markdown_table}
 
-*Evaluation powered by LLM Judge (Llama-3.3-70b) using a 5-point rubric for Accuracy and Fluency.*
+*Evaluation powered by LLM Judge (Gemini 2.0 Flash) using a 5-point rubric for Accuracy and Fluency.*
 """
 
     with open(report_path, "w") as f:
