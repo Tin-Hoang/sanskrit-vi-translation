@@ -48,16 +48,36 @@ class BenchmarkCache:
         # Use a short hash to avoid long filenames
         return hashlib.md5(model_id.encode()).hexdigest()[:8]
 
+    @staticmethod
+    def _short_model_name(model_id: str) -> str:
+        """Extract a short, filesystem-safe model name for readability."""
+        # Get last part of model path (e.g., 'groq/llama-3.3-70b' -> 'llama-3.3-70b')
+        name = model_id.split("/")[-1]
+        # Remove common suffixes and sanitize
+        name = name.replace("-instruct", "").replace("-versatile", "")
+        # Keep only alphanumeric, dash, underscore
+        name = "".join(c if c.isalnum() or c in "-_" else "" for c in name)
+        # Limit length
+        return name[:20]
+
     def _get_translation_cache_path(self, model_id: str) -> Path:
         """Get path to translation cache file for a model."""
+        short_name = self._short_model_name(model_id)
         model_hash = self._model_hash(model_id)
-        return self.translations_dir / f"{self.task_name}_{model_hash}.json"
+        return (
+            self.translations_dir / f"{self.task_name}_{short_name}_{model_hash}.json"
+        )
 
     def _get_judgement_cache_path(self, model_id: str, judge_model: str) -> Path:
         """Get path to judgement cache file for a model pair."""
+        short_name = self._short_model_name(model_id)
+        judge_short = self._short_model_name(judge_model)
         model_hash = self._model_hash(model_id)
         judge_hash = self._model_hash(judge_model)
-        return self.judgements_dir / f"{self.task_name}_{model_hash}_{judge_hash}.json"
+        return (
+            self.judgements_dir
+            / f"{self.task_name}_{short_name}_{model_hash}_judge_{judge_short}_{judge_hash}.json"
+        )
 
     def _load_translation_cache(self, model_id: str) -> dict:
         """Load translation cache from disk."""

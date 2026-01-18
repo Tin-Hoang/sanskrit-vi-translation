@@ -133,7 +133,15 @@ class Translator:
                     if isinstance(item, dict):
                         translation = item.get("translation", "")
                     elif isinstance(item, str):
-                        translation = item
+                        # Try to parse as JSON in case model returned stringified objects
+                        try:
+                            parsed_item = json.loads(item)
+                            if isinstance(parsed_item, dict):
+                                translation = parsed_item.get("translation", item)
+                            else:
+                                translation = item
+                        except (json.JSONDecodeError, TypeError):
+                            translation = item
                     else:
                         translation = ""
 
