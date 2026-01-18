@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "model": "groq/moonshotai/kimi-k2-instruct-0905",
+    "judge": "gemini/gemini-2.5-flash",
+    "task": "pali-vi",
+    "created": "2026-01-18T12:59:22.468110"
+  },
+  "entries": {
+    "4c4c4eaa840bc95d": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is perfectly accurate, preserving all nuances of the Pali text. The Vietnamese phrasing is natural, clear, and flows very well.\"}",
+    "03f0f4eec4579a80": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This translation is highly accurate, capturing the meaning of the Pali text precisely. The Vietnamese is fluent, natural, and easy to understand, using appropriate idiomatic expressions.\"}",
+    "eab4fd5d78bb8441": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is accurate in conveying the meaning of the Pali. The Vietnamese is natural and strong, effectively expressing the sentiment of harboring resentment.\"}",
+    "9dccfdfecf99e909": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is accurate and clear, effectively conveying the opposite meaning of the previous verse. The Vietnamese phrasing is natural and fluent, especially 'l\\u1eafng d\\u1ecbu' for 'upasammati'.\"}",
+    "23bef09b6dc49c8e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This is an excellent translation. It accurately captures the profound meaning of the Pali verse. The Vietnamese is powerful, natural, and uses precise vocabulary like 'd\\u1eadp t\\u1eaft' and 'v\\u00f4 h\\u1eadn'.\"}",
+    "99f039f3cb141dd7": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"There is a major error in translating 'yam\\u0101mase' as 'ph\\u1ea3i ki\\u1ec1m ch\\u1ebf' (must restrain) instead of 'we perish' or 'we are doomed to die'. This fundamentally changes the meaning of the first part of the verse. The rest of the phrasing is fluent.\"}",
+    "31aa005f3b8d1a07": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is highly accurate, with precise rendering of Buddhist terms and concepts. The Vietnamese is natural, clear, and impactful, conveying the warning effectively.\"}",
+    "b878574ed59c1adc": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This translation is perfectly accurate, maintaining consistency with the previous verse while conveying the positive attributes. The Vietnamese is fluent and uses appropriate Buddhist terminology.\"}",
+    "c64f6c95753f2765": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is accurate and uses appropriate Buddhist terminology like 'c\\u1ea5u u\\u1ebf' and 'y ph\\u00e1p/c\\u00e0-sa'. The phrasing is natural and clear.\"}",
+    "72ac45f15faa08ba": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This translation is accurate and consistent with the preceding verse. The Vietnamese is natural, clear, and effectively conveys the meaning of being worthy of the robe.\"}",
+    "3315820f9c9fd602": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"An excellent translation. It accurately captures the abstract concept of 's\\u0101ra' (essential) with 'c\\u1ed1t y\\u1ebfu' and clearly explains the consequence of wrong perception. The fluency is outstanding.\"}",
+    "135ede36dd0c6252": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This translation is perfectly accurate and consistent with the previous verse, conveying the positive outcome of right perception. The Vietnamese is fluent and clear.\"}",
+    "57ed437581bc37c7": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is highly accurate, using vivid and natural imagery like 'm\\u00e1i d\\u1ed9t' and 'xuy\\u00ean th\\u1ea5m'. The analogy is perfectly conveyed in fluent Vietnamese.\"}",
+    "3374069b367daa99": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This translation is perfectly accurate and consistent with the previous verse, effectively conveying the analogy of a well-maintained mind. The Vietnamese is fluent and clear.\"}",
+    "4267c123f8d0a801": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is accurate and impactful. The choice of 'kh\\u00f3c' and 'kh\\u1ed5 n\\u00e3o' effectively conveys the suffering and torment. The Vietnamese is very natural and expressive.\"}",
+    "da1e16aba7b8db82": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This translation is accurate and effectively conveys the joy and happiness. The use of 'vui' and 'hoan h\\u1ef7' adds good variation. The Vietnamese is natural and clear.\"}",
+    "5b9505d6e81e173c": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"The translation is highly accurate. 'H\\u1ed1i h\\u1eadn' is an excellent choice for 'tappati' in this context, conveying the mental anguish. The phrasing 'c\\u00e0ng th\\u00eam kh\\u1ed1n kh\\u1ed5' is very strong and natural.\"}",
+    "51e53827ff9127cb": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This translation is accurate and effectively conveys the delight and happiness. 'Hoan h\\u1ef7' and 'vui s\\u01b0\\u1edbng' are well-chosen. The Vietnamese is natural and clear.\"}",
+    "e2420dba4affb17c": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"The translation is generally accurate, but 'kin\\u1ec7t t\\u1ee5ng' appears to be a typo or a less common term for 'kinh \\u0111i\\u1ec3n' or 'kinh k\\u1ec7', which slightly impacts fluency. Otherwise, the meaning is well-preserved and the phrasing is natural.\"}",
+    "5cca1fc80e8ef8fd": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"This is an excellent translation. It accurately captures the essence of the Pali, using appropriate Buddhist terms and conveying the profound meaning clearly. The Vietnamese is highly fluent and natural.\"}"
+  }
+}

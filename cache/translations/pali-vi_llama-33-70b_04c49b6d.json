@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "model": "groq/llama-3.3-70b-versatile",
+    "task": "pali-vi",
+    "created": "2026-01-18T12:57:08.837182"
+  },
+  "entries": {
+    "0820af6092dc0ecd": "Các pháp lấy tâm làm điềm đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm bị ô nhiễm, thì bất kể lời nói hay hành động, kết quả sẽ là khổ, giống như bánh xe theo chân ngựa.",
+    "104b9cc46cc9660c": "Các pháp lấy tâm làm điềm đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm trong sạch, thì bất kể lời nói hay hành động, kết quả sẽ là hạnh phúc, giống như bóng không rời thân.",
+    "d085a2303dda01a9": "Đừng xúc phạm tôi, đừng giết tôi, đừng làm tôi bị thương; những ai tiếp tục gây ra thù hận, sẽ không bao giờ tìm thấy sự chấm dứt thù hận.",
+    "56fa11a4c4fd7120": "Đừng xúc phạm tôi, đừng giết tôi, đừng làm tôi bị thương; những ai từ bỏ thù hận, sẽ tìm thấy sự chấm dứt thù hận.",
+    "ab3ac8cf3abdf03b": "Thù hận không bao giờ chấm dứt bằng thù hận, ở bất kỳ nơi nào. Chỉ có tình yêu thương mới có thể chấm dứt thù hận, đây là luật pháp vĩnh cửu.",
+    "55c468100cdc8942": "Người khác không hiểu, nhưng chúng ta biết rõ ở đây; những ai hiểu biết, sẽ tìm thấy sự chấm dứt, với trí tuệ sắc sảo.",
+    "cc2301943692c885": "Người nào sống quán chiếu những điều đẹp, nhưng không kiểm soát được các giác quan, biết vừa đủ trong việc ăn uống, lười biếng và thiếu sức mạnh; người đó sẽ bị Ma (quỷ) chi phối, giống như gió lay động cây yếu.",
+    "51c2ec8a7ee6af3d": "Người nào sống quán chiếu những điều không đẹp, nhưng kiểm soát được các giác quan, biết vừa đủ trong việc ăn uống, có lòng tin và sức mạnh; người đó sẽ không bị Ma (quỷ) chi phối, giống như gió không lay động được đá núi.",
+    "8b661a830f29c1b2": "Người không từ bỏ tham ái, mặc áo cà sa; người đó không xứng đáng mặc áo cà sa, nếu không có sự kiểm soát và trí tuệ.",
+    "72d09befc1e47074": "Người nào từ bỏ tham ái, mặc áo cà sa; người đó xứng đáng mặc áo cà sa, nếu có sự kiểm soát và trí tuệ.",
+    "6c47bc7231036190": "Những người không có giá trị, sống dựa vào những thứ có giá trị; những kẻ theo đuổi những tư tưởng sai lầm, không đạt được giá trị thực sự.",
+    "a78a100d16782c9a": "Những người nhận biết giá trị từ những thứ có giá trị, và không giá trị từ những thứ không có giá trị; những kẻ theo đuổi những tư tưởng đúng đắn, đạt được giá trị thực sự.",
+    "a854294acef7a643": "Giống như một ngôi nhà bị hư hỏng, gió có thể thổi qua dễ dàng; cũng vậy, một tâm trí không được tu dưỡng, tham lam có thể xâm chiếm dễ dàng.",
+    "6d1f690439cd1c89": "Giống như một ngôi nhà được xây dựng tốt, gió không thể thổi qua; cũng vậy, một tâm trí được tu dưỡng, tham lam không thể xâm chiếm.",
+    "16a1675f2283d8e8": "Người làm ác sẽ than thở ở đây và sau khi chết, họ sẽ than thở ở cả hai nơi; khi nhìn thấy những hành động ô nhiễm của mình, họ sẽ than thở và đau khổ.",
+    "5a6c5cf7eae0ec6e": "Người làm phúc sẽ vui mừng ở đây và sau khi chết, họ sẽ vui mừng ở cả hai nơi; khi nhìn thấy sự thanh tịnh của những hành động của mình, họ sẽ vui mừng và hoan hỷ.",
+    "ed889d589785bd86": "Người làm ác sẽ hối hận ở đây và sau khi chết, họ sẽ hối hận ở cả hai nơi; họ sẽ hối hận vì đã làm ác, và sẽ hối hận nhiều hơn khi rơi vào cõi thấp.",
+    "46212d9af604b32d": "Người làm phúc sẽ vui mừng ở đây và sau khi chết, họ sẽ vui mừng ở cả hai nơi; họ sẽ vui mừng vì đã làm phúc, và sẽ vui mừng nhiều hơn khi lên cõi cao.",
+    "78ae8f8ab538ec1c": "Dù có nói nhiều về sự kết hợp, nhưng người đàn ông lười biếng và thiếu trí tuệ không phải là người khôn ngoan; giống như một người chăn bò chỉ quan tâm đến việc đếm bò của người khác, không phải là người chia sẻ sự bình đẳng.",
+    "d52af7c203377104": "Dù có nói ít về sự kết hợp, nhưng người đàn ông sống theo pháp, tuân theo giáo lý, từ bỏ tham lam, sân hận và si mê, với tâm trí thông suốt và giải thoát; không bám víu vào bất cứ thứ gì, ở đây hay sau khi chết, người đó là người chia sẻ sự bình đẳng thực sự."
+  }
+}
