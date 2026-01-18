@@ -18,7 +18,7 @@ load_dotenv()
 
 
 class Evaluator:
-    def __init__(self, judge_model: str = "gemini/gemini-3-flash-preview"):
+    def __init__(self, judge_model: str = "gemini/gemini-2.5-flash"):
         self.judge_model = judge_model
 
     def calculate_metrics(

@@ -48,12 +48,12 @@ MODELS_CONFIG = [
     {"id": "groq/openai/gpt-oss-120b", "name": "GPT-OSS-120b"},
     {"id": "groq/moonshotai/kimi-k2-instruct-0905", "name": "Kimi-k2"},
     {"id": "groq/qwen/qwen3-32b", "name": "Qwen3-32b"},
-    {"id": "gemini/gemini-3-flash-preview", "name": "Gemini-3-Flash"},  # Judge model
+    {"id": "gemini/gemini-2.5-flash", "name": "Gemini-2.5-Flash"},  # Judge model
 ]
 
 # Judge model (constant for fair comparison)
 # Using Gemini 3 Flash Preview for powerful evaluation with generous free tier
-JUDGE_MODEL = "gemini/gemini-3-flash-preview"
+JUDGE_MODEL = "gemini/gemini-2.5-flash"
 
 
 def parse_args():
