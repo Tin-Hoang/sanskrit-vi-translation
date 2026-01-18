@@ -10,6 +10,43 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
 | `pali-vi` | Pali → Vietnamese (Dhammapada) | `pali_vi_dhammapada.csv` |
 | `compare` | Pali vs Sanskrit comparison | `dhammapada_udanavarga_parallel.csv` |
 
+
+## Results
+
+### Sanskrit → Vietnamese
+
+| Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| Llama-3.3-70b |     7.37 |          0.70 |                         4.33 |                        3.89 |         8.38 |
+| GPT-OSS-120b  |     9.79 |          0.69 |                         3.94 |                        3.89 |        18.39 |
+| Kimi-k2       |    21.54 |          0.74 |                         0.28 |                        0.22 |         9.38 |
+| Qwen3-32b     |     0.59 |          0.54 |                         0.00 |                        0.00 |        37.59 |
+
+
+### Pali → Vietnamese
+
+| Source   | Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:---------|:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| Pali     | Llama-3.3-70b |     3.05 |          0.71 |                         3.60 |                        4.25 |        10.20 |
+| Pali     | GPT-OSS-120b  |     2.24 |          0.72 |                         1.60 |                        1.85 |        22.83 |
+| Pali     | Kimi-k2       |     5.02 |          0.76 |                         0.00 |                        0.00 |        13.31 |
+| Pali     | Qwen3-32b     |     0.21 |          0.56 |                         0.00 |                        0.00 |        47.73 |
+
+
+### Pali vs Sanskrit Comparison
+
+| Source   | Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:---------|:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| Pali     | Llama-3.3-70b |     3.00 |          0.72 |                         3.65 |                        4.05 |        10.55 |
+| Pali     | GPT-OSS-120b  |     2.49 |          0.72 |                         3.45 |                        3.90 |        20.55 |
+| Pali     | Kimi-k2       |     7.91 |          0.76 |                         4.65 |                        4.50 |        13.16 |
+| Pali     | Qwen3-32b     |     0.21 |          0.56 |                         4.40 |                        4.45 |        45.76 |
+| Sanskrit | Llama-3.3-70b |     4.24 |          0.71 |                         3.55 |                        3.80 |         8.56 |
+| Sanskrit | GPT-OSS-120b  |     1.85 |          0.70 |                         3.00 |                        3.45 |        21.58 |
+| Sanskrit | Kimi-k2       |     2.69 |          0.73 |                         4.00 |                        4.05 |        12.99 |
+| Sanskrit | Qwen3-32b     |     0.19 |          0.55 |                         3.50 |                        3.60 |        59.62 |
+
+
 ## 📂 Structure
 - `data/`:
     - `sanskrit_vi_heart_sutra.csv`: Sanskrit Heart Sutra benchmark (18 lines, multi-ref).
