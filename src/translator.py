@@ -61,6 +61,7 @@ class Translator:
         """
         all_translations: List[Optional[str]] = [None] * len(texts)
         total_inference_time = 0.0
+        cached_time = 0.0
         total = len(texts)
         cache_hits = 0
 
@@ -70,7 +71,9 @@ class Translator:
             if cache:
                 cached = cache.get_translation(self.model_name, text)
                 if cached is not None:
-                    all_translations[idx] = cached
+                    translation, time_seconds = cached
+                    all_translations[idx] = translation
+                    cached_time += time_seconds
                     cache_hits += 1
                     continue
             texts_to_translate.append((idx, text))
@@ -81,8 +84,8 @@ class Translator:
             )
 
         if not texts_to_translate:
-            # All translations were cached
-            return [t if t is not None else "" for t in all_translations], 0.0
+            # All translations were cached - return accumulated cached time
+            return [t if t is not None else "" for t in all_translations], cached_time
 
         # Second pass: batch translate remaining texts
         for batch_start in range(0, len(texts_to_translate), batch_size):
@@ -146,6 +149,10 @@ class Translator:
                 translations = parsed.get("translations", [])
 
                 # Extract translations and map back to original indices
+                # Calculate time per item for this batch
+                batch_time = end_time - start_time
+                time_per_item = batch_time / len(batch_texts) if batch_texts else 0.0
+
                 for i, item in enumerate(translations):
                     if i >= len(batch_items):
                         break
@@ -169,10 +176,10 @@ class Translator:
 
                     all_translations[original_idx] = translation
 
-                    # Cache the result
+                    # Cache the result with proportional time
                     if cache and translation:
                         cache.set_translation(
-                            self.model_name, original_text, translation
+                            self.model_name, original_text, translation, time_per_item
                         )
 
                 # Handle case where fewer translations returned than expected
@@ -188,6 +195,7 @@ class Translator:
                         all_translations[original_idx] = ""
 
         print()  # New line after progress
+        # Return total time: fresh API calls + cached original times
         return [
             t if t is not None else "" for t in all_translations
-        ], total_inference_time
+        ], total_inference_time + cached_time

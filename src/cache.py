@@ -173,7 +173,9 @@ class BenchmarkCache:
 
     # === Public API ===
 
-    def get_translation(self, model_id: str, source_text: str) -> Optional[str]:
+    def get_translation(
+        self, model_id: str, source_text: str
+    ) -> Optional[tuple[str, float]]:
         """
         Get cached translation if available.
 
@@ -182,24 +184,36 @@ class BenchmarkCache:
             source_text: The source text that was translated
 
         Returns:
-            Cached translation string, or None if not cached
+            Tuple of (translation, time_seconds), or None if not cached
         """
         cache = self._load_translation_cache(model_id)
         content_hash = self._hash_content(source_text)
-        return cache["entries"].get(content_hash)
+        entry = cache["entries"].get(content_hash)
+        if entry is None:
+            return None
+        # Handle legacy cache entries (plain strings)
+        if isinstance(entry, str):
+            return (entry, 0.0)
+        return (entry.get("translation", ""), entry.get("time_seconds", 0.0))
 
-    def set_translation(self, model_id: str, source_text: str, translation: str):
+    def set_translation(
+        self, model_id: str, source_text: str, translation: str, time_seconds: float
+    ):
         """
-        Cache a translation result.
+        Cache a translation result with its processing time.
 
         Args:
             model_id: The model used for translation
             source_text: The source text that was translated
             translation: The resulting translation
+            time_seconds: Time taken to generate this translation
         """
         cache = self._load_translation_cache(model_id)
         content_hash = self._hash_content(source_text)
-        cache["entries"][content_hash] = translation
+        cache["entries"][content_hash] = {
+            "translation": translation,
+            "time_seconds": time_seconds,
+        }
         self._save_translation_cache(model_id)
 
     def get_judgement(

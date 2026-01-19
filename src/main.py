@@ -298,7 +298,7 @@ def generate_report(
 
 {markdown_table}
 
-*Evaluation powered by LLM Judge (Gemini 2.0 Flash) using a 5-point rubric for Accuracy and Fluency.*
+*Evaluation powered by LLM Judge using a 5-point rubric for Accuracy and Fluency.*
 """
 
     with open(report_path, "w") as f:
