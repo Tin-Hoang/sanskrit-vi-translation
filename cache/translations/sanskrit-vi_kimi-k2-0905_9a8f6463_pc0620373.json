@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "model": "groq/moonshotai/kimi-k2-instruct-0905",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:11:01.587938"
+  },
+  "entries": {
+    "4c746fce2b5cef65": {
+      "translation": "Bồ-tát Quán Tự Tại thực hành hành động Ba-la-mật đa với trí tuệ sâu xa, quán chiếu thấy rằng năm uẩn đều rỗng không về tự tánh.",
+      "time_seconds": 0.23092358112335204
+    },
+    "c832585b2c832127": {
+      "translation": "Này Xá-lợi-phất, sắc là không, không chính là sắc; không khác sắc, sắc không khác không; cái gì là sắc thì đó là không, cái gì là không thì đó là sắc.",
+      "time_seconds": 0.23092358112335204
+    },
+    "57b33dd4d566503b": {
+      "translation": "Cũng vậy, thọ, tưởng, hành, thức đều như thế.",
+      "time_seconds": 0.23092358112335204
+    },
+    "7e749336a9d5529a": {
+      "translation": "Này Xá-lợi-phất, tất cả pháp đều mang tướng không, không sinh không diệt, không nhiễm không sạch, không thiếu không thừa.",
+      "time_seconds": 0.23092358112335204
+    },
+    "15899db54ad2a307": {
+      "translation": "Vì vậy, này Xá-lợi-phất, trong không không có sắc, không có thọ, không có tưởng, không có hành, không có thức.",
+      "time_seconds": 0.23092358112335204
+    },
+    "6a8f64e7baa790ea": {
+      "translation": "Không có mắt, tai, mũi, lưỡi, thân, ý.",
+      "time_seconds": 0.23092358112335204
+    },
+    "153c3b0983576ab4": {
+      "translation": "Không có sắc, thanh, hương, vị, xúc, pháp.",
+      "time_seconds": 0.23092358112335204
+    },
+    "6f48b5914f06b6f2": {
+      "translation": "Không có giới nhãn cho đến không có giới ý-thức.",
+      "time_seconds": 0.23092358112335204
+    },
+    "d70716d13e6a543d": {
+      "translation": "Không có vô minh, cũng không có diệt tận vô minh, cho đến không có già chết, cũng không có diệt tận già chết.",
+      "time_seconds": 0.23092358112335204
+    },
+    "ddce371f269534fa": {
+      "translation": "Không có khổ, tập, diệt, đạo.",
+      "time_seconds": 0.23092358112335204
+    },
+    "42d2a1fd0d9fbb6c": {
+      "translation": "Không tri thức, không đạt được, không không đạt được.",
+      "time_seconds": 0.2562083899974823
+    },
+    "d1d842be8dde4c94": {
+      "translation": "Vì vậy, này Xá Lợi Phất, nhờ không đạt được, Bồ Tát dựa vào Bát-nhã ba-la-mật mà sống không còn chướng ngại tâm.",
+      "time_seconds": 0.2562083899974823
+    },
+    "86c31363f836c32f": {
+      "translation": "Do không có chướng ngại tâm, nên không sợ hãi, vượt qua mọi điên đảo, đạt đến tận cùng Niết-bàn.",
+      "time_seconds": 0.2562083899974823
+    },
+    "2663248f37d304dd": {
+      "translation": "Tất cả chư Phật trong ba thời đều dựa vào Bát-nhã ba-la-mật mà chứng được vô thượng chánh đẳng chánh giác.",
+      "time_seconds": 0.2562083899974823
+    },
+    "6eb326fdacfd4452": {
+      "translation": "Vì vậy cần biết: Bát-nhã ba-la-mật là đại chú, là đại minh chú, là vô thượng chú, là chú vô thượng đẳng đẳng.",
+      "time_seconds": 0.2562083899974823
+    },
+    "4772d5a31dd8595a": {
+      "translation": "Làm lắng dịu mọi khổ đau, là chân thật, không hư dối.",
+      "time_seconds": 0.2562083899974823
+    },
+    "224d8b37a0972547": {
+      "translation": "Trong Bát-nhã ba-la-mật đã nói chú rằng:",
+      "time_seconds": 0.2562083899974823
+    },
+    "1df732d7e28c22a8": {
+      "translation": "Yết-đế, yết-đế, ba-la-yết-đế, ba-la-tăng-yết-đế, bồ-đề, tát-bà-ha.",
+      "time_seconds": 0.2562083899974823
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "model": "groq/openai/gpt-oss-120b",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:10:43.628919"
+  },
+  "entries": {
+    "4c746fce2b5cef65": {
+      "translation": "Bồ tát Avalokiteśvara cao quý, đang thực hành sâu sắc Bát Nhã, quan sát năm uẩn và thấy chúng không có bản chất cố định.",
+      "time_seconds": 0.4892356634140015
+    },
+    "c832585b2c832127": {
+      "translation": "Ở đây, Śāriiputra: hình tướng là không, không chính là hình tướng; hình tướng không tách rời khỏi không, không không tách rời khỏi hình tướng; mọi gì là hình tướng thì là không; mọi gì là không thì là hình tướng.",
+      "time_seconds": 0.4892356634140015
+    },
+    "57b33dd4d566503b": {
+      "translation": "Cũng như vậy, cảm thọ, nhận biết, nghiệp tâm và ý thức.",
+      "time_seconds": 0.4892356634140015
+    },
+    "7e749336a9d5529a": {
+      "translation": "Ở đây, Śāriiputra: mọi pháp đều là nhãn tính của không, không sinh ra, không bị cản trở, tinh khiết, không bẩn, không sinh ra, chưa hoàn thiện.",
+      "time_seconds": 0.4892356634140015
+    },
+    "15899db54ad2a307": {
+      "translation": "Vì vậy, Śāriiputra, trong không không có hình tướng, không cảm thọ, không nhận biết, không nghiệp tâm, không ý thức.",
+      "time_seconds": 0.4892356634140015
+    },
+    "6a8f64e7baa790ea": {
+      "translation": "Không có mắt, tai, mũi, lưỡi, thân, tâm.",
+      "time_seconds": 0.4892356634140015
+    },
+    "153c3b0983576ab4": {
+      "translation": "Không có hình, âm, thơm, vị, các pháp có thể chạm vào.",
+      "time_seconds": 0.4892356634140015
+    },
+    "6f48b5914f06b6f2": {
+      "translation": "Không có yếu tố mắt cho đến khi không có yếu tố ý thức tâm.",
+      "time_seconds": 0.4892356634140015
+    },
+    "d70716d13e6a543d": {
+      "translation": "Không có vô minh, không có sự diệt vô minh cho đến khi không có già và chết, không có sự diệt già và chết.",
+      "time_seconds": 0.4892356634140015
+    },
+    "ddce371f269534fa": {
+      "translation": "Không có khổ, không có nguồn gốc khổ, không có chấm dứt khổ, không có con đường.",
+      "time_seconds": 0.4892356634140015
+    },
+    "42d2a1fd0d9fbb6c": {
+      "translation": "Không có tri thức, không có đạt được, không có không đạt được.",
+      "time_seconds": 0.5785232484340668
+    },
+    "d1d842be8dde4c94": {
+      "translation": "Vì vậy, do không đạt được, con của Chariputra, Bồ Tát, dựa vào Prajñāpāramitā, ở lại, (có) sự che phủ của tâm.",
+      "time_seconds": 0.5785232484340668
+    },
+    "86c31363f836c32f": {
+      "translation": "Vì không còn sự che phủ của tâm, không còn rối loạn, đã vượt qua sự đảo lộn, đạt được Niết-bàn kiên định.",
+      "time_seconds": 0.5785232484340668
+    },
+    "2663248f37d304dd": {
+      "translation": "Tất cả các vị Phật, được sắp đặt trong ba thời, dựa vào Prajñāpāramitā, đã đạt được giác ngộ hoàn hảo vô song.",
+      "time_seconds": 0.5785232484340668
+    },
+    "6eb326fdacfd4452": {
+      "translation": "Vì vậy cần phải biết: Prajñāpāramitā là kinh chú lớn, kinh chú của tri thức lớn, kinh chú vô thượng, kinh chú đồng đẳng.",
+      "time_seconds": 0.5785232484340668
+    },
+    "4772d5a31dd8595a": {
+      "translation": "Mọi khổ đau đều được xoa dịu, chân lý vượt lên trên dối gian.",
+      "time_seconds": 0.5785232484340668
+    },
+    "224d8b37a0972547": {
+      "translation": "Trong Prajñāpāramitā, câu chú được nói như sau:",
+      "time_seconds": 0.5785232484340668
+    },
+    "1df732d7e28c22a8": {
+      "translation": "Đã qua, đã qua, vượt qua, vượt qua, giác ngộ, xú.",
+      "time_seconds": 0.5785232484340668
+    }
+  }
+}

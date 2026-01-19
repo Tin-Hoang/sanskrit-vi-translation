@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "groq/openai/gpt-oss-120b",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:10:54.762041"
+  },
+  "entries": {
+    "97056b154869b163": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the Sanskrit terms into modern Vietnamese while maintaining the philosophical nuance of 'svabh\\u0101va \\u015b\\u016bny\\u0101n'.\"}",
+    "12e8319ced524163": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Very accurate to the Sanskrit syntax. 'M\\u1ecdi g\\u00ec' is slightly clunky but effectively conveys the 'yad... tad' structure.\"}",
+    "732fa7d24db5a8a0": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good translation. 'Nghi\\u1ec7p t\\u00e2m' for sa\\u1e43sk\\u0101ra is a specific choice; 'h\\u00e0nh' is more standard, but it works in context.\"}",
+    "8f0662b9cbe8e753": "{\"accuracy\": 3, \"fluency\": 3, \"explanation\": \"Errors in technical terms: 'nh\\u00e3n t\\u00ednh' is likely a typo for 'nh\\u00e2n t\\u00ednh' or 't\\u00ednh ch\\u1ea5t', and 'kh\\u00f4ng b\\u1ecb c\\u1ea3n tr\\u1edf' for 'aniruddh\\u0101' (unstopped/un-extinguished) is slightly off.\"}",
+    "e32b5a69295adbd0": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly captures the negation of the five skandhas in the state of emptiness.\"}",
+    "90406c2997aa4202": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Simple and accurate translation of the six sense organs.\"}",
+    "5865230343cda54f": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate, though 'th\\u01a1m' (fragrance) and 'ch\\u1ea1m v\\u00e0o' (touchable) are more colloquial than the traditional 'h\\u01b0\\u01a1ng' and 'x\\u00fac'.\"}",
+    "fd501ec5eac9607e": "{\"accuracy\": 4, \"fluency\": 3, \"explanation\": \"The phrase 'cho \\u0111\\u1ebfn khi' is a literal translation of 'y\\u0101van' but sounds awkward in Vietnamese; 'cho \\u0111\\u1ebfn' is better.\"}",
+    "0a1928479222f107": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately reflects the chain of dependent origination and its negation.\"}",
+    "c70cce5fe730ea67": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly identifies the Four Noble Truths.\"}",
+    "5767aa1f79ad90f3": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate translation of 'na j\\u00f1\\u0101nam, na pr\\u0101ptir na-apr\\u0101pti\\u1e25'.\"}",
+    "5d78e878c608cfaa": "{\"accuracy\": 2, \"fluency\": 2, \"explanation\": \"Major error: 'con c\\u1ee7a Chariputra' is a mistranslation of the vocative 'ch\\u0101riputra'. 'S\\u1ef1 che ph\\u1ee7 c\\u1ee7a t\\u00e2m' misses the negation 'a-citt\\u0101vara\\u1e47a' (no mental veil).\"}",
+    "fd37f02958371d74": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good translation of the result of removing mental obstacles, though '\\u0111\\u1ea3o l\\u1ed9n' is a bit literal for 'vipary\\u0101sa'.\"}",
+    "5a26216f2078bc0a": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the Buddhas of the three times and their enlightenment.\"}",
+    "3d53b70517ec0c82": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate, though 'kinh ch\\u00fa' is used for 'mantra' which is usually just 'th\\u1ea7n ch\\u00fa' or 'm\\u1eadt ng\\u00f4n'.\"}",
+    "782aa12de7165a73": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Beautiful and accurate translation of the efficacy and truth of the mantra.\"}",
+    "6a369c2c8b7c2191": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard and accurate introductory phrase.\"}",
+    "15d1831bc4fcd71b": "{\"accuracy\": 2, \"fluency\": 2, \"explanation\": \"Translating the mantra literally is rare and 'x\\u00fa' for 'sv\\u0101h\\u0101' is an odd phonetic choice that lacks meaning or traditional resonance.\"}"
+  }
+}

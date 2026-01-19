@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "model": "groq/qwen/qwen3-32b",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:11:13.813078"
+  },
+  "entries": {
+    "4c746fce2b5cef65": {
+      "translation": "Bồ Tát Quan Thế Âm đang thực hành Bát Nhã Ba La Mật Sâu Sâu, nhìn thấy năm uẩn này vốn không có tự tánh.",
+      "time_seconds": 0.3700169801712036
+    },
+    "c832585b2c832127": {
+      "translation": "Ở đây, Ưu Ba Ly, hình tướng là không, không chính là hình tướng; hình tướng không tách rời không, không không tách rời hình tướng; như hình tướng là như không, như không là như hình tướng.",
+      "time_seconds": 0.3700169801712036
+    },
+    "57b33dd4d566503b": {
+      "translation": "Cũng vậy, cảm thọ, triền, hành, thức.",
+      "time_seconds": 0.3700169801712036
+    },
+    "7e749336a9d5529a": {
+      "translation": "Ở đây, Ưu Ba Ly, tất cả pháp đều không tướng, không sinh không diệt, không nhiễm không tịnh, không tăng không giảm.",
+      "time_seconds": 0.3700169801712036
+    },
+    "15899db54ad2a307": {
+      "translation": "Vì vậy, Ưu Ba Ly, trong không, không có sắc, không cảm thọ, không triền, không hành, không thức.",
+      "time_seconds": 0.3700169801712036
+    },
+    "6a8f64e7baa790ea": {
+      "translation": "Không mắt, tai, mũi, lưỡi, thân, ý.",
+      "time_seconds": 0.3700169801712036
+    },
+    "153c3b0983576ab4": {
+      "translation": "Không sắc, thanh, hương, vị, xúc, pháp.",
+      "time_seconds": 0.3700169801712036
+    },
+    "6f48b5914f06b6f2": {
+      "translation": "Không sắc giới cho đến không ý thức giới.",
+      "time_seconds": 0.3700169801712036
+    },
+    "d70716d13e6a543d": {
+      "translation": "Không vô minh, không tận vô minh... cho đến không già chết, không tận già chết.",
+      "time_seconds": 0.3700169801712036
+    },
+    "ddce371f269534fa": {
+      "translation": "Không khổ, tập, diệt, đạo.",
+      "time_seconds": 0.3700169801712036
+    },
+    "42d2a1fd0d9fbb6c": {
+      "translation": "Không có tri thức, không có đạt được, không có không đạt được.",
+      "time_seconds": 0.4428582489490509
+    },
+    "d1d842be8dde4c94": {
+      "translation": "Này Ưu Ba Li Tử, do không đạt được nên Bồ Tát nương theo Bát Nhã Ba La Mật Đa mà an trú, không có chướng ngại tâm.",
+      "time_seconds": 0.4428582489490509
+    },
+    "86c31363f836c32f": {
+      "translation": "Do không còn chướng ngại tâm, vượt qua sai lầm, đạt đến Niết Bàn vững chắc.",
+      "time_seconds": 0.4428582489490509
+    },
+    "2663248f37d304dd": {
+      "translation": "Tất cả Phật đều nương theo Bát Nhã Ba La Mật Đa mà chứng đắc Vô Thượng Chánh Giác.",
+      "time_seconds": 0.4428582489490509
+    },
+    "6eb326fdacfd4452": {
+      "translation": "Vì vậy cần biết: Bát Nhã Ba La Mật Đa là đại thần chú, đại minh chú, vô thượng thần chú, không hai thần chú.",
+      "time_seconds": 0.4428582489490509
+    },
+    "4772d5a31dd8595a": {
+      "translation": "Chấm dứt tất cả khổ đau, chân thật không thể lay chuyển.",
+      "time_seconds": 0.4428582489490509
+    },
+    "224d8b37a0972547": {
+      "translation": "Đây là thần chú trong Bát Nhã Ba La Mật Đa, như vầy:",
+      "time_seconds": 0.4428582489490509
+    },
+    "1df732d7e28c22a8": {
+      "translation": "Đi đi, đi đến bờ kia, đi đến bờ kia, giác ngộ, xá lợi!",
+      "time_seconds": 0.4428582489490509
+    }
+  }
+}

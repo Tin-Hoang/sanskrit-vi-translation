@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "gemini/gemini-3-flash-preview",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:11:36.337019"
+  },
+  "entries": {
+    "53d2ae66505146ae": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the Sanskrit 'vyavalokayati' and 'pa\\u00f1ca-skandh\\u0101s' while maintaining the traditional Buddhist terminology in Vietnamese.\"}",
+    "f3f49245f4e0cc92": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly captures the repetitive structure of the Sanskrit original regarding the identity of form and emptiness.\"}",
+    "cf8bdce456c608f9": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"A concise and accurate translation of the remaining four skandhas.\"}",
+    "103012b0fe7959b8": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the list of negations (anutpann\\u0101, etc.) into natural Vietnamese Buddhist terms.\"}",
+    "5c14b398783210b3": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly translates '\\u015b\\u016bnyatay\\u0101\\u1e43' (in emptiness) and the list of aggregates.\"}",
+    "36c3e3f69119a316": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate translation of the six sense organs (\\u0101yatana).\"}",
+    "30b2d764acbf246e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate translation of the six sense objects.\"}",
+    "5938bdf6f4c8fc80": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly handles the 'y\\u0101van' (up to/until) construction for the eighteen dh\\u0101tus.\"}",
+    "4a8395fdb2aafd02": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately reflects the negation of the twelve links of dependent origination and their cessation.\"}",
+    "f749702c33038488": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard and accurate translation of the Four Noble Truths.\"}",
+    "71e3fa2a22c3ff63": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly translates 'na-apr\\u0101pti\\u1e25' (no non-attainment), which is often omitted in shorter Chinese versions but present in Sanskrit.\"}",
+    "359edc123c778e46": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately links the lack of attainment to the Bodhisattva's state of mind.\"}",
+    "707982e5899cbe26": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Excellent translation of 'vipary\\u0101sa-atikr\\u0101nto' (transcending perversions/delusions).\"}",
+    "1447b9eb50dfc5bb": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the attainment of the Buddhas of the three times.\"}",
+    "8a28909a76cad888": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly captures the four descriptions of the mantra.\"}",
+    "96e1562ef04bf2ae": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'pra\\u015bamana\\u1e25' (appeasing/quelling) and the validation of the truth.\"}",
+    "769a326923b67dfc": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard and accurate transition to the mantra.\"}",
+    "b18c38a64db61d59": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Provides a meaningful translation of the Sanskrit mantra words rather than just transliterating them, which is helpful for understanding.\"}"
+  }
+}

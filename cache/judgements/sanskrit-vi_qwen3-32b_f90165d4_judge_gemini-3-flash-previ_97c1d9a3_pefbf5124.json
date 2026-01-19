@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "groq/qwen/qwen3-32b",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:11:22.618790"
+  },
+  "entries": {
+    "4c040ed2c2504329": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the Sanskrit 'gambh\\u012br\\u0101\\u1e43' (deep/s\\u00e2u s\\u00e2u) and 'svabh\\u0101va \\u015b\\u016bny\\u0101n' (empty of self-nature).\"}",
+    "e614e9314f46195a": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Major error: '\\u015a\\u0101riputra' is translated as '\\u01afu Ba Ly' (Upali), a different person. 'H\\u00ecnh t\\u01b0\\u1edbng' is an acceptable but less common term for 'r\\u016bpa' than 's\\u1eafc'.\"}",
+    "04846c7455853f10": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate, though 'tri\\u1ec1n' is an unusual translation for 'sa\\u1e43j\\u00f1\\u0101' (usually 't\\u01b0\\u1edfng').\"}",
+    "1442b2a907c2c079": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"Repeats the error of naming '\\u01afu Ba Ly' instead of '\\u015a\\u0101riputra'.\"}",
+    "503c07f52b479d8b": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"Repeats the '\\u01afu Ba Ly' error and uses 'tri\\u1ec1n' for 'sa\\u1e43j\\u00f1\\u0101'.\"}",
+    "db62e378bbbd0aae": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly accurate translation of the six sense organs.\"}",
+    "c218509f9d758e38": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly accurate translation of the six sense objects.\"}",
+    "8349615f36eb64e6": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Error: 'cak\\u1e63\\u016br-dh\\u0101tur' refers to the 'eye element' (nh\\u00e3n gi\\u1edbi), not 's\\u1eafc gi\\u1edbi' (r\\u016bpa-dh\\u0101tu).\"}",
+    "fa88f2a805af4b20": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the negation of the chain of dependent origination.\"}",
+    "241d2a6d98441b3f": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard and accurate translation of the Four Noble Truths.\"}",
+    "5767aa1f79ad90f3": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately reflects the Sanskrit 'na-apr\\u0101pti\\u1e25' (non-non-attainment).\"}",
+    "7fef8e4f45a7a346": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"Repeats the '\\u01afu Ba Ly' error (here '\\u01afu Ba Li T\\u1eed'). 'Ch\\u01b0\\u1edbng ng\\u1ea1i t\\u00e2m' is a correct translation of 'citt\\u0101vara\\u1e47a'.\"}",
+    "054fb35bbc822a5e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'vipary\\u0101sa-atikr\\u0101nto' (transcending errors/perversions).\"}",
+    "783359d5ec6e8a2d": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and fluent translation of the Buddhas of the three times.\"}",
+    "65894fc1452de5ef": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good translation, though 'kh\\u00f4ng hai' (non-dual) for 'samasama' is an interpretation; 'v\\u00f4 \\u0111\\u1eb3ng \\u0111\\u1eb3ng' is more standard.\"}",
+    "ff3435e02562e736": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'pra\\u015bamana\\u1e25' (appeasing/quelling) and 'amithyat\\u0101t' (not false).\"}",
+    "14a7d87e0af36e70": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Simple and accurate introductory phrase.\"}",
+    "4c3745d88c9cc794": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"The translation of 'sv\\u0101h\\u0101' as 'x\\u00e1 l\\u1ee3i' is incorrect; 'sv\\u0101h\\u0101' is an exclamation like 'hail' or 'so be it', whereas 'x\\u00e1 l\\u1ee3i' means relics (\\u015bar\\u012bra).\"}"
+  }
+}

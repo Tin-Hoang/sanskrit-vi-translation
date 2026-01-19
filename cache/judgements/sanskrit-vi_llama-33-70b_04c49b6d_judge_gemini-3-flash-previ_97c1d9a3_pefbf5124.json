@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "groq/llama-3.3-70b-versatile",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:10:36.765725"
+  },
+  "entries": {
+    "606efb76a739d054": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the Sanskrit 'svabh\\u0101va \\u015b\\u016bny\\u0101n' as 'kh\\u00f4ng c\\u00f3 t\\u1ef1 t\\u00ednh' and maintains a natural flow.\"}",
+    "2dc3486b703e574b": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Translates '\\u015b\\u016bnyat\\u0101' as 'v\\u00f4 t\\u00ednh' (no-nature) which is philosophically accurate but less common than 'kh\\u00f4ng'. 'H\\u00ecnh th\\u1ec3' for 'r\\u016bpa' is acceptable but 's\\u1eafc' is more standard.\"}",
+    "bd3e3094cc569e56": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly accurate and concise translation of the list of aggregates.\"}",
+    "b62ec4868fc0cd41": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the series of negations in the Sanskrit text with natural Vietnamese phrasing.\"}",
+    "3a371213edd4f6de": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly reflects the locative '\\u015b\\u016bnyatay\\u0101\\u1e43' (in emptiness) and lists the aggregates accurately.\"}",
+    "dbb13c5f0aea6593": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard and accurate translation of the six sense organs.\"}",
+    "ffced1ab066bfe13": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard and accurate translation of the six sense objects.\"}",
+    "d737ea8539990911": "{\"accuracy\": 2, \"fluency\": 2, \"explanation\": \"Major error: includes a Chinese character '\\u773c' (eye) untranslated and fails to properly render the 'y\\u0101van' (up to) construction.\"}",
+    "04c616ccb99a2256": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the negation of the links of dependent origination and their cessation.\"}",
+    "cee03fcfad977ddc": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly accurate translation of the Four Noble Truths.\"}",
+    "6925cbf0eedd9ca8": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures 'na-apr\\u0101pti\\u1e25' (non-non-attainment) as 'kh\\u00f4ng c\\u00f3 kh\\u00f4ng th\\u00e0nh t\\u1ef1u'.\"}",
+    "090f885667f61660": "{\"accuracy\": 2, \"fluency\": 2, \"explanation\": \"Major error: contains '\\u00f4\\u30b7\\u30e3\\u91cc\\u5b50', which appears to be a mix of Japanese katakana and Chinese characters, likely a hallucination or encoding error.\"}",
+    "d0c4a4e73d5c9364": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good translation, though 'v\\u01b0\\u1ee3t qua s\\u1ef1 \\u0111\\u1ea3o ng\\u01b0\\u1ee3c' is a bit literal for 'vipary\\u0101sa-atikr\\u0101nto' (transcending perverted views).\"}",
+    "3a12214e45d4ab6a": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the attainment of the Buddhas of the three times.\"}",
+    "6587d6aa80327721": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate, though '\\u0111\\u1ea1i tr\\u00ed' for 'mah\\u0101-vidy\\u0101' is slightly different from the usual '\\u0111\\u1ea1i minh'.\"}",
+    "af1439efa90fc6a6": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'pra\\u015bamana\\u1e25' as 'l\\u1eafng xu\\u1ed1ng' and 'amithyat\\u0101t' as 'kh\\u00f4ng sai l\\u1ec7ch'.\"}",
+    "88819a2dd5ef1922": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Simple and accurate introductory phrase for the mantra.\"}",
+    "6db997a954e38293": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Translates the meaning of the mantra rather than transliterating it. While accurate to the Sanskrit roots, mantras are usually transliterated in Vietnamese practice.\"}"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "model": "groq/moonshotai/kimi-k2-instruct-0905",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "sanskrit-vi",
+    "created": "2026-01-19T01:11:07.456400"
+  },
+  "entries": {
+    "efe5f87b451f466e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'svabh\\u0101va \\u015b\\u016bny\\u0101n' as 'r\\u1ed7ng kh\\u00f4ng v\\u1ec1 t\\u1ef1 t\\u00e1nh' and maintains a formal, modern Vietnamese style.\"}",
+    "b3580eafb0eecf6b": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly captures the repetitive structure of the Sanskrit original while remaining natural in Vietnamese.\"}",
+    "7dd1b6e701f6231d": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Direct and accurate translation of the Sanskrit 'evam eva'.\"}",
+    "7d1149ec82a70b04": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'an\\u016bn\\u0101 aparip\\u016br\\u1e47\\u0101\\u1e25' as 'kh\\u00f4ng thi\\u1ebfu kh\\u00f4ng th\\u1eeba', which is a precise modern equivalent to the Sino-Vietnamese 'b\\u1ea5t t\\u0103ng b\\u1ea5t gi\\u1ea3m'.\"}",
+    "cc24c2f1b02e71fd": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly renders the locative '\\u015b\\u016bnyatay\\u0101\\u1e43' as 'trong kh\\u00f4ng' and lists the aggregates accurately.\"}",
+    "36c3e3f69119a316": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Simple and accurate translation of the six sense organs.\"}",
+    "30b2d764acbf246e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Simple and accurate translation of the six sense objects.\"}",
+    "b6ed345cae1ba87a": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Accurate, though 'gi\\u1edbi nh\\u00e3n' is slightly less common than 'nh\\u00e3n gi\\u1edbi' in standard Buddhist terminology, it remains correct.\"}",
+    "5c36a5694bdfc99a": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately reflects the 'na... na... k\\u1e63ayo' (neither... nor the end of...) structure.\"}",
+    "f749702c33038488": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard and accurate translation of the Four Noble Truths.\"}",
+    "dc6f703940fddae9": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'na-apr\\u0101pti\\u1e25' (non-non-attainment), which is often omitted in shorter Chinese versions.\"}",
+    "3f4176564accd6df": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly links the lack of attainment to the state of the Bodhisattva's mind.\"}",
+    "3fa4dcd0fc1984dc": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates 'vipary\\u0101sa-atikr\\u0101nto' as 'v\\u01b0\\u1ee3t qua m\\u1ecdi \\u0111i\\u00ean \\u0111\\u1ea3o'.\"}",
+    "58fadc26bd883c31": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Precise translation of 'tryadhva' (three times/periods) and the attainment of enlightenment.\"}",
+    "1495c22154c16474": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately renders the various descriptions of the mantra.\"}",
+    "e65bf5654d969838": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate translation of 'pra\\u015bamana\\u1e25' (appeasing/quelling) and 'amithyat\\u0101t' (not false).\"}",
+    "ecaef19a54626a42": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Direct and clear introductory sentence for the mantra.\"}",
+    "d1fb9bd7a0bfdcea": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Standard transliteration of the Sanskrit mantra into Vietnamese phonetics.\"}"
+  }
+}
