@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "model": "gemini/gemini-3-flash-preview",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:42:04.606733"
+  },
+  "entries": {
+    "c35c71a0b52e261b": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the meaning of the Dhammapada verse 1 with natural phrasing.\"}",
+    "9e3c18b6567e35fc": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly translates verse 2, maintaining the parallel structure with the previous verse.\"}",
+    "9db7cf8b8a26b8ba": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and concise translation of verse 3.\"}",
+    "48c0d8305b08a17a": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately reflects the cessation of hatred in verse 4.\"}",
+    "f8b4b510d9e200f6": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Classic and accurate rendering of the eternal law (sanantano dhammo).\"}",
+    "95b89a18b4237650": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly interprets 'yam\\u0101mase' as 'we are dying/passing away', which is more precise than the reference's 'being harmed'.\"}",
+    "ac920560aeae32da": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the qualities of one who is easily overcome by Mara.\"}",
+    "920b0221a4ca61f6": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the qualities of one who is not overcome by Mara.\"}",
+    "142a649b184f7476": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Accurate, though the placement of 'ch\\u00e2n th\\u1eadt' (truth) feels slightly disconnected from the lack of it (asaccena).\"}",
+    "fd6b075f0279f826": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Flows well and accurately describes the one worthy of the yellow robe.\"}",
+    "96061aa412305907": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Clear and accurate translation of the confusion between essence and non-essence.\"}",
+    "4b4a7a4cfc06a425": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately mirrors the previous verse regarding right thought.\"}",
+    "719012ac37895739": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and uses clear, modern Vietnamese for the house metaphor.\"}",
+    "47bbc82e23c7c099": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Consistent and accurate translation of the well-roofed house metaphor.\"}",
+    "1ece8343777ff04f": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the sorrow of the wrongdoer in both worlds.\"}",
+    "dff31169ea15a28c": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the joy of the merit-maker in both worlds.\"}",
+    "7a9b85257de6bd44": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly translates 'tappati' as remorse/regret (h\\u1ed1i h\\u1eadn) which is very fitting.\"}",
+    "1dfe31c62f4052a7": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the rejoicing of the merit-maker.\"}",
+    "95212d67936d9793": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Excellent prose-style translation that clarifies the 'cowherd' metaphor.\"}",
+    "a645cb01ae9d9eae": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Comprehensive and accurate translation of the benefits of practicing the Dhamma.\"}"
+  }
+}

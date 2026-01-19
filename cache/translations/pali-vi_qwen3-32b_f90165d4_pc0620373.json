@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "model": "groq/qwen/qwen3-32b",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:41:40.551967"
+  },
+  "entries": {
+    "0820af6092dc0ecd": {
+      "translation": "Những pháp do ý khởi đầu, do ý làm chủ, do ý tạo ra; nếu người ấy nói hay làm điều ác bằng tâm ô nhiễm, khổ đau sẽ theo đuổi người ấy như bánh xe theo chân ngựa kéo.",
+      "time_seconds": 0.2512569189071655
+    },
+    "104b9cc46cc9660c": {
+      "translation": "Những pháp do ý khởi đầu, do ý làm chủ, do ý tạo ra; nếu người ấy nói hay làm điều thiện bằng tâm thanh tịnh, hạnh phúc sẽ theo đuổi người ấy như bóng theo hình.",
+      "time_seconds": 0.2512569189071655
+    },
+    "d085a2303dda01a9": {
+      "translation": "Nếu người ta mắng tôi, chê bai tôi, hoặc nói điều không đúng về tôi; những ai làm như vậy, lòng thù oán của tôi sẽ không dứt.",
+      "time_seconds": 0.2512569189071655
+    },
+    "56fa11a4c4fd7120": {
+      "translation": "Nếu người ta mắng tôi, chê bai tôi, hoặc nói điều không đúng về tôi; những ai làm như vậy, lòng thù oán của tôi sẽ được an tịnh.",
+      "time_seconds": 0.2512569189071655
+    },
+    "ab3ac8cf3abdf03b": {
+      "translation": "Thật vậy, bằng oán thù không thể dứt oán thù nào; chỉ bằng từ bi mới dứt oán thù. Đó là lời dạy hằng hữu.",
+      "time_seconds": 0.2512569189071655
+    },
+    "55c468100cdc8942": {
+      "translation": "Người khác không hiểu điều này, chúng ta ở đây không làm gì; những ai hiểu được điều này, nhờ đó trí tuệ của họ được an tịnh.",
+      "time_seconds": 0.2512569189071655
+    },
+    "cc2301943692c885": {
+      "translation": "Người sống không quán sát sự đẹp đẽ, các căn không được chế ngự; ăn uống quá độ, lười biếng, Ma vua dễ dàng đánh bại người ấy như gió đánh gãy cây yếu.",
+      "time_seconds": 0.2512569189071655
+    },
+    "51c2ec8a7ee6af3d": {
+      "translation": "Người sống quán sát sự không đẹp đẽ, các căn được chế ngự; ăn uống đúng mức, tinh tấn, Ma vua không thể đánh bại người ấy như gió không thể lay chuyển núi đá.",
+      "time_seconds": 0.2512569189071655
+    },
+    "8b661a830f29c1b2": {
+      "translation": "Người không giữ giới mặc áo cà sa, người ấy không đáng mặc y phục này; người mất đi sự thật và giới luật, không xứng đáng với áo cà sa.",
+      "time_seconds": 0.2512569189071655
+    },
+    "72d09befc1e47074": {
+      "translation": "Người giữ giới trọn vẹn, người ấy xứng đáng mặc áo cà sa; người đạt được sự thật và giới luật, chính người ấy đáng mặc y phục này.",
+      "time_seconds": 0.2512569189071655
+    },
+    "6c47bc7231036190": {
+      "translation": "Những người say đắm bản chất, sai lầm nhận thức phi bản chất; họ không đạt được bản chất, do đi theo ý nghĩ sai lầm.",
+      "time_seconds": 0.2869963884353638
+    },
+    "a78a100d16782c9a": {
+      "translation": "Những người hiểu đúng bản chất, nhận thức đúng phi bản chất; họ đạt được bản chất, do đi theo ý nghĩ đúng.",
+      "time_seconds": 0.2869963884353638
+    },
+    "a854294acef7a643": {
+      "translation": "Giống như ngôi nhà không được che chắn, dục vọng tràn ngập; tâm không được tu dưỡng, tham dục tràn ngập.",
+      "time_seconds": 0.2869963884353638
+    },
+    "6d1f690439cd1c89": {
+      "translation": "Giống như ngôi nhà được che chắn, dục vọng không tràn ngập; tâm được tu dưỡng, tham dục không tràn ngập.",
+      "time_seconds": 0.2869963884353638
+    },
+    "16a1675f2283d8e8": {
+      "translation": "Ở đây đau khổ, sau này đau khổ, kẻ tạo ác nghiệp đau khổ cả hai đời; kẻ ấy đau khổ, bị khổ đau, thấy quả báo của chính mình.",
+      "time_seconds": 0.2869963884353638
+    },
+    "5a6c5cf7eae0ec6e": {
+      "translation": "Ở đây vui sướng, sau này vui sướng, kẻ tạo thiện nghiệp vui sướng cả hai đời; kẻ ấy vui sướng, được vui sướng, thấy quả lành của chính mình.",
+      "time_seconds": 0.2869963884353638
+    },
+    "ed889d589785bd86": {
+      "translation": "Ở đây hối hận, sau này hối hận, kẻ tạo ác nghiệp hối hận cả hai đời; 'Tôi đã tạo ác nghiệp', người ấy hối hận, càng hối hận hơn khi đi vào ác đạo.",
+      "time_seconds": 0.2869963884353638
+    },
+    "46212d9af604b32d": {
+      "translation": "Ở đây vui mừng, sau này vui mừng, kẻ tạo thiện nghiệp vui mừng cả hai đời; 'Tôi đã tạo thiện nghiệp', người ấy vui mừng, càng vui mừng hơn khi đi vào thiện đạo.",
+      "time_seconds": 0.2869963884353638
+    },
+    "78ae8f8ab538ec1c": {
+      "translation": "Người lười biếng, nói năng hỗn loạn, không có trí tuệ; giống như con bò trong đàn người khác, không phải bậc thánh trong đạo.",
+      "time_seconds": 0.2869963884353638
+    },
+    "d52af7c203377104": {
+      "translation": "Người chánh niệm, nói năng hòa hợp, sống theo pháp; đoạn trừ tham, sân, si, trí tuệ chánh kiến, tâm giải thoát; dù ở đây hay ở xa, người ấy là bậc thánh trong đạo.",
+      "time_seconds": 0.2869963884353638
+    }
+  }
+}

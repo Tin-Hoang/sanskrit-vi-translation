@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "model": "groq/llama-3.3-70b-versatile",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:41:03.636400"
+  },
+  "entries": {
+    "3aea655bf660b683": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the meaning of the Dhammapada verse 1 with natural Vietnamese phrasing.\"}",
+    "14afceec0eeb6117": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the meaning of verse 2 with natural Vietnamese phrasing.\"}",
+    "19f95e79110460ca": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"Incorrect translation of verbs. The source describes past actions (insulted, struck, defeated, robbed), but the candidate translates them as imperatives (Don't insult, don't kill).\"}",
+    "684b24538887635b": "{\"accuracy\": 2, \"fluency\": 4, \"explanation\": \"Same error as Item 3; translates past grievances as negative imperatives, missing the core meaning of the verse.\"}",
+    "11c79f0b3ee785b6": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate meaning, though 't\\u00ecnh y\\u00eau' (love) is a slightly secular translation for 'averena' (non-hatred/loving-kindness).\"}",
+    "b71788a3bfc62314": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Misinterprets 'yam\\u0101mase' (we perish/restrain ourselves) and 'medhag\\u0101' (quarrels). The candidate translates 'medhag\\u0101' as 'intelligent'.\"}",
+    "3591950d2e7cb886": "{\"accuracy\": 4, \"fluency\": 3, \"explanation\": \"Mostly accurate, but 't\\u00e1n t\\u1ec9nh' (flirting) is an odd choice for 'subh\\u0101nupassi\\u1e43' (contemplating the pleasant).\"}",
+    "73beb7b8a03881ad": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and fluent translation of the verse regarding sense restraint.\"}",
+    "bb092672b0bc6383": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good translation, though it adds 'tham s\\u00e2n si' which is an interpretation of 'anikkas\\u0101vo' (not free from stains).\"}",
+    "b2a460b8adedc94b": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Consistent with Item 9; accurate and clear.\"}",
+    "130e7877558a5d23": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Misinterprets 'as\\u0101re' (unsubstantial/unreal) as 'people without value' and 'gocar\\u0101' (resort/sphere) as 'living among'.\"}",
+    "69c31ea0ac87091a": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Same error as Item 11; misinterprets the philosophical concepts of substance/essence as social value.\"}",
+    "037e8c1fb0b2156b": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Misinterprets 'ducchanna\\u1e43' (ill-roofed) as 'not cleaned' and 'vu\\u1e6d\\u1e6dh\\u012b' (rain) as 'wind'.\"}",
+    "2b7bb6f2a904b578": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Same error as Item 13; confuses roofing/rain with cleaning/wind.\"}",
+    "a45c86bef0d0125f": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Very accurate and captures the repetitive structure of the Pali verse well.\"}",
+    "5b4b5223e30f31e4": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and fluent translation of the verse regarding the joy of merit.\"}",
+    "feb8ff03bb086e44": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate translation of 'tappati' as 'h\\u1ed1i h\\u1eadn' (regret/remorse) in this context.\"}",
+    "404a8d30a96000d1": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and fluent.\"}",
+    "3891b9f04e5e137f": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Misinterprets 'sahita\\u1e43' (scriptures/texts) as 'combination' and 's\\u0101ma\\u00f1\\u00f1assa' (asceticism/holy life) as 'equality'.\"}",
+    "f1774876ff621d32": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Same errors as Item 19 regarding 'sahita\\u1e43' and 's\\u0101ma\\u00f1\\u00f1assa'.\"}"
+  }
+}

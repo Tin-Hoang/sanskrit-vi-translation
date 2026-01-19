@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "model": "groq/openai/gpt-oss-120b",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:41:11.398567"
+  },
+  "entries": {
+    "0820af6092dc0ecd": {
+      "translation": "Các pháp xuất phát từ tâm, tâm là chủ, tâm là của tâm; Khi tâm bất an, người nói hay làm, thì dũi khổ theo, như bánh xe theo chân xe.",
+      "time_seconds": 0.5496931076049805
+    },
+    "104b9cc46cc9660c": {
+      "translation": "Nếu tâm vui vẻ, người nói hay làm, thì hạnh phúc theo, như bóng không rời.",
+      "time_seconds": 0.5496931076049805
+    },
+    "d085a2303dda01a9": {
+      "translation": "Ai đã đánh, trói, lăng mạ tôi; Những người trả thù họ không có hận.",
+      "time_seconds": 0.5496931076049805
+    },
+    "56fa11a4c4fd7120": {
+      "translation": "Ai đã đánh, trói, lăng mạ tôi; Những người tái trả thù, họ đồng ý với hận thù.",
+      "time_seconds": 0.5496931076049805
+    },
+    "ab3ac8cf3abdf03b": {
+      "translation": "Không có hận thù sinh ra từ hận thù, không bao giờ gặp nhau; Khi có hận thù thì họ gặp nhau, đó là pháp bất diệt.",
+      "time_seconds": 0.5496931076049805
+    },
+    "55c468100cdc8942": {
+      "translation": "Những người khác không biết, tôi ở đây là người xét xử; Những người biết ở đó, thì họ gặp người khôn ngoan.",
+      "time_seconds": 0.5496931076049805
+    },
+    "cc2301943692c885": {
+      "translation": "Khi nhìn thấy điều tốt, sinh sống, các giác quan không bị kiềm chế; Khi ăn, tâm không yên, thân yếu ớt; Đúng là ma ca phá hủy, như gió làm gãy cây yếu.",
+      "time_seconds": 0.5496931076049805
+    },
+    "51c2ec8a7ee6af3d": {
+      "translation": "Khi nhìn thấy điều không tốt, sinh sống, các giác quan được kiềm chế; Khi ăn, tâm tĩnh, niềm tin kiên định; Ma không thể phá hủy, như gió không làm di chuyển núi.",
+      "time_seconds": 0.5496931076049805
+    },
+    "8b661a830f29c1b2": {
+      "translation": "Ai không ăn gạo, sẽ phá hoại tài sản; Khi đã đạt được chân lý Dhamma, người ấy không giết hại cỏ.",
+      "time_seconds": 0.5496931076049805
+    },
+    "72d09befc1e47074": {
+      "translation": "Ai gắn bó với cỏ vantaka, trong giới luật chặt chẽ; Khi đã đạt được chân lý Dhamma, người ấy thực sự giết hại cỏ.",
+      "time_seconds": 0.5496931076049805
+    },
+    "6c47bc7231036190": {
+      "translation": "Những người bám víu vào vô ngã, và xem ngã là không tồn tại; họ không đạt được sự thật của ngã, họ bị dẫn dắt bởi ý định sai lầm.",
+      "time_seconds": 0.44954397678375246
+    },
+    "a78a100d16782c9a": {
+      "translation": "Biết được cả ngã và vô ngã, họ đạt được ngã, được dẫn dắt bởi ý định chính xác.",
+      "time_seconds": 0.44954397678375246
+    },
+    "a854294acef7a643": {
+      "translation": "Như một ngôi nhà được xây dựng kém, sẽ sụp đổ; như vậy tâm không được phát triển, sẽ sụp đổ vì tham.",
+      "time_seconds": 0.44954397678375246
+    },
+    "6d1f690439cd1c89": {
+      "translation": "Như một ngôi nhà được xây dựng tốt, không sụp đổ; như vậy tâm tốt không bị sụp đổ vì tham.",
+      "time_seconds": 0.44954397678375246
+    },
+    "16a1675f2283d8e8": {
+      "translation": "Ở đây người này buồn, sau này cũng buồn, kẻ làm ác buồn ở cả hai nơi; Người buồn tự hủy hoại mình khi thấy hành động ác của mình.",
+      "time_seconds": 0.44954397678375246
+    },
+    "5a6c5cf7eae0ec6e": {
+      "translation": "Ở đây người này vui mừng, sau này cũng vui mừng, người đã làm công đức vui mừng ở cả hai nơi; Người vui mừng, tự hào khi thấy hành động trong sạch của mình.",
+      "time_seconds": 0.44954397678375246
+    },
+    "ed889d589785bd86": {
+      "translation": "Ở đây người này chịu khổ, sau này cũng chịu khổ, kẻ làm ác chịu khổ ở cả hai nơi; Người làm ác, chịu khổ, sau này chịu khổ hơn vì đã vào cảnh xấu.",
+      "time_seconds": 0.44954397678375246
+    },
+    "46212d9af604b32d": {
+      "translation": "Ở đây người này hân hoan, sau này cũng hân hoan, người đã làm công đức hân hoan ở cả hai nơi; Người làm công đức, hân hoan, sau này hân hoan vì đã đạt được nơi tốt.",
+      "time_seconds": 0.44954397678375246
+    },
+    "78ae8f8ab538ec1c": {
+      "translation": "Nếu người nói nhiều lời cùng lúc, không phải là người thật; Như bò đếm những con bò khác, không phải là người tu hành chân chính.",
+      "time_seconds": 0.44954397678375246
+    },
+    "d52af7c203377104": {
+      "translation": "Ngay cả khi nói một chút cũng là người theo Dhamma; loại bỏ tham, sân và vô minh, người hiểu đúng là tâm đã giải thoát hoàn toàn; Dù ở đây hay ở nơi sau, người ấy là người tu hành chân thật.",
+      "time_seconds": 0.44954397678375246
+    }
+  }
+}

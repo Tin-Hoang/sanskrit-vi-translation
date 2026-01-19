@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "model": "gemini/gemini-3-flash-preview",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:41:55.192779"
+  },
+  "entries": {
+    "0820af6092dc0ecd": {
+      "translation": "Ý dẫn đầu các pháp, ý làm chủ, ý tạo; nếu với ý ô nhiễm, nói năng hay hành động, khổ não bước theo sau, như xe chân vật kéo.",
+      "time_seconds": 0.3552248477935791
+    },
+    "104b9cc46cc9660c": {
+      "translation": "Ý dẫn đầu các pháp, ý làm chủ, ý tạo; nếu với ý thanh tịnh, nói năng hay hành động, hạnh phúc bước theo sau, như bóng không rời hình.",
+      "time_seconds": 0.3552248477935791
+    },
+    "d085a2303dda01a9": {
+      "translation": "Nó mắng tôi, đánh tôi, nó thắng tôi, cướp tôi; ai ôm hiềm hận ấy, hận thù không thể nguôi.",
+      "time_seconds": 0.3552248477935791
+    },
+    "56fa11a4c4fd7120": {
+      "translation": "Nó mắng tôi, đánh tôi, nó thắng tôi, cướp tôi; không ôm hiềm hận ấy, hận thù tự nhiên nguôi.",
+      "time_seconds": 0.3552248477935791
+    },
+    "ab3ac8cf3abdf03b": {
+      "translation": "Với hận diệt hận thù, đời này không có được; không hận diệt hận thù, là định luật ngàn thu.",
+      "time_seconds": 0.3552248477935791
+    },
+    "55c468100cdc8942": {
+      "translation": "Người khác không hiểu rằng, chúng ta đây sắp chết; những ai hiểu điều đó, tranh luận được lắng êm.",
+      "time_seconds": 0.3552248477935791
+    },
+    "cc2301943692c885": {
+      "translation": "Ai sống nhìn tịnh tướng, không hộ trì các căn, ăn uống không tiết độ, biếng nhác, kém tinh tấn; Ma vương dễ nhiếp phục, như gió thổi cây yếu.",
+      "time_seconds": 0.3552248477935791
+    },
+    "51c2ec8a7ee6af3d": {
+      "translation": "Ai sống nhìn bất tịnh, khéo hộ trì các căn, ăn uống có tiết độ, có đức tin, tinh tấn; Ma vương không nhiếp phục, như gió thổi núi đá.",
+      "time_seconds": 0.3552248477935791
+    },
+    "8b661a830f29c1b2": {
+      "translation": "Ai chưa rời uế trược, mặc áo cà-sa này, thiếu tự chế, chân thật, không xứng áo cà-sa.",
+      "time_seconds": 0.3552248477935791
+    },
+    "72d09befc1e47074": {
+      "translation": "Ai đã rời uế trược, giới luật khéo trang nghiêm, tự chế và chân thật, xứng đáng áo cà-sa.",
+      "time_seconds": 0.3552248477935791
+    },
+    "6c47bc7231036190": {
+      "translation": "Coi không thực là thực, xem thực là không thực; Họ không đạt được thực, do nuôi dưỡng tà tư duy.",
+      "time_seconds": 0.42344887256622316
+    },
+    "a78a100d16782c9a": {
+      "translation": "Biết cái thực là thực, cái không thực là không thực; Họ đạt được cái thực, nhờ nuôi dưỡng chánh tư duy.",
+      "time_seconds": 0.42344887256622316
+    },
+    "a854294acef7a643": {
+      "translation": "Như ngôi nhà lợp không kỹ, mưa sẽ xâm nhập vào; Cũng vậy, tâm không tu tập, tham dục sẽ xâm nhập vào.",
+      "time_seconds": 0.42344887256622316
+    },
+    "6d1f690439cd1c89": {
+      "translation": "Như ngôi nhà lợp khéo kỹ, mưa không xâm nhập vào; Cũng vậy, tâm khéo tu tập, tham dục không xâm nhập vào.",
+      "time_seconds": 0.42344887256622316
+    },
+    "16a1675f2283d8e8": {
+      "translation": "Nay sầu, đời sau sầu, kẻ làm ác sầu cả hai nơi; Người ấy sầu khổ, người ấy bị dày vò, khi thấy nghiệp uế nhiễm của chính mình.",
+      "time_seconds": 0.42344887256622316
+    },
+    "5a6c5cf7eae0ec6e": {
+      "translation": "Nay vui, đời sau vui, kẻ làm phước vui cả hai nơi; Người ấy vui vẻ, người ấy hân hoan, khi thấy nghiệp thanh tịnh của chính mình.",
+      "time_seconds": 0.42344887256622316
+    },
+    "ed889d589785bd86": {
+      "translation": "Nay hối hận, đời sau hối hận, kẻ làm ác hối hận cả hai nơi; 'Ta đã làm ác' là điều khiến họ hối hận, khi đọa vào cõi khổ họ càng hối hận hơn.",
+      "time_seconds": 0.42344887256622316
+    },
+    "46212d9af604b32d": {
+      "translation": "Nay hân hoan, đời sau hân hoan, kẻ làm phước hân hoan cả hai nơi; 'Ta đã làm phước' là điều khiến họ hân hoan, khi đi đến cõi lành họ càng hân hoan hơn.",
+      "time_seconds": 0.42344887256622316
+    },
+    "78ae8f8ab538ec1c": {
+      "translation": "Dù tụng đọc nhiều kinh điển, nhưng người phóng dật không thực hành theo; Thì cũng như kẻ chăn bò đếm bò cho người khác, không được dự phần vào lợi ích của Sa-môn hạnh.",
+      "time_seconds": 0.42344887256622316
+    },
+    "d52af7c203377104": {
+      "translation": "Dù tụng đọc ít kinh điển, nhưng sống đúng theo giáo pháp; Từ bỏ tham, sân, si, có hiểu biết đúng đắn, tâm giải thoát hoàn toàn; Không chấp thủ đời này hay đời sau, người ấy được dự phần vào lợi ích của Sa-môn hạnh.",
+      "time_seconds": 0.42344887256622316
+    }
+  }
+}

@@ -31,13 +31,17 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
 
 ### Pali → Vietnamese (Dhammapada | Kinh Pháp Cú)
 
-| Source   | Model            |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
-|:---------|:-----------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
-| Pali     | Llama-3.3-70b    |     3.41 |          0.71 |                         3.05 |                        4.15 |         5.39 |
-| Pali     | GPT-OSS-120b     |     2.25 |          0.73 |                         2.45 |                        3.00 |        10.60 |
-| Pali     | Kimi-k2          |     5.89 |          0.75 |                         4.80 |                        4.90 |         7.64 |
-| Pali     | Qwen3-32b        |     4.88 |          0.73 |                         3.10 |                        4.00 |         6.09 |
-| Pali     | Gemini-2.5-Flash |    12.34 |          0.77 |                         5.00 |                        5.00 |        15.56 |
+**Date**: 2026-01-19 01:45:20
+**Judge Model**: gemini/gemini-3-flash-preview
+**Dataset**: pali_vi_dhammapada.csv (20 samples)
+
+| Source   | Model                  |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:---------|:-----------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| Pali     | Llama-3.3-70b          |    14.00 |          0.72 |                         3.55 |                        4.05 |         4.86 |
+| Pali     | GPT-OSS-120b           |     7.89 |          0.72 |                         2.75 |                        3.20 |         9.99 |
+| Pali     | Kimi-k2                |    16.82 |          0.77 |                         4.75 |                        4.60 |         7.30 |
+| Pali     | Qwen3-32b              |    11.59 |          0.74 |                         3.75 |                        4.00 |         5.38 |
+| Pali     | Gemini-3-Flash-Preview |    37.65 |          0.84 |                         5.00 |                        4.95 |         7.79 |
 
 ### Pali vs Sanskrit Comparison (Dhammapada - Udanavarga | Kinh Pháp Cú)
 

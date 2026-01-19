@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "model": "groq/openai/gpt-oss-120b",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:41:23.142929"
+  },
+  "entries": {
+    "6b4ef42f06aff71f": "{\"accuracy\": 3, \"fluency\": 3, \"explanation\": \"Mistranslates 'padu\\u1e6d\\u1e6dhena' (defiled/corrupt) as 'b\\u1ea5t an' (anxious/unstable). 'D\\u0169i kh\\u1ed5' is a typo or archaic; 'b\\u00e1nh xe theo ch\\u00e2n xe' is redundant.\"}",
+    "376faca2f5c30597": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate overall, though 'vui v\\u1ebb' is a bit light for 'pasannena' (pure/serene).\"}",
+    "6cef58eefef1f64b": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Mistranslates 'ajini' (conquered) and 'ah\\u0101si' (robbed) as 'tr\\u00f3i' (tied). The second half completely flips the meaning: the source says hatred is NOT stilled, but the candidate says they have no hate.\"}",
+    "8ef8a85bb121bd9b": "{\"accuracy\": 1, \"fluency\": 2, \"explanation\": \"Major errors. 'N\\u016bpanayhanti' (not harboring) is translated as 't\\u00e1i tr\\u1ea3 th\\u00f9' (retaliating). 'Upasammati' (is stilled) is translated as '\\u0111\\u1ed3ng \\u00fd' (agreeing).\"}",
+    "16ff5dd64ab36735": "{\"accuracy\": 2, \"fluency\": 2, \"explanation\": \"Mistranslates 'sammant\\u012bdha' (stilled here) as 'g\\u1eb7p nhau' (meeting). The second half is also inaccurate regarding the cessation of hatred.\"}",
+    "a241d8d85bc8b832": "{\"accuracy\": 1, \"fluency\": 2, \"explanation\": \"Complete hallucination. 'Yam\\u0101mase' (we restrain/perish) is translated as 'x\\u00e9t x\\u1eed' (judge). 'Medhag\\u0101' (quarrels) is translated as 'ng\\u01b0\\u1eddi kh\\u00f4n ngoan' (wise person).\"}",
+    "20b62f9142cba229": "{\"accuracy\": 3, \"fluency\": 3, \"explanation\": \"Translates 'Bhojanamhi c\\u0101matta\\u00f1\\u00f1u\\u1e43' (immoderate in eating) as 't\\u00e2m kh\\u00f4ng y\\u00ean' (mind not peaceful). 'Ma ca' is likely a typo for 'Ma v\\u01b0\\u01a1ng'.\"}",
+    "b86c7effa828c63f": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Generally accurate, though 't\\u00e2m t\\u0129nh' is a loose translation for 'matta\\u00f1\\u00f1u' (moderation).\"}",
+    "20129758f35d55fd": "{\"accuracy\": 1, \"fluency\": 2, \"explanation\": \"Complete hallucination. 'Anikkas\\u0101vo' (not free from stains) is translated as 'kh\\u00f4ng \\u0103n g\\u1ea1o' (not eating rice). 'K\\u0101s\\u0101va\\u1e43' (yellow robe) is translated as 't\\u00e0i s\\u1ea3n' (property) and 'c\\u1ecf' (grass).\"}",
+    "1dae9be01a04c6c4": "{\"accuracy\": 1, \"fluency\": 2, \"explanation\": \"Continues the hallucination from Item 9, translating 'k\\u0101s\\u0101va' (robe) as 'c\\u1ecf' (grass) and 'vantakas\\u0101vassa' as 'g\\u1eafn b\\u00f3 v\\u1edbi c\\u1ecf'.\"}",
+    "0597e51c080d8103": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Mistranslates 'as\\u0101re' (unsubstantial/unreal) as 'v\\u00f4 ng\\u00e3' (anatta). While related in philosophy, it's a specific technical error here.\"}",
+    "70f8e666fcc98929": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Same error as Item 11, forcing the concept of 'ng\\u00e3/v\\u00f4 ng\\u00e3' (self/non-self) onto 's\\u0101ra/as\\u0101ra' (essence/non-essence).\"}",
+    "968b437ca6236185": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Translates 'samativijjhati' (penetrates/leaks through) as 's\\u1ee5p \\u0111\\u1ed5' (collapse). It captures the result but misses the specific imagery of rain leaking.\"}",
+    "eeacb86e563e9ebf": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Same as Item 13; uses 's\\u1ee5p \\u0111\\u1ed5' (collapse) instead of 'penetrate/leak'.\"}",
+    "dddcd7f6ae067e0c": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good translation. 'T\\u1ef1 h\\u1ee7y ho\\u1ea1i m\\u00ecnh' is a bit strong for 'viha\\u00f1\\u00f1ati' (suffers/is distressed) but fits the context.\"}",
+    "77a505861e0ea198": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate and fluent. 'T\\u1ef1 h\\u00e0o' (proud) is a slight interpretive stretch for 'pamodati' (rejoices) but acceptable.\"}",
+    "06c97e92619b2336": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate. 'Ch\\u1ecbu kh\\u1ed5' captures 'tappati' (burns/tormented) well.\"}",
+    "68c0072c7eab1b40": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Excellent translation, captures the meaning and tone perfectly.\"}",
+    "5907bae229689aab": "{\"accuracy\": 2, \"fluency\": 2, \"explanation\": \"Mistranslates 'Gopova g\\u0101vo ga\\u1e47aya\\u1e43' (like a cowherd counting cows) as 'b\\u00f2 \\u0111\\u1ebfm nh\\u1eefng con b\\u00f2 kh\\u00e1c' (like a cow counting other cows).\"}",
+    "944beef97357166d": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good translation. 'N\\u01a1i sau' is a bit vague for 'hura\\u1e43' (the world beyond), but the overall meaning is preserved.\"}"
+  }
+}

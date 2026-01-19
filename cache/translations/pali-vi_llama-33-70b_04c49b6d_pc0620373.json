@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "model": "groq/llama-3.3-70b-versatile",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:40:56.598300"
+  },
+  "entries": {
+    "0820af6092dc0ecd": {
+      "translation": "Các pháp lấy tâm làm đi đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm bị ô nhiễm, thì bất kể nói hay hành động, kết quả sẽ là khổ, giống như bánh xe theo chân ngựa.",
+      "time_seconds": 0.2622212886810303
+    },
+    "104b9cc46cc9660c": {
+      "translation": "Các pháp lấy tâm làm đi đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm trong sạch, thì bất kể nói hay hành động, kết quả sẽ là hạnh phúc, giống như bóng theo người không rời.",
+      "time_seconds": 0.2622212886810303
+    },
+    "d085a2303dda01a9": {
+      "translation": "Đừng xúc phạm tôi, đừng giết tôi, đừng làm tổn thương tôi. Những ai làm như vậy sẽ không được chấp nhận, sẽ gây ra thù hận.",
+      "time_seconds": 0.2622212886810303
+    },
+    "56fa11a4c4fd7120": {
+      "translation": "Đừng xúc phạm tôi, đừng giết tôi, đừng làm tổn thương tôi. Những ai không làm như vậy sẽ được chấp nhận, sẽ dập tắt thù hận.",
+      "time_seconds": 0.2622212886810303
+    },
+    "ab3ac8cf3abdf03b": {
+      "translation": "Thù không thể dập tắt thù bằng thù, không có ai có thể làm được điều đó. Chỉ có tình yêu và từ bi mới có thể dập tắt thù, đó là luật pháp vĩnh cửu.",
+      "time_seconds": 0.2622212886810303
+    },
+    "55c468100cdc8942": {
+      "translation": "Người khác không hiểu, nhưng chúng tôi biết rõ ở đây. Những ai hiểu biết sẽ chấp nhận và thông minh.",
+      "time_seconds": 0.2622212886810303
+    },
+    "cc2301943692c885": {
+      "translation": "Người nào sống trong sự tán tỉnh của những điều đẹp, không kiểm soát được các giác quan, biết vừa đủ trong việc ăn uống, lười biếng và thiếu năng lực. Ma vương sẽ tấn công người đó như gió tấn công cây yếu.",
+      "time_seconds": 0.2622212886810303
+    },
+    "51c2ec8a7ee6af3d": {
+      "translation": "Người nào sống trong sự quán xét những điều không đẹp, kiểm soát được các giác quan, biết vừa đủ trong việc ăn uống, có lòng tin và năng lực. Ma vương sẽ không tấn công người đó, giống như gió không thể lay động được đá núi.",
+      "time_seconds": 0.2622212886810303
+    },
+    "8b661a830f29c1b2": {
+      "translation": "Người không từ bỏ tham sân si, mặc áo cà sa, che giấu thân bằng áo cà sa. Người đó không xứng đáng mặc áo cà sa, vì không có sự kiểm soát và không có trí tuệ.",
+      "time_seconds": 0.2622212886810303
+    },
+    "72d09befc1e47074": {
+      "translation": "Nhưng người nào từ bỏ tham sân si, tu tập trong giới luật, có sự kiểm soát và trí tuệ. Người đó xứng đáng mặc áo cà sa.",
+      "time_seconds": 0.2622212886810303
+    },
+    "6c47bc7231036190": {
+      "translation": "Những người không có giá trị, sống giữa những người có giá trị, nhưng không học hỏi từ họ. Họ không đạt được giá trị, vì họ đi trên con đường tư duy sai lầm.",
+      "time_seconds": 0.22334504127502441
+    },
+    "a78a100d16782c9a": {
+      "translation": "Những người biết giá trị và phi giá trị, nhận ra giá trị từ những người có giá trị và phi giá trị. Họ đạt được giá trị, vì họ đi trên con đường tư duy đúng đắn.",
+      "time_seconds": 0.22334504127502441
+    },
+    "a854294acef7a643": {
+      "translation": "Giống như một ngôi nhà không được lau chùi, gió sẽ thổi vào khắp nơi. Cũng vậy, một tâm trí không được tu tập, tham lam sẽ bao trùm toàn bộ.",
+      "time_seconds": 0.22334504127502441
+    },
+    "6d1f690439cd1c89": {
+      "translation": "Giống như một ngôi nhà được lau chùi, gió sẽ không thổi vào. Cũng vậy, một tâm trí được tu tập, tham lam sẽ không bao trùm.",
+      "time_seconds": 0.22334504127502441
+    },
+    "16a1675f2283d8e8": {
+      "translation": "Người làm ác sẽ than thở ở đây và sau khi chết, họ sẽ than thở ở cả hai nơi. Họ sẽ than thở và đau khổ khi nhìn thấy những hành động ô nhiễm của mình.",
+      "time_seconds": 0.22334504127502441
+    },
+    "5a6c5cf7eae0ec6e": {
+      "translation": "Người làm phúc sẽ vui mừng ở đây và sau khi chết, họ sẽ vui mừng ở cả hai nơi. Họ sẽ vui mừng và hoan hỷ khi nhìn thấy sự trong sạch của những hành động của mình.",
+      "time_seconds": 0.22334504127502441
+    },
+    "ed889d589785bd86": {
+      "translation": "Người làm ác sẽ hối hận ở đây và sau khi chết, họ sẽ hối hận ở cả hai nơi. Họ sẽ hối hận vì đã làm ác và sẽ hối hận nhiều hơn khi rơi vào cõi thấp.",
+      "time_seconds": 0.22334504127502441
+    },
+    "46212d9af604b32d": {
+      "translation": "Người làm phúc sẽ vui mừng ở đây và sau khi chết, họ sẽ vui mừng ở cả hai nơi. Họ sẽ vui mừng vì đã làm phúc và sẽ vui mừng nhiều hơn khi lên cõi cao.",
+      "time_seconds": 0.22334504127502441
+    },
+    "78ae8f8ab538ec1c": {
+      "translation": "Dù có nói nhiều về sự kết hợp, nhưng người đàn ông lười biếng và thiếu trí tuệ không phải là người khôn ngoan. Giống như một người chăn bò chỉ đếm bò của người khác, người đó không phải là người chia sẻ sự bình đẳng.",
+      "time_seconds": 0.22334504127502441
+    },
+    "d52af7c203377104": {
+      "translation": "Dù có nói ít về sự kết hợp, nhưng người đàn ông sống theo pháp, tuân theo pháp và loại bỏ tham, sân, si. Người đó có tâm trí giải thoát, không dính mắc, và có thể đạt được sự giải thoát ở đây hoặc sau khi chết, người đó là người chia sẻ sự bình đẳng.",
+      "time_seconds": 0.22334504127502441
+    }
+  }
+}

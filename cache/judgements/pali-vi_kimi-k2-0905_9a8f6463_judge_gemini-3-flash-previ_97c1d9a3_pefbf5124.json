@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "model": "groq/moonshotai/kimi-k2-instruct-0905",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:45:08.364727"
+  },
+  "entries": {
+    "3c950fe10d22012a": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the meaning of 'manopubba\\u1e45gam\\u0101' and the simile of the wheel following the ox.\"}",
+    "c4d5efd841ab767d": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly translates the positive counterpart of the first verse with natural phrasing.\"}",
+    "2b91ce0de40f8d7d": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Accurate translation; 'd\\u1ecbu' is a bit soft for 'sammati' (cease/quell) but acceptable.\"}",
+    "cbec9569c535811a": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately reflects the negation 'n\\u016bpanayhanti' and the cessation of hatred.\"}",
+    "0cea590abd3c2722": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Captures the eternal law (sanantano) and the principle of non-hatred effectively.\"}",
+    "8164e555c76db0ec": "{\"accuracy\": 3, \"fluency\": 3, \"explanation\": \"The translation of 'yam\\u0101mase' as 'ki\\u1ec3m so\\u00e1t' (control) is a common but debatable interpretation; it usually refers to 'restraining oneself' or 'dying/passing away' in this context.\"}",
+    "064e27e1c2e0ca6f": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the conditions for Mara's influence using clear Vietnamese.\"}",
+    "b1d437ca797da64c": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately translates the opposite of verse 7, correctly identifying the mountain simile.\"}",
+    "b7f867c84a068a3d": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Good use of 'tr\\u01b0\\u1edbc' for 'kas\\u0101va' (impurities) and 'x\\u1ee9ng \\u0111\\u00e1ng' for 'arahati'.\"}",
+    "d5c4ca2709de8090": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and fluent translation of the qualities of one worthy of the robe.\"}",
+    "33bf4015acd038be": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Accurate, though '\\u0111i\\u1ec1u qu\\u00fd gi\\u00e1' for 's\\u0101ra' is slightly more interpretive than 'c\\u1ed1t l\\u00f5i' or 'tinh t\\u00fay'.\"}",
+    "aa196fa32dc5ae0f": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Consistent with item 11; accurate meaning regarding right intention.\"}",
+    "de1178726110da79": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Excellent translation of the house/rain simile applied to the mind.\"}",
+    "446262155f19cbc0": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and maintains the parallel structure of the previous verse.\"}",
+    "3826e9fd3a2370c1": "{\"accuracy\": 5, \"fluency\": 4, \"explanation\": \"Accurate. Using 'h\\u1eafn' (him/it) for 'so' adds a slightly harsher tone, which fits the context of a wrongdoer.\"}",
+    "309a5e45a5a28228": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and fluent translation of the joy of merit.\"}",
+    "bead9635834d7f51": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Correctly translates 'tappati' as 'h\\u1ed1i h\\u1eadn' (remorse/suffering) in this context.\"}",
+    "ab6d75fcef6c0c01": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate translation of 'nandati' and the joy of the virtuous.\"}",
+    "574a78acbbec913e": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Major error: 'g\\u0101vo' means cows/cattle, not 'g\\u00e0' (chickens). This changes the traditional simile significantly.\"}",
+    "ad8de22a1d1faa21": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate translation of the qualities of a true practitioner despite knowing few texts.\"}"
+  }
+}

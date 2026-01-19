@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "model": "groq/qwen/qwen3-32b",
+    "judge": "gemini/gemini-3-flash-preview",
+    "task": "pali-vi",
+    "created": "2026-01-19T01:41:47.437406"
+  },
+  "entries": {
+    "89f92799aaa8c2b5": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurately captures the meaning of the Dhammapada verse with natural prose phrasing.\"}",
+    "9c39da9eb9b3c47e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Perfectly accurate and flows naturally in Vietnamese.\"}",
+    "7e59695b940f7bb0": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"The candidate adds 'ch\\u00ea bai' (criticize) which isn't explicitly in the Pali, and changes the subject-object relationship slightly.\"}",
+    "2f2758c6f77e9d06": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Similar to Item 3, it adds extra descriptive verbs not in the source and slightly alters the structure of the original verse.\"}",
+    "55633aee6f9c000f": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate, though 't\\u1eeb bi' (compassion) is a specific interpretation of 'averena' (non-hatred/love).\"}",
+    "13d2d30881599f36": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Major error: 'yam\\u0101mase' refers to 'we must die' or 'restraint', not 'doing nothing'. 'Tr\\u00ed tu\\u1ec7' is also an interpolation for 'medhag\\u0101' (quarrels).\"}",
+    "6ac18d8b176441a9": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate, though 'kh\\u00f4ng qu\\u00e1n s\\u00e1t s\\u1ef1 \\u0111\\u1eb9p \\u0111\\u1ebd' is a bit clunky compared to 'nh\\u00ecn t\\u1ecbnh t\\u01b0\\u1edbng'.\"}",
+    "18ffbc1335ae0b55": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and clear translation of the Pali terms.\"}",
+    "f50fdca6456d9884": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Good, but 'kh\\u00f4ng gi\\u1eef gi\\u1edbi' is a broad interpretation of 'anikkas\\u0101vo' (not free from impurities).\"}",
+    "02385cbf97732678": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate and readable, though 'gi\\u1eef gi\\u1edbi tr\\u1ecdn v\\u1eb9n' is a slight simplification of 'vantakas\\u0101vassa'.\"}",
+    "e84ece5a462a80b5": "{\"accuracy\": 3, \"fluency\": 3, \"explanation\": \"Using 'b\\u1ea3n ch\\u1ea5t' for 's\\u0101ra' (essence/substance) is acceptable but 'say \\u0111\\u1eafm b\\u1ea3n ch\\u1ea5t' is a confusing translation of 'as\\u0101re s\\u0101ramatino'.\"}",
+    "cc99cb469d734c37": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Clearer than Item 11, though 'b\\u1ea3n ch\\u1ea5t' remains a slightly abstract choice for 's\\u0101ra'.\"}",
+    "478b97c0a94e9124": "{\"accuracy\": 3, \"fluency\": 3, \"explanation\": \"The candidate translates 'vu\\u1e6d\\u1e6dh\\u012b' (rain) as 'd\\u1ee5c v\\u1ecdng' (desire) in the first clause, losing the simile's structure.\"}",
+    "1b346b622e10e6e8": "{\"accuracy\": 3, \"fluency\": 3, \"explanation\": \"Same issue as Item 13: it replaces the literal 'rain' in the simile with the metaphorical 'desire' too early.\"}",
+    "84a1af88ca6a7111": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate, though 'qu\\u1ea3 b\\u00e1o' is an interpretation of 'kammakili\\u1e6d\\u1e6dham' (soiled deeds).\"}",
+    "7f682e2c0c6ab15e": "{\"accuracy\": 4, \"fluency\": 4, \"explanation\": \"Accurate and clear, consistent with the previous item.\"}",
+    "76ec37267e3e45de": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Excellent translation of 'tappati' as 'h\\u1ed1i h\\u1eadn' (remorse/torment) in this context.\"}",
+    "e0e419fdcc93fb8e": "{\"accuracy\": 5, \"fluency\": 5, \"explanation\": \"Accurate and captures the joy of the original verse well.\"}",
+    "7080dd923cd0e72d": "{\"accuracy\": 2, \"fluency\": 3, \"explanation\": \"Major errors: 'sahita\\u1e43' refers to scriptures/texts, not 'h\\u1ed7n lo\\u1ea1n'. 'Gopova' is a cowherd, not the cow itself.\"}",
+    "bf4d69ac35969481": "{\"accuracy\": 3, \"fluency\": 4, \"explanation\": \"Generally correct, but 'n\\u00f3i n\\u0103ng h\\u00f2a h\\u1ee3p' is a poor translation for 'sahita\\u1e43 bh\\u0101sam\\u0101no' (reciting texts).\"}"
+  }
+}
