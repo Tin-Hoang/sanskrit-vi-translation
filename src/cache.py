@@ -16,16 +16,30 @@ from datetime import datetime
 class BenchmarkCache:
     """Cache manager for benchmark translations and judgements."""
 
-    def __init__(self, cache_dir: Path, task_name: str):
+    def __init__(
+        self,
+        cache_dir: Path,
+        task_name: str,
+        translator_prompt_hash: str = "",
+        evaluator_prompt_hash: str = "",
+    ):
         """
         Initialize cache for a specific benchmark task.
 
         Args:
             cache_dir: Root cache directory (e.g., project_root/cache)
             task_name: Name of the benchmark task (e.g., "sanskrit-vi")
+            translator_prompt_hash: Hash of translator prompts (for cache invalidation)
+            evaluator_prompt_hash: Hash of evaluator prompts (for cache invalidation)
         """
         self.cache_dir = cache_dir
         self.task_name = task_name
+        self.translator_prompt_hash = (
+            translator_prompt_hash[:8] if translator_prompt_hash else "default"
+        )
+        self.evaluator_prompt_hash = (
+            evaluator_prompt_hash[:8] if evaluator_prompt_hash else "default"
+        )
         self.translations_dir = cache_dir / "translations"
         self.judgements_dir = cache_dir / "judgements"
 
@@ -64,8 +78,10 @@ class BenchmarkCache:
         """Get path to translation cache file for a model."""
         short_name = self._short_model_name(model_id)
         model_hash = self._model_hash(model_id)
+        prompt_hash = self.translator_prompt_hash
         return (
-            self.translations_dir / f"{self.task_name}_{short_name}_{model_hash}.json"
+            self.translations_dir
+            / f"{self.task_name}_{short_name}_{model_hash}_p{prompt_hash}.json"
         )
 
     def _get_judgement_cache_path(self, model_id: str, judge_model: str) -> Path:
@@ -74,9 +90,10 @@ class BenchmarkCache:
         judge_short = self._short_model_name(judge_model)
         model_hash = self._model_hash(model_id)
         judge_hash = self._model_hash(judge_model)
+        prompt_hash = self.evaluator_prompt_hash
         return (
             self.judgements_dir
-            / f"{self.task_name}_{short_name}_{model_hash}_judge_{judge_short}_{judge_hash}.json"
+            / f"{self.task_name}_{short_name}_{model_hash}_judge_{judge_short}_{judge_hash}_p{prompt_hash}.json"
         )
 
     def _load_translation_cache(self, model_id: str) -> dict:

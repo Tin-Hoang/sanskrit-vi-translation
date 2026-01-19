@@ -1,4 +1,5 @@
 import argparse
+import hashlib
 import json
 import pandas as pd
 import time
@@ -9,6 +10,14 @@ from translator import Translator
 from evaluator import Evaluator
 from cache import BenchmarkCache
 from utils import load_data, save_results
+from system_prompts.translator.current import BATCH_TRANSLATE_PROMPT
+from system_prompts.evaluator.current import BATCH_JUDGE_PROMPT, EVALUATION_RUBRIC
+
+
+def _hash_prompt(prompt: str) -> str:
+    """Generate a short hash of prompt content for cache versioning."""
+    return hashlib.sha256(prompt.encode()).hexdigest()[:8]
+
 
 # Suppress Pydantic serializer warnings from litellm/pydantic interaction
 warnings.filterwarnings("ignore", message=".*Pydantic serializer warnings.*")
@@ -48,12 +57,15 @@ MODELS_CONFIG = [
     {"id": "groq/openai/gpt-oss-120b", "name": "GPT-OSS-120b"},
     {"id": "groq/moonshotai/kimi-k2-instruct-0905", "name": "Kimi-k2"},
     {"id": "groq/qwen/qwen3-32b", "name": "Qwen3-32b"},
-    {"id": "gemini/gemini-2.5-flash", "name": "Gemini-2.5-Flash"},  # Judge model
+    {
+        "id": "gemini/gemini-3-flash-preview",
+        "name": "Gemini-3-Flash-Preview",
+    },  # Judge model
 ]
 
 # Judge model (constant for fair comparison)
 # Using Gemini 3 Flash Preview for powerful evaluation with generous free tier
-JUDGE_MODEL = "gemini/gemini-2.5-flash"
+JUDGE_MODEL = "gemini/gemini-3-flash-preview"
 
 
 def parse_args():
@@ -319,7 +331,12 @@ def main():
     cache = None
     if not args.no_cache:
         cache_dir = base_dir / "cache"
-        cache = BenchmarkCache(cache_dir, task_key)
+        cache = BenchmarkCache(
+            cache_dir,
+            task_key,
+            translator_prompt_hash=_hash_prompt(BATCH_TRANSLATE_PROMPT),
+            evaluator_prompt_hash=_hash_prompt(BATCH_JUDGE_PROMPT + EVALUATION_RUBRIC),
+        )
         if args.clear_cache:
             cache.clear()
             print("Cache cleared.")

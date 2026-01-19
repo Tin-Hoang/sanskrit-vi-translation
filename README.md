@@ -13,7 +13,7 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
 
 ## Results
 
-### Sanskrit → Vietnamese (Heart Sutra)
+### Sanskrit → Vietnamese (Heart Sutra | Bát Nhã Tâm Kinh)
 
 | Source   | Model            |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
 |:---------|:-----------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
@@ -23,7 +23,7 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
 | Sanskrit | Qwen3-32b        |    19.27 |          0.75 |                         4.00 |                        4.56 |         7.55 |
 | Sanskrit | Gemini-2.5-Flash |    36.40 |          0.78 |                         4.94 |                        4.94 |        11.71 |
 
-### Pali → Vietnamese (Dhammapada)
+### Pali → Vietnamese (Dhammapada | Kinh Pháp Cú)
 
 | Source   | Model            |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
 |:---------|:-----------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
@@ -33,7 +33,7 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
 | Pali     | Qwen3-32b        |     4.88 |          0.73 |                         3.10 |                        4.00 |         6.09 |
 | Pali     | Gemini-2.5-Flash |    12.34 |          0.77 |                         5.00 |                        5.00 |        15.56 |
 
-### Pali vs Sanskrit Comparison (Dhammapada)
+### Pali vs Sanskrit Comparison (Dhammapada - Udanavarga | Kinh Pháp Cú)
 
 | Source   | Model         |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
 |:---------|:--------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
