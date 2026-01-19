@@ -6,6 +6,8 @@ import json
 import sacrebleu
 from bert_score import score
 import litellm
+from litellm.exceptions import RateLimitError
+import time
 from dotenv import load_dotenv
 
 from system_prompts.evaluator.current import (
@@ -120,13 +122,35 @@ Candidate (Vietnamese): {cand}
                 rubric=EVALUATION_RUBRIC,
                 items_text=items_text,
             )
+            # Retry logic for rate limits: 60s, 120s, 180s
+            retry_delays = [60, 120, 180]
+            max_retries = len(retry_delays)
+            response = None
+
+            for attempt in range(max_retries + 1):
+                try:
+                    response = litellm.completion(
+                        model=self.judge_model,
+                        messages=[{"role": "user", "content": prompt}],
+                        response_format={"type": "json_object"},
+                        temperature=0.1,
+                    )
+                    break  # Success, exit retry loop
+                except RateLimitError as e:
+                    if attempt < max_retries:
+                        wait_time = retry_delays[attempt]
+                        print(
+                            f"\n  Rate limited. Waiting {wait_time}s before retry {attempt + 1}/{max_retries}..."
+                        )
+                        time.sleep(wait_time)
+                    else:
+                        print(f"\n  Rate limit exceeded after {max_retries} retries.")
+                        raise
+
+            if response is None:
+                raise RuntimeError("No response received after retries")
+
             try:
-                response = litellm.completion(
-                    model=self.judge_model,
-                    messages=[{"role": "user", "content": prompt}],
-                    response_format={"type": "json_object"},
-                    temperature=0.1,
-                )
                 result_text = response.choices[0].message.content
 
                 # Parse the batch response

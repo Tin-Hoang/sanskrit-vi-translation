@@ -4,6 +4,7 @@ from typing import List, Optional, TYPE_CHECKING
 if TYPE_CHECKING:
     from cache import BenchmarkCache
 import litellm
+from litellm.exceptions import RateLimitError
 import time
 from dotenv import load_dotenv
 
@@ -105,17 +106,38 @@ class Translator:
                 source_lang=source_lang,
                 items_text=items_text,
             )
-            try:
-                start_time = time.time()
-                response = litellm.completion(
-                    model=self.model_name,
-                    messages=[{"role": "user", "content": prompt}],
-                    response_format={"type": "json_object"},
-                    temperature=0.3,
-                )
-                end_time = time.time()
-                total_inference_time += end_time - start_time
+            # Retry logic for rate limits: 60s, 120s, 180s
+            retry_delays = [60, 120, 180]
+            max_retries = len(retry_delays)
+            response = None
 
+            for attempt in range(max_retries + 1):
+                try:
+                    start_time = time.time()
+                    response = litellm.completion(
+                        model=self.model_name,
+                        messages=[{"role": "user", "content": prompt}],
+                        response_format={"type": "json_object"},
+                        temperature=0.3,
+                    )
+                    end_time = time.time()
+                    total_inference_time += end_time - start_time
+                    break  # Success, exit retry loop
+                except RateLimitError as e:
+                    if attempt < max_retries:
+                        wait_time = retry_delays[attempt]
+                        print(
+                            f"\n  Rate limited. Waiting {wait_time}s before retry {attempt + 1}/{max_retries}..."
+                        )
+                        time.sleep(wait_time)
+                    else:
+                        print(f"\n  Rate limit exceeded after {max_retries} retries.")
+                        raise
+
+            if response is None:
+                raise RuntimeError("No response received after retries")
+
+            try:
                 result_text = response.choices[0].message.content
                 clean_json = (
                     result_text.replace("```json", "").replace("```", "").strip()

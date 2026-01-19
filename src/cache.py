@@ -253,8 +253,6 @@ class BenchmarkCache:
 
     def clear(self):
         """Clear all caches for this task."""
-        import shutil
-
         for cache_file in self.translations_dir.glob(f"{self.task_name}_*.json"):
             cache_file.unlink()
         for cache_file in self.judgements_dir.glob(f"{self.task_name}_*.json"):
