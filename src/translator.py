@@ -4,7 +4,7 @@ from typing import List, Optional, TYPE_CHECKING
 if TYPE_CHECKING:
     from cache import BenchmarkCache
 import litellm
-from litellm.exceptions import RateLimitError
+from litellm.exceptions import RateLimitError, BadRequestError
 import time
 from dotenv import load_dotenv
 
@@ -114,18 +114,32 @@ class Translator:
             max_retries = len(retry_delays)
             response = None
 
+            use_json_mode = True
             for attempt in range(max_retries + 1):
                 try:
                     start_time = time.time()
-                    response = litellm.completion(
-                        model=self.model_name,
-                        messages=[{"role": "user", "content": prompt}],
-                        response_format={"type": "json_object"},
-                        temperature=0.3,
-                    )
+                    completion_kwargs = {
+                        "model": self.model_name,
+                        "messages": [{"role": "user", "content": prompt}],
+                        "temperature": 0.3,
+                    }
+                    if use_json_mode:
+                        completion_kwargs["response_format"] = {"type": "json_object"}
+                    response = litellm.completion(**completion_kwargs)
                     end_time = time.time()
                     total_inference_time += end_time - start_time
                     break  # Success, exit retry loop
+                except BadRequestError as e:
+                    # Handle JSON validation failures (e.g., Kimi-k2 on Groq)
+                    if "json_validate_failed" in str(e) and use_json_mode:
+                        print(
+                            f"\n  JSON mode failed for {self.model_name}, retrying without JSON mode..."
+                        )
+                        use_json_mode = False
+                        continue  # Retry without JSON mode
+                    else:
+                        print(f"\nFailed to translate with {self.model_name}: {e}")
+                        raise
                 except RateLimitError as e:
                     if attempt < max_retries:
                         wait_time = retry_delays[attempt]
@@ -145,8 +159,26 @@ class Translator:
                 clean_json = (
                     result_text.replace("```json", "").replace("```", "").strip()
                 )
-                parsed = json.loads(clean_json)
-                translations = parsed.get("translations", [])
+
+                # Try to parse as JSON first
+                try:
+                    parsed = json.loads(clean_json)
+                    translations = parsed.get("translations", [])
+                except json.JSONDecodeError:
+                    # If that fails, try to extract JSON from the response
+                    import re
+
+                    json_match = re.search(
+                        r'\{[\s\S]*"translations"[\s\S]*\}', clean_json
+                    )
+                    if json_match:
+                        try:
+                            parsed = json.loads(json_match.group())
+                            translations = parsed.get("translations", [])
+                        except json.JSONDecodeError:
+                            translations = []
+                    else:
+                        translations = []
 
                 # Extract translations and map back to original indices
                 # Calculate time per item for this batch
