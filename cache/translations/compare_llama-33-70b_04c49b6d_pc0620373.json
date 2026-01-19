@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "model": "groq/llama-3.3-70b-versatile",
+    "task": "compare",
+    "created": "2026-01-19T01:46:42.919614"
+  },
+  "entries": {
+    "0820af6092dc0ecd": {
+      "translation": "Các pháp đều do tâm dẫn đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm bị ô nhiễm, thì bất kể nói hay hành động, đều sẽ bị khổ theo đuổi, như bánh xe theo chân ngựa.",
+      "time_seconds": 0.25692524909973147
+    },
+    "104b9cc46cc9660c": {
+      "translation": "Các pháp đều do tâm dẫn đầu, tâm là tối thượng, tâm tạo ra tất cả. Nếu tâm trong sạch, thì bất kể nói hay hành động, đều sẽ được hạnh phúc theo đuổi, như bóng không rời thân.",
+      "time_seconds": 0.25692524909973147
+    },
+    "d085a2303dda01a9": {
+      "translation": "Đừng khiêu khích ta, đừng đánh ta, đừng làm cho ta phải chịu đựng. Những ai tiếp tục gây ra sự thù hận, sẽ không bao giờ được yên ổn.",
+      "time_seconds": 0.25692524909973147
+    },
+    "56fa11a4c4fd7120": {
+      "translation": "Đừng khiêu khích ta, đừng đánh ta, đừng làm cho ta phải chịu đựng. Những ai không tiếp tục gây ra sự thù hận, sẽ được yên ổn.",
+      "time_seconds": 0.25692524909973147
+    },
+    "ab3ac8cf3abdf03b": {
+      "translation": "Không có sự thù hận nào có thể dập tắt sự thù hận, sự thù hận chỉ có thể được dập tắt bằng không thù hận. Đây là một quy luật vĩnh cửu.",
+      "time_seconds": 0.25692524909973147
+    },
+    "55c468100cdc8942": {
+      "translation": "Những người khác không biết, nhưng chúng ta biết rõ, những ai hiểu biết sẽ được yên ổn, những người khôn ngoan sẽ được yên ổn.",
+      "time_seconds": 0.25692524909973147
+    },
+    "cc2301943692c885": {
+      "translation": "Người nào sống trong sự tán tỉnh của những điều đẹp đẽ, nhưng không kiểm soát được các giác quan, biết vừa phải trong việc ăn uống, lười biếng và thiếu sức mạnh, thì Ma vương sẽ tấn công người đó, như gió tấn công cây yếu.",
+      "time_seconds": 0.25692524909973147
+    },
+    "51c2ec8a7ee6af3d": {
+      "translation": "Người nào sống trong sự tán tỉnh của những điều không đẹp đẽ, nhưng kiểm soát được các giác quan, biết vừa phải trong việc ăn uống, có lòng tin và sức mạnh, thì Ma vương sẽ không tấn công người đó, như gió không thể lay động được núi đá.",
+      "time_seconds": 0.25692524909973147
+    },
+    "8b661a830f29c1b2": {
+      "translation": "Người mặc áo cà sa nhưng không có sự trong sạch, chỉ che giấu bằng áo cà sa, không có sự kiểm soát, không có sự thật, người đó không xứng đáng mặc áo cà sa.",
+      "time_seconds": 0.25692524909973147
+    },
+    "72d09befc1e47074": {
+      "translation": "Nhưng người nào mặc áo cà sa, có sự trong sạch, có sự kiểm soát, có sự thật, người đó xứng đáng mặc áo cà sa.",
+      "time_seconds": 0.25692524909973147
+    },
+    "6c47bc7231036190": {
+      "translation": "Những người không có giá trị, sống giữa những người có giá trị, nhưng không nhận ra giá trị của họ; những người đó không đạt được giá trị, vì họ đi trên con đường tư duy sai lầm.",
+      "time_seconds": 0.22441720962524414
+    },
+    "a78a100d16782c9a": {
+      "translation": "Những người nhận ra giá trị từ những người có giá trị, và không có giá trị từ những người không có giá trị; những người đó đạt được giá trị, vì họ đi trên con đường tư duy đúng đắn.",
+      "time_seconds": 0.22441720962524414
+    },
+    "a854294acef7a643": {
+      "translation": "Giống như một ngôi nhà bị hư hỏng, gió có thể thổi qua dễ dàng; cũng vậy, một tâm trí không được tu dưỡng, tham lam có thể xâm chiếm dễ dàng.",
+      "time_seconds": 0.22441720962524414
+    },
+    "6d1f690439cd1c89": {
+      "translation": "Giống như một ngôi nhà được xây dựng tốt, gió không thể thổi qua; cũng vậy, một tâm trí được tu dưỡng, tham lam không thể xâm chiếm.",
+      "time_seconds": 0.22441720962524414
+    },
+    "16a1675f2283d8e8": {
+      "translation": "Người làm ác sẽ than thở ở đây và sau khi chết, họ than thở ở cả hai nơi; họ than thở và đau khổ khi thấy hành động ác của mình.",
+      "time_seconds": 0.22441720962524414
+    },
+    "5a6c5cf7eae0ec6e": {
+      "translation": "Người làm善 sẽ vui mừng ở đây và sau khi chết, họ vui mừng ở cả hai nơi; họ vui mừng và hoan hỷ khi thấy hành động thiện của mình.",
+      "time_seconds": 0.22441720962524414
+    },
+    "ed889d589785bd86": {
+      "translation": "Người làm ác sẽ hối hận ở đây và sau khi chết, họ hối hận ở cả hai nơi; họ hối hận vì đã làm ác và hối hận hơn nữa khi rơi vào cõi恶 giới.",
+      "time_seconds": 0.22441720962524414
+    },
+    "46212d9af604b32d": {
+      "translation": "Người làm thiện sẽ vui mừng ở đây và sau khi chết, họ vui mừng ở cả hai nơi; họ vui mừng vì đã làm thiện và vui mừng hơn nữa khi lên cõi thiện giới.",
+      "time_seconds": 0.22441720962524414
+    },
+    "78ae8f8ab538ec1c": {
+      "translation": "Dù có nói nhiều về sự hợp tác, nhưng người đàn ông lười biếng và thiếu trí tuệ không phải là người khôn ngoan; giống như một người chăn bò chỉ biết đếm bò của người khác, không phải là người chia sẻ sự bình đẳng.",
+      "time_seconds": 0.22441720962524414
+    },
+    "d52af7c203377104": {
+      "translation": "Dù có nói ít về sự hợp tác, nhưng người đàn ông sống theo pháp, tuân thủ pháp; từ bỏ tham, sân, si, và có sự hiểu biết đúng đắn, tâm trí được giải thoát; không bám víu, ở đây hay sau khi chết, người đó là người chia sẻ sự bình đẳng thực sự.",
+      "time_seconds": 0.22441720962524414
+    },
+    "a41113c03466fe9a": {
+      "translation": "Pháp trước hết là tâm, tâm là tốt đẹp nhất, tâm nhanh như ý; nếu tâm bị ô nhiễm, thì lời nói hay hành động sẽ theo đó mà bị nhiễm, và nỗi khổ sẽ theo đuổi như bánh xe theo chân ngựa.",
+      "time_seconds": 0.23401885032653807
+    },
+    "1faaebd975d6c030": {
+      "translation": "Pháp trước hết là tâm, tâm là tốt đẹp nhất, tâm nhanh như ý; nếu tâm trong sáng, thì lời nói hay hành động sẽ theo đó mà tốt đẹp, và hạnh phúc sẽ theo đuổi như bóng không bao giờ rời.",
+      "time_seconds": 0.23401885032653807
+    },
+    "430b415ab5ccd07b": {
+      "translation": "Họ la mắng tôi, họ nói xấu tôi, họ ghen ghét tôi; những ai ghen ghét ở đây, thù hận của họ sẽ không bao giờ dứt.",
+      "time_seconds": 0.23401885032653807
+    },
+    "9138a3cf4f7e5120": {
+      "translation": "Họ la mắng tôi, họ nói xấu tôi, họ ghen ghét tôi; những ai không ghen ghét ở đây, thù hận của họ sẽ được dứt.",
+      "time_seconds": 0.23401885032653807
+    },
+    "e638f4631984151c": {
+      "translation": "Thù hận không bao giờ được dứt bằng thù hận, pháp luật muôn đời là như vậy; thù hận được dứt bằng không thù hận.",
+      "time_seconds": 0.23401885032653807
+    },
+    "45fef1fe6f967817": {
+      "translation": "Người khác không hiểu, chúng ta ở đây tự kiềm chế; những ai hiểu ở nơi đó, sẽ được an yên, đó là trí tuệ.",
+      "time_seconds": 0.23401885032653807
+    },
+    "4c59d8fd5c2068fb": {
+      "translation": "Người sống gần gũi với điều tốt đẹp, nhưng không kiểm soát được các giác quan; ăn uống không có chừng mực, tâm trí yếu kém; người đó sẽ bị tham dục chi phối, như gió làm khô một cây.",
+      "time_seconds": 0.23401885032653807
+    },
+    "98ff783bbbbdd2fb": {
+      "translation": "Người sống gần gũi với điều不好, nhưng kiểm soát được các giác quan; ăn uống có chừng mực, tâm trí mạnh mẽ; người đó sẽ không bị tham dục chi phối, như gió không làm lay động một ngọn núi.",
+      "time_seconds": 0.23401885032653807
+    },
+    "453db7855e62608f": {
+      "translation": "Người không có lòng từ bi, mặc áo cà sa; người đó không xứng đáng mặc áo cà sa, vì không có lòng từ bi và khiêm nhường.",
+      "time_seconds": 0.23401885032653807
+    },
+    "7a78443f63277dc9": {
+      "translation": "Nhưng người nào mặc áo cà sa, có lòng từ bi và khiêm nhường, tâm trí trong sáng; người đó xứng đáng mặc áo cà sa.",
+      "time_seconds": 0.23401885032653807
+    },
+    "37e0c5a67544e01b": {
+      "translation": "Trong những thứ không có giá trị, người ta lại cho là có giá trị. Trong những thứ có giá trị, người ta lại cho là không có giá trị. Những người như vậy không đạt được giá trị thực sự, vì họ bị che khuất bởi những tư tưởng sai lầm.",
+      "time_seconds": 0.21577742099761962
+    },
+    "92660e81de3b3a6e": {
+      "translation": "Biết rõ giá trị và không giá trị, nhận ra bản chất của chúng; những người như vậy đạt được giá trị thực sự, vì họ có những tư tưởng đúng đắn.",
+      "time_seconds": 0.21577742099761962
+    },
+    "9e9fa2a2d4a4c12d": {
+      "translation": "Giống như một ngôi nhà không có mái che, mưa sẽ thấm vào khắp nơi. Cũng vậy, một tâm trí không được tu dưỡng sẽ bị tham lam thấm vào.",
+      "time_seconds": 0.21577742099761962
+    },
+    "65357ac90a09e60b": {
+      "translation": "Giống như một ngôi nhà có mái che, mưa sẽ không thấm vào. Cũng vậy, một tâm trí được tu dưỡng sẽ không bị tham lam thấm vào.",
+      "time_seconds": 0.21577742099761962
+    },
+    "93a7158c1d77c1fe": {
+      "translation": "Người làm ác sẽ than thở ở đây và sẽ than thở sau khi chết, họ sẽ than thở ở cả hai nơi. Họ sẽ than thở và sẽ bị tổn thương khi nhìn thấy những hành động bất thiện của mình.",
+      "time_seconds": 0.21577742099761962
+    },
+    "e6a03dbf8be4bc76": {
+      "translation": "Người làm điều thiện sẽ vui mừng ở đây và sẽ vui mừng sau khi chết, họ sẽ vui mừng ở cả hai nơi. Họ sẽ vui mừng và sẽ hoan hỷ khi nhìn thấy sự trong sạch của những hành động của mình.",
+      "time_seconds": 0.21577742099761962
+    },
+    "e038d3a7f3fa3176": {
+      "translation": "Không có bản dịch vì văn bản gốc không có sẵn",
+      "time_seconds": 0.21577742099761962
+    },
+    "36689f3b84da532c": {
+      "translation": "Dù có nói nhiều ở đây, nhưng người đàn ông đó vẫn chưa tỉnh táo; giống như một người chăn bò chỉ quan tâm đến việc đếm bò của người khác, không phải là một người có tâm trí thức tỉnh trong việc thực hành đạo đức.",
+      "time_seconds": 0.21577742099761962
+    },
+    "c2e0c936c55f9e5c": {
+      "translation": "Dù chỉ nói ít, nhưng nếu người đó có tâm trí thức tỉnh, họ sẽ là người thực hành theo pháp. Họ sẽ loại bỏ tham lam, sân hận và si mê, và sẽ là người đạt được lợi ích của việc thực hành đạo đức.",
+      "time_seconds": 0.21577742099761962
+    }
+  }
+}

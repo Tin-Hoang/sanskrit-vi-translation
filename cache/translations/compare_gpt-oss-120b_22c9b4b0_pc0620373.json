@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "model": "groq/openai/gpt-oss-120b",
+    "task": "compare",
+    "created": "2026-01-19T01:47:52.772494"
+  },
+  "entries": {
+    "0820af6092dc0ecd": {
+      "translation": "Các pháp đều do tâm làm tiền đề, tâm là chủ yếu, tâm là do tâm tạo; nếu bằng tâm xấu nói hay làm, thì dương khổ sẽ theo, như bánh xe theo chân xe.",
+      "time_seconds": 0.5150531530380249
+    },
+    "104b9cc46cc9660c": {
+      "translation": "Nếu bằng tâm vui vẻ nói hay làm, thì hạnh phúc sẽ theo, như bóng không rời.",
+      "time_seconds": 0.5150531530380249
+    },
+    "d085a2303dda01a9": {
+      "translation": "Họ xúc phạm tôi, đánh tôi, gọi tôi là kẻ tội lỗi; những người nuôi thù hận với tôi không có quyền.",
+      "time_seconds": 0.5150531530380249
+    },
+    "56fa11a4c4fd7120": {
+      "translation": "Họ xúc phạm tôi, đánh tôi, gọi tôi là kẻ tội lỗi; và những người nuôi thù hận với tôi, họ được cho là có lý.",
+      "time_seconds": 0.5150531530380249
+    },
+    "ab3ac8cf3abdf03b": {
+      "translation": "Không có thù hận sinh ra từ thù hận, chẳng bao giờ; mà bằng không thù hận thì sinh thù hận, đó là pháp bất diệt.",
+      "time_seconds": 0.5150531530380249
+    },
+    "55c468100cdc8942": {
+      "translation": "Những người khác không biết, đừng trách tôi ở đây; những người biết ở đó, thì họ là người khôn ngoan.",
+      "time_seconds": 0.5150531530380249
+    },
+    "cc2301943692c885": {
+      "translation": "Sống trong sự nhận thức tốt, các giác quan không xao lạc; trong ăn uống có một chút tham lam, một chút lười biếng; Mara sẽ phá hủy điều đó, như gió làm gãy cây yếu.",
+      "time_seconds": 0.5150531530380249
+    },
+    "51c2ec8a7ee6af3d": {
+      "translation": "Sống trong nhận thức không tốt, các giác quan được kiềm chế; trong ăn uống có một chút ngu dốt, nhưng có niềm tin vững chắc và nỗ lực; Mara không thể phá hủy điều đó, như gió không làm di chuyển núi.",
+      "time_seconds": 0.5150531530380249
+    },
+    "8b661a830f29c1b2": {
+      "translation": "Ai không ăn gạo, người sẽ phá hoại tài sản; nếu không có chân lý của pháp, người ấy không giết gạo.",
+      "time_seconds": 0.5150531530380249
+    },
+    "72d09befc1e47074": {
+      "translation": "Người có khao khát gạo, trong đạo đức đã chánh niệm; nắm giữ chân lý của pháp, người ấy thực sự giết gạo.",
+      "time_seconds": 0.5150531530380249
+    },
+    "6c47bc7231036190": {
+      "translation": "Những người bám vào cái tôi và những người thấy không có cái tôi đều không đạt được sự thật của bản ngã, họ bị chi phối bởi ý định sai lầm.",
+      "time_seconds": 0.6101288557052612
+    },
+    "a78a100d16782c9a": {
+      "translation": "Những người biết được cái tôi và không có cái tôi đạt được sự thật của bản ngã, được dẫn dắt bởi ý định chính xác.",
+      "time_seconds": 0.6101288557052612
+    },
+    "a854294acef7a643": {
+      "translation": "Như một ngôi nhà kém chất lượng sẽ sụp đổ, như vậy tâm không có gì cũng bị chi phối bởi dạ dày (đam mê).",
+      "time_seconds": 0.6101288557052612
+    },
+    "6d1f690439cd1c89": {
+      "translation": "Như một ngôi nhà được xây dựng tốt không sụp đổ, như vậy một tâm hồn tốt lành không bị dạ dày (đam mê) chi phối.",
+      "time_seconds": 0.6101288557052612
+    },
+    "16a1675f2283d8e8": {
+      "translation": "Ở đây người buồn, sau này người buồn, kẻ làm ác buồn ở cả hai nơi; người buồn tự hủy hoại mình khi thấy hành động ác của mình.",
+      "time_seconds": 0.6101288557052612
+    },
+    "5a6c5cf7eae0ec6e": {
+      "translation": "Ở đây người vui, sau này người vui, người đã làm công đức vui ở cả hai nơi; người vui tự hào khi thấy hành động trong sạch của mình.",
+      "time_seconds": 0.6101288557052612
+    },
+    "ed889d589785bd86": {
+      "translation": "Ở đây người chịu khổ, sau này người chịu khổ, kẻ làm ác chịu khổ ở cả hai nơi; người làm ác chịu khổ, sau này chịu khổ hơn vì rơi vào con đường xấu.",
+      "time_seconds": 0.6101288557052612
+    },
+    "46212d9af604b32d": {
+      "translation": "Ở đây người hân hoan, sau này người hân hoan, người đã làm công đức hân hoan ở cả hai nơi; người làm công đức hân hoan, sau này hân hoan trong sự giải thoát tốt.",
+      "time_seconds": 0.6101288557052612
+    },
+    "78ae8f8ab538ec1c": {
+      "translation": "Dù nói nhiều cùng nhau, người hẹp hòi không phải là tăng thật; như bò đếm những con bò khác, không phải là người tu hành chân chính.",
+      "time_seconds": 0.6101288557052612
+    },
+    "d52af7c203377104": {
+      "translation": "Ngay cả khi nói ít, nếu gắn bó, sẽ trở thành người theo Pháp; loại bỏ tham, sân, si, người hiểu đúng là tâm giải thoát; không bám víu ở đây hay nơi nào, người ấy là người tu hành chân thật.",
+      "time_seconds": 0.6101288557052612
+    },
+    "a41113c03466fe9a": {
+      "translation": "Đạo trước tâm, tinh hoa của tâm, nhanh trí; Khi tâm trí xáo trộn, người nói hoặc hành động; Từ đó sinh ra khổ đau như bánh xe được mang bởi bước chân.",
+      "time_seconds": 0.6004992723464966
+    },
+    "1faaebd975d6c030": {
+      "translation": "Đạo trước tâm, tinh hoa của tâm, nhanh trí; Khi tâm trí vui vẻ, người nói hoặc hành động; Từ đó sinh ra hạnh phúc như bóng tối không rời.",
+      "time_seconds": 0.6004992723464966
+    },
+    "430b415ab5ccd07b": {
+      "translation": "Đừng chỉ trích tôi, đừng nói xấu tôi, đừng ra lệnh tôi hành động; Ở đây những kẻ thù địch không bao giờ yên ấm.",
+      "time_seconds": 0.6004992723464966
+    },
+    "9138a3cf4f7e5120": {
+      "translation": "Đừng chỉ trích tôi, đừng nói xấu tôi, đừng ra lệnh tôi hành động; Ở đây những người không thù địch, sự thù hận của họ được làm dịu.",
+      "time_seconds": 0.6004992723464966
+    },
+    "e638f4631984151c": {
+      "translation": "Không phải bằng kẻ thù mà kẻ thù được làm dịu ở đây bao giờ; Mà bằng không có kẻ thù thì chúng được làm dịu, đây là đạo vĩnh cửu.",
+      "time_seconds": 0.6004992723464966
+    },
+    "45fef1fe6f967817": {
+      "translation": "Những người khác không biết, chúng tôi ở đây giam giữ; Những người biết, những con ong sẽ được làm dịu.",
+      "time_seconds": 0.6004992723464966
+    },
+    "4c59d8fd5c2068fb": {
+      "translation": "Người nhìn thấy điều tốt, sống với các giác quan không bị che phủ; Khi ăn uống cũng không nhận ra mẹ, vui mừng nhưng sức lực yếu; Cơn giận làm nó tan vỡ, gió như trống khô.",
+      "time_seconds": 0.6004992723464966
+    },
+    "98ff783bbbbdd2fb": {
+      "translation": "Người nhìn thấy điều không lành, sống với các giác quan được bao phủ tốt; Khi ăn uống cũng biết mẹ, với sự sùng kính bắt đầu sức mạnh; Cơn giận không làm tan vỡ, gió như ngọn núi đá.",
+      "time_seconds": 0.6004992723464966
+    },
+    "453db7855e62608f": {
+      "translation": "Người không là tăng mặc áo cà sa, mặc áo đó; Không trở thành tăng, không xứng đáng với cà sa.",
+      "time_seconds": 0.6004992723464966
+    },
+    "7a78443f63277dc9": {
+      "translation": "Người là tăng cà sa, giữ giới luật chặt chẽ; Khi trở thành tăng, người ấy xứng đáng với cà sa.",
+      "time_seconds": 0.6004992723464966
+    },
+    "37e0c5a67544e01b": {
+      "translation": "Những người bám vào vô ngã, và những người bám vào ngã; họ không đạt được ngã, họ là những người khao khát sai lầm.",
+      "time_seconds": 0.47305572032928467
+    },
+    "92660e81de3b3a6e": {
+      "translation": "Biết ngã là ngã và vô ngã là vô ngã; họ đạt được ngã, họ là những người khao khát đúng đắn.",
+      "time_seconds": 0.47305572032928467
+    },
+    "9e9fa2a2d4a4c12d": {
+      "translation": "Như mưa rơi vào nhà hỏng, như vậy tâm không có thiện tính cũng bị dính say.",
+      "time_seconds": 0.47305572032928467
+    },
+    "65357ac90a09e60b": {
+      "translation": "Như mưa không thấm vào nhà chắc chắn, như vậy tâm tốt không bị dính say.",
+      "time_seconds": 0.47305572032928467
+    },
+    "93a7158c1d77c1fe": {
+      "translation": "Ở đây người buồn, sau khi chết người cũng buồn, kẻ ác làm hại ở cả hai nơi buồn; Kẻ buồn sẽ bị tiêu diệt, khi nhìn thấy tội lỗi nghiệp của mình.",
+      "time_seconds": 0.47305572032928467
+    },
+    "e6a03dbf8be4bc76": {
+      "translation": "Ở đây người vui, sau khi chết người cũng vui, người làm việc thiện ở cả hai nơi vui; Kẻ vui mừng, người ấy hạnh phúc, khi thấy sự trong sạch nghiệp của mình.",
+      "time_seconds": 0.47305572032928467
+    },
+    "36689f3b84da532c": {
+      "translation": "Người nói ở đây một cách tôn trọng, kẻ điên không trở thành như vậy; Như người chăn trâu đếm trâu của người khác, không trở thành bậc thánh.",
+      "time_seconds": 0.47305572032928467
+    },
+    "c2e0c936c55f9e5c": {
+      "translation": "Ngay cả khi nói một chút một cách tôn trọng, người trở thành người tuân theo pháp, không phải người vi phạm pháp; Dục vọng, tội lỗi và mê muội, cũng như vậy, người trở thành người tu hành tiêu diệt chúng.",
+      "time_seconds": 0.47305572032928467
+    }
+  }
+}

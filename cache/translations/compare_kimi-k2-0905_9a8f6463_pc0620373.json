@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "model": "groq/moonshotai/kimi-k2-instruct-0905",
+    "task": "compare",
+    "created": "2026-01-19T01:48:14.755186"
+  },
+  "entries": {
+    "0820af6092dc0ecd": {
+      "translation": "Mọi pháp đều do tâm dẫn đầu, tâm là chủ, do tâm tạo; nếu với tâm ô nhiễm người ta nói hay làm, thì khổ đau theo đuổi người ấy như bánh xe theo dấu chân con vật kéo xe.",
+      "time_seconds": 0.36630704402923586
+    },
+    "104b9cc46cc9660c": {
+      "translation": "Mọi pháp đều do tâm dẫn đầu, tâm là chủ, do tâm tạo; nếu với tâm thanh tịnh người ta nói hay làm, thì hạnh phúc theo đuổi người ấy như bóng không rời hình.",
+      "time_seconds": 0.36630704402923586
+    },
+    "d085a2303dda01a9": {
+      "translation": "Người ta mắng ta, đánh ta, thắng ta, cướp của ta; những ai ôm giữ điều ấy, hận thù đối với họ không thể nguôi.",
+      "time_seconds": 0.36630704402923586
+    },
+    "56fa11a4c4fd7120": {
+      "translation": "Người ta mắng ta, đánh ta, thắng ta, cướp của ta; những ai không ôm giữ điều ấy, hận thù đối với họ sẽ lắng dịu.",
+      "time_seconds": 0.36630704402923586
+    },
+    "ab3ac8cf3abdf03b": {
+      "translation": "Không bao giờ hận thù được xoa dịu bằng hận thù ở đời; chỉ bởi không hận thù mới xoa dịu được hận thù, đây là định luật từ thuở trước.",
+      "time_seconds": 0.36630704402923586
+    },
+    "55c468100cdc8942": {
+      "translation": "Người khác không hiểu rằng chúng ta phải kiềm chế ở đây; những ai hiểu điều ấy, thì các cuộc tranh chấp sẽ được hòa giải.",
+      "time_seconds": 0.36630704402923586
+    },
+    "cc2301943692c885": {
+      "translation": "Người sống chăm chú vào cái đẹp, không chế ngự các căn, ăn uống không biết vừa phải, biếng nhác, tinh thần sa sút; Ma vương chinh phục người ấy như gió làm đổ cây yếu ớt.",
+      "time_seconds": 0.36630704402923586
+    },
+    "51c2ec8a7ee6af3d": {
+      "translation": "Người sống quán bất tịnh, chế ngự các căn, ăn uống biết vừa phải, có lòng tin, tinh tấn; Ma vương không chinh phục được người ấy như gió không lay chuyển được núi đá.",
+      "time_seconds": 0.36630704402923586
+    },
+    "8b661a830f29c1b2": {
+      "translation": "Người chưa rửa sạch các vết nhơ mà mặc y pháp, thiếu chế ngự và chân thật, thì không xứng đáng với y pháp.",
+      "time_seconds": 0.36630704402923586
+    },
+    "72d09befc1e47074": {
+      "translation": "Người đã từ bỏ các vết nhơ, vững chắc trong giới luật, đầy đủ chế ngự và chân thật, thì thật sự xứng đáng với y pháp.",
+      "time_seconds": 0.36630704402923586
+    },
+    "6c47bc7231036190": {
+      "translation": "Kẻ thấy vô nghĩa là quý, quý mà lại thấy vô nghĩa; Họ không đạt được điều quý, vì sống theo tư tưởng sai lầm.",
+      "time_seconds": 0.29967799186706545
+    },
+    "a78a100d16782c9a": {
+      "translation": "Biết rõ cái gì quý là quý, cái gì không quý là không quý; Họ đạt được điều quý, vì sống theo tư tưởng chánh.",
+      "time_seconds": 0.29967799186706545
+    },
+    "a854294acef7a643": {
+      "translation": "Như ngôi nhà mái dột, mưa xuyên thấm vào; Cũng vậy tâm không tu, tham dục xâm chiếm.",
+      "time_seconds": 0.29967799186706545
+    },
+    "6d1f690439cd1c89": {
+      "translation": "Như ngôi nhà mái kín, mưa không xuyên thấm; Cũng vậy tâm đã tu, tham dục không xâm chiếm.",
+      "time_seconds": 0.29967799186706545
+    },
+    "16a1675f2283d8e8": {
+      "translation": "Ở đây khóc, chết rồi cũng khóc, kẻ làm ác khóc cả hai nơi; Hắn khóc, hắn đau khổ, khi thấy nghiệp ô uế của mình.",
+      "time_seconds": 0.29967799186706545
+    },
+    "5a6c5cf7eae0ec6e": {
+      "translation": "Ở đây vui, chết rồi cũng vui, người làm phước vui cả hai nơi; Người ấy vui, người ấy hoan hỷ, khi thấy nghiệp thanh tịnh của mình.",
+      "time_seconds": 0.29967799186706545
+    },
+    "ed889d589785bd86": {
+      "translation": "Ở đây hối hận, chết rồi cũng hối, kẻ làm ác hối cả hai nơi; ‘Ta đã làm điều ác’ nên hối, đọa vào đường dữ càng hối hơn.",
+      "time_seconds": 0.29967799186706545
+    },
+    "46212d9af604b32d": {
+      "translation": "Ở đây hoan hỷ, chết rồi cũng hoan, người làm phước hoan cả hai nơi; ‘Ta đã làm điều phước’ nên hoan, được lên thiện thú càng hoan hơn.",
+      "time_seconds": 0.29967799186706545
+    },
+    "78ae8f8ab538ec1c": {
+      "translation": "Dù thuộc nhiều kinh mà nói, nếu người phóng túng không hành trì; Như bác mục đếm bò người khác, không được phần Sa-môn.",
+      "time_seconds": 0.29967799186706545
+    },
+    "d52af7c203377104": {
+      "translation": "Dù thuộc ít kinh mà nói, nếu hành theo chánh pháp; Bỏ tham sân và si, trí tuệ chánh, tâm giải thoát; Không chấp thủ đời này hay đời sau, người ấy được phần Sa-môn.",
+      "time_seconds": 0.29967799186706545
+    },
+    "a41113c03466fe9a": {
+      "translation": "Mọi hành động thiện đều bắt đầu từ tâm, tâm là cao nhất và nhanh nhất; nếu tâm bị ô nhiễm, dù chỉ nói hay làm, khổ đau sẽ theo bước như bánh xe đạp trên đường.",
+      "time_seconds": 0.34441399574279785
+    },
+    "1faaebd975d6c030": {
+      "translation": "Mọi hành động thiện đều bắt đầu từ tâm, tâm là cao nhất và nhanh nhất; nếu tâm trong sáng, dù chỉ nói hay làm, hạnh phúc sẽ theo bước như bóng mát không bao giờ rời.",
+      "time_seconds": 0.34441399574279785
+    },
+    "430b415ab5ccd07b": {
+      "translation": "Người chửi mắng ta, nói xấu ta, sai khiến ta; những ai ôm giữ hận thù ở đây thì mối thù của họ không bao giờ lắng dịu.",
+      "time_seconds": 0.34441399574279785
+    },
+    "9138a3cf4f7e5120": {
+      "translation": "Người chửi mắm ta, nói xấu ta, sai khiến ta; những ai không ôm giữ hận thù ở đây thì mối thù của họ sẽ lắng dịu.",
+      "time_seconds": 0.34441399574279785
+    },
+    "e638f4631984151c": {
+      "translation": "Không bao giờ hận thù có thể dập tắt hận thù; chỉ có không hận thù mới dập tắt được hận thù, đây là đạo lý cổ xưa.",
+      "time_seconds": 0.34441399574279785
+    },
+    "45fef1fe6f967817": {
+      "translation": "Người khác không hiểu được điều chúng ta kiềm chế ở đây; những ai hiểu được điều ấy thì mối thù sẽ lắng dịu.",
+      "time_seconds": 0.34441399574279785
+    },
+    "4c59d8fd5c2068fb": {
+      "translation": "Kẻ chỉ thấy cái đẹp, sống buông thả các giác quan, ăn uống không điều độ, lười biếng và thiếu nghị lực; dục vọng dễ dàng đánh gục người ấy như gió làm gãy cây khô.",
+      "time_seconds": 0.34441399574279785
+    },
+    "98ff783bbbbdd2fb": {
+      "translation": "Người thấy được cái xấu, sống kềm chế các giác quan, ăn uống điều độ, tin tưởng và có nghị lực; dục vọng không thể đánh gục người ấy như gió không lay chuyển được núi đá.",
+      "time_seconds": 0.34441399574279785
+    },
+    "453db7855e62608f": {
+      "translation": "Người chưa từ bỏ ô nhiễm mà mặc y phấn tảo, không có giới hạnh và chánh niệm, thì không xứng đáng với y phấn tảo.",
+      "time_seconds": 0.34441399574279785
+    },
+    "7a78443f63277dc9": {
+      "translation": "Người đã từ bỏ ô nhiễm, an trú trong giới đức, có giới hạnh và chánh niệm, thì mới thật sự xứng đáng với y phấn tảo.",
+      "time_seconds": 0.34441399574279785
+    },
+    "37e0c5a67544e01b": {
+      "translation": "Người ngu tưởng phù phiếm là thật, tưởng thật là phù phiếm; Họ không đạt được điều gì quý giá, vì tư duy sai lầm.",
+      "time_seconds": 0.22957375049591064
+    },
+    "92660e81de3b3a6e": {
+      "translation": "Biết rõ thật là thật, phù phiếm là phù phiếm; Họ đạt được điều quý giá, vì tư duy chân chính.",
+      "time_seconds": 0.22957375049591064
+    },
+    "9e9fa2a2d4a4c12d": {
+      "translation": "Như mái nhà dột, mưa xuyên thấu; Tâm không tu tập, tham dục xuyên thấu.",
+      "time_seconds": 0.22957375049591064
+    },
+    "65357ac90a09e60b": {
+      "translation": "Như mái nhà kín, mưa không xuyên thấu; Tâm đã tu tập, tham dục không xuyên thấu.",
+      "time_seconds": 0.22957375049591064
+    },
+    "93a7158c1d77c1fe": {
+      "translation": "Ở đời khóc, chết rồi cũng khóc, kẻ làm ác khóc cả hai nơi; Họ khóc, họ đau đớn, khi thấy nghiệp uế của mình.",
+      "time_seconds": 0.22957375049591064
+    },
+    "e6a03dbf8be4bc76": {
+      "translation": "Ở đời vui, chết rồi cũng vui, người có phước vui cả hai nơi; Họ vui, họ hoan hỷ, khi thấy nghiệp thanh tịnh của mình.",
+      "time_seconds": 0.22957375049591064
+    },
+    "36689f3b84da532c": {
+      "translation": "Dù nói nhiều lời hay bên đây, kẻ phóng dật không thực hành; Như người chăn thuê đếm bò người khác, không phải là bậc Thánh trong mục đích Sa-môn.",
+      "time_seconds": 0.22957375049591064
+    },
+    "c2e0c936c55f9e5c": {
+      "translation": "Dù chỉ nói ít lời, nếu thực hành đúng pháp, đúng theo Chánh pháp; Diệt tham, sân và si, thành bậc Thánh trong mục đích Sa-môn.",
+      "time_seconds": 0.22957375049591064
+    },
+    "e038d3a7f3fa3176": {
+      "translation": "(Chỉ có trong kinh Pali, không có đoạn tương đương trong Udanavarga)",
+      "time_seconds": 0.29330384731292725
+    }
+  }
+}
