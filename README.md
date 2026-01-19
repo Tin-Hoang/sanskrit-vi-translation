@@ -1,8 +1,17 @@
 # Buddhist Text Translation Benchmark
+This benchmark evaluates how well AI models translate sacred texts from **Sanskrit** and **Pali** into Vietnamese, comparing them against classical translations by renowned Buddhist monks.
 
-This project benchmarks the performance of LLMs on translating Buddhist texts from **Sanskrit** and **Pali** into Vietnamese.
+<p align="center">
+  <img src="sanskrit_vi_banner.jpg" alt="Sanskrit-Vietnamese Translation Benchmark" width="100%" />
+</p>
 
-## 📊 Supported Benchmarks
+## 🔬 Research Questions
+
+1. Can modern LLMs translate ancient Buddhist scriptures as well as human scholars?
+2. Which current LLM achieves the highest translation accuracy?
+3. Which is the better source language to translate into Vietnamese: Sanskrit or Pali?
+
+##  Supported Benchmarks
 
 | Task | Description | Source Text |
 |------|-------------|-------------|
@@ -11,7 +20,7 @@ This project benchmarks the performance of LLMs on translating Buddhist texts fr
 | `compare` | Pali vs Sanskrit comparison | `dhammapada_udanavarga_parallel.csv` |
 
 
-## Results
+## 📊 Results
 
 ### Sanskrit → Vietnamese (Heart Sutra | Bát Nhã Tâm Kinh)
 
@@ -147,8 +156,11 @@ Each task generates:
     - **Quantitative**: BLEU (corpus), BERTScore (semantic F1)
     - **Qualitative**: LLM-as-a-Judge (5-point accuracy/fluency rubric), using `gemini/gemini-3-flash-preview`
 
-## 🔬 Research Question
-> Which original language (Sanskrit or Pali) produces better Vietnamese translations of Buddhist texts?
-
 The `compare` task enables direct comparison by running both source languages on parallel texts (e.g., Dhammapada vs Udanavarga).
 
+## TODO
+
+- Beyond Translation -> Semantic Understanding, verify ability of LLM to interprete the Buddhist texts.
+- Data Expansion
+- Add more models
+- Add more metrics
