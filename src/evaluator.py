@@ -5,23 +5,50 @@ if TYPE_CHECKING:
 import json
 import sacrebleu
 from bert_score import score
+import numpy as np
 import litellm
 from litellm.exceptions import RateLimitError
 import time
 from dotenv import load_dotenv
 
-from system_prompts.evaluator.current import (
-    EVALUATION_RUBRIC,
-    BATCH_JUDGE_PROMPT,
-    SINGLE_JUDGE_PROMPT,
-)
+# from system_prompts.evaluator.current import (
+#    EVALUATION_RUBRIC,
+#    BATCH_JUDGE_PROMPT,
+#    SINGLE_JUDGE_PROMPT,
+# )
 
 load_dotenv()
 
 
 class Evaluator:
-    def __init__(self, judge_model: str = "gemini/gemini-2.5-flash"):
+    def __init__(
+        self,
+        judge_model: str = "gemini/gemini-2.5-flash",
+        rubric: Optional[str] = None,
+        single_judge_prompt_template: Optional[str] = None,
+        batch_judge_prompt_template: Optional[str] = None,
+    ):
         self.judge_model = judge_model
+
+        # Fallback to local prompts if not provided
+        if (
+            not rubric
+            or not single_judge_prompt_template
+            or not batch_judge_prompt_template
+        ):
+            from system_prompts.evaluator.current import (
+                EVALUATION_RUBRIC,
+                BATCH_JUDGE_PROMPT,
+                SINGLE_JUDGE_PROMPT,
+            )
+
+        self.rubric = rubric or EVALUATION_RUBRIC
+        self.single_judge_prompt_template = (
+            single_judge_prompt_template or SINGLE_JUDGE_PROMPT
+        )
+        self.batch_judge_prompt_template = (
+            batch_judge_prompt_template or BATCH_JUDGE_PROMPT
+        )
 
     def calculate_metrics(
         self, references: List[List[str]], candidates: List[str]
@@ -118,9 +145,9 @@ Reference (Vietnamese): {ref}
 Candidate (Vietnamese): {cand}
 """
 
-            prompt = BATCH_JUDGE_PROMPT.format(
+            prompt = self.batch_judge_prompt_template.format(
                 source_lang=source_lang,
-                rubric=EVALUATION_RUBRIC,
+                rubric=self.rubric,
                 items_text=items_text,
             )
             # Retry logic for rate limits: 60s, 120s, 180s
@@ -163,7 +190,10 @@ Candidate (Vietnamese): {cand}
                     result_text.replace("```json", "").replace("```", "").strip()
                 )
                 parsed = json.loads(clean_json)
-                evaluations = parsed.get("evaluations", [])
+                if isinstance(parsed, list):
+                    evaluations = parsed
+                else:
+                    evaluations = parsed.get("evaluations", [])
 
                 # Map results back to original indices
                 for i, eval_item in enumerate(evaluations):
@@ -218,9 +248,9 @@ Candidate (Vietnamese): {cand}
         session_id: Optional[str] = None,
     ) -> Dict[str, any]:
         """Single-item evaluation (kept for backwards compatibility)."""
-        prompt = SINGLE_JUDGE_PROMPT.format(
+        prompt = self.single_judge_prompt_template.format(
             source_lang=source_lang,
-            rubric=EVALUATION_RUBRIC,
+            rubric=self.rubric,
             source=source,
             reference=reference,
             candidate=candidate,

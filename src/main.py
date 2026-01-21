@@ -12,8 +12,18 @@ from evaluator import Evaluator
 from cache import BenchmarkCache
 from utils import load_data, save_results
 from observability import init_langfuse
-from system_prompts.translator.current import BATCH_TRANSLATE_PROMPT
-from system_prompts.evaluator.current import BATCH_JUDGE_PROMPT, EVALUATION_RUBRIC
+from observability import init_langfuse
+from prompt_manager import PromptManager
+
+from system_prompts.translator.current import (
+    SINGLE_TRANSLATE_PROMPT,
+    BATCH_TRANSLATE_PROMPT,
+)
+from system_prompts.evaluator.current import (
+    EVALUATION_RUBRIC,
+    BATCH_JUDGE_PROMPT,
+    SINGLE_JUDGE_PROMPT,
+)
 
 # Initialize Langfuse tracing (optional - gracefully degrades if not configured)
 init_langfuse()
@@ -106,6 +116,7 @@ def run_single_benchmark(
     source_column: str,
     source_lang: str,
     df: pd.DataFrame,
+    translator_prompts: dict,  # Added
     evaluator: Evaluator,
     output_prefix: str,
     base_dir: Path,
@@ -145,7 +156,14 @@ def run_single_benchmark(
         print(f"Processing Model: {model_name} ({model_id})")
         print(f"{'=' * 50}")
 
-        translator = Translator(model_name=model_id)
+        print(f"Processing Model: {model_name} ({model_id})")
+        print(f"{'=' * 50}")
+
+        translator = Translator(
+            model_name=model_id,
+            single_prompt_template=translator_prompts["single"],
+            batch_prompt_template=translator_prompts["batch"],
+        )
 
         # 1. Translate
         print(f"Translating {len(df)} sentences from {source_lang}...")
@@ -335,15 +353,38 @@ def main():
     output_csv_path = results_dir / f"results_{output_prefix}_benchmark.csv"
     report_md_path = results_dir / f"BENCHMARK_REPORT_{output_prefix.upper()}.md"
 
+    # Initialize PromptManager
+    prompt_manager = PromptManager()
+
+    print("Fetching prompts from Langfuse (or local fallback)...")
+    translator_batch_prompt = prompt_manager.get_prompt(
+        "translator-batch", fallback=BATCH_TRANSLATE_PROMPT
+    )
+    translator_single_prompt = prompt_manager.get_prompt(
+        "translator-single", fallback=SINGLE_TRANSLATE_PROMPT
+    )
+    evaluator_batch_prompt = prompt_manager.get_prompt(
+        "evaluator-batch", fallback=BATCH_JUDGE_PROMPT
+    )
+    evaluator_single_prompt = prompt_manager.get_prompt(
+        "evaluator-single", fallback=SINGLE_JUDGE_PROMPT
+    )
+    evaluator_rubric = prompt_manager.get_prompt(
+        "evaluator-rubric", fallback=EVALUATION_RUBRIC
+    )
+
     # Initialize cache
     cache = None
     if not args.no_cache:
         cache_dir = base_dir / "cache"
+        # Hash fetched prompts for cache keys
         cache = BenchmarkCache(
             cache_dir,
             task_key,
-            translator_prompt_hash=_hash_prompt(BATCH_TRANSLATE_PROMPT),
-            evaluator_prompt_hash=_hash_prompt(BATCH_JUDGE_PROMPT + EVALUATION_RUBRIC),
+            translator_prompt_hash=_hash_prompt(translator_batch_prompt),
+            evaluator_prompt_hash=_hash_prompt(
+                evaluator_batch_prompt + evaluator_rubric
+            ),
         )
         if args.clear_cache:
             cache.clear()
@@ -368,7 +409,12 @@ def main():
         print(f"Error: {e}")
         return
 
-    evaluator = Evaluator(judge_model=JUDGE_MODEL)
+    evaluator = Evaluator(
+        judge_model=JUDGE_MODEL,
+        rubric=evaluator_rubric,
+        single_judge_prompt_template=evaluator_single_prompt,
+        batch_judge_prompt_template=evaluator_batch_prompt,
+    )
     print(f"Using Judge Model: {JUDGE_MODEL}")
 
     all_benchmark_results = []
@@ -386,6 +432,10 @@ def main():
                 source_column=src_col,
                 source_lang=src_lang,
                 df=results_df,
+                translator_prompts={
+                    "single": translator_single_prompt,
+                    "batch": translator_batch_prompt,
+                },
                 evaluator=evaluator,
                 output_prefix=output_prefix,
                 base_dir=base_dir,
@@ -400,6 +450,10 @@ def main():
             source_column=task_cfg["source_column"],
             source_lang=task_cfg["source_lang"],
             df=df,
+            translator_prompts={
+                "single": translator_single_prompt,
+                "batch": translator_batch_prompt,
+            },
             evaluator=evaluator,
             output_prefix=output_prefix,
             base_dir=base_dir,

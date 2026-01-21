@@ -3,22 +3,33 @@ from typing import List, Optional, TYPE_CHECKING
 
 if TYPE_CHECKING:
     from cache import BenchmarkCache
+
+from cache import BenchmarkCache
 import litellm
 from litellm.exceptions import RateLimitError, BadRequestError
 import time
 from dotenv import load_dotenv
 
-from system_prompts.translator.current import (
-    SINGLE_TRANSLATE_PROMPT,
-    BATCH_TRANSLATE_PROMPT,
-)
-
 load_dotenv()
 
 
 class Translator:
-    def __init__(self, model_name: str = "groq/llama-3.3-70b-versatile"):
+    def __init__(
+        self,
+        model_name: str = "groq/llama-3.3-70b-versatile",
+        single_prompt_template: Optional[str] = None,
+        batch_prompt_template: Optional[str] = None,
+    ):
         self.model_name = model_name
+        # Use provided templates or load from current (fallback logic to be safe)
+        if not single_prompt_template or not batch_prompt_template:
+            from system_prompts.translator.current import (
+                SINGLE_TRANSLATE_PROMPT,
+                BATCH_TRANSLATE_PROMPT,
+            )
+
+        self.single_prompt_template = single_prompt_template or SINGLE_TRANSLATE_PROMPT
+        self.batch_prompt_template = batch_prompt_template or BATCH_TRANSLATE_PROMPT
 
     def translate(
         self,
@@ -28,7 +39,7 @@ class Translator:
         session_id: Optional[str] = None,
     ) -> str:
         """Single text translation (kept for backwards compatibility)."""
-        prompt = SINGLE_TRANSLATE_PROMPT.format(
+        prompt = self.single_prompt_template.format(
             source_lang=source_lang,
             target_lang=target_lang,
             text=text,
@@ -114,7 +125,7 @@ class Translator:
             for i, text in enumerate(batch_texts):
                 items_text += f"\n--- Item {i + 1} ---\nText: {text}\n"
 
-            prompt = BATCH_TRANSLATE_PROMPT.format(
+            prompt = self.batch_prompt_template.format(
                 source_lang=source_lang,
                 items_text=items_text,
             )
@@ -176,7 +187,10 @@ class Translator:
                 # Try to parse as JSON first
                 try:
                     parsed = json.loads(clean_json)
-                    translations = parsed.get("translations", [])
+                    if isinstance(parsed, list):
+                        translations = parsed
+                    else:
+                        translations = parsed.get("translations", [])
                 except json.JSONDecodeError:
                     # If that fails, try to extract JSON from the response
                     import re
