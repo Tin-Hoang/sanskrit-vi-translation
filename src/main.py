@@ -3,6 +3,7 @@ import hashlib
 import json
 import pandas as pd
 import time
+import uuid
 from pathlib import Path
 import warnings
 
@@ -109,6 +110,7 @@ def run_single_benchmark(
     output_prefix: str,
     base_dir: Path,
     cache: BenchmarkCache = None,
+    session_id: str = None,
 ) -> tuple[pd.DataFrame, list[dict]]:
     """Run benchmark for a single source language.
 
@@ -152,6 +154,7 @@ def run_single_benchmark(
                 df[source_column].tolist(),
                 source_lang=source_lang,
                 cache=cache,
+                session_id=session_id,
             )
         except Exception as e:
             print(f"Failed to translate with {model_name}: {e}")
@@ -212,6 +215,7 @@ def run_single_benchmark(
                 batch_size=30,  # 30 items per API call
                 cache=cache,
                 model_id=model_id,
+                session_id=session_id,
             )
         else:
             batch_results = []
@@ -351,6 +355,13 @@ def main():
     print(f"Task: {task_cfg['name']}")
     print(f"Loading data from {data_path}...")
 
+    # Generate session ID for Langfuse grouping
+    # Format: benchmark-{task_name}-{timestamp}-{uuid_short}
+    timestamp = time.strftime("%Y%m%d-%H%M%S")
+    short_uuid = str(uuid.uuid4())[:8]
+    session_id = f"benchmark-{task_key}-{timestamp}-{short_uuid}"
+    print(f"Session ID: {session_id}")
+
     try:
         df = load_data(data_path)
     except Exception as e:
@@ -379,6 +390,7 @@ def main():
                 output_prefix=output_prefix,
                 base_dir=base_dir,
                 cache=cache,
+                session_id=session_id,
             )
             all_benchmark_results.extend(benchmark_results)
     else:
@@ -392,6 +404,7 @@ def main():
             output_prefix=output_prefix,
             base_dir=base_dir,
             cache=cache,
+            session_id=session_id,
         )
         all_benchmark_results.extend(benchmark_results)
 

@@ -21,7 +21,11 @@ class Translator:
         self.model_name = model_name
 
     def translate(
-        self, text: str, source_lang: str = "Sanskrit", target_lang: str = "Vietnamese"
+        self,
+        text: str,
+        source_lang: str = "Sanskrit",
+        target_lang: str = "Vietnamese",
+        session_id: Optional[str] = None,
     ) -> str:
         """Single text translation (kept for backwards compatibility)."""
         prompt = SINGLE_TRANSLATE_PROMPT.format(
@@ -34,6 +38,10 @@ class Translator:
                 model=self.model_name,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.3,
+                metadata={
+                    "session_id": session_id,
+                    "tags": ["translation", self.model_name, source_lang],
+                },
             )
             return response.choices[0].message.content.strip()
         except Exception as e:
@@ -46,6 +54,7 @@ class Translator:
         source_lang: str = "Sanskrit",
         batch_size: int = 10,
         cache: Optional["BenchmarkCache"] = None,
+        session_id: Optional[str] = None,
     ) -> tuple[List[str], float]:
         """
         Translate multiple texts using batched API calls to reduce RPM usage.
@@ -122,6 +131,10 @@ class Translator:
                         "model": self.model_name,
                         "messages": [{"role": "user", "content": prompt}],
                         "temperature": 0.3,
+                        "metadata": {
+                            "session_id": session_id,
+                            "tags": ["translation", self.model_name, source_lang],
+                        },
                     }
                     if use_json_mode:
                         completion_kwargs["response_format"] = {"type": "json_object"}

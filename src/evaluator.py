@@ -50,6 +50,7 @@ class Evaluator:
         batch_size: int = 20,
         cache: Optional["BenchmarkCache"] = None,
         model_id: str = "",
+        session_id: Optional[str] = None,
     ) -> List[Dict[str, any]]:
         """
         Evaluate multiple translations in batched API calls to reduce RPM usage.
@@ -134,6 +135,10 @@ Candidate (Vietnamese): {cand}
                         messages=[{"role": "user", "content": prompt}],
                         response_format={"type": "json_object"},
                         temperature=0.1,
+                        metadata={
+                            "session_id": session_id,
+                            "tags": ["evaluation", self.judge_model, source_lang],
+                        },
                     )
                     break  # Success, exit retry loop
                 except RateLimitError as e:
@@ -205,7 +210,12 @@ Candidate (Vietnamese): {cand}
         ]
 
     def llm_judge(
-        self, source: str, reference: str, candidate: str, source_lang: str = "Sanskrit"
+        self,
+        source: str,
+        reference: str,
+        candidate: str,
+        source_lang: str = "Sanskrit",
+        session_id: Optional[str] = None,
     ) -> Dict[str, any]:
         """Single-item evaluation (kept for backwards compatibility)."""
         prompt = SINGLE_JUDGE_PROMPT.format(
@@ -221,6 +231,10 @@ Candidate (Vietnamese): {cand}
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"},
                 temperature=0.1,
+                metadata={
+                    "session_id": session_id,
+                    "tags": ["evaluation", self.judge_model, source_lang],
+                },
             )
             return response.choices[0].message.content
             # Note: caller should parse this JSON string
