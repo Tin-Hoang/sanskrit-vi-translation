@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bert-score>=0.3.13",
-    "litellm>=1.80.16",
+    "litellm>=1.81.0",
     "pandas>=2.3.3",
     "python-dotenv>=1.2.1",
     "sacrebleu>=2.6.0",
@@ -16,4 +16,9 @@ dependencies = [
     "cloudscraper",
     "sacremoses",
     "tabulate",
+    # Langfuse Observability
+    "langfuse>=3.0.0",
+    "opentelemetry-api>=1.39.1",
+    "opentelemetry-sdk>=1.39.1",
+    "opentelemetry-exporter-otlp>=1.39.1",
 ]

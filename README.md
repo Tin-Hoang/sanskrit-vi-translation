@@ -2,7 +2,7 @@
 This benchmark evaluates how well AI models translate sacred texts from **Sanskrit** and **Pali** into Vietnamese, comparing them against classical translations by renowned Buddhist monks.
 
 <p align="center">
-  <img src="sanskrit_vi_banner.jpg" alt="Sanskrit-Vietnamese Translation Benchmark" width="100%" />
+  <img src="docs/sanskrit_vi_banner.jpg" alt="Sanskrit-Vietnamese Translation Benchmark" width="100%" />
 </p>
 
 ## 🔬 Research Questions
@@ -139,6 +139,34 @@ uv run src/main.py --task pali-vi --no-cache
 ```
 
 Cache files are stored in `cache/` (auto-created).
+
+### Langfuse Observability (Optional)
+
+Enable LLM tracing with [Langfuse](https://langfuse.com) (free) to monitor all translation and evaluation calls:
+
+<p align="center">
+  <img src="docs/langfuse-screenshot.png" alt="Langfuse Tracing Screenshot" width="100%" />
+</p>
+
+1. **Create a Langfuse account** at https://cloud.langfuse.com
+2. **Create a project** and get your API keys from Settings → API Keys
+3. **Configure `.env`**:
+   ```bash
+   LANGFUSE_PUBLIC_KEY=pk-lf-...
+   LANGFUSE_SECRET_KEY=sk-lf-...
+   ```
+
+When configured, you'll see:
+```
+✅ Langfuse tracing enabled
+   View traces at: https://cloud.langfuse.com
+```
+
+**Features tracked:**
+- All LLM API calls (translation + evaluation)
+- Token usage and latency
+- Full prompts and responses
+- Error traces for debugging
 
 ### 3. Output Files
 Each task generates:

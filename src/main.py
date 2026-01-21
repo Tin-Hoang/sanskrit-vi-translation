@@ -10,8 +10,12 @@ from translator import Translator
 from evaluator import Evaluator
 from cache import BenchmarkCache
 from utils import load_data, save_results
+from observability import init_langfuse
 from system_prompts.translator.current import BATCH_TRANSLATE_PROMPT
 from system_prompts.evaluator.current import BATCH_JUDGE_PROMPT, EVALUATION_RUBRIC
+
+# Initialize Langfuse tracing (optional - gracefully degrades if not configured)
+init_langfuse()
 
 
 def _hash_prompt(prompt: str) -> str:
