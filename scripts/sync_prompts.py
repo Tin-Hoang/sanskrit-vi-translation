@@ -61,21 +61,64 @@ def safe_read_file(path: str) -> str:
         return ""
 
 
-def push_prompts(langfuse: Langfuse):
-    """Upload local prompts to Langfuse."""
-    logger.info("🚀 Pushing prompts to Langfuse...")
+def normalize_whitespace(text: str) -> str:
+    """Normalize whitespace for comparison (strip trailing, normalize newlines)."""
+    return "\n".join(line.rstrip() for line in text.strip().splitlines())
 
-    for name, content in PROMPT_MAP.items():
-        logger.info(f"  - Updating '{name}'...")
-        # Create or update prompt in Langfuse
+
+def push_prompts(langfuse: Langfuse, force: bool = False):
+    """Upload local prompts to Langfuse (only if changed).
+
+    Args:
+        langfuse: Langfuse client
+        force: If True, upload all prompts regardless of changes
+    """
+    logger.info("🚀 Checking prompts for changes...")
+
+    updated_count = 0
+    skipped_count = 0
+    new_count = 0
+
+    for name, local_content in PROMPT_MAP.items():
+        # Try to get current version from Langfuse
+        remote_content = None
+        try:
+            prompt = langfuse.get_prompt(name, label="production")
+            remote_content = prompt.compile()
+        except Exception:
+            # Prompt doesn't exist yet
+            pass
+
+        # Compare normalized content
+        local_normalized = normalize_whitespace(local_content)
+        remote_normalized = (
+            normalize_whitespace(remote_content) if remote_content else None
+        )
+
+        if not force and remote_normalized == local_normalized:
+            logger.info(f"  ⏭️  '{name}' - unchanged, skipping")
+            skipped_count += 1
+            continue
+
+        # Upload the prompt
+        status = "🆕 new" if remote_content is None else "✅ updated"
+        logger.info(f"  {status}: '{name}'")
+
         langfuse.create_prompt(
             name=name,
-            prompt=content,
-            labels=["production"],  # Tag as production initially
+            prompt=local_content,
+            labels=["production"],
             config={"type": "text"},
         )
 
-    logger.info("✅ Push complete!")
+        if remote_content is None:
+            new_count += 1
+        else:
+            updated_count += 1
+
+    logger.info(
+        f"\n📊 Summary: {updated_count} updated, {new_count} new, {skipped_count} unchanged"
+    )
 
 
 def pull_prompts(langfuse: Langfuse):
@@ -122,10 +165,17 @@ def main():
     parser = argparse.ArgumentParser(description="Sync prompts with Langfuse")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
-        "--push", action="store_true", help="Push local prompts to Langfuse"
+        "--push",
+        action="store_true",
+        help="Push local prompts to Langfuse (only changed)",
     )
     group.add_argument(
         "--pull", action="store_true", help="Pull production prompts from Langfuse"
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Force push all prompts, ignoring change detection",
     )
 
     args = parser.parse_args()
@@ -138,7 +188,7 @@ def main():
         sys.exit(1)
 
     if args.push:
-        push_prompts(langfuse)
+        push_prompts(langfuse, force=args.force)
     elif args.pull:
         pull_prompts(langfuse)
 
