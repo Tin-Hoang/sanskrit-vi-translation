@@ -166,11 +166,16 @@ When configured, you'll see:
 
 ### Langfuse Datasets (Data Management)
 
+<p align="center">
+  <img src="docs/langfuse-dataset.png" alt="Langfuse Dataset Screenshot" width="100%" />
+</p>
+
 The benchmark supports auto dataset uploading into Langfuse:
 -   **Auto-Sync**: When running with a local file, it automatically checks if the corresponding Langfuse dataset exists. If the local file has more items, it upserts them.
--   **Schema Enforcement**: All datasets utilize Langfuse's Native Schema Enforcement to ensure data quality:
+-   **Schema Enforcement**: All datasets utilize Langfuse's Native Schema Enforcement to ensure data validity:
     -   `input`: String (Source text)
     -   `expected_output`: Dictionary (Reference translations)
+- **Evaluation Scores Dashboard**: scores are visualized in Langfuse dashboard grouped by model and dataset.
 
 ### 3. Output Files
 Each task generates:

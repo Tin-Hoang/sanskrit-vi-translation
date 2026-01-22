@@ -196,8 +196,16 @@ def run_benchmark(
         print("Calculating automated metrics...")
         try:
             metrics = evaluator.calculate_metrics(transposed_references, translations)
+            # Also calculate per-item metrics for Run Item scoring
+            item_metrics = evaluator.calculate_item_metrics(
+                transposed_references, translations
+            )
         except Exception:
             metrics = {"BLEU": 0.0, "BERTScore_F1": 0.0}
+            item_metrics = {
+                "BLEU": [0.0] * len(translations),
+                "BERTScore_F1": [0.0] * len(translations),
+            }
 
         # LLM Judge
         print("Running LLM Judge...")
@@ -331,6 +339,18 @@ def run_benchmark(
                                     name="judge-fluency",
                                     value=flu_val,
                                 )
+
+                                # Add automated metrics (BLEU and BERTScore)
+                                if i < len(item_metrics["BLEU"]):
+                                    run_span.score_trace(
+                                        name="bleu",
+                                        value=item_metrics["BLEU"][i],
+                                    )
+                                if i < len(item_metrics["BERTScore_F1"]):
+                                    run_span.score_trace(
+                                        name="bertscore",
+                                        value=item_metrics["BERTScore_F1"][i],
+                                    )
                             scored_count += 1
 
                         except Exception as e:

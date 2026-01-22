@@ -62,6 +62,43 @@ class Evaluator:
 
         return {"BLEU": bleu.score, "BERTScore_F1": F1.mean().item()}
 
+    def calculate_item_metrics(
+        self, references: List[List[str]], candidates: List[str]
+    ) -> Dict[str, List[float]]:
+        """
+        Calculate per-item BLEU and BERTScore metrics.
+
+        Args:
+            references: List of reference lists, where each inner list contains
+                       all reference translations for that position
+            candidates: List of candidate translations
+
+        Returns:
+            Dictionary with 'BLEU' and 'BERTScore_F1' keys, each containing
+            a list of scores per item
+        """
+        # Per-item sentence BLEU scores
+        sentence_bleu_scores = []
+        for i, cand in enumerate(candidates):
+            # Get references for this item from each reference list
+            item_refs = [ref_list[i] for ref_list in references if i < len(ref_list)]
+            if item_refs and cand and cand.strip():
+                # sacrebleu.sentence_bleu expects refs as list of strings
+                sent_bleu = sacrebleu.sentence_bleu(cand, item_refs)
+                sentence_bleu_scores.append(sent_bleu.score)
+            else:
+                sentence_bleu_scores.append(0.0)
+
+        # Per-item BERTScore (already returns per-item scores)
+        primary_ref = references[0] if isinstance(references[0], list) else references
+        P, R, F1 = score(candidates, primary_ref, lang="vi", verbose=False)
+        bertscore_f1_list = F1.tolist()
+
+        return {
+            "BLEU": sentence_bleu_scores,
+            "BERTScore_F1": bertscore_f1_list,
+        }
+
     def batch_llm_judge(
         self,
         sources: List[str],
