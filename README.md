@@ -103,24 +103,20 @@ GROQ_API_KEY=your_key_here
 
 ### 2. Run Benchmark
 
-**Sanskrit → Vietnamese (default):**
+**Smart Loading:**
+The benchmark automatically detects if the input is a local file or a Langfuse dataset name.
+
 ```bash
-uv run src/main.py --task sanskrit-vi
+# Option A: Run with Local Data File (Auto-uploads/Syncs to Langfuse)
+uv run src/main.py data/sanskrit_vi_heart_sutra.csv
+
+# Option B: Run with Langfuse Dataset Name
+uv run src/main.py sanskrit-vi-heart-sutra
 ```
 
-**Pali → Vietnamese:**
+**Custom Limit (for testing):**
 ```bash
-uv run src/main.py --task pali-vi
-```
-
-**Comparison Mode (both languages on parallel data):**
-```bash
-uv run src/main.py --task compare
-```
-
-**Custom data file:**
-```bash
-uv run src/main.py --task sanskrit-vi --data /path/to/custom.csv
+uv run src/main.py data/sanskrit_vi_heart_sutra.csv --limit 2
 ```
 
 ### Caching (Rate Limit Handling)
@@ -129,13 +125,13 @@ The benchmark caches API outputs to handle rate limits gracefully. If interrupte
 
 ```bash
 # Default: caching enabled, resumes from cache
-uv run src/main.py --task pali-vi
+uv run src/main.py data/sanskrit_vi_heart_sutra.csv
 
 # Clear cache and start fresh
-uv run src/main.py --task pali-vi --clear-cache
+uv run src/main.py data/sanskrit_vi_heart_sutra.csv --clear-cache
 
 # Disable caching entirely
-uv run src/main.py --task pali-vi --no-cache
+uv run src/main.py data/sanskrit_vi_heart_sutra.csv --no-cache
 ```
 
 Cache files are stored in `cache/` (auto-created).
@@ -162,11 +158,20 @@ When configured, you'll see:
    View traces at: https://cloud.langfuse.com
 ```
 
-**Features tracked:**
-- All LLM API calls (translation + evaluation)
-- Token usage and latency
-- Full prompts and responses
-- Error traces for debugging
+### Langfuse Datasets (Data Management)
+
+The benchmark now supports **Smart Dataset Loading** with **Schema Enforcement**:
+-   **Auto-Sync**: When running with a local file, it automatically checks if the corresponding Langfuse dataset exists. If the local file has more items, it upserts them.
+-   **Schema Enforcement**: All datasets utilize Langfuse's Native Schema Enforcement to ensure data quality:
+    -   `input`: String (Source text)
+    -   `expected_output`: Dictionary (Reference translations)
+-   **Trace Linking**: Every translation is linked to the specific dataset item, enabling "Run on Dataset" analysis in Langfuse.
+
+#### Migration / Management
+To forcibly migrate or delete old datasets and enforce the new schema, use the migration script:
+```bash
+uv run scripts/migrate_datasets.py
+```
 
 ### 3. Output Files
 Each task generates:

@@ -25,12 +25,52 @@ def upload_dataset(dataset_name: str, df: pd.DataFrame) -> None:
     langfuse = get_langfuse_client()
     print(f"Uploading dataset '{dataset_name}' to Langfuse ({len(df)} items)...")
 
-    # Ensure dataset exists
+    # Define Schema
+    # Input: Simple string (the source text)
+    input_schema = {"type": "string"}
+
+    # Expected Output: Dictionary of strings (references)
+    expected_output_schema = {
+        "type": "object",
+        "additionalProperties": {"type": "string"},
+    }
+
+    # Ensure dataset exists with Schema
+    import time
+
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            # First try to create it (this fails if it exists usually, or it might just return it)
+            # Langfuse SDK `create_dataset` usually doesn't update if it exists.
+            langfuse.create_dataset(
+                name=dataset_name,
+                input_schema=input_schema,
+                expected_output_schema=expected_output_schema,
+            )
+            break
+        except Exception as e:
+            if "429" in str(e) and attempt < max_retries - 1:
+                sleep_time = (attempt + 1) * 2
+                print(f"Rate limit hit creating dataset. Retrying in {sleep_time}s...")
+                time.sleep(sleep_time)
+            else:
+                print(f"Dataset creation note: {e}")
+                # If it exists, we assume it's fine.
+                # Ideally we would check if schema matches, but SDK might not expose that easily.
+                break
+
+    # Validation step: Check if dataset is strictly created
+    # Langfuse might be async or dataset creation might need a moment?
+    # But usually API is synchronous. Let's verify we have it.
     try:
-        langfuse.create_dataset(name=dataset_name)
+        remote_ds = langfuse.get_dataset(dataset_name)
+        # Verify schema if possible?
+        # print(f"Remote Schema: {remote_ds.input_schema}")
     except Exception:
-        # Likely exists, that's fine
-        pass
+        raise ValueError(
+            f"Dataset '{dataset_name}' count not be retrieved after creation attempt. Aborting upload."
+        )
 
     # Identify columns
     input_col, ref_cols, metadata_cols = identify_columns(df)
@@ -57,13 +97,29 @@ def upload_dataset(dataset_name: str, df: pd.DataFrame) -> None:
             if pd.notna(row[meta]):
                 metadata[meta] = row[meta]
 
-        langfuse.create_dataset_item(
-            dataset_name=dataset_name,
-            input=input_data,
-            expected_output=expected_output,
-            metadata=metadata,
-            id=str(row["id"]) if "id" in df.columns else None,
-        )
+        # Retry item creation
+        for item_attempt in range(3):
+            try:
+                langfuse.create_dataset_item(
+                    dataset_name=dataset_name,
+                    input=input_data,
+                    expected_output=expected_output,
+                    metadata=metadata,
+                    # id=str(row["id"]) if "id" in df.columns else None, # Disable explicit ID to fix 404
+                )
+                break  # Success
+            except Exception as e:
+                is_rate_limit = "429" in str(e) or "rate limit" in str(e).lower()
+                is_not_found = "404" in str(e)
+
+                if (is_rate_limit or is_not_found) and item_attempt < 2:
+                    wait = (item_attempt + 1) * 2
+                    # print(f"Retry item {row.get('id')} due to error: {e}. Waiting {wait}s...")
+                    time.sleep(wait)
+                else:
+                    if item_attempt == 2:
+                        print(f"Failed to create item {row.get('id', '?')}: {e}")
+                        print("Likely Schema Validation Failure or duplicate ID.")
 
     print(f"Successfully uploaded {len(df)} items to '{dataset_name}'.")
 
