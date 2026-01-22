@@ -112,14 +112,7 @@ class Translator:
                     lf = Langfuse_cls()
                     current_trace_id = lf.get_current_trace_id()
                 except Exception as e:
-                    print(f"    DEBUG: Failed to get trace ID: {e}")
-
-            print(f"    DEBUG: current_trace_id={current_trace_id}", flush=True)
-            if batch_item_ids:
-                print(
-                    f"    DEBUG: batch_item_ids count={len(batch_item_ids)}", flush=True
-                )
-                print(f"    DEBUG: first item_id={batch_item_ids[0]}", flush=True)
+                    pass
 
             # Build batch prompt
             items_text = ""
@@ -210,80 +203,6 @@ class Translator:
                     elif isinstance(item, str):
                         val = item
                 final_translations.append(val)
-
-            # Link Dataset Items - Create specific spans for each item
-            if current_trace_id and any(batch_item_ids):
-                try:
-                    from langfuse import Langfuse
-                    import os
-
-                    if os.getenv("LANGFUSE_PUBLIC_KEY"):
-                        # Initialize fetching dataset (relying on client caching if available)
-                        # Ideally we do this once per batch or pass it in, but this is safe
-                        lf = Langfuse()
-                        target_dataset = dataset_name or "pali-vi-dhammapada"
-                        run_name_for_link = (
-                            experiment_name or f"Experiment {self.model_name}"
-                        )
-
-                        # We use try/except for get_dataset in case network fails
-                        try:
-                            # Verify if dataset exists and fetch items
-                            try:
-                                dataset = lf.get_dataset(target_dataset)
-                            except Exception:
-                                # For local files, dataset might not exist via API if not created yet?
-                                # But we need it for linking.
-                                print(
-                                    f"    Warning: Dataset '{target_dataset}' fetch failed. Linking skipped."
-                                )
-                                dataset = None
-
-                            if dataset and hasattr(dataset, "items"):
-                                # Build lookup for existing items (v3 doesn't have get_item)
-                                item_lookup = {item.id: item for item in dataset.items}
-
-                                links_created = 0
-                                for i, item_id in enumerate(batch_item_ids):
-                                    if item_id and i < len(final_translations):
-                                        item = item_lookup.get(item_id)
-                                        if item:
-                                            try:
-                                                # v3 linking: use item.run() to create a linked span
-                                                with item.run(
-                                                    run_name=run_name_for_link,
-                                                    run_metadata={
-                                                        "model": self.model_name,
-                                                        "source_lang": source_lang,
-                                                    },
-                                                ) as item_span:
-                                                    # Record specific content
-                                                    item_span.update(
-                                                        input=batch_texts[i],
-                                                        output=final_translations[i],
-                                                    )
-                                                links_created += 1
-                                            except Exception as inner_e:
-                                                print(
-                                                    f"    Item {i} link error: {inner_e}"
-                                                )
-                                        else:
-                                            # Item ID might be from local file but not uploaded yet?
-                                            # If so, we can't link.
-                                            pass
-
-                                # Ensure data dispatch
-                                lf.flush()
-                                if links_created > 0:
-                                    print(
-                                        f"    Linked {links_created} items to experiment '{run_name_for_link}'"
-                                    )
-
-                        except Exception as e:
-                            print(f"    Dataset fetch/processing failed: {e}")
-
-                except Exception as e:
-                    print(f"  Linking logic failed: {e}")
 
             return final_translations, inference_time, current_trace_id
 

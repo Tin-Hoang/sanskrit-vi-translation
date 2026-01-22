@@ -9,7 +9,7 @@ clear_cache: false
 limit: null
 
 # Batch sizes
-batch_size: 10  # Default for translation
+batch_size: 20  # Default for translation
 
 # Model Configuration
 judge:

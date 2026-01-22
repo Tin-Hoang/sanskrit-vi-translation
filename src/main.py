@@ -274,8 +274,75 @@ def run_benchmark(
             }
         )
 
-        # Upload Scores to Langfuse linked to Items
-        # Score upload skipped (Langfuse.score not supported in this version)
+        # Link Dataset Items and Score in Langfuse
+        if dataset_item_ids:
+            print("Scoring items in Langfuse...")
+            try:
+                lf = Langfuse()
+                dataset = lf.get_dataset(dataset_name)
+
+                if dataset and hasattr(dataset, "items"):
+                    item_lookup = {item.id: item for item in dataset.items}
+                    scored_count = 0
+
+                    for i, item_id in enumerate(dataset_item_ids):
+                        if not item_id:
+                            continue
+
+                        item = item_lookup.get(item_id)
+                        if not item:
+                            continue
+
+                        # Parse judgement for this item
+                        j_str = judgements[i]
+                        try:
+                            j = (
+                                json.loads(
+                                    j_str.replace("```json", "")
+                                    .replace("```", "")
+                                    .strip()
+                                )
+                                if isinstance(j_str, str)
+                                else j_str
+                            )
+                            acc_val = float(j.get("accuracy", 0))
+                            flu_val = float(j.get("fluency", 0))
+
+                            # Use item.run() to create a linked run with scores
+                            with item.run(
+                                run_name=experiment_name,
+                                run_metadata={
+                                    "model": model_name,
+                                    "source_lang": source_lang,
+                                },
+                            ) as run_span:
+                                # Update with translation input/output
+                                run_span.update(
+                                    input=str(df.iloc[i][input_col]),
+                                    output=translations[i],
+                                )
+
+                                # Add scores - these populate Run Item Scores
+                                run_span.score_trace(
+                                    name="judge-accuracy",
+                                    value=acc_val,
+                                )
+                                run_span.score_trace(
+                                    name="judge-fluency",
+                                    value=flu_val,
+                                )
+                            scored_count += 1
+
+                        except Exception as e:
+                            print(f"  Error scoring item {i}: {e}")
+
+                    lf.flush()
+                    print(
+                        f"Scored {scored_count} items in experiment '{experiment_name}'"
+                    )
+
+            except Exception as e:
+                print(f"Langfuse scoring failed: {e}")
 
     return results_df, benchmark_results
 
