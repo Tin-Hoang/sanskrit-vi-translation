@@ -1,7 +1,5 @@
 from typing import List, Dict, Optional, TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from cache import BenchmarkCache
 import json
 import sacrebleu
 from bert_score import score
@@ -10,12 +8,6 @@ import litellm
 from litellm.exceptions import RateLimitError
 import time
 from dotenv import load_dotenv
-
-# from system_prompts.evaluator.current import (
-#    EVALUATION_RUBRIC,
-#    BATCH_JUDGE_PROMPT,
-#    SINGLE_JUDGE_PROMPT,
-# )
 
 load_dotenv()
 
@@ -77,7 +69,6 @@ class Evaluator:
         candidates: List[str],
         source_lang: str = "Sanskrit",
         batch_size: int = 20,
-        cache: Optional["BenchmarkCache"] = None,
         model_id: str = "",
         session_id: Optional[str] = None,
     ) -> List[Dict[str, any]]:
@@ -98,23 +89,13 @@ class Evaluator:
         """
         all_results: List[Optional[str]] = [None] * len(sources)
         total = len(sources)
-        cache_hits = 0
-
-        # First pass: check cache for existing judgements
+        # Prepare items for judging (LiteLLM handles caching)
         items_to_judge: List[tuple[int, str, str, str]] = []  # (idx, src, ref, cand)
         for idx, (src, ref, cand) in enumerate(zip(sources, references, candidates)):
-            if cache and model_id:
-                cached = cache.get_judgement(model_id, self.judge_model, src, cand)
-                if cached is not None:
-                    all_results[idx] = cached
-                    cache_hits += 1
-                    continue
             items_to_judge.append((idx, src, ref, cand))
 
-        if cache_hits > 0:
-            print(
-                f"  Cache: {cache_hits}/{total} judgements cached, {len(items_to_judge)} to judge"
-            )
+        if not items_to_judge:
+            return []
 
         if not items_to_judge:
             # All judgements were cached
@@ -130,8 +111,8 @@ class Evaluator:
             batch_end = min(batch_start + batch_size, len(items_to_judge))
             batch_items = items_to_judge[batch_start:batch_end]
 
-            progress_start = batch_start + cache_hits + 1
-            progress_end = batch_end + cache_hits
+            progress_start = batch_start + 1
+            progress_end = batch_end
             print(
                 f"  Judging batch {progress_start}-{progress_end} of {total}...",
                 end="\r",
@@ -210,12 +191,6 @@ Candidate (Vietnamese): {cand}
                         }
                     )
                     all_results[original_idx] = result_json
-
-                    # Cache the result
-                    if cache and model_id:
-                        cache.set_judgement(
-                            model_id, self.judge_model, src, cand, result_json
-                        )
 
                 # Handle case where fewer results returned than expected
                 for i in range(len(evaluations), len(batch_items)):

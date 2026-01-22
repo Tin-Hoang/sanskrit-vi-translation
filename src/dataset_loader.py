@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 from langfuse import Langfuse
-from typing import Optional
 
 from src.utils import identify_columns
 

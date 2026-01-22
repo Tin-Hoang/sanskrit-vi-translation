@@ -1,10 +1,7 @@
 import json
 from typing import List, Optional, TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from cache import BenchmarkCache
 
-from cache import BenchmarkCache
 import litellm
 from litellm.exceptions import RateLimitError, BadRequestError
 import time
@@ -79,7 +76,6 @@ class Translator:
         texts: List[str],
         source_lang: str = "Sanskrit",
         batch_size: int = 10,
-        cache: Optional["BenchmarkCache"] = None,
         session_id: Optional[str] = None,
         dataset_item_ids: Optional[List[str]] = None,
         dataset_name: Optional[str] = None,
@@ -295,26 +291,16 @@ class Translator:
         all_translations: List[Optional[str]] = [None] * len(texts)
         all_trace_ids: List[Optional[str]] = [None] * len(texts)
         total_inference_time = 0.0
-        cached_time = 0.0
 
         texts_to_translate: List[tuple[int, str, Optional[str]]] = []
 
-        # Check Cache
+        # Prepare all items for translation (LiteLLM handles caching)
         for idx, text in enumerate(texts):
             item_id = dataset_item_ids[idx] if dataset_item_ids else None
-            if cache:
-                cached = cache.get_translation(self.model_name, text)
-                if cached:
-                    all_translations[idx], t_time = cached
-                    cached_time += t_time
-                    continue
             texts_to_translate.append((idx, text, item_id))
 
-        if len(texts_to_translate) < len(texts):
-            print(f"  Cache: {len(texts) - len(texts_to_translate)} hits")
-
         if not texts_to_translate:
-            return ([t or "" for t in all_translations], cached_time, all_trace_ids)
+            return ([t or "" for t in all_translations], 0.0, all_trace_ids)
 
         # Batch Processing
         for batch_start in range(0, len(texts_to_translate), batch_size):
@@ -337,16 +323,12 @@ class Translator:
                     all_translations[orig_idx] = t_val
                     all_trace_ids[orig_idx] = b_trace_id
 
-                    if cache and t_val:
-                        cache.set_translation(
-                            self.model_name, orig_text, t_val, b_time / len(b_texts)
-                        )
             except Exception as e:
                 print(f"\n  Batch failed: {e}")
 
         print()
         return (
             [t or "" for t in all_translations],
-            total_inference_time + cached_time,
+            total_inference_time,
             all_trace_ids,
         )

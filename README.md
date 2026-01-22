@@ -81,7 +81,7 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
     - `pali_vi_dhammapada.csv`: Pali Dhammapada benchmark (TBD).
     - `dhammapada_udanavarga_parallel.csv`: Parallel Pali/Sanskrit verses (TBD).
 - `src/`:
-    - `main.py`: **Entry point**. Runs benchmark with configurable tasks.
+    - `main.py`: **Entry point**. Runs benchmark with configurable inputs.
     - `translator.py`: LLM translation wrapper (supports multiple source languages).
     - `evaluator.py`: BLEU, BERTScore, and LLM Judge evaluation.
     - `cache.py`: Caching module for rate limit resilience.
@@ -166,23 +166,15 @@ When configured, you'll see:
 
 ### Langfuse Datasets (Data Management)
 
-The benchmark now supports **Smart Dataset Loading** with **Schema Enforcement**:
+The benchmark supports auto dataset uploading into Langfuse:
 -   **Auto-Sync**: When running with a local file, it automatically checks if the corresponding Langfuse dataset exists. If the local file has more items, it upserts them.
 -   **Schema Enforcement**: All datasets utilize Langfuse's Native Schema Enforcement to ensure data quality:
     -   `input`: String (Source text)
     -   `expected_output`: Dictionary (Reference translations)
--   **Trace Linking**: Every translation is linked to the specific dataset item, enabling "Run on Dataset" analysis in Langfuse.
-
-#### Migration / Management
-To forcibly migrate or delete old datasets and enforce the new schema, use the migration script:
-```bash
-uv run scripts/migrate_datasets.py
-```
 
 ### 3. Output Files
 Each task generates:
-- `results_{task}_benchmark.csv`: Detailed translations and judgments
-- `BENCHMARK_REPORT_{TASK}.md`: Summary report with metrics
+- `results_{dataset_name}_{timestamp}.csv`: Detailed translations and judgments
 
 ## 🧠 Methodology
 - **Translation Models**:
