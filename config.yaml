@@ -22,6 +22,18 @@ translator:
     - id: "groq/openai/gpt-oss-120b"
       name: "GPT-OSS-120b"
       temperature: 0.3
+    - id: "groq/llama-3.3-70b-versatile"
+      name: "Llama-3.3-70B"
+      temperature: 0.3
+    - id: "groq/moonshotai/kimi-k2-instruct-0905"
+      name: "Kimi-K2"
+      temperature: 0.3
+    - id: "groq/qwen/qwen3-32b"
+      name: "Qwen3-32B"
+      temperature: 0.3
+    - id: "gemini/gemini-3-flash-preview"
+      name: "Gemini-3-Flash"
+      temperature: 1.0
   defaults:
     temperature: 0.3
     batch_size: 10
