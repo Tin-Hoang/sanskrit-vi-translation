@@ -24,11 +24,13 @@ class Evaluator:
     def __init__(
         self,
         judge_model: str = "gemini/gemini-2.5-flash",
+        temperature: float = 0.1,
         rubric: Optional[str] = None,
         single_judge_prompt_template: Optional[str] = None,
         batch_judge_prompt_template: Optional[str] = None,
     ):
         self.judge_model = judge_model
+        self.temperature = temperature
 
         # Fallback to local prompts if not provided
         if (
@@ -161,7 +163,7 @@ Candidate (Vietnamese): {cand}
                         model=self.judge_model,
                         messages=[{"role": "user", "content": prompt}],
                         response_format={"type": "json_object"},
-                        temperature=0.1,
+                        temperature=self.temperature,
                         metadata={
                             "session_id": session_id,
                             "tags": ["evaluation", self.judge_model, source_lang],
@@ -260,7 +262,7 @@ Candidate (Vietnamese): {cand}
                 model=self.judge_model,
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"},
-                temperature=0.1,
+                temperature=self.temperature,
                 metadata={
                     "session_id": session_id,
                     "tags": ["evaluation", self.judge_model, source_lang],

@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+
+# CLI Arguments / General Settings
+input: null
+
+no_cache: false
+clear_cache: false
+limit: null
+
+# Batch sizes
+batch_size: 10  # Default for translation
+
+# Model Configuration
+judge:
+  model: "gemini/gemini-3-flash-preview"
+  temperature: 1.0
+  batch_size: 30
+
+translator:
+  models:
+    - id: "groq/openai/gpt-oss-120b"
+      name: "GPT-OSS-120b"
+      temperature: 0.3
+  defaults:
+    temperature: 0.3
+    batch_size: 10

@@ -107,31 +107,37 @@ GROQ_API_KEY=your_key_here
 The benchmark automatically detects if the input is a local file or a Langfuse dataset name.
 
 ```bash
-# Option A: Run with Local Data File (Auto-uploads/Syncs to Langfuse)
-uv run src/main.py data/sanskrit_vi_heart_sutra.csv
+# Option A: Run with Local Data File
+uv run src/main.py input=data/sanskrit_vi_heart_sutra.csv
 
 # Option B: Run with Langfuse Dataset Name
-uv run src/main.py sanskrit-vi-heart-sutra
+uv run src/main.py input=sanskrit-vi-heart-sutra
 ```
 
-**Custom Limit (for testing):**
+**Configuration via CLI (Hydra):**
+You can override any configuration from `config.yaml` directly on the command line:
+
 ```bash
-uv run src/main.py data/sanskrit_vi_heart_sutra.csv --limit 2
+# Change limit and judge temperature
+uv run src/main.py input=data/sanskrit_vi_heart_sutra.csv limit=2 judge.temperature=0.5
+
+# Change Batch Size
+uv run src/main.py input=data/sanskrit_vi_heart_sutra.csv batch_size=5
 ```
 
 ### Caching (Rate Limit Handling)
 
-The benchmark caches API outputs to handle rate limits gracefully. If interrupted, re-run to resume from cached results.
+The benchmark caches API outputs to handle rate limits gracefully.
 
 ```bash
 # Default: caching enabled, resumes from cache
-uv run src/main.py data/sanskrit_vi_heart_sutra.csv
+uv run src/main.py input=data/sanskrit_vi_heart_sutra.csv
 
 # Clear cache and start fresh
-uv run src/main.py data/sanskrit_vi_heart_sutra.csv --clear-cache
+uv run src/main.py input=data/sanskrit_vi_heart_sutra.csv clear_cache=true
 
 # Disable caching entirely
-uv run src/main.py data/sanskrit_vi_heart_sutra.csv --no-cache
+uv run src/main.py input=data/sanskrit_vi_heart_sutra.csv no_cache=true
 ```
 
 Cache files are stored in `cache/` (auto-created).

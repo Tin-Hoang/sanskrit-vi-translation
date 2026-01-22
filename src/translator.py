@@ -30,10 +30,12 @@ class Translator:
     def __init__(
         self,
         model_name: str = "groq/llama-3.3-70b-versatile",
+        temperature: float = 0.3,
         single_prompt_template: Optional[str] = None,
         batch_prompt_template: Optional[str] = None,
     ):
         self.model_name = model_name
+        self.temperature = temperature
         # Use provided templates or load from current (fallback logic to be safe)
         if not single_prompt_template or not batch_prompt_template:
             from system_prompts.translator.current import (
@@ -61,7 +63,7 @@ class Translator:
             response = litellm.completion(
                 model=self.model_name,
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.3,
+                temperature=self.temperature,
                 metadata={
                     "session_id": session_id,
                     "tags": ["translation", self.model_name, source_lang],
@@ -145,7 +147,7 @@ class Translator:
                     completion_kwargs = {
                         "model": self.model_name,
                         "messages": [{"role": "user", "content": prompt}],
-                        "temperature": 0.3,
+                        "temperature": self.temperature,
                         "metadata": {
                             "session_id": session_id,
                             "tags": ["translation", self.model_name, source_lang],

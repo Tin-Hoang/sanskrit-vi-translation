@@ -1,6 +1,6 @@
-import argparse
+import hydra
 import hashlib
-import json
+from omegaconf import DictConfig, OmegaConf
 import pandas as pd
 import time
 import uuid
@@ -43,49 +43,9 @@ warnings.filterwarnings("ignore", message=".*Pydantic serializer warnings.*")
 # Define current directory
 current_dir = Path(__file__).parent
 
-# Judge model (constant)
-JUDGE_MODEL = "gemini/gemini-3-flash-preview"
 
-MODELS_CONFIG = [
-    {"id": "groq/openai/gpt-oss-120b", "name": "GPT-OSS-120b"},
-]
-
-
-def parse_args():
-    parser = argparse.ArgumentParser(
-        description="Benchmark LLM translation of Buddhist texts"
-    )
-    parser.add_argument(
-        "input",
-        nargs="?",
-        help="Input CSV file path OR Langfuse Dataset name. If not provided, defaults to legacy behavior or error.",
-    )
-    # Legacy arguments for backward compat (optional, or just remove if we want hard break)
-    parser.add_argument("--task", help="Deprecated: Task name", default=None)
-
-    parser.add_argument(
-        "--no-cache",
-        action="store_true",
-        help="Disable caching",
-    )
-    parser.add_argument(
-        "--clear-cache",
-        action="store_true",
-        help="Clear existing cache",
-    )
-    parser.add_argument(
-        "--batch-size",
-        type=int,
-        default=10,
-        help="Batch size for translation (default: 10)",
-    )
-    parser.add_argument(
-        "--limit",
-        type=int,
-        default=None,
-        help="Limit number of items to process (for testing)",
-    )
-    return parser.parse_args()
+# Load Configuration
+# Removed manual loading for Hydra
 
 
 def load_input_data(input_arg: str, base_dir: Path) -> tuple[pd.DataFrame, str, str]:
@@ -144,6 +104,8 @@ def run_benchmark(
     evaluator: Evaluator,
     output_prefix: str,
     base_dir: Path,
+    models_config: list,
+    default_translator_config: dict,
     cache: BenchmarkCache = None,
     session_id: str = None,
     batch_size: int = 10,
@@ -184,7 +146,7 @@ def run_benchmark(
     # This aligns trace linking to a specific "run" in Langfuse
     timestamp = time.strftime("%Y%m%d-%H%M")
 
-    for model_info in MODELS_CONFIG:
+    for model_info in models_config:
         model_id = model_info["id"]
         model_name = model_info["name"]
 
@@ -194,8 +156,15 @@ def run_benchmark(
         print(f"Model: {model_name} -> Experiment: {experiment_name}")
         print(f"{'=' * 50}")
 
+        # Get specific temperature for this model or default
+        model_temp = model_info.get(
+            "temperature",
+            default_translator_config.get("temperature", 0.3),
+        )
+
         translator = Translator(
             model_name=model_id,
+            temperature=model_temp,
             single_prompt_template=translator_prompts["single"],
             batch_prompt_template=translator_prompts["batch"],
         )
@@ -364,26 +333,15 @@ def run_benchmark(
     return results_df, benchmark_results
 
 
-def main():
-    args = parse_args()
+@hydra.main(version_base=None, config_path="../", config_name="config")
+def main(cfg: DictConfig):
     base_dir = current_dir.parent
 
     # Resolve Input
-    input_arg = args.input
+    input_arg = cfg.input
     if not input_arg:
-        if args.task:
-            # Legacy mapping
-            task_map = {
-                "sanskrit-vi": "data/sanskrit_vi_heart_sutra.csv",
-                "pali-vi": "data/pali_vi_dhammapada.csv",
-            }
-            input_arg = task_map.get(args.task)
-            if not input_arg:
-                print("Error: Please provide input file/dataset or valid --task")
-                return
-        else:
-            print("Error: Input argument required (file path or dataset name).")
-            return
+        print("Error: Input argument required (file path or dataset name).")
+        return
 
     try:
         df, dataset_name, source_lang = load_input_data(input_arg, base_dir)
@@ -391,9 +349,9 @@ def main():
         print(e)
         return
 
-    if args.limit:
-        df = df.head(args.limit)
-        print(f"Limiting to first {args.limit} rows.")
+    if cfg.limit:
+        df = df.head(cfg.limit)
+        print(f"Limiting to first {cfg.limit} rows.")
 
     # Init Prompt Manager
     prompt_manager = PromptManager()
@@ -408,19 +366,20 @@ def main():
 
     # Init Cache
     cache = None
-    if not args.no_cache:
+    if not cfg.no_cache:
         cache_dir = base_dir / "cache"
         cache = BenchmarkCache(
             cache_dir,
             dataset_name,  # Use dataset name as task key
             translator_prompt_hash=_hash_prompt(tr_prompts["batch"]),
         )
-        if args.clear_cache:
+        if cfg.clear_cache:
             cache.clear()
 
     # Init Evaluator
     evaluator = Evaluator(
-        judge_model=JUDGE_MODEL,
+        judge_model=cfg.judge.model,
+        temperature=cfg.judge.temperature,
         rubric=prompt_manager.get_prompt(
             "evaluator-rubric", fallback=EVALUATION_RUBRIC
         ),
@@ -440,6 +399,10 @@ def main():
     out_csv = results_dir / f"results_{dataset_name}_{timestamp}.csv"
 
     # Run
+    # Convert OmegaConf/dict config to list/dict for passing
+    models_config_list = OmegaConf.to_container(cfg.translator.models, resolve=True)
+    translator_defaults = OmegaConf.to_container(cfg.translator.defaults, resolve=True)
+
     res_df, stats = run_benchmark(
         dataset_name=dataset_name,
         source_lang=source_lang,
@@ -448,8 +411,10 @@ def main():
         evaluator=evaluator,
         output_prefix=dataset_name,
         base_dir=base_dir,
+        models_config=models_config_list,
+        default_translator_config=translator_defaults,
         cache=cache,
-        batch_size=args.batch_size,
+        batch_size=cfg.batch_size,
     )
 
     if res_df is not None:
