@@ -3,6 +3,106 @@ import pandas as pd
 from langfuse import Langfuse
 from typing import Optional
 
+from src.utils import identify_columns
+
+
+def get_langfuse_client():
+    public_key = os.getenv("LANGFUSE_PUBLIC_KEY")
+    secret_key = os.getenv("LANGFUSE_SECRET_KEY")
+    host = os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
+
+    if not public_key or not secret_key:
+        raise ValueError("Langfuse credentials not found in environment variables")
+
+    return Langfuse(public_key=public_key, secret_key=secret_key, host=host)
+
+
+def upload_dataset(dataset_name: str, df: pd.DataFrame) -> None:
+    """
+    Uploads a pandas DataFrame to Langfuse as a dataset.
+    Items are keyed by 'id' if available, otherwise auto-generated.
+    """
+    langfuse = get_langfuse_client()
+    print(f"Uploading dataset '{dataset_name}' to Langfuse ({len(df)} items)...")
+
+    # Ensure dataset exists
+    try:
+        langfuse.create_dataset(name=dataset_name)
+    except Exception:
+        # Likely exists, that's fine
+        pass
+
+    # Identify columns
+    input_col, ref_cols, metadata_cols = identify_columns(df)
+
+    if not input_col:
+        raise ValueError("Could not identify input column for upload.")
+
+    # Iterate and create items
+    for _, row in df.iterrows():
+        input_data = row[input_col]
+
+        # Expected Output (References)
+        expected_output = {}
+        for ref in ref_cols:
+            if pd.notna(row[ref]):
+                expected_output[ref] = str(row[ref])
+
+        # If only one reference and generic name, maybe simplify?
+        # But keeping as dict is robust for the benchmark reader.
+
+        # Metadata
+        metadata = {}
+        for meta in metadata_cols:
+            if pd.notna(row[meta]):
+                metadata[meta] = row[meta]
+
+        langfuse.create_dataset_item(
+            dataset_name=dataset_name,
+            input=input_data,
+            expected_output=expected_output,
+            metadata=metadata,
+            id=str(row["id"]) if "id" in df.columns else None,
+        )
+
+    print(f"Successfully uploaded {len(df)} items to '{dataset_name}'.")
+
+
+def sync_local_dataset(df: pd.DataFrame, dataset_name: str) -> pd.DataFrame:
+    """
+    Checks if Langfuse dataset exists.
+    If not, uploads.
+    If exists but has fewer items, uploads (upserts) the local items.
+
+    Returns:
+        pd.DataFrame: A dataframe containing Langfuse Item IDs (fetched after upload/check).
+    """
+    langfuse = get_langfuse_client()
+
+    should_upload = False
+    try:
+        remote_dataset = langfuse.get_dataset(dataset_name)
+        remote_count = len(remote_dataset.items)
+        local_count = len(df)
+
+        print(f"Dataset '{dataset_name}': Local={local_count}, Remote={remote_count}")
+
+        if local_count > remote_count:
+            print(f"Local has more items. Syncing to Langfuse...")
+            should_upload = True
+        else:
+            print("Remote dataset is up-to-date.")
+
+    except Exception:
+        print(f"Dataset '{dataset_name}' not found on Langfuse. Creating...")
+        should_upload = True
+
+    if should_upload:
+        upload_dataset(dataset_name, df)
+
+    # Always reload from Langfuse to get the canonical Item IDs for tracing
+    return load_dataset_as_dataframe(dataset_name)
+
 
 def load_dataset_as_dataframe(dataset_name: str) -> pd.DataFrame:
     """
@@ -22,15 +122,9 @@ def load_dataset_as_dataframe(dataset_name: str) -> pd.DataFrame:
     Returns:
         pd.DataFrame: DataFrame with source, references, and metadata
     """
-    public_key = os.getenv("LANGFUSE_PUBLIC_KEY")
-    secret_key = os.getenv("LANGFUSE_SECRET_KEY")
     host = os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
 
-    if not public_key or not secret_key:
-        raise ValueError("Langfuse credentials not found in environment variables")
-
-    print(f"Fetching dataset '{dataset_name}' from Langfuse...")
-    langfuse = Langfuse(public_key=public_key, secret_key=secret_key, host=host)
+    langfuse = get_langfuse_client()
 
     try:
         dataset = langfuse.get_dataset(dataset_name)

@@ -14,7 +14,8 @@ from cache import BenchmarkCache
 from utils import load_data, save_results, identify_columns
 from observability import init_langfuse
 from prompt_manager import PromptManager
-from dataset_loader import load_dataset_as_dataframe
+from prompt_manager import PromptManager
+from dataset_loader import load_dataset_as_dataframe, sync_local_dataset
 from langfuse import Langfuse
 
 from system_prompts.translator.current import (
@@ -93,19 +94,24 @@ def load_input_data(input_arg: str, base_dir: Path) -> tuple[pd.DataFrame, str, 
     Returns: (DataFrame, dataset_name, source_lang_hint)
     """
     if not input_arg:
-        # Fallback for now if user runs without args (legacy default?)
-        # For this refactor, let's enforce input or providing a default if None
-        # But let's check if it looks like a path
-        pass
+        raise ValueError("No input provided (file path or dataset name).")
 
     # Method 1: Check if file exists
     input_path = Path(input_arg)
     if input_path.exists() or (base_dir / input_arg).exists():
         path_ref = input_path if input_path.exists() else (base_dir / input_arg)
         print(f"Loading local file: {path_ref}")
-        df = load_data(path_ref)
+
+        # Load local data
+        local_df = load_data(path_ref)
+
         # Derive dataset name from filename
         dataset_name = path_ref.stem.replace("_", "-").lower()
+
+        # NEW: Sync with Langfuse (upload if new/larger) and get back DF with linking IDs
+        df = sync_local_dataset(local_df, dataset_name)
+
+        print(f"Dataset '{dataset_name}' ready with {len(df)} items.")
     else:
         # Method 2: Assume Langfuse Dataset
         print(f"Loading Langfuse dataset: {input_arg}")
@@ -121,6 +127,7 @@ def load_input_data(input_arg: str, base_dir: Path) -> tuple[pd.DataFrame, str, 
     input_col, _, _ = identify_columns(df)
     source_lang = "Sanskrit"  # Default
     if input_col:
+        # Simple heuristic based on column name
         if "pali" in input_col.lower():
             source_lang = "Pali"
         elif "viet" in input_col.lower():
