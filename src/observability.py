@@ -25,9 +25,15 @@ Usage:
 """
 
 import os
+import logging
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Suppress harmless OpenTelemetry span warnings from LiteLLM's OTEL callback
+# These occur when attributes are set on ended spans, which is a known issue
+# in async tracing scenarios but doesn't affect functionality
+logging.getLogger("opentelemetry.sdk.trace").setLevel(logging.ERROR)
 
 
 def init_langfuse() -> bool:

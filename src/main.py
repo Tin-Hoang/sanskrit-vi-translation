@@ -272,13 +272,13 @@ def run_benchmark(
 
         benchmark_results.append(
             {
-                "Experiment": experiment_name,
+                "Dataset": dataset_name,
                 "Model": model_name,
-                "BLEU": metrics.get("BLEU", 0),
-                "BERTScore": metrics.get("BERTScore_F1", 0),
-                "Judge Accuracy": avg_acc,
-                "Judge Fluency": avg_flu,
-                "Time (s)": elapsed_time,
+                "BLEU ↑": metrics.get("BLEU", 0),
+                "BERTScore ↑": metrics.get("BERTScore_F1", 0),
+                "LLM Judge Accuracy (1-5) ↑": avg_acc,
+                "LLM Judge Fluency (1-5) ↑": avg_flu,
+                "Time (s) ↓": elapsed_time,
             }
         )
 
@@ -316,7 +316,9 @@ def run_benchmark(
                             acc_val = float(j.get("accuracy", 0))
                             flu_val = float(j.get("fluency", 0))
 
-                            # Use item.run() to create a linked run with scores
+                            # Use context manager for the run, but score AFTER it ends
+                            # to avoid OTEL span timing issues
+                            trace_id = None
                             with item.run(
                                 run_name=experiment_name,
                                 run_metadata={
@@ -329,27 +331,39 @@ def run_benchmark(
                                     input=str(df.iloc[i][input_col]),
                                     output=translations[i],
                                 )
+                                # Capture trace_id for scoring later
+                                trace_id = run_span.trace_id
 
-                                # Add scores - these populate Run Item Scores
-                                run_span.score_trace(
+                            # Score AFTER the span ends using native create_score() API
+                            # This avoids "Setting attribute on ended span" warnings
+                            if trace_id:
+                                lf.create_score(
+                                    trace_id=trace_id,
                                     name="judge-accuracy",
                                     value=acc_val,
+                                    data_type="NUMERIC",
                                 )
-                                run_span.score_trace(
+                                lf.create_score(
+                                    trace_id=trace_id,
                                     name="judge-fluency",
                                     value=flu_val,
+                                    data_type="NUMERIC",
                                 )
 
                                 # Add automated metrics (BLEU and BERTScore)
                                 if i < len(item_metrics["BLEU"]):
-                                    run_span.score_trace(
+                                    lf.create_score(
+                                        trace_id=trace_id,
                                         name="bleu",
                                         value=item_metrics["BLEU"][i],
+                                        data_type="NUMERIC",
                                     )
                                 if i < len(item_metrics["BERTScore_F1"]):
-                                    run_span.score_trace(
+                                    lf.create_score(
+                                        trace_id=trace_id,
                                         name="bertscore",
                                         value=item_metrics["BERTScore_F1"][i],
+                                        data_type="NUMERIC",
                                     )
                             scored_count += 1
 
