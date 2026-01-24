@@ -24,56 +24,75 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
 
 ### Sanskrit → Vietnamese (Heart Sutra | Bát Nhã Tâm Kinh)
 
-**Date**: 2026-01-19 01:11:42
+**Date**: 2026-01-24
 
-**Judge Model**: gemini/gemini-3-flash-preview
+**LLM Judge Model**: gemini/gemini-3-flash-preview
 
-**Dataset**: sanskrit_vi_heart_sutra.csv (18 samples)
+**Dataset**: data/sanskrit_vi_heart_sutra.csv
 
-| Source   | Model                  |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
-|:---------|:-----------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
-| Sanskrit | Llama-3.3-70b          |    15.78 |          0.73 |                         4.44 |                        4.44 |         3.32 |
-| Sanskrit | GPT-OSS-120b           |    10.30 |          0.69 |                         4.28 |                        4.17 |         9.52 |
-| Sanskrit | Kimi-k2                |    27.13 |          0.76 |                         5.00 |                        4.94 |         4.36 |
-| Sanskrit | Qwen3-32b              |    18.69 |          0.75 |                         4.00 |                        4.50 |         7.24 |
-| Sanskrit | Gemini-3-Flash-Preview |    41.84 |          0.76 |                         5.00 |                        5.00 |         5.50 |
+| Dataset                 | Model                |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:------------------------|:---------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| sanskrit-vi-heart-sutra | GPT-OSS-20B          |     4.29 |          0.62 |                         2.72 |                        2.11 |         4.36 |
+| sanskrit-vi-heart-sutra | GPT-OSS-120b         |     8.52 |          0.71 |                         3.00 |                        2.61 |         9.32 |
+| sanskrit-vi-heart-sutra | Llama-3.1-8b         |     6.02 |          0.68 |                         2.39 |                        2.22 |         1.49 |
+| sanskrit-vi-heart-sutra | Llama-3.3-70B        |    15.82 |          0.72 |                         4.00 |                        3.61 |         2.89 |
+| sanskrit-vi-heart-sutra | Llama-4-Maverick-17B |    21.72 |          0.75 |                         4.67 |                        4.22 |         4.54 |
+| sanskrit-vi-heart-sutra | Kimi-K2              |    10.80 |          0.67 |                         4.61 |                        4.00 |         4.03 |
+| sanskrit-vi-heart-sutra | Qwen3-32B            |    11.50 |          0.75 |                         3.83 |                        3.33 |         4.76 |
+| sanskrit-vi-heart-sutra | Gemini-3-Flash       |    33.73 |          0.76 |                         4.94 |                        4.56 |        11.11 |
 
 ### Pali → Vietnamese (Dhammapada | Kinh Pháp Cú)
 
-**Date**: 2026-01-19 01:45:20
+**Date**: 2026-01-24
 
-**Judge Model**: gemini/gemini-3-flash-preview
+**LLM Judge Model**: gemini/gemini-3-flash-preview
 
-**Dataset**: pali_vi_dhammapada.csv (20 samples)
+**Dataset**: data/pali_vi_dhammapada.csv
 
-| Source   | Model                  |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
-|:---------|:-----------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
-| Pali     | Llama-3.3-70b          |    14.00 |          0.72 |                         3.55 |                        4.05 |         4.86 |
-| Pali     | GPT-OSS-120b           |     7.89 |          0.72 |                         2.75 |                        3.20 |         9.99 |
-| Pali     | Kimi-k2                |    16.82 |          0.77 |                         4.75 |                        4.60 |         7.30 |
-| Pali     | Qwen3-32b              |    11.59 |          0.74 |                         3.75 |                        4.00 |         5.38 |
-| Pali     | Gemini-3-Flash-Preview |    37.65 |          0.84 |                         5.00 |                        4.95 |         7.79 |
+| Dataset            | Model                |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:-------------------|:---------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| pali-vi-dhammapada | GPT-OSS-20B          |     1.68 |          0.67 |                         1.40 |                        1.55 |         3.57 |
+| pali-vi-dhammapada | GPT-OSS-120b         |     5.96 |          0.70 |                         2.45 |                        1.95 |        10.84 |
+| pali-vi-dhammapada | Llama-3.1-8b         |     0.84 |          0.66 |                         1.45 |                        1.65 |         1.99 |
+| pali-vi-dhammapada | Llama-3.3-70B        |     9.27 |          0.77 |                         3.05 |                        2.75 |         5.13 |
+| pali-vi-dhammapada | Llama-4-Maverick-17B |    15.75 |          0.78 |                         4.20 |                        3.90 |         3.06 |
+| pali-vi-dhammapada | Kimi-K2              |    15.99 |          0.79 |                         4.30 |                        4.00 |         6.53 |
+| pali-vi-dhammapada | Qwen3-32B            |    13.58 |          0.77 |                         3.25 |                        3.05 |         4.71 |
+| pali-vi-dhammapada | Gemini-3-Flash       |    32.67 |          0.83 |                         4.65 |                        4.45 |         8.47 |
 
 ### Pali vs Sanskrit Comparison (Dhammapada - Udanavarga | Kinh Pháp Cú)
 
-**Date**: 2026-01-19 01:54:12
+To analyze the comparative translation quality between Middle Indo-Aryan (Pali) and Old Indo-Aryan (Sanskrit) into Vietnamese, we constructed a multi-source parallel corpus based on the "Gāthā" (verse) literature of early Buddhism.
+- Pali Source: The Dhammapada (Theravāda tradition), widely regarded as the most representative anthology of early Buddhist ethics.
+- Sanskrit Source: The Udanavarga (Sarvāstivāda tradition), the Sanskrit textual cousin to the Dhammapada.
+- Vietnamese References:
+  - Reference A (Liturgical): Translations by Thich Minh Chau (strictly adhering to the Pali Prime).
+  - Reference B (Modern/Natural): Contemporary prose translations focusing on intelligibility.
+
+**Date**: 2026-01-24
 
 **Judge Model**: gemini/gemini-3-flash-preview
 
 **Dataset**: dhammapada_udanavarga_parallel.csv (20 samples)
 
-| Source   | Model                  |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
-|:---------|:-----------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
-| Pali     | Llama-3.3-70b          |    10.62 |          0.71 |                         3.60 |                        3.85 |         4.81 |
-| Pali     | GPT-OSS-120b           |     9.42 |          0.71 |                         2.95 |                        3.35 |        11.25 |
-| Pali     | Kimi-k2                |    18.02 |          0.77 |                         4.80 |                        4.70 |         6.66 |
-| Pali     | Qwen3-32b              |    13.08 |          0.75 |                         3.65 |                        3.95 |         5.25 |
-| Pali     | Gemini-3-Flash-Preview |    39.16 |          0.84 |                         5.00 |                        4.60 |         7.61 |
-| Sanskrit | Llama-3.3-70b          |    11.98 |          0.70 |                         3.65 |                        3.55 |         4.50 |
-| Sanskrit | GPT-OSS-120b           |     6.54 |          0.66 |                         2.83 |                        2.89 |        10.75 |
-| Sanskrit | Kimi-k2                |    12.61 |          0.70 |                         4.42 |                        4.37 |         5.87 |
-| Sanskrit | Qwen3-32b              |     7.40 |          0.71 |                         3.80 |                        3.80 |         7.60 |
-| Sanskrit | Gemini-3-Flash-Preview |    32.35 |          0.78 |                         5.00 |                        5.00 |         8.50 |
+| Dataset                     | Model                |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
+|:----------------------------|:---------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
+| pali-vi-dhammapada-18verses | GPT-OSS-20B          |     1.41 |          0.67 |                         1.72 |                        2.17 |         6.97 |
+| pali-vi-dhammapada-18verses | GPT-OSS-120b         |     7.60 |          0.70 |                         2.50 |                        2.28 |        10.20 |
+| pali-vi-dhammapada-18verses | Llama-3.1-8b         |     1.59 |          0.71 |                         2.00 |                        2.33 |         1.89 |
+| pali-vi-dhammapada-18verses | Llama-3.3-70B        |     9.00 |          0.76 |                         3.72 |                        3.22 |         4.39 |
+| pali-vi-dhammapada-18verses | Llama-4-Maverick-17B |    16.60 |          0.80 |                         4.22 |                        3.72 |         2.95 |
+| pali-vi-dhammapada-18verses | Kimi-K2              |    11.61 |          0.72 |                         2.88 |                        2.94 |         5.42 |
+| pali-vi-dhammapada-18verses | Qwen3-32B            |    12.02 |          0.78 |                         3.17 |                        3.06 |         4.44 |
+| pali-vi-dhammapada-18verses | Gemini-3-Flash       |    37.58 |          0.84 |                         4.67 |                        4.56 |         6.33 |
+| sanskrit-vi-udanavarga-18verses | GPT-OSS-20B          |     1.75 |          0.67 |                         1.61 |                        1.89 |         5.49 |
+| sanskrit-vi-udanavarga-18verses | GPT-OSS-120b         |     5.29 |          0.70 |                         2.00 |                        1.89 |         8.32 |
+| sanskrit-vi-udanavarga-18verses | Llama-3.1-8b         |     4.18 |          0.72 |                         1.72 |                        2.56 |         1.77 |
+| sanskrit-vi-udanavarga-18verses | Llama-3.3-70B        |     8.34 |          0.76 |                         3.06 |                        2.72 |         3.84 |
+| sanskrit-vi-udanavarga-18verses | Llama-4-Maverick-17B |    13.24 |          0.78 |                         3.61 |                        3.00 |         2.55 |
+| sanskrit-vi-udanavarga-18verses | Kimi-K2              |     8.05 |          0.76 |                         4.06 |                        3.28 |         4.94 |
+| sanskrit-vi-udanavarga-18verses | Qwen3-32B            |    13.76 |          0.77 |                         3.00 |                        2.50 |         5.39 |
+| sanskrit-vi-udanavarga-18verses | Gemini-3-Flash       |    35.26 |          0.83 |                         4.50 |                        4.33 |         9.65 |
 
 ## 📂 Structure
 - `data/`:
