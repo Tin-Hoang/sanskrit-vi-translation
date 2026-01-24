@@ -19,11 +19,20 @@ judge:
 
 translator:
   models:
+    - id: "groq/openai/gpt-oss-20b"
+      name: "GPT-OSS-20B"
+      temperature: 0.3
     - id: "groq/openai/gpt-oss-120b"
       name: "GPT-OSS-120b"
       temperature: 0.3
+    - id: "groq/llama-3.1-8b-instant"
+      name: "Llama-3.1-8b"
+      temperature: 0.3
     - id: "groq/llama-3.3-70b-versatile"
       name: "Llama-3.3-70B"
+      temperature: 0.3
+    - id: "groq/meta-llama/llama-4-maverick-17b-128e-instruct"
+      name: "Llama-4-Maverick-17B"
       temperature: 0.3
     - id: "groq/moonshotai/kimi-k2-instruct-0905"
       name: "Kimi-K2"
