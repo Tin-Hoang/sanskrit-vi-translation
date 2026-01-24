@@ -154,8 +154,11 @@ class Translator:
                     inference_time = end_time - start_time
                     break
                 except BadRequestError as e:
-                    if "json_validate_failed" in str(e) and use_json_mode:
-                        print(f"\n  JSON mode failed, retrying without...")
+                    # Broaden retry logic: if using JSON mode, try disabling it for ANY BadRequest
+                    if use_json_mode:
+                        print(
+                            f"\n  BadRequest with JSON mode ({e}), retrying without..."
+                        )
                         use_json_mode = False
                         continue
                     else:
@@ -191,6 +194,24 @@ class Translator:
                         translations = parsed.get("translations", [])
                     except:
                         pass
+
+            if not translations:
+                print(
+                    f"\n  [ERROR] JSON parsing failed. Raw content: {result_text[:500]}..."
+                )
+
+                # Fallback: Aggressive Regex Extraction if JSON failed
+                import re
+
+                # Match "translation": "..." handling escaped quotes if possible, or just non-quotes
+                # simplified: "translation": "(.*?)"
+                matches = re.findall(r'"translation":\s*"(.*?)(?<!\\)"', clean_json)
+                if matches:
+                    print(f"  [INFO] Recovered {len(matches)} items via regex.")
+                    translations = matches
+                elif "Item" in clean_json or "Text:" in clean_json:
+                    # Attempt to match lines that look like translations if previous pattern failed
+                    pass
 
             # Normalize translations list to match batch size
             final_translations = []
