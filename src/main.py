@@ -29,6 +29,9 @@ from system_prompts.evaluator.current import (
 # Initialize Langfuse tracing
 init_langfuse()
 
+# [DEBUG] Enable LiteLLM Debugging
+# litellm._turn_on_debug()
+
 
 def _hash_prompt(prompt: str) -> str:
     """Generate a short hash of prompt content for cache versioning."""
@@ -92,6 +95,49 @@ def load_input_data(input_arg: str, base_dir: Path) -> tuple[pd.DataFrame, str, 
             source_lang = "Vietnamese"
 
     return df, dataset_name, source_lang
+
+
+def safe_create_score(langfuse_client, retry_count=3, **kwargs):
+    """Safely create a score in Langfuse with retries for rate limits."""
+    delay = 1
+    for attempt in range(retry_count + 1):
+        try:
+            langfuse_client.create_score(**kwargs)
+            return
+        except Exception as e:
+            # Check for rate limit indicators in the exception message
+            err_msg = str(e).lower()
+            if "429" in err_msg or "rate limit" in err_msg:
+                if attempt < retry_count:
+                    # Exponential backoff
+                    time.sleep(delay)
+                    delay *= 2
+                    continue
+
+            # If not a rate limit or retries exhausted, log and break
+            print(f"Error creating score: {e}")
+            break
+
+
+def safe_flush(langfuse_client, retry_count=3):
+    """Safely flush Langfuse with retries for timeouts."""
+    delay = 1
+    for attempt in range(retry_count + 1):
+        try:
+            langfuse_client.flush()
+            return
+        except Exception as e:
+            # Check for timeout
+            if "timeout" in str(e).lower():
+                if attempt < retry_count:
+                    print(f"Langfuse flush timed out, retrying in {delay}s...")
+                    time.sleep(delay)
+                    delay *= 2
+                    continue
+
+            # If not a timeout or retries exhausted
+            print(f"Error flushing Langfuse: {e}")
+            break
 
 
 def run_benchmark(
@@ -337,13 +383,15 @@ def run_benchmark(
                             # Score AFTER the span ends using native create_score() API
                             # This avoids "Setting attribute on ended span" warnings
                             if trace_id:
-                                lf.create_score(
+                                safe_create_score(
+                                    lf,
                                     trace_id=trace_id,
                                     name="judge-accuracy",
                                     value=acc_val,
                                     data_type="NUMERIC",
                                 )
-                                lf.create_score(
+                                safe_create_score(
+                                    lf,
                                     trace_id=trace_id,
                                     name="judge-fluency",
                                     value=flu_val,
@@ -352,14 +400,16 @@ def run_benchmark(
 
                                 # Add automated metrics (BLEU and BERTScore)
                                 if i < len(item_metrics["BLEU"]):
-                                    lf.create_score(
+                                    safe_create_score(
+                                        lf,
                                         trace_id=trace_id,
                                         name="bleu",
                                         value=item_metrics["BLEU"][i],
                                         data_type="NUMERIC",
                                     )
                                 if i < len(item_metrics["BERTScore_F1"]):
-                                    lf.create_score(
+                                    safe_create_score(
+                                        lf,
                                         trace_id=trace_id,
                                         name="bertscore",
                                         value=item_metrics["BERTScore_F1"][i],
@@ -367,10 +417,13 @@ def run_benchmark(
                                     )
                             scored_count += 1
 
+                            # Small delay to avoid rate limits
+                            time.sleep(0.2)
+
                         except Exception as e:
                             print(f"  Error scoring item {i}: {e}")
 
-                    lf.flush()
+                    safe_flush(lf)
                     print(
                         f"Scored {scored_count} items in experiment '{experiment_name}'"
                     )
