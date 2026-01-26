@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Default values
-MODEL="Qwen/Qwen2.5-7B-Instruct" # Balanced model for L4 GPU (24GB)
+# Default values (run on NVIDIA L4 - 24GB)
+MODEL="Qwen/Qwen2.5-32B-Instruct-AWQ"
 PORT=8000
-GPU_MEMORY_UTILIZATION=0.90
-MAX_MODEL_LEN="" # Default to auto/empty
-DTYPE="auto" # use bfloat16 for L4 if supported, else float16
-QUANTIZATION="" # e.g. awq, gptq
-KV_CACHE_DTYPE="auto" # fp8 for better cache utilization if supported
+GPU_MEMORY_UTILIZATION=0.92
+MAX_MODEL_LEN=2048
+DTYPE="auto"
+QUANTIZATION="awq"
+KV_CACHE_DTYPE="auto"
 
 # Help function
 show_help() {
@@ -92,6 +92,9 @@ if ! command -v vllm &> /dev/null; then
     exit 1
 fi
 
+# Export PyTorch Allocator Config to reduce fragmentation
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+
 # Run vLLM
 # - enable-prefix-caching: Improves performance for system prompts/multi-turn
 # - trust-remote-code: Required for some models
@@ -100,7 +103,7 @@ CMD="vllm serve $MODEL \
     --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
     --dtype $DTYPE \
     --kv-cache-dtype $KV_CACHE_DTYPE \
-    --enable-prefix-caching \
+    --max-num-seqs 32 \
     --trust-remote-code"
 
 if [ -n "$MAX_MODEL_LEN" ]; then
