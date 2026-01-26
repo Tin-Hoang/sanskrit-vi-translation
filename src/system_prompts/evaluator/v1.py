@@ -14,40 +14,40 @@ EVALUATION_RUBRIC = """Rubric:
 
 # Batch evaluation prompt
 BATCH_JUDGE_PROMPT = """You are a professional translator and evaluator.
-Rate EACH of the following Vietnamese translations of {source_lang} texts on a scale from 1 to 5 for:
+Rate EACH of the following Vietnamese translations of {{source_lang}} texts on a scale from 1 to 5 for:
 1. Accuracy (Meaning preservation)
 2. Fluency (Natural Vietnamese)
 
-{rubric}
+{{rubric}}
 
-{items_text}
+{{items_text}}
 
 Provide the output as a JSON object with an "evaluations" array containing one object per item, in the SAME ORDER as the items above:
-{{
+{
   "evaluations": [
-    {{"item": 1, "accuracy": <number>, "fluency": <number>, "explanation": "<short explanation>"}},
-    {{"item": 2, "accuracy": <number>, "fluency": <number>, "explanation": "<short explanation>"}},
+    {"item": 1, "accuracy": <number>, "fluency": <number>, "explanation": "<short explanation>"},
+    {"item": 2, "accuracy": <number>, "fluency": <number>, "explanation": "<short explanation>"},
     ...
   ]
-}}
+}
 """
 
 # Single item evaluation prompt
 SINGLE_JUDGE_PROMPT = """You are a professional translator and evaluator.
-Rate the following Vietnamese translation of a {source_lang} text on a scale from 1 to 5 for:
+Rate the following Vietnamese translation of a {{source_lang}} text on a scale from 1 to 5 for:
 1. Accuracy (Meaning preservation)
 2. Fluency (Natural Vietnamese)
 
-{rubric}
+{{rubric}}
 
-Source ({source_lang}): {source}
-Reference (Vietnamese): {reference}
-Candidate (Vietnamese): {candidate}
+Source ({{source_lang}}): {{source}}
+Reference (Vietnamese): {{reference}}
+Candidate (Vietnamese): {{candidate}}
 
 Provide the output in the following JSON format ONLY:
-{{
+{
   "accuracy": <number>,
   "fluency": <number>,
   "explanation": "<short explanation>"
-}}
+}
 """

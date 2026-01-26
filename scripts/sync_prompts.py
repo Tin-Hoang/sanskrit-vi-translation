@@ -47,9 +47,9 @@ PROMPT_MAP = {
 FILE_MAP = {
     "translator-single": "src/system_prompts/translator/v1.py",
     "translator-batch": "src/system_prompts/translator/v1.py",
-    "evaluator-rubric": "src/system_prompts/evaluator/v1.py",
-    "evaluator-batch": "src/system_prompts/evaluator/v1.py",
-    "evaluator-single": "src/system_prompts/evaluator/v1.py",
+    "evaluator-rubric": "src/system_prompts/evaluator/v2.py",
+    "evaluator-batch": "src/system_prompts/evaluator/v2.py",
+    "evaluator-single": "src/system_prompts/evaluator/v2.py",
 }
 
 
@@ -108,7 +108,7 @@ def push_prompts(langfuse: Langfuse, force: bool = False):
             name=name,
             prompt=local_content,
             labels=["production"],
-            config={"type": "text"},
+            type="text",
         )
 
         if remote_content is None:

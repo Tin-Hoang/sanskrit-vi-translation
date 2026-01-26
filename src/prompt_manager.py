@@ -8,10 +8,34 @@ import os
 import logging
 from typing import Optional, Any
 from langfuse import Langfuse
+import jinja2
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+def render_prompt(template: str, **kwargs) -> str:
+    """
+    Render a prompt template using Jinja2 if {{ }} are present,
+    otherwise fall back to Python string formatting.
+    """
+    # Try Jinja2 first if it looks like a template
+    if "{{" in template:
+        try:
+            return jinja2.Template(template).render(**kwargs)
+        except Exception as e:
+            logger.debug(f"Jinja2 rendering failed: {e}. Falling back.")
+
+    # Fallback to Python .format()
+    try:
+        return template.format(**kwargs)
+    except KeyError as e:
+        logger.error(f"Missing variable for prompt: {e}")
+        return template
+    except Exception as e:
+        logger.error(f"Error formatting prompt: {e}")
+        return template
 
 
 class PromptManager:
@@ -83,11 +107,4 @@ class PromptManager:
             Formatted prompt string.
         """
         template = self.get_prompt(name, fallback)
-        try:
-            return template.format(**kwargs)
-        except KeyError as e:
-            logger.error(f"Missing variable for prompt '{name}': {e}")
-            return template  # Return unformatted template on error, or raise?
-        except Exception as e:
-            logger.error(f"Error formatting prompt '{name}': {e}")
-            return template
+        return render_prompt(template, **kwargs)

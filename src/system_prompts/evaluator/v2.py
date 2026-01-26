@@ -29,7 +29,7 @@ Rate EACH of the following Vietnamese translations on a scale from 1 to 5 for:
 1. **Accuracy** - Doctrinal correctness, preservation of Buddhist philosophical concepts, proper use of Vietnamese Buddhist terminology
 2. **Fluency** - Natural Vietnamese flow with appropriate Buddhist sutra register (văn kinh)
 
-{rubric}
+{{rubric}}
 
 IMPORTANT SCORING GUIDELINES:
 - Score 5 is RARE. Reserve for translations that match the quality of recognized Buddhist masters.
@@ -37,26 +37,26 @@ IMPORTANT SCORING GUIDELINES:
 - Score 3 is acceptable but has noticeable issues with terminology or register.
 - Be especially strict about Buddhist technical terms (Pāli/Sanskrit → Vietnamese Buddhist vocabulary).
 
-{items_text}
+{{items_text}}
 
 Provide the output as a JSON object with an "evaluations" array containing one object per item, in the SAME ORDER as the items above:
-{{
+{
   "evaluations": [
-    {{"item": 1, "accuracy": <number>, "fluency": <number>, "explanation": "<brief explanation citing specific terms or issues>"}},
-    {{"item": 2, "accuracy": <number>, "fluency": <number>, "explanation": "<brief explanation citing specific terms or issues>"}},
+    {"item": 1, "accuracy": <number>, "fluency": <number>, "explanation": "<brief explanation citing specific terms or issues>"},
+    {"item": 2, "accuracy": <number>, "fluency": <number>, "explanation": "<brief explanation citing specific terms or issues>"},
     ...
   ]
-}}
+}
 """
 
 # Single item evaluation prompt
-SINGLE_JUDGE_PROMPT = """You are an expert evaluator of Buddhist scripture translations, specializing in {source_lang} to Vietnamese.
+SINGLE_JUDGE_PROMPT = """You are an expert evaluator of Buddhist scripture translations, specializing in {{source_lang}} to Vietnamese.
 
 Rate the following Vietnamese translation on a scale from 1 to 5 for:
 1. **Accuracy** - Doctrinal correctness, preservation of Buddhist philosophical concepts, proper use of Vietnamese Buddhist terminology
 2. **Fluency** - Natural Vietnamese flow with appropriate Buddhist sutra register (văn kinh)
 
-{rubric}
+{{rubric}}
 
 IMPORTANT SCORING GUIDELINES:
 - Score 5 is RARE. Reserve for translations that match the quality of recognized Buddhist masters.
@@ -64,14 +64,14 @@ IMPORTANT SCORING GUIDELINES:
 - Score 3 is acceptable but has noticeable issues with terminology or register.
 - Be especially strict about Buddhist technical terms (Pāli/Sanskrit → Vietnamese Buddhist vocabulary).
 
-Source ({source_lang}): {source}
-Reference (Vietnamese): {reference}
-Candidate (Vietnamese): {candidate}
+Source ({{source_lang}}): {{source}}
+Reference (Vietnamese): {{reference}}
+Candidate (Vietnamese): {{candidate}}
 
 Provide the output in the following JSON format ONLY:
-{{
+{
   "accuracy": <number>,
   "fluency": <number>,
   "explanation": "<brief explanation citing specific terms or issues>"
-}}
+}
 """

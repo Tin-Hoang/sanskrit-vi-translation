@@ -11,6 +11,7 @@ from tenacity import (
 from dotenv import load_dotenv
 from litellm.exceptions import RateLimitError
 from schemas import BatchTranslationResult
+from prompt_manager import render_prompt
 
 load_dotenv()
 
@@ -76,8 +77,8 @@ class Translator:
         for i, text in enumerate(batch_texts):
             items_text += f"\n--- Item {i + 1} ---\nText: {text}\n"
 
-        prompt = self.batch_prompt_template.format(
-            source_lang=source_lang, items_text=items_text
+        prompt = render_prompt(
+            self.batch_prompt_template, source_lang=source_lang, items_text=items_text
         )
 
         model_params = {

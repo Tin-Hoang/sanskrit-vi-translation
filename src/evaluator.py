@@ -14,6 +14,7 @@ from tenacity import (
 )
 from dotenv import load_dotenv
 from schemas import BatchJudgementResult
+from prompt_manager import render_prompt
 
 load_dotenv()
 
@@ -109,7 +110,8 @@ Source ({source_lang}): {src}
 Reference (Vietnamese): {ref}
 Candidate (Vietnamese): {cand}
 """
-        prompt = self.batch_judge_prompt_template.format(
+        prompt = render_prompt(
+            self.batch_judge_prompt_template,
             source_lang=source_lang,
             rubric=self.rubric,
             items_text=items_text,
