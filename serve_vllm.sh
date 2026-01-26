@@ -3,8 +3,11 @@
 # Default values
 MODEL="Qwen/Qwen2.5-7B-Instruct" # Balanced model for L4 GPU (24GB)
 PORT=8000
-GPU_MEMORY_UTILIZATION=0.80
+GPU_MEMORY_UTILIZATION=0.90
 MAX_MODEL_LEN="" # Default to auto/empty
+DTYPE="auto" # use bfloat16 for L4 if supported, else float16
+QUANTIZATION="" # e.g. awq, gptq
+KV_CACHE_DTYPE="auto" # fp8 for better cache utilization if supported
 
 # Help function
 show_help() {
@@ -15,10 +18,13 @@ show_help() {
     echo "  -p, --port <number>      Port to run the server on (default: $PORT)"
     echo "  --gpu-util <float>       GPU memory utilization (default: $GPU_MEMORY_UTILIZATION)"
     echo "  --max-len <int>          Max model length (default: Auto)"
+    echo "  --dtype <type>           Data type (auto, float16, bfloat16) (default: $DTYPE)"
+    echo "  -q, --quantization <alg> Quantization (awq, gptq, squeezellm) (default: None)"
+    echo "  --kv-cache-dtype <type>  KV Cache data type (auto, fp8) (default: $KV_CACHE_DTYPE)"
     echo "  -h, --help               Show this help message"
     echo ""
     echo "Example:"
-    echo "  $0 --model Qwen/Qwen2.5-32B-Instruct --gpu-util 0.95"
+    echo "  $0 --model Qwen/Qwen2.5-32B-Instruct-AWQ --quantization awq"
 }
 
 # Parse arguments
@@ -40,6 +46,18 @@ while [[ $# -gt 0 ]]; do
             MAX_MODEL_LEN="$2"
             shift 2
             ;;
+        --dtype)
+            DTYPE="$2"
+            shift 2
+            ;;
+        -q|--quantization)
+            QUANTIZATION="$2"
+            shift 2
+            ;;
+        --kv-cache-dtype)
+            KV_CACHE_DTYPE="$2"
+            shift 2
+            ;;
         -h|--help)
             show_help
             exit 0
@@ -56,10 +74,16 @@ echo "Starting vLLM server..."
 echo "Model: $MODEL"
 echo "Port: $PORT"
 echo "GPU Util: $GPU_MEMORY_UTILIZATION"
+echo "Dtype: $DTYPE"
+
 if [ -n "$MAX_MODEL_LEN" ]; then
     echo "Max Model Len: $MAX_MODEL_LEN"
 else
     echo "Max Model Len: Auto"
+fi
+
+if [ -n "$QUANTIZATION" ]; then
+    echo "Quantization: $QUANTIZATION"
 fi
 
 # Check if vllm is installed
@@ -69,10 +93,22 @@ if ! command -v vllm &> /dev/null; then
 fi
 
 # Run vLLM
-CMD="vllm serve $MODEL --port $PORT --gpu-memory-utilization $GPU_MEMORY_UTILIZATION --trust-remote-code"
+# - enable-prefix-caching: Improves performance for system prompts/multi-turn
+# - trust-remote-code: Required for some models
+CMD="vllm serve $MODEL \
+    --port $PORT \
+    --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
+    --dtype $DTYPE \
+    --kv-cache-dtype $KV_CACHE_DTYPE \
+    --enable-prefix-caching \
+    --trust-remote-code"
 
 if [ -n "$MAX_MODEL_LEN" ]; then
     CMD="$CMD --max-model-len $MAX_MODEL_LEN"
+fi
+
+if [ -n "$QUANTIZATION" ]; then
+    CMD="$CMD --quantization $QUANTIZATION"
 fi
 
 echo "Executing: $CMD"
