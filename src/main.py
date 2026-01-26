@@ -1,6 +1,7 @@
 import hydra
 import hashlib
 import json
+import asyncio
 from omegaconf import DictConfig, OmegaConf
 import pandas as pd
 import time
@@ -29,9 +30,6 @@ from system_prompts.evaluator.current import (
 # Initialize Langfuse tracing
 init_langfuse()
 
-# [DEBUG] Enable LiteLLM Debugging
-# litellm._turn_on_debug()
-
 
 def _hash_prompt(prompt: str) -> str:
     """Generate a short hash of prompt content for cache versioning."""
@@ -43,10 +41,6 @@ warnings.filterwarnings("ignore", message=".*Pydantic serializer warnings.*")
 
 # Define current directory
 current_dir = Path(__file__).parent
-
-
-# Load Configuration
-# Removed manual loading for Hydra
 
 
 def load_input_data(input_arg: str, base_dir: Path) -> tuple[pd.DataFrame, str, str]:
@@ -140,7 +134,7 @@ def safe_flush(langfuse_client, retry_count=3):
             break
 
 
-def run_benchmark(
+async def run_benchmark(
     dataset_name: str,
     source_lang: str,
     df: pd.DataFrame,
@@ -172,7 +166,6 @@ def run_benchmark(
     )
 
     # If using local file with IDs, we can reconstruct the expected Item IDs
-    # (Assuming they were uploaded with standard naming: dataset_name-id)
     if not dataset_item_ids and "id" in df.columns:
         dataset_item_ids = [f"{dataset_name}-{row['id']}" for _, row in df.iterrows()]
         print(f"Reconstructed {len(dataset_item_ids)} Item IDs for linking.")
@@ -185,8 +178,6 @@ def run_benchmark(
     benchmark_results = []
     results_df = df.copy()
 
-    # Generate an experiment name for this run
-    # This aligns trace linking to a specific "run" in Langfuse
     timestamp = time.strftime("%Y%m%d-%H%M")
 
     for model_info in models_config:
@@ -199,7 +190,6 @@ def run_benchmark(
         print(f"Model: {model_name} -> Experiment: {experiment_name}")
         print(f"{'=' * 50}")
 
-        # Get specific temperature for this model or default
         model_temp = model_info.get(
             "temperature",
             default_translator_config.get("temperature", 0.3),
@@ -216,10 +206,10 @@ def run_benchmark(
             batch_prompt_template=translator_prompts["batch"],
         )
 
-        # 1. Translate
+        # 1. Translate (Async)
         print("Translating...")
         try:
-            translations, elapsed_time, trace_ids = translator.batch_translate(
+            translations, elapsed_time, trace_ids = await translator.batch_translate(
                 df[input_col].tolist(),
                 source_lang=source_lang,
                 session_id=session_id,
@@ -237,33 +227,20 @@ def run_benchmark(
         col_trans = f"trans_{model_name.replace(' ', '_')}"
         results_df[col_trans] = translations
 
-        # 2. Evaluate (Qualitative - Judge)
-        # Note: We do judge BEFORE metrics or parallel?
-        # Actually in the original code, metrics were first.
-        # But we need to use the automated metrics too.
-
-        # Calculate Metrics (Fast)
+        # 2. Metrics
         print("Calculating automated metrics...")
-        try:
-            metrics = evaluator.calculate_metrics(transposed_references, translations)
-            # Also calculate per-item metrics for Run Item scoring
-            item_metrics = evaluator.calculate_item_metrics(
-                transposed_references, translations
-            )
-        except Exception:
-            metrics = {"BLEU": 0.0, "BERTScore_F1": 0.0}
-            item_metrics = {
-                "BLEU": [0.0] * len(translations),
-                "BERTScore_F1": [0.0] * len(translations),
-            }
+        metrics = evaluator.calculate_metrics(transposed_references, translations)
+        item_metrics = evaluator.calculate_item_metrics(
+            transposed_references, translations
+        )
 
-        # LLM Judge
+        # 3. LLM Judge (Async)
         print("Running LLM Judge...")
         col_judge = f"judge_{model_name.replace(' ', '_')}"
 
-        # Prepare valid items for judge
         primary_ref = ref_cols[0] if ref_cols else None
 
+        # Determine valid items that actually need judging
         valid_indices = []
         valid_sources = []
         valid_refs = []
@@ -278,43 +255,41 @@ def run_benchmark(
 
         batch_results = []
         if valid_cands:
-            batch_results = evaluator.batch_llm_judge(
+            batch_results = await evaluator.batch_llm_judge(
                 valid_sources,
                 valid_refs,
                 valid_cands,
                 source_lang,
-                batch_size=30,
+                batch_size=30,  # Could also use config batch_size
                 model_id=model_id,
                 session_id=session_id,
             )
 
-        # Reconstruct judgements
+        # Reconstruct judgements list matching the dataframe
         judgements = ['{"accuracy": 0, "fluency": 0}'] * len(df)
+
+        # We need to map the batch_results (which are only for valid items) back to the full DF
+        # batch_results is parallel to valid_indices
         for i, idx in enumerate(valid_indices):
             if i < len(batch_results):
                 judgements[idx] = batch_results[i]
 
         results_df[col_judge] = judgements
 
-        # Calculate Judge Averages
+        # Calculate Averages for Summary
         total_acc = 0
         total_flu = 0
         count = 0
         for j_str in judgements:
             try:
-                j = (
-                    json.loads(j_str.replace("```json", "").replace("```", "").strip())
-                    if isinstance(j_str, str)
-                    else j_str
-                )
+                j = json.loads(j_str) if isinstance(j_str, str) else j_str
                 acc = float(j.get("accuracy", 0))
                 flu = float(j.get("fluency", 0))
                 if acc > 0:
                     total_acc += acc
                     total_flu += flu
                     count += 1
-            except Exception as e:
-                print(f"Error parsing judge: {e}")
+            except:
                 pass
 
         avg_acc = total_acc / count if count else 0
@@ -332,43 +307,35 @@ def run_benchmark(
             }
         )
 
-        # Link Dataset Items and Score in Langfuse
+        # Langfuse Scoring
         if dataset_item_ids:
             print("Scoring items in Langfuse...")
+            # We can process this in parallel eventually, but scoring is sensitive to rates
+            # Let's keep it simple for now, maybe use async later if slow.
             try:
                 lf = Langfuse()
                 dataset = lf.get_dataset(dataset_name)
 
+                scored_count = 0
                 if dataset and hasattr(dataset, "items"):
                     item_lookup = {item.id: item for item in dataset.items}
-                    scored_count = 0
 
                     for i, item_id in enumerate(dataset_item_ids):
-                        if not item_id:
+                        if not item_id or item_id not in item_lookup:
                             continue
 
-                        item = item_lookup.get(item_id)
-                        if not item:
-                            continue
+                        item = item_lookup[item_id]
 
-                        # Parse judgement for this item
-                        j_str = judgements[i]
+                        # Parse judgement
                         try:
-                            j = (
-                                json.loads(
-                                    j_str.replace("```json", "")
-                                    .replace("```", "")
-                                    .strip()
-                                )
-                                if isinstance(j_str, str)
-                                else j_str
-                            )
+                            j_str = judgements[i]
+                            j = json.loads(j_str) if isinstance(j_str, str) else j_str
                             acc_val = float(j.get("accuracy", 0))
                             flu_val = float(j.get("fluency", 0))
 
-                            # Use context manager for the run, but score AFTER it ends
-                            # to avoid OTEL span timing issues
                             trace_id = None
+
+                            # Using trace linking
                             with item.run(
                                 run_name=experiment_name,
                                 run_metadata={
@@ -376,40 +343,32 @@ def run_benchmark(
                                     "source_lang": source_lang,
                                 },
                             ) as run_span:
-                                # Update with translation input/output
                                 run_span.update(
                                     input=str(df.iloc[i][input_col]),
                                     output=translations[i],
                                 )
-                                # Capture trace_id for scoring later
                                 trace_id = run_span.trace_id
 
-                            # Score AFTER the span ends using native create_score() API
-                            # This avoids "Setting attribute on ended span" warnings
                             if trace_id:
                                 safe_create_score(
                                     lf,
                                     trace_id=trace_id,
                                     name="judge-accuracy",
                                     value=acc_val,
-                                    data_type="NUMERIC",
                                 )
                                 safe_create_score(
                                     lf,
                                     trace_id=trace_id,
                                     name="judge-fluency",
                                     value=flu_val,
-                                    data_type="NUMERIC",
                                 )
 
-                                # Add automated metrics (BLEU and BERTScore)
                                 if i < len(item_metrics["BLEU"]):
                                     safe_create_score(
                                         lf,
                                         trace_id=trace_id,
                                         name="bleu",
                                         value=item_metrics["BLEU"][i],
-                                        data_type="NUMERIC",
                                     )
                                 if i < len(item_metrics["BERTScore_F1"]):
                                     safe_create_score(
@@ -417,21 +376,17 @@ def run_benchmark(
                                         trace_id=trace_id,
                                         name="bertscore",
                                         value=item_metrics["BERTScore_F1"][i],
-                                        data_type="NUMERIC",
                                     )
-                            scored_count += 1
 
-                            # Small delay to avoid rate limits
-                            time.sleep(0.2)
+                                scored_count += 1
 
                         except Exception as e:
-                            print(f"  Error scoring item {i}: {e}")
+                            print(f"Error scoring item {i}: {e}")
 
                     safe_flush(lf)
                     print(
                         f"Scored {scored_count} items in experiment '{experiment_name}'"
                     )
-
             except Exception as e:
                 print(f"Langfuse scoring failed: {e}")
 
@@ -440,6 +395,11 @@ def run_benchmark(
 
 @hydra.main(version_base=None, config_path="../", config_name="config")
 def main(cfg: DictConfig):
+    # Wrapper to run async main
+    asyncio.run(async_main(cfg))
+
+
+async def async_main(cfg: DictConfig):
     base_dir = current_dir.parent
 
     # Resolve Input
@@ -473,13 +433,6 @@ def main(cfg: DictConfig):
     if not cfg.no_cache:
         litellm.cache = litellm.Cache(type="disk")
         print("LiteLLM Disk Cache enabled")
-        if cfg.clear_cache:
-            # LiteLLM doesn't have a direct clear method for disk cache in all versions easily accessible here
-            # without knowing the path, but usually it's in .cache/litellm.
-            # For now we'll just print a warning or rely on manual clearing if needed
-            # or we could try to look up where it saves.
-            # But per requirements we just need to replace it.
-            pass
 
     # Init Evaluator
     evaluator = Evaluator(
@@ -504,11 +457,10 @@ def main(cfg: DictConfig):
     out_csv = results_dir / f"results_{dataset_name}_{timestamp}.csv"
 
     # Run
-    # Convert OmegaConf/dict config to list/dict for passing
     models_config_list = OmegaConf.to_container(cfg.translator.models, resolve=True)
     translator_defaults = OmegaConf.to_container(cfg.translator.defaults, resolve=True)
 
-    res_df, stats = run_benchmark(
+    res_df, stats = await run_benchmark(
         dataset_name=dataset_name,
         source_lang=source_lang,
         df=df,
