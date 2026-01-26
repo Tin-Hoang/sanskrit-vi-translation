@@ -64,7 +64,7 @@ IMPORTANT SCORING GUIDELINES:
 - Score 3 is acceptable but has noticeable issues with terminology or register.
 - Be especially strict about Buddhist technical terms (Pāli/Sanskrit → Vietnamese Buddhist vocabulary).
 
-Source ({{source_lang}}): {{source}}
+Source ({{source_lang}}): {{text}}
 Reference (Vietnamese): {{reference}}
 Candidate (Vietnamese): {{candidate}}
 

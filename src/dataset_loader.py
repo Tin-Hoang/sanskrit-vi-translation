@@ -25,8 +25,16 @@ def upload_dataset(dataset_name: str, df: pd.DataFrame) -> None:
     print(f"Uploading dataset '{dataset_name}' to Langfuse ({len(df)} items)...")
 
     # Define Schema
-    # Input: Simple string (the source text)
-    input_schema = {"type": "string"}
+    # Input: JSON Object (text, source_lang, target_lang)
+    input_schema = {
+        "type": "object",
+        "properties": {
+            "text": {"type": "string"},
+            "source_lang": {"type": "string"},
+            "target_lang": {"type": "string"},
+        },
+        "required": ["text"],
+    }
 
     # Expected Output: Dictionary of strings (references)
     expected_output_schema = {
@@ -79,7 +87,22 @@ def upload_dataset(dataset_name: str, df: pd.DataFrame) -> None:
 
     # Iterate and create items
     for _, row in df.iterrows():
-        input_data = row[input_col]
+        raw_input = str(row[input_col])
+
+        # Heuristic for source lang (simple, per item or column based)
+        # We can reuse the logic from main/utils if we wanted, but sticking to simple heuristic here
+        source_lang_val = "Sanskrit"
+        if "pali" in input_col.lower():
+            source_lang_val = "Pali"
+        elif "viet" in input_col.lower():
+            source_lang_val = "Vietnamese"
+
+        # Construct Input Object for Langfuse
+        input_data = {
+            "text": raw_input,
+            "source_lang": source_lang_val,
+            "target_lang": "Vietnamese",
+        }
 
         # Expected Output (References)
         expected_output = {}
@@ -189,9 +212,27 @@ def load_dataset_as_dataframe(dataset_name: str) -> pd.DataFrame:
     items = []
     for item in dataset.items:
         # Base row data from input
-        row = {
-            "pali_text": item.input
-        }  # Defaulting to pali_text for this specific dataset
+        if isinstance(item.input, dict):
+            # If input is a dict, extract the main text
+            # We prefer 'text' or 'source', but checks for other common keys
+            val = None
+            for key in ["text", "source", "pali_text", "sanskrit_text", "input"]:
+                if key in item.input:
+                    val = item.input[key]
+                    break
+
+            if val is None:
+                # Fallback: take the first value if it's a simple dict
+                val = next(iter(item.input.values())) if item.input else ""
+
+            row = {"pali_text": val}
+
+            # We could also load 'source_lang' here if we wanted to populate metadata
+            if "source_lang" in item.input:
+                row["source_lang"] = item.input["source_lang"]
+        else:
+            # Fallback for legacy string input
+            row = {"pali_text": item.input}
 
         # Add Langfuse Item ID for linking
         row["langfuse_item_id"] = item.id

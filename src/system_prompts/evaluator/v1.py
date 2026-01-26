@@ -40,7 +40,7 @@ Rate the following Vietnamese translation of a {{source_lang}} text on a scale f
 
 {{rubric}}
 
-Source ({{source_lang}}): {{source}}
+Source ({{source_lang}}): {{text}}
 Reference (Vietnamese): {{reference}}
 Candidate (Vietnamese): {{candidate}}
 
