@@ -161,6 +161,34 @@ uv run src/main.py input=data/sanskrit_vi_heart_sutra.csv no_cache=true
 
 Cache files are stored in `cache/` (auto-created).
 
+### Local Models with vLLM
+
+To benchmark local models using [vLLM](https://docs.vllm.ai/):
+
+1.  **Install dependencies**:
+    ```bash
+    uv sync --extra vllm
+    ```
+
+2.  **Start vLLM Server**:
+    Use the helper script to launch a model (e.g., Qwen2.5-32B):
+    ```bash
+    # Usage: ./scripts/serve_vllm.sh --model <model_id> --gpu-util <0.9>
+    ./scripts/serve_vllm.sh --model Qwen/Qwen2.5-32B-Instruct
+    ```
+
+3.  **Configure Benchmark**:
+    Uncomment the local model configuration in `config.yaml`:
+    ```yaml
+    - id: "openai/Qwen/Qwen2.5-7B-Instruct"
+      name: "vLLM-Qwen2.5-7B"
+      api_base: "http://localhost:8000/v1"
+      api_key: "EMPTY"
+    ```
+
+4.  **Run**:
+    The system will treat it like any other OpenAI-compatible endpoint.
+
 ### Langfuse Observability (Optional)
 
 Enable LLM tracing with [Langfuse](https://langfuse.com) (free) to monitor all translation and evaluation calls:

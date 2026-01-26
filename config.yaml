@@ -43,6 +43,12 @@ translator:
     - id: "gemini/gemini-3-flash-preview"
       name: "Gemini-3-Flash"
       temperature: 1.0
+    # Example for Local vLLM (OpenAI Compatible)
+    # - id: "openai/Qwen/Qwen2.5-7B-Instruct"
+    #   name: "vLLM-Qwen2.5-7B"
+    #   api_base: "http://localhost:8000/v1"
+    #   api_key: "EMPTY"
+    #   temperature: 0.3
   defaults:
     temperature: 0.3
     batch_size: 10

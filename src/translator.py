@@ -30,9 +30,13 @@ class Translator:
         temperature: float = 0.3,
         single_prompt_template: Optional[str] = None,
         batch_prompt_template: Optional[str] = None,
+        api_base: Optional[str] = None,
+        api_key: Optional[str] = None,
     ):
         self.model_name = model_name
         self.temperature = temperature
+        self.api_base = api_base
+        self.api_key = api_key
         # Use provided templates or load from current (fallback logic to be safe)
         if not single_prompt_template or not batch_prompt_template:
             from system_prompts.translator.current import (
@@ -57,15 +61,31 @@ class Translator:
             text=text,
         )
         try:
-            response = litellm.completion(
-                model=self.model_name,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=self.temperature,
-                metadata={
+            model_to_use = self.model_name
+            # If api_base is set (custom server) and no provider prefix, default to openai/
+            if self.api_base and "/" in self.model_name and not self.model_name.startswith("openai/"):
+                 # Check if it already has a known provider prefix could be complex,
+                 # but for vLLM/local usually we want openai logic.
+                 # Actually, let's just prepend openai/ if it's missing and we have api_base,
+                 # assuming the user intends to use the openai-compatible endpoint.
+                 model_to_use = f"openai/{self.model_name}"
+
+            kwargs = {
+                "model": model_to_use,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": self.temperature,
+                "frequency_penalty": 1.0, # Prevent repetition loops for small models
+                "metadata": {
                     "session_id": session_id,
                     "tags": ["translation", self.model_name, source_lang],
                 },
-            )
+            }
+            if self.api_base:
+                kwargs["api_base"] = self.api_base
+            if self.api_key:
+                kwargs["api_key"] = self.api_key
+
+            response = litellm.completion(**kwargs)
             return response.choices[0].message.content.strip()
         except Exception as e:
             print(f"Error translating text: {e}")
@@ -137,11 +157,16 @@ class Translator:
                         "model": self.model_name,
                         "messages": [{"role": "user", "content": prompt}],
                         "temperature": self.temperature,
+                        "frequency_penalty": 1.0,
                         "metadata": {
                             "session_id": session_id,
                             "tags": ["translation", self.model_name, source_lang],
                         },
                     }
+                    if self.api_base:
+                        completion_kwargs["api_base"] = self.api_base
+                    if self.api_key:
+                        completion_kwargs["api_key"] = self.api_key
                     if current_trace_id:
                         # Propagate trace ID to LiteLLM so it nests under this trace
                         completion_kwargs["metadata"]["trace_id"] = current_trace_id

@@ -204,10 +204,14 @@ def run_benchmark(
             "temperature",
             default_translator_config.get("temperature", 0.3),
         )
+        api_base = model_info.get("api_base")
+        api_key = model_info.get("api_key")
 
         translator = Translator(
             model_name=model_id,
             temperature=model_temp,
+            api_base=api_base,
+            api_key=api_key,
             single_prompt_template=translator_prompts["single"],
             batch_prompt_template=translator_prompts["batch"],
         )
