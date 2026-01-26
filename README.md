@@ -171,10 +171,10 @@ To benchmark local models using [vLLM](https://docs.vllm.ai/):
     ```
 
 2.  **Start vLLM Server**:
-    Use the helper script to launch a model (e.g., Qwen2.5-32B):
+    Use the helper script to launch a model (e.g., Qwen2.5-7B):
     ```bash
     # Usage: ./scripts/serve_vllm.sh --model <model_id> --gpu-util <0.9>
-    ./scripts/serve_vllm.sh --model Qwen/Qwen2.5-32B-Instruct
+    ./scripts/serve_vllm.sh --model Qwen/Qwen2.5-7B-Instruct
     ```
 
 3.  **Configure Benchmark**:
