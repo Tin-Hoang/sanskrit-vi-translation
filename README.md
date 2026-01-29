@@ -5,6 +5,14 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
   <img src="docs/sanskrit_vi_banner.jpg" alt="Sanskrit-Vietnamese Translation Benchmark" width="100%" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/LiteLLM-00A67E?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTIyIDhIMTNDNiA4IDIgMTEgMiAxNXYyaDIwVjhaIi8+PHBhdGggZD0iTTEzIDExaDV2LTJoLTVjLS42IDAtMSAuNC0xIDFzLjQgMSAxIDF6Ii8+PHBhdGggZD0iTTIgMjFoMjB2LTJIMnoiLz48L3N2Zz4=&logoColor=white" alt="LiteLLM">
+  <img src="https://img.shields.io/badge/Langfuse-7C3AED?style=flat-square&logo=train&logoColor=white" alt="Langfuse">
+  <img src="https://img.shields.io/badge/Hydra-4285F4?style=flat-square&logo=Pydantic&logoColor=white" alt="Hydra">
+  <img src="https://img.shields.io/badge/Jinja2-B41717?style=flat-square&logo=jinja&logoColor=white" alt="Jinja2">
+  <img src="https://img.shields.io/badge/LLM--as--a--Judge-FF6F61?style=flat-square&logo=dungeonsanddragons&logoColor=white" alt="LLM-as-a-Judge">
+</p>
+
 ## 🔬 Research Questions
 
 1. Can modern LLMs translate ancient Buddhist scriptures as well as human scholars?
