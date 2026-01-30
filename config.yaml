@@ -57,6 +57,13 @@ translator:
     - id: "xai/grok-4-1-fast-reasoning"
       name: "Grok-4.1-Fast-Reasoning"
       temperature: 0.3
+    # DeepSeek
+    - id: "deepseek/deepseek-chat"
+      name: "DeepSeek-V3.2-Chat"
+      temperature: 0.3
+    - id: "deepseek/deepseek-reasoner"
+      name: "DeepSeek-V3.2-Reasoner"
+      temperature: 0.3
     # Local vLLM (OpenAI Compatible)
     # - id: "openai/Qwen/Qwen2.5-32B-Instruct-AWQ"
     #   name: "vLLM-Qwen2.5-32B-Instruct-AWQ"

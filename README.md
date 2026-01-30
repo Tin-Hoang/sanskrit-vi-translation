@@ -50,6 +50,8 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
 | sanskrit-vi-heart-sutra | GPT-5.2            |    20.79 |          0.75 |                         4.89 |                        4.39 |        17.89 |
 | sanskrit-vi-heart-sutra | Grok-4-0709             |    26.17 |          0.76 |                         4.83 |                        4.00 |        31.69 |
 | sanskrit-vi-heart-sutra | Grok-4.1-Fast-Reasoning |    15.27 |          0.77 |                         4.78 |                        4.44 |        35.26 |
+| sanskrit-vi-heart-sutra | DeepSeek-V3.2-Chat     |    26.09 |          0.76 |                         4.67 |                        4.11 |        29.81 |
+| sanskrit-vi-heart-sutra | DeepSeek-V3.2-Reasoner |    23.27 |          0.76 |                         4.50 |                        3.83 |       103.64 |
 | sanskrit-vi-heart-sutra | Gemini-3-Flash       |    33.73 |          0.76 |                         4.94 |                        4.56 |        11.11 |
 
 ### Pali → Vietnamese (Dhammapada | Kinh Pháp Cú)
@@ -72,6 +74,8 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
 | pali-vi-dhammapada | GPT-5.2              |    21.90 |          0.80 |                         4.70 |                        4.45 |        22.24 |
 | pali-vi-dhammapada | Grok-4-0709             |    21.39 |          0.80 |                         4.45 |                        4.20 |        34.38 |
 | pali-vi-dhammapada | Grok-4.1-Fast-Reasoning |    14.84 |          0.78 |                         3.85 |                        3.65 |        20.84 |
+| pali-vi-dhammapada | DeepSeek-V3.2-Chat     |    22.09 |          0.81 |                         4.65 |                        4.20 |        47.69 |
+| pali-vi-dhammapada | DeepSeek-V3.2-Reasoner |    19.84 |          0.80 |                         4.45 |                        4.05 |       125.94 |
 | pali-vi-dhammapada | Gemini-3-Flash       |    32.67 |          0.83 |                         4.65 |                        4.45 |         8.47 |
 
 ### Pali vs Sanskrit Comparison (Dhammapada - Udanavarga | Kinh Pháp Cú)
@@ -101,6 +105,8 @@ To analyze the comparative translation quality between Middle Indo-Aryan (Pali) 
 | pali-vi-dhammapada-18verses | GPT-5.2 |    19.49 |          0.80 |                         4.67 |                        4.44 |        21.71 |
 | pali-vi-dhammapada-18verses | Grok-4-0709             |    20.52 |          0.79 |                         4.33 |                        3.78 |        33.42 |
 | pali-vi-dhammapada-18verses | Grok-4.1-Fast-Reasoning |    13.35 |          0.78 |                         4.06 |                        3.56 |        11.16 |
+| pali-vi-dhammapada-18verses | DeepSeek-V3.2-Chat     |    27.39 |          0.81 |                         4.56 |                        4.50 |        42.27 |
+| pali-vi-dhammapada-18verses | DeepSeek-V3.2-Reasoner |    18.16 |          0.80 |                         4.00 |                        3.72 |       112.90 |
 | pali-vi-dhammapada-18verses | Gemini-3-Flash       |    37.58 |          0.84 |                         4.67 |                        4.56 |         6.33 |
 | sanskrit-vi-udanavarga-18verses | GPT-OSS-20B          |     1.75 |          0.67 |                         1.61 |                        1.89 |         5.49 |
 | sanskrit-vi-udanavarga-18verses | GPT-OSS-120b         |     5.29 |          0.70 |                         2.00 |                        1.89 |         8.32 |
@@ -112,6 +118,8 @@ To analyze the comparative translation quality between Middle Indo-Aryan (Pali) 
 | sanskrit-vi-udanavarga-18verses | GPT-5.2 |    17.61 |          0.80 |                         4.61 |                        4.28 |        22.07 |
 | sanskrit-vi-udanavarga-18verses | Grok-4-0709             |    15.52 |          0.79 |                         4.33 |                        3.83 |        43.94 |
 | sanskrit-vi-udanavarga-18verses | Grok-4.1-Fast-Reasoning |    10.89 |          0.76 |                         3.78 |                        3.56 |        17.88 |
+| sanskrit-vi-udanavarga-18verses | DeepSeek-V3.2-Chat     |    18.58 |          0.80 |                         4.67 |                        4.17 |        42.37 |
+| sanskrit-vi-udanavarga-18verses | DeepSeek-V3.2-Reasoner |    13.17 |          0.77 |                         3.89 |                        3.61 |       114.35 |
 | sanskrit-vi-udanavarga-18verses | Gemini-3-Flash       |    35.26 |          0.83 |                         4.50 |                        4.33 |         9.65 |
 
 ## 📂 Structure
