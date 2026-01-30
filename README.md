@@ -65,6 +65,9 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
 
 **Dataset**: data/pali_vi_dhammapada.csv
 
+<details>
+<summary>Click to view full results table</summary>
+
 | Dataset            | Model                |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
 |:-------------------|:---------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
 | pali-vi-dhammapada | GPT-OSS-20B          |     1.68 |          0.67 |                         1.40 |                        1.55 |         3.57 |
@@ -81,6 +84,8 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
 | pali-vi-dhammapada | DeepSeek-V3.2-Reasoner |    19.84 |          0.80 |                         4.45 |                        4.05 |       125.94 |
 | pali-vi-dhammapada | Gemini-3-Flash       |    32.67 |          0.83 |                         4.65 |                        4.45 |         8.47 |
 
+</details>
+
 ### Pali vs Sanskrit Comparison (Dhammapada - Udanavarga | Kinh Pháp Cú)
 
 To analyze the comparative translation quality between Middle Indo-Aryan (Pali) and Old Indo-Aryan (Sanskrit) into Vietnamese, we constructed a multi-source parallel corpus based on the "Gāthā" (verse) literature of early Buddhism.
@@ -95,6 +100,9 @@ To analyze the comparative translation quality between Middle Indo-Aryan (Pali) 
 **Judge Model**: gemini/gemini-3-flash-preview
 
 **Dataset**: dhammapada_udanavarga_parallel.csv (20 samples)
+
+<details>
+<summary>Click to view full results table</summary>
 
 | Dataset                     | Model                |   BLEU ↑ |   BERTScore ↑ |   LLM Judge Accuracy (1-5) ↑ |   LLM Judge Fluency (1-5) ↑ |   Time (s) ↓ |
 |:----------------------------|:---------------------|---------:|--------------:|-----------------------------:|----------------------------:|-------------:|
@@ -122,10 +130,16 @@ To analyze the comparative translation quality between Middle Indo-Aryan (Pali) 
 | sanskrit-vi-udanavarga-18verses | Grok-4-0709             |    15.52 |          0.79 |                         4.33 |                        3.83 |        43.94 |
 | sanskrit-vi-udanavarga-18verses | Grok-4.1-Fast-Reasoning |    10.89 |          0.76 |                         3.78 |                        3.56 |        17.88 |
 | sanskrit-vi-udanavarga-18verses | DeepSeek-V3.2-Chat     |    18.58 |          0.80 |                         4.67 |                        4.17 |        42.37 |
-| sanskrit-vi-udanavarga-18verses | DeepSeek-V3.2-Reasoner |    13.17 |          0.77 |                         3.89 |                        3.61 |       114.35 |
+| sanskrit-vi-udanavarga-18verses | DeepSeek-V3.2-Reasoner |    13.17 |          0.80 |                         3.89 |                        3.61 |       114.35 |
 | sanskrit-vi-udanavarga-18verses | Gemini-3-Flash       |    35.26 |          0.83 |                         4.50 |                        4.33 |         9.65 |
 
+</details>
+
 ## 📂 Structure
+
+<details>
+<summary>Click to view full folder structure</summary>
+
 - `data/`:
     - `sanskrit_vi_heart_sutra.csv`: Sanskrit Heart Sutra benchmark (18 lines, multi-ref).
     - `pali_vi_dhammapada.csv`: Pali Dhammapada benchmark (TBD).
@@ -139,6 +153,8 @@ To analyze the comparative translation quality between Middle Indo-Aryan (Pali) 
     - `system_prompts/`: Versioned prompt templates.
         - `translator/v1.py`, `current.py`: Translation prompts.
         - `evaluator/v1.py`, `current.py`: LLM Judge prompts.
+
+</details>
 
 ## 🚀 Usage
 
