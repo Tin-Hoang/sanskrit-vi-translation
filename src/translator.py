@@ -1,15 +1,17 @@
-import asyncio
+"""
+Translator module for LLM-based translation.
+
+Extends BaseLLMClient to provide translation-specific functionality
+while inheriting shared LLM logic (retry, timing, batch processing).
+"""
+
+import json
 from typing import List, Optional, Dict, Any
-import litellm
-import time
-from tenacity import (
-    retry,
-    stop_after_attempt,
-    wait_exponential,
-    retry_if_exception_type,
-)
+
 from dotenv import load_dotenv
-from litellm.exceptions import RateLimitError
+
+from llm_client import BaseLLMClient, llm_retry
+from response_parser import validate_pydantic, fix_double_encoded_list, safe_json_parse
 from schemas import BatchTranslationResult
 from prompt_manager import render_prompt
 
@@ -28,7 +30,14 @@ except ImportError:
         return decorator
 
 
-class Translator:
+class Translator(BaseLLMClient):
+    """
+    LLM-based translator for batch translation tasks.
+
+    Inherits retry logic and batch processing from BaseLLMClient.
+    Implements translation-specific prompt building and response parsing.
+    """
+
     def __init__(
         self,
         model_name: str,
@@ -39,13 +48,21 @@ class Translator:
         api_key: Optional[str] = None,
         extra_params: Optional[Dict[str, Any]] = None,
     ):
-        self.model_name = model_name
-        self.temperature = temperature
-        self.api_base = api_base
-        self.api_key = api_key
-        self.extra_params = extra_params or {}
+        super().__init__(
+            model_name=model_name,
+            temperature=temperature,
+            api_base=api_base,
+            api_key=api_key,
+            extra_params=extra_params,
+        )
+        self._load_prompt_templates(single_prompt_template, batch_prompt_template)
 
-        # Load default templates if not provided
+    def _load_prompt_templates(
+        self,
+        single_prompt_template: Optional[str],
+        batch_prompt_template: Optional[str],
+    ) -> None:
+        """Load default templates if not provided."""
         if not single_prompt_template or not batch_prompt_template:
             from system_prompts.translator.current import (
                 SINGLE_TRANSLATE_PROMPT,
@@ -60,103 +77,56 @@ class Translator:
             self.single_prompt_template = single_prompt_template
             self.batch_prompt_template = batch_prompt_template
 
-    @retry(
-        retry=retry_if_exception_type(RateLimitError),
-        stop=stop_after_attempt(5),
-        wait=wait_exponential(multiplier=1, min=4, max=60),
-    )
-    async def _process_batch(
-        self,
-        batch_texts: List[str],
-        source_lang: str,
-        session_id: Optional[str],
-        trace_id: Optional[str],
-    ) -> tuple[List[str], float]:
-        """Process a single batch with retries and structured output."""
+    def _build_prompt(self, batch_items: List[str], source_lang: str, **kwargs) -> str:
+        """
+        Build translation prompt from batch items.
 
-        # Prepare batch prompt
+        Args:
+            batch_items: List of texts to translate
+            source_lang: Source language name
+
+        Returns:
+            Formatted prompt string
+        """
         items_text = ""
-        for i, text in enumerate(batch_texts):
+        for i, text in enumerate(batch_items):
             items_text += f"\n--- Item {i + 1} ---\nText: {text}\n"
 
-        prompt = render_prompt(
-            self.batch_prompt_template, source_lang=source_lang, items_text=items_text
+        return render_prompt(
+            self.batch_prompt_template,
+            source_lang=source_lang,
+            items_text=items_text,
         )
 
-        model_params = {
-            "model": self.model_name,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": self.temperature,
-            # Use json_object instead of strict schema class to be safer with Groq/OpenSource models
-            "response_format": {"type": "json_object"},
-            "metadata": {
-                "session_id": session_id,
-                "tags": ["translation", self.model_name, source_lang],
-                "trace_id": trace_id,
-            },
-        }
+    def _parse_response(self, content: str, batch_size: int) -> List[str]:
+        """
+        Parse BatchTranslationResult into list of translation strings.
 
-        if self.api_base:
-            model_params["api_base"] = self.api_base
-        if self.api_key:
-            model_params["api_key"] = self.api_key
+        Args:
+            content: Cleaned JSON response content
+            batch_size: Expected number of translations
 
-        # Merge any extra parameters (reasoning_effort, verbosity, top_p, etc.)
-        model_params.update(self.extra_params)
-
-        start_time = time.time()
-
-        # Async LiteLLM Call
-        print(f"litellm.acompletion() params: {model_params}")
-        response = await litellm.acompletion(**model_params)
-
-        end_time = time.time()
-        inference_time = end_time - start_time
-
-        # Parse Pydantic Result
+        Returns:
+            List of translation strings
+        """
         try:
-            # LiteLLM/Instructor integration usually returns the model instance directly
-            # if we use certain wrappers, but standard litellm.acompletion returns a response object.
-            # Using validation via json.loads is standard for raw structured outputs.
-            content = response.choices[0].message.content
-
-            # Additional cleanup for frequent JSON errors
-            if content.startswith("```json"):
-                content = content.replace("```json", "").replace("```", "")
-
-            import json
-
-            data = json.loads(content)
-
-            # Fix double-encoded JSON strings in 'translations' list
-            if "translations" in data and isinstance(data["translations"], list):
-                fixed_list = []
-                for item in data["translations"]:
-                    if isinstance(item, str):
-                        try:
-                            fixed_list.append(json.loads(item))
-                        except:
-                            fixed_list.append({"translation": item})  # Fallback
-                    else:
-                        fixed_list.append(item)
-                data["translations"] = fixed_list
+            # Parse JSON and fix double-encoded strings if present
+            data = safe_json_parse(content)
+            data = fix_double_encoded_list(data, "translations")
 
             result = BatchTranslationResult.model_validate(data)
-
-            # Map back to list of strings
             translations = [item.translation for item in result.translations]
 
-            # Pad if shorter (shouldn't happen with strict schemas but safety first)
-            if len(translations) < len(batch_texts):
-                translations += [""] * (len(batch_texts) - len(translations))
+            # Pad if shorter than expected
+            if len(translations) < batch_size:
+                translations += [""] * (batch_size - len(translations))
 
-            return translations[: len(batch_texts)], inference_time
+            return translations[:batch_size]
 
         except Exception as e:
             print(f"Schema Validation Failed: {e}")
-            print(f"Raw Output: {response.choices[0].message.content[:200]}...")
-            # Fallback empty
-            return [""] * len(batch_texts), inference_time
+            print(f"Raw Output: {content[:200]}...")
+            return [""] * batch_size
 
     @observe(as_type="generation")
     async def batch_translate(
@@ -171,54 +141,33 @@ class Translator:
     ) -> tuple[List[str], float, List[Optional[str]]]:
         """
         Async batch translation with parallelism.
-        """
 
+        Args:
+            texts: List of texts to translate
+            source_lang: Source language (default: Sanskrit)
+            batch_size: Items per batch
+            session_id: Optional session ID for tracking
+            dataset_item_ids: Optional list of dataset item IDs
+            dataset_name: Optional dataset name
+            experiment_name: Optional experiment name
+
+        Returns:
+            Tuple of (translations, total_time, trace_ids)
+        """
         # Get parent trace ID if available
         lf = Langfuse() if Langfuse else None
         current_trace_id = lf.get_current_trace_id() if lf else None
 
-        tasks = []
-        batch_map = []  # Track which indices belong to which batch
+        translations, total_time = await self.process_batches(
+            items=texts,
+            batch_size=batch_size,
+            session_id=session_id,
+            trace_id=current_trace_id,
+            default_result="",
+            source_lang=source_lang,
+        )
 
-        # 1. Create Tasks
-        for i in range(0, len(texts), batch_size):
-            batch_end = min(i + batch_size, len(texts))
-            batch_texts = texts[i:batch_end]
-            batch_map.append((i, batch_end))
+        # All items share the parent trace
+        trace_ids = [current_trace_id] * len(texts)
 
-            tasks.append(
-                self._process_batch(
-                    batch_texts=batch_texts,
-                    source_lang=source_lang,
-                    session_id=session_id,
-                    trace_id=current_trace_id,
-                )
-            )
-
-        print(f"Dispatching {len(tasks)} async batches for {len(texts)} items...")
-
-        # 2. Run in Parallel
-        # Use return_exceptions=True to prevent one batch failure from crashing everything
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-
-        # 3. Aggregate Results
-        all_translations = [""] * len(texts)
-        total_time = 0.0
-        all_trace_ids = [current_trace_id] * len(texts)  # Inherit parent trace
-
-        for idx, result in enumerate(results):
-            start_idx, end_idx = batch_map[idx]
-
-            if isinstance(result, Exception):
-                print(f"Batch {idx} Failed: {result}")
-                # Empty strings already set as default
-            else:
-                translations, batch_time = result
-                total_time += batch_time
-
-                # Place in correct slots
-                for k, trans in enumerate(translations):
-                    if start_idx + k < len(all_translations):
-                        all_translations[start_idx + k] = trans
-
-        return all_translations, total_time, all_trace_ids
+        return translations, total_time, trace_ids
