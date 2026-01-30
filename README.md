@@ -10,6 +10,9 @@ This benchmark evaluates how well AI models translate sacred texts from **Sanskr
   <img src="https://img.shields.io/badge/Langfuse-7C3AED?style=flat-square&logo=train&logoColor=white" alt="Langfuse">
   <img src="https://img.shields.io/badge/Hydra-4285F4?style=flat-square&logo=Pydantic&logoColor=white" alt="Hydra">
   <img src="https://img.shields.io/badge/Jinja2-B41717?style=flat-square&logo=jinja&logoColor=white" alt="Jinja2">
+  <img src="https://img.shields.io/badge/vLLM-5C2D91?style=flat-square&logo=pytorch&logoColor=white" alt="vLLM">
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana">
   <img src="https://img.shields.io/badge/LLM--as--a--Judge-FF6F61?style=flat-square&logo=dungeonsanddragons&logoColor=white" alt="LLM-as-a-Judge">
 </p>
 
@@ -216,6 +219,21 @@ To benchmark local models using [vLLM](https://docs.vllm.ai/):
 
 4.  **Run**:
     The system will treat it like any other OpenAI-compatible endpoint.
+
+### vLLM Monitoring (Prometheus + Grafana)
+
+For production monitoring of vLLM performance, see the [vLLM Monitoring Guide](vllm_monitoring/README.md).
+
+<p align="center">
+  <img src="docs/grafana_vllm_dashboard.png" alt="vLLM Dashboard on Grafana" width="100%" />
+</p>
+
+Quick start:
+```bash
+cd vllm_monitoring && docker compose up -d
+# Access via SSH tunnel: ssh -L 3000:localhost:3000 -L 9091:localhost:9091 user@server
+# Grafana: http://localhost:3000 (admin/admin)
+```
 
 ### Langfuse Observability (Optional)
 
