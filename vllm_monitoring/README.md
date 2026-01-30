@@ -3,7 +3,7 @@
 This directory contains a Docker Compose setup for monitoring vLLM with Prometheus and Grafana.
 
 <p align="center">
-  <img src="../docs/grafana_vllm_dashboard.png" alt="vLLM Dashboard on Grafana" width="100%" />
+  <img src="../docs/grafana_vllm_dashboard_2.png" alt="vLLM Dashboard on Grafana" width="100%" />
 </p>
 
 ## Quick Start

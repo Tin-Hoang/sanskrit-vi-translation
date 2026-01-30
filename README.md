@@ -225,7 +225,7 @@ To benchmark local models using [vLLM](https://docs.vllm.ai/):
 For production monitoring of vLLM performance, see the [vLLM Monitoring Guide](vllm_monitoring/README.md).
 
 <p align="center">
-  <img src="docs/grafana_vllm_dashboard.png" alt="vLLM Dashboard on Grafana" width="100%" />
+  <img src="docs/grafana_vllm_dashboard_2.png" alt="vLLM Dashboard on Grafana" width="100%" />
 </p>
 
 Quick start:
