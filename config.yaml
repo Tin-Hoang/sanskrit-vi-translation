@@ -4,8 +4,13 @@ defaults:
 # CLI Arguments / General Settings
 input: null
 
+# Do not cache current requests
 no_cache: false
+
+# Clear existing cache (equals to `rm -rf ~/.litellm_cache`)
 clear_cache: false
+
+# Limit number of items to process
 limit: null
 
 # Batch sizes

@@ -435,6 +435,24 @@ async def async_main(cfg: DictConfig):
     }
 
     # Init Cache
+    if cfg.clear_cache:
+        # Clear existing disk cache
+        import shutil
+
+        cache_dir = Path.home() / ".litellm_cache"
+        if cache_dir.exists():
+            shutil.rmtree(cache_dir)
+            print(f"Cleared LiteLLM cache at {cache_dir}")
+
+        # Also clear legacy cache folder in project root
+        legacy_cache_dir = base_dir / "cache"
+        if legacy_cache_dir.exists():
+            shutil.rmtree(legacy_cache_dir)
+            print(f"Cleared legacy cache at {legacy_cache_dir}")
+
+        if not cache_dir.exists() and not legacy_cache_dir.exists():
+            print("No cache to clear")
+
     if not cfg.no_cache:
         litellm.cache = litellm.Cache(type="disk")
         print("LiteLLM Disk Cache enabled")
