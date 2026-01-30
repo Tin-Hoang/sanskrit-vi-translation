@@ -197,11 +197,16 @@ async def run_benchmark(
         api_base = model_info.get("api_base")
         api_key = model_info.get("api_key")
 
+        # Extract extra params (everything except known keys)
+        known_keys = {"id", "name", "temperature", "api_base", "api_key"}
+        extra_params = {k: v for k, v in model_info.items() if k not in known_keys}
+
         translator = Translator(
             model_name=model_id,
             temperature=model_temp,
             api_base=api_base,
             api_key=api_key,
+            extra_params=extra_params,
             single_prompt_template=translator_prompts["single"],
             batch_prompt_template=translator_prompts["batch"],
         )

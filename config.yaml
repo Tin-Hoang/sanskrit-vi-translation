@@ -19,6 +19,7 @@ judge:
 
 translator:
   models:
+    # Groq
     - id: "groq/openai/gpt-oss-20b"
       name: "GPT-OSS-20B"
       temperature: 0.3
@@ -40,10 +41,16 @@ translator:
     - id: "groq/qwen/qwen3-32b"
       name: "Qwen3-32B"
       temperature: 0.3
+    # Gemini
     - id: "gemini/gemini-3-flash-preview"
       name: "Gemini-3-Flash"
       temperature: 1.0
-    # Example for Local vLLM (OpenAI Compatible)
+    # OpenAI API Platform
+    - id: "openai/gpt-5.2"
+      name: "GPT-5.2"
+      temperature: 0.3
+      reasoning_effort: "medium"
+    # Local vLLM (OpenAI Compatible)
     # - id: "openai/Qwen/Qwen2.5-32B-Instruct-AWQ"
     #   name: "vLLM-Qwen2.5-32B-Instruct-AWQ"
     #   api_base: "http://localhost:8000/v1"

@@ -1,5 +1,5 @@
 import asyncio
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 import litellm
 import time
 from tenacity import (
@@ -37,11 +37,13 @@ class Translator:
         batch_prompt_template: Optional[str] = None,
         api_base: Optional[str] = None,
         api_key: Optional[str] = None,
+        extra_params: Optional[Dict[str, Any]] = None,
     ):
         self.model_name = model_name
         self.temperature = temperature
         self.api_base = api_base
         self.api_key = api_key
+        self.extra_params = extra_params or {}
 
         # Load default templates if not provided
         if not single_prompt_template or not batch_prompt_template:
@@ -99,9 +101,13 @@ class Translator:
         if self.api_key:
             model_params["api_key"] = self.api_key
 
+        # Merge any extra parameters (reasoning_effort, verbosity, top_p, etc.)
+        model_params.update(self.extra_params)
+
         start_time = time.time()
 
         # Async LiteLLM Call
+        print(f"litellm.acompletion() params: {model_params}")
         response = await litellm.acompletion(**model_params)
 
         end_time = time.time()
