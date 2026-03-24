@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bert-score>=0.3.13",
-    "litellm>=1.81.0",
+    "litellm>=1.81.0,<=1.82.5",
     "pandas>=2.3.3",
     "python-dotenv>=1.2.1",
     "sacrebleu>=2.6.0",
