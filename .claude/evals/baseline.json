@@ -1,0 +1,21 @@
+{
+  "generated": "2026-04-18",
+  "note": "Update scores after each full benchmark run. Used to detect quality regressions.",
+  "datasets": {
+    "pali-vi": {
+      "models": {}
+    },
+    "sanskrit-vi": {
+      "models": {}
+    },
+    "compare": {
+      "models": {}
+    }
+  },
+  "unit_tests": {
+    "test_response_parser": "NOT_RUN",
+    "test_schemas": "NOT_RUN",
+    "test_utils": "NOT_RUN",
+    "test_prompt_manager": "NOT_RUN"
+  }
+}
